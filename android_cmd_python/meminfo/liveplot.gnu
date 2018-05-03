@@ -23,9 +23,10 @@ set size 1,1
 set output "figure.jpg"
 set style data line
 
-plot "dump_meminfo.txt" u 1:2 t "Total", \
-"" u 1:3 t "Free", \
-"" u 1:4 t "cache"
+plot "dump_meminfo.txt" u 1:2 t "MemTotal", \
+"" u 1:3 t "MemFree", \
+"" u 1:4 t "MemAvailable", \
+"" u 1:5 t "Cached"
 
 pause 1
 reread
