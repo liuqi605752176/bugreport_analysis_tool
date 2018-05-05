@@ -20,15 +20,12 @@ set grid
 set terminal jpeg size 2048, 1080
 
 set size 1,1
-set output "figure.jpg"
+set output "figure_ion_meminfo.jpg"
 set style data line
 
-plot "dump_meminfo.txt" u 1:2 t "MemTotal", \
-"" u 1:3 t "MemFree", \
-"" u 1:4 t "MemAvailable", \
-"" u 1:5 t "Cached"
+plot "dump_ion_meminfo.txt" u 1:2 t "ion mem Total", \
+
 
 pause 1
 reread
-
 

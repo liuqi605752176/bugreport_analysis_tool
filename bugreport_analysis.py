@@ -6,7 +6,7 @@ import config
 import mimetypes
 import zipfile
 import shutil
-
+import glob
 '''
 This is tool to get bugreport analysis
 
@@ -37,6 +37,7 @@ command:
 
 # get options object and all config
 OPT = util.OPT
+WS = util.WS
 debug_enable = config.MODE_DEBUG
 test_enable = config.MODE_TEST
 TAG = 'bugreport_analysis'
@@ -65,7 +66,6 @@ def prepare_bugreport_raw_data():
             TAG, 'bugreport file type wrong, expected TEXT or ZIP ', exit=False)
         return False
 
-    sys.path
     if is_unzip_required:
         print ' Extracting ...'
         with zipfile.ZipFile(OPT.zip_file, 'r') as bug_zip:
@@ -98,6 +98,17 @@ def check_prerequisite():
     return True
 
 
+def set_path():
+    files_list = glob.glob(util.ws_out + '/bugreport-*')
+    WS.bugreport_filename = files_list[0]
+
+
+def dump_build_details():
+    print 'dump_build_details'
+    set_path()
+    return True
+
+
 def usage():
     util.print_empty_line()
     print util.prog_name + ' ' + '<options> ' + ' --file ' + ' bugreport.zip '
@@ -120,7 +131,7 @@ def parse_argument(argv):
         util.print_empty_line()
         print 'Error : args parser '
         usage()
-        sys.exit(1)
+        return False
 
     if debug_enable:
         util.PLOGD(TAG, 'opts are :', str(opts_list))
@@ -128,22 +139,24 @@ def parse_argument(argv):
 
     if args_pos:
         usage()
-        sys.exit(-1)
+        return False
 
     for opt, val in opts_list:
         if opt == '--file':
             util.OPT.file_name = val
         elif opt in ['-h', '--help']:
             usage()
-            sys.exit(0)
+            return False
         elif opt == '--version':
             print util.get_version()
-            sys.exit(0)
+            return False
         elif opt in ['-v', '--verbose']:
             util.OPT.verbose = True
         else:
             print 'Error: wrong option : ' + opt
-            sys.exit(0)
+            return False
+
+    return True
 
 
 def start_analysis():
@@ -153,11 +166,14 @@ def start_analysis():
         util.PLOGE(TAG, 'check prerequitsite failed', exit=True)
     if not prepare_bugreport_raw_data():
         util.PLOGE(TAG, 'Prepare bugreport data failed', exit=True)
+    if not dump_build_details():
+        util.PLOGE(TAG, 'Failed to get build details', exit=True)
 
 
 def main():
     util.prog_name = sys.argv[0]
-    parse_argument(sys.argv)
+    if not parse_argument(sys.argv):
+        util.PLOGE(TAG, 'parse argument failed', exit=True)
     start_analysis()
 
 

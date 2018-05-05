@@ -22,10 +22,10 @@ class Options(object):
     '''
 
     def __init__(self):
-        self.file_name = None
         self.verbose = None
-        self.is_unzip_required = None
-        self.zip_file = None
+        self.meminfo = None
+        self.ion = None
+        self.ionAndMeminfo = None
 
 
 class WorkSpace(object):

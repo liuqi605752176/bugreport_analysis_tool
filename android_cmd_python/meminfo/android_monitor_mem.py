@@ -10,9 +10,12 @@ import datetime
 from time import gmtime
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
-# from matplotlib import style
+import localAdb as adb
+import utils as util
+import getopt
 
-
+TAG = util.prog_name
+OPT = util.OPT
 mem_total = 'MemTotal:'
 mem_free = 'MemFree:'
 mem_ava = 'MemAvailable:'
@@ -25,6 +28,7 @@ dict_mem_type = {
     'MemFree': None,
     'Cached': None
 }
+
 
 '''
 ['MemTotal:', '2803616', 'kB']
@@ -97,15 +101,68 @@ def mem_filter(buf):
     return y_total, y_free, y_ava, y_cache
 
 
-def dump_to_file(x_time, y_total, y_free, y_ava, y_cache):
-    dash_line = '-' * 90 + '\n'
+def dump_to_file(filename, x_time, y_total, y_free, y_ava, y_cache):
     try:
-        f = open('dump_meminfo.txt', 'a')
+        f = open(filename, 'a')
     except IOError:
         print 'dump meminfo file error '
         exit(1)
     data_line = str(x_time) + ' ' + y_total + ' ' + \
         y_free + ' ' + y_ava + ' ' + y_cache
+    print data_line
+    f.write(data_line + ' \n')
+    f.close()
+
+
+def dump_all_data_to_file(filename, x_time, y_total, y_free, y_ava, y_cache, y_ion_total):
+    try:
+        f = open(filename, 'a')
+    except IOError:
+        print 'dump meminfo file error '
+        exit(1)
+    data_line = str(x_time) + ' ' + y_total + ' ' + \
+        y_free + ' ' + y_ava + ' ' + y_cache + ' ' + y_ion_total
+    print data_line
+    f.write(data_line + ' \n')
+    f.close()
+
+
+def dump_ion_data_to_file(filename, x_time, y_ion_total):
+    try:
+        f = open(filename, 'a')
+    except IOError:
+        print 'dump meminfo file error '
+        exit(1)
+    data_line = str(x_time) + ' ' + y_ion_total
+    print data_line
+    f.write(data_line + ' \n')
+    f.close()
+
+
+def setup_ion_data_file(filename):
+    if os.path.isfile(filename):
+        os.remove(filename)
+    try:
+        f = open(filename, 'a')
+    except IOError:
+        print 'dump meminfo file error '
+        exit(1)
+    data_line = '##DateTime' + ' ' + 'ION_Total'
+    print data_line
+    f.write(data_line + ' \n')
+    f.close()
+
+
+def setup_all_data_file(filename):
+    if os.path.isfile(filename):
+        os.remove(filename)
+    try:
+        f = open(filename, 'a')
+    except IOError:
+        print 'dump meminfo file error '
+        exit(1)
+    data_line = '##DateTime' + ' ' + mem_total + ' ' + mem_free + \
+        ' ' + mem_ava + ' ' + mem_cache + ' ' + ' ION_total'
     print data_line
     f.write(data_line + ' \n')
     f.close()
@@ -119,10 +176,22 @@ def setup_data_file():
     except IOError:
         print 'dump meminfo file error '
         exit(1)
-    data_line = '##DateTime' + ' ' + mem_total + ' ' + mem_free + ' ' + mem_cache
+    data_line = '##DateTime' + ' ' + mem_total + ' ' + mem_free + \
+        ' ' + mem_ava + ' ' + mem_cache
     print data_line
     f.write(data_line + ' \n')
     f.close()
+
+
+def get_ion_meminfo():
+    data_list = adb.shell_command('cat /d/ion/heaps/system')
+    # print data_list
+    for item in data_list:
+        data = str(item)
+        if data.startswith('          total'):
+            list_total = data.split()
+            total = list_total[1].strip('\n')
+            return int(total)/1024
 
 
 def get_meminfo():
@@ -189,14 +258,95 @@ def plot_graph_animate():
     plt.pause(1)
 
 
+def usage():
+    util.print_empty_line()
+    print util.prog_name + ' ' + '<options>'
+    util.print_line()
+    print 'options:'
+    print '\t-h,--help\t\t - print help'
+    print '\t-v,--verbose\t\t - print verbose logging'
+    print '\t-m \t\t - monitor /proc/meminfo'
+    print '\t-i \t\t - monitor /d/kernel/ion'
+    print '\t--version\t\t - print version'
+    util.print_empty_line()
+
+
+def parse_argument(argv):
+    long_opts = ['help', 'version', 'verbose']
+    short_opts = 'hvmia'
+
+    try:
+        opts_list, args_pos = getopt.getopt(argv[1:], short_opts, long_opts)
+    except getopt.GetoptError:
+        util.print_empty_line()
+        print 'Error : args parser '
+        usage()
+        return False
+
+    if args_pos:
+        usage()
+        return False
+
+    for opt, val in opts_list:
+        if opt in ['-h', '--help']:
+            usage()
+            return False
+        elif opt == '--version':
+            print util.get_version()
+            return False
+        elif opt in ['-v', '--verbose']:
+            util.OPT.verbose = True
+        elif opt == '-m':
+            util.OPT.meminfo = True
+        elif opt == '-i':
+            util.OPT.ion = True
+        elif opt == '-a':
+            util.OPT.ionAndMeminfo = True
+        else:
+            print 'Error: wrong option : ' + opt
+            return False
+
+    return True
+
+
 def main():
-    setup_data_file()
-    while True:
-        y_total, y_free, y_ava, y_cache = get_meminfo()
-        x_time = get_dev_time()
-        dump_to_file(x_time, y_total, y_free, y_ava, y_cache)
-        time.sleep(0.5)
-    sys.exit(0)
+    util.prog_name = sys.argv[0]
+    if not parse_argument(sys.argv):
+        util.PLOGE(TAG, 'parse argument failed', exit=True)
+
+    if not adb.is_device_online():
+        print 'check adb device connection'
+        sys.exit(-1)
+
+    if OPT.meminfo:
+        setup_data_file()
+        while True:
+            y_total, y_free, y_ava, y_cache = get_meminfo()
+            x_time = get_dev_time()
+            dump_to_file('dump_meminfo.txt', x_time,
+                         y_total, y_free, y_ava, y_cache)
+            time.sleep(0.5)
+        sys.exit(0)
+
+    if OPT.ion:
+        setup_ion_data_file('dump_ion_meminfo.txt')
+        while True:
+            total = get_ion_meminfo()
+            # y_total = get_ion_meminfo()
+            x_time = get_dev_time()
+            dump_ion_data_to_file('dump_ion_meminfo.txt', x_time, str(total))
+            time.sleep(0.5)
+
+    if OPT.ionAndMeminfo:
+        setup_all_data_file('dump_all_meminfo.txt')
+        while True:
+            y_total, y_free, y_ava, y_cache = get_meminfo()
+            x_time = get_dev_time()
+            y_ion_total = get_ion_meminfo()
+
+            dump_all_data_to_file('dump_all_meminfo.txt', x_time,
+                                  y_total, y_free, y_ava, y_cache, str(y_ion_total))
+            time.sleep(0.5)
 
 
 if __name__ == '__main__':
