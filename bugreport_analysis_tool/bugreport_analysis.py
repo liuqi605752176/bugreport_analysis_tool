@@ -191,6 +191,33 @@ def analyze_bugreport():
         f_build_details.close()
         return True
 
+    def dump_system_logs(file_buf):
+        bool_start_dump = False
+        try:
+            f_sys_log_buf = open(WS.file_system_logs,'w+')
+        except IOError as err:
+            err_str = 'failed to create file : ' \
+                + WS.file_system_logs + '\n' + str(err)
+            util.PLOGE(TAG,err_str)
+            return False
+        f_sys_log_buf.write(util.get_line())
+        f_sys_log_buf.write('--- System logs ---\n')
+        f_sys_log_buf.write(util.get_line())
+
+        for line in file_buf:
+            if bool_start_dump:
+                f_sys_log_buf.write(line)
+            if patt.start_system_log.search(line):
+                bool_start_dump = True
+            if patt.end_system_log.search(line):
+                bool_start_dump = False
+            # if bool_start_dump:
+            #     f_sys_log_buf.write(line)
+
+        f_sys_log_buf.write(util.get_line())
+        f_sys_log_buf.close()
+        return True
+
     def extract_data_files():
         bool_ret = False
         try:
@@ -203,6 +230,8 @@ def analyze_bugreport():
 
         if not dump_build_details(f_bug_rpt):
             util.PLOGE(TAG, 'Failed to get build details')
+        if not dump_system_logs(f_bug_rpt):
+            util.PLOGE(TAG,'Failed to get system logs')
 
 
     extract_data_files()
