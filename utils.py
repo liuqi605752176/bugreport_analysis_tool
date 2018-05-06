@@ -56,7 +56,10 @@ def get_version():
 
 
 def get_log_msg(tag, log_type, msg, arg=None):
-    log_msg = tag + ' ' + log_type + ':  ' + msg + ' ' + arg
+    if type(msg) != str:
+        log_msg = tag + ' ' + log_type + ':  ' + str(msg) + ' ' + arg
+    else:
+        log_msg = tag + ' ' + log_type + ':  ' + msg + ' ' + arg
     return log_msg
 
 
