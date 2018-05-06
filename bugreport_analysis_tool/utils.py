@@ -35,7 +35,11 @@ class WorkSpace(object):
     '''
 
     def __init__(self):
-        self.bugreport_filename = None
+        self.version_file = None
+        self.dumpstate_log_file = None
+        self.main_entry_file = None
+        self.FS_dir = None
+        self.bugreport_file = None
 
 
 OPT = Options()

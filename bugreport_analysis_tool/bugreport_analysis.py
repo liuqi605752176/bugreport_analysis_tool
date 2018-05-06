@@ -98,14 +98,13 @@ def check_prerequisite():
     return True
 
 
-def set_path():
-    files_list = glob.glob(util.ws_out + '/bugreport-*')
-    WS.bugreport_filename = files_list[0]
+def set_files_path():
+    files_list = glob.glob(util.ws_out + '/FS/*')
+    util.PLOGD(TAG, files_list)
 
 
 def dump_build_details():
     print 'dump_build_details'
-    set_path()
     return True
 
 
@@ -166,6 +165,8 @@ def start_analysis():
         util.PLOGE(TAG, 'check prerequitsite failed', exit=True)
     if not prepare_bugreport_raw_data():
         util.PLOGE(TAG, 'Prepare bugreport data failed', exit=True)
+    if not set_files_path():
+        util.PLOGE(TAG, 'failed to set file path', exit=True)
     if not dump_build_details():
         util.PLOGE(TAG, 'Failed to get build details', exit=True)
 
