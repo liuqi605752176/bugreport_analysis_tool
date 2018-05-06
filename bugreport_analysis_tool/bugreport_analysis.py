@@ -11,11 +11,11 @@ import glob
 This is tool to get bugreport analysis
 
 TODO:
-1. Open bugreport from cmdline 
+1. Open bugreport from cmdline
     - check , Is it zip or .txt
-    - Extract if it is zip and open .txt 
-2. Get build details for .txt file 
-3. Display build details and device information 
+    - Extract if it is zip and open .txt
+2. Get build details for .txt file
+3. Display build details and device information
 4. Prepare CLI to shor the data as per user request
 5. Add CLI option to short data with default configuration
 
@@ -27,7 +27,7 @@ bugreport_analysis/
 
 
 command:
-    bugreport_analysis.py -v --file bugreport.zip 
+    bugreport_analysis.py -v --file bugreport.zip
 
 '''
 
@@ -38,8 +38,11 @@ command:
 # get options object and all config
 OPT = util.OPT
 WS = util.WS
+
+
 debug_enable = config.MODE_DEBUG
 test_enable = config.MODE_TEST
+
 TAG = 'bugreport_analysis'
 
 
@@ -99,8 +102,31 @@ def check_prerequisite():
 
 
 def set_files_path():
-    files_list = glob.glob(util.ws_out + '/FS/*')
-    util.PLOGD(TAG, files_list)
+    files_list = glob.glob(util.ws_out + '/*')
+    util.PLOGV(TAG, 'Files in side zip')
+    util.PLOGV(TAG, files_list)
+
+    for file_and_folder in files_list:
+        if util.pattern_version_file_wt_txt_ext.search(file_and_folder):
+            WS.version_file = file_and_folder
+        elif util.pattern_dumpstate_log_file_wt_txt_ext.search(file_and_folder):
+            WS.dumpstate_log_file = file_and_folder
+        elif util.pattern_main_entry_file_wt_txt_ext.search(file_and_folder):
+            WS.main_entry_file = file_and_folder
+        elif util.pattern_FS_dir.search(file_and_folder):
+            WS.FS_dir = file_and_folder
+        elif util.pattern_bug_rpt_file_wt_txt_ext.search(file_and_folder):
+            WS.bugreport_file = file_and_folder
+
+    util.PLOGV(TAG, WS.bugreport_file)
+    util.PLOGV(TAG, WS.dumpstate_log_file)
+    util.PLOGV(TAG, WS.FS_dir)
+    util.PLOGV(TAG, WS.version_file)
+    util.PLOGV(TAG, WS.main_entry_file)
+
+    if not WS.bugreport_file:
+        return False
+    return True
 
 
 def dump_build_details():
@@ -132,9 +158,8 @@ def parse_argument(argv):
         usage()
         return False
 
-    if debug_enable:
-        util.PLOGD(TAG, 'opts are :', str(opts_list))
-        util.PLOGD(TAG, 'args are :', str(args_pos))
+    util.PLOGV(TAG, 'opts are :', str(opts_list))
+    util.PLOGV(TAG, 'args are :', str(args_pos))
 
     if args_pos:
         usage()

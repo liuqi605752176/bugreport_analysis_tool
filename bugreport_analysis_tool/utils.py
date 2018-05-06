@@ -2,6 +2,7 @@ import sys
 import os
 import mimetypes
 import zipfile
+import re
 
 prog_name = ''
 ws_out = 'bugreport_analysis'
@@ -14,11 +15,25 @@ minor_ver = '01'
 
 mime_type_list = ['text/plain', 'application/zip']
 
+# filename pattern
+# bugreport-tphoneE-T5911INDURD-147-2018-04-25-11-45-07.txt
+
+
+pattern_version_file_wt_txt_ext = re.compile(
+    r'version.txt')
+pattern_dumpstate_log_file_wt_txt_ext = re.compile(
+    r'dumpstate_log.txt')
+pattern_main_entry_file_wt_txt_ext = re.compile(
+    r'main_entry.txt')
+pattern_FS_dir = re.compile(r'/FS$')
+pattern_bug_rpt_file_wt_txt_ext = re.compile(
+    r'[bugreport-]+.*[.](?=txt$)[^.]*$')
+
 
 class Options(object):
     '''
-    a class to store options to share accross 
-    global 
+    a class to store options to share accross
+    global
     '''
 
     def __init__(self):
@@ -30,8 +45,8 @@ class Options(object):
 
 class WorkSpace(object):
     '''
-    a class to store options to share accross 
-    global 
+    a class to store options to share accross
+    global
     '''
 
     def __init__(self):
@@ -79,6 +94,13 @@ def PLOGD(tag='', msg='', arg=''):
     log_type = 'D'
     log_msg = get_log_msg(tag, log_type, msg, arg)
     print log_msg
+
+
+def PLOGV(tag='', msg='', arg=''):
+    if OPT.verbose:
+        log_type = 'V'
+        log_msg = get_log_msg(tag, log_type, msg, arg)
+        print log_msg
 
 
 def is_unzip_required(file_path):
