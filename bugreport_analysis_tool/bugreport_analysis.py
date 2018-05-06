@@ -54,6 +54,7 @@ def setup_ws():
         if os.path.exists(util.ws_out):
             shutil.rmtree(util.ws_out)
         os.makedirs(util.ws_out)
+        os.makedirs(util.ws_analysis)
     except os.error as err:
         util.PLOGE(TAG, str(err), exit=False)
         return False
@@ -87,19 +88,25 @@ def prepare_bugreport_raw_data():
 
 
 def check_prerequisite():
-    if OPT.file_name is not None:
-        OPT.zip_file = os.path.abspath(OPT.file_name)
-        if not os.path.isfile(OPT.zip_file):
-            util.PLOGE(TAG, 'File not found or is not a file : ',
-                       OPT.zip_file, exit=False)
-            return False
 
-        is_unzip_required, error = util.is_unzip_required(OPT.zip_file)
+    if not OPT.file_name:
+        util.PLOGE(TAG,'bug report file not given in termial command line ')
+        return False
 
-        if error:
-            util.PLOGE(
-                TAG, 'bugreport file type wrong, expected TEXT or ZIP ', exit=False)
-            return False
+    OPT.zip_file = os.path.abspath(OPT.file_name)
+    if not os.path.isfile(OPT.zip_file):
+        util.PLOGE(TAG, 'File not found or is not a file : ',
+                    OPT.zip_file, exit=False)
+        return False
+
+    is_unzip_required, error = util.is_unzip_required(OPT.zip_file)
+
+    if error:
+        util.PLOGE(
+            TAG, 'bugreport file type wrong, expected TEXT or ZIP ', exit=False)
+        return False
+    else:
+        util.PLOGD(TAG,'bugreport zip file found : ' + str(is_unzip_required))
 
     return True
 
@@ -111,23 +118,36 @@ def set_files_path():
 
     for file_and_folder in files_list:
         if patt.pattern_version_file_wt_txt_ext.search(file_and_folder):
-            WS.version_file = file_and_folder
+            WS.file_version = file_and_folder
         elif patt.pattern_dumpstate_log_file_wt_txt_ext.search(file_and_folder):
-            WS.dumpstate_log_file = file_and_folder
+            WS.file_dumpstate_log = file_and_folder
         elif patt.pattern_main_entry_file_wt_txt_ext.search(file_and_folder):
-            WS.main_entry_file = file_and_folder
+            WS.file_main_entry = file_and_folder
         elif patt.pattern_FS_dir.search(file_and_folder):
-            WS.FS_dir = file_and_folder
+            WS.dir_FS = file_and_folder
         elif patt.pattern_bug_rpt_file_wt_txt_ext.search(file_and_folder):
-            WS.bugreport_file = file_and_folder
+            WS.file_bugreport = file_and_folder
 
-    util.PLOGV(TAG, WS.bugreport_file)
-    util.PLOGV(TAG, WS.dumpstate_log_file)
-    util.PLOGV(TAG, WS.FS_dir)
-    util.PLOGV(TAG, WS.version_file)
-    util.PLOGV(TAG, WS.main_entry_file)
+    WS.file_build_details   = util.ws_analysis_build_details
+    WS.file_system_logs     = util.ws_analysis_sys_logs
+    WS.file_event_logs      = util.ws_analysis_event_logs
+    WS.file_radio_logs      = util.ws_analysis_radio_logs
+    WS.file_kernel_logs     = util.ws_analysis_kernel_logs
 
-    if not WS.bugreport_file:
+    util.PLOGV(TAG, WS.file_version)
+    util.PLOGV(TAG, WS.file_dumpstate_log)
+    util.PLOGV(TAG, WS.file_main_entry)
+    util.PLOGV(TAG, WS.dir_FS)
+    util.PLOGV(TAG, WS.file_bugreport)
+
+    util.PLOGV(TAG,WS.file_build_details)
+    util.PLOGV(TAG,WS.file_system_logs)
+    util.PLOGV(TAG,WS.file_event_logs)
+    util.PLOGV(TAG,WS.file_radio_logs)
+    util.PLOGV(TAG,WS.file_kernel_logs)
+
+
+    if not WS.file_bugreport:
         return False
     return True
 
@@ -147,31 +167,45 @@ def analyze_bugreport():
     print '-' * 80
     util.PLOGV(TAG, 'Enter  - analyze_bugreport')
 
-    def dump_build_details():
+    def dump_build_details(file_buf):
         try:
-            f = open(WS.bugreport_file, 'rU')
+            f_build_details = open(WS.file_build_details,'w+')
         except IOError as err:
-            err_str = 'failed to open file : ' + \
-                WS.bugreport_file + '\n' + str(err)
+            err_str = 'failed to create file : ' + \
+                WS.file_build_details + '\n' + str(err)
             util.PLOGE(TAG, err_str)
             return False
 
-        util.PLOGV(TAG, ' --- Build details ---')
+        f_build_details.write(util.get_line())
+        f_build_details.write('--- Build details ---\n')
+        f_build_details.write(util.get_line())
 
-        for line in f:
+        for line in file_buf:
             if patt.start_of_file.match(line):
                 continue
             if patt.start_dumpsys_meminfo.search(line):
                 break
-            print line,
+            f_build_details.write(line)
 
-        f.close()
+        f_build_details.write(util.get_empty_line())
+        f_build_details.close()
         return True
 
-    if not dump_build_details():
-        util.PLOGE(TAG, 'Failed to get build details')
-        return False
+    def extract_data_files():
+        bool_ret = False
+        try:
+            f_bug_rpt = open(WS.file_bugreport,'rU')
+        except IOError as err:
+            err_str = 'failed to open file : ' + \
+                WS.file_bugreport + '\n' + str(err)
+            util.PLOGE(TAG, err_str)
+            return False
 
+        if not dump_build_details(f_bug_rpt):
+            util.PLOGE(TAG, 'Failed to get build details')
+
+
+    extract_data_files()
     util.PLOGV(TAG, 'Exit   - analyze_bugreport')
     return True
 

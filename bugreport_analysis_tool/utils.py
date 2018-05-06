@@ -5,7 +5,16 @@ import zipfile
 import re
 
 prog_name = ''
+
 ws_out = 'bugreport_analysis'
+ws_analysis = ws_out + '/' + 'analysis'
+ws_analysis_build_details = ws_analysis + '/' + 'build_details.txt'
+ws_analysis_sys_logs = ws_analysis + '/' + 'system_logs.txt'
+ws_analysis_event_logs = ws_analysis + '/' + 'event_logs.txt'
+ws_analysis_radio_logs = ws_analysis + '/' + 'radio_logs.txt'
+ws_analysis_kernel_logs = ws_analysis + '/' + 'kernel_logs.txt'
+
+
 ws_build_details = 'build_details.txt'
 ws_report = 'report.txt'
 
@@ -39,20 +48,33 @@ class WorkSpace(object):
     '''
 
     def __init__(self):
-        self.version_file = None
-        self.dumpstate_log_file = None
-        self.main_entry_file = None
-        self.FS_dir = None
-        self.bugreport_file = None
+        self.file_version = None
+        self.file_dumpstate_log = None
+        self.file_main_entry = None
+        self.dir_FS = None
+        self.file_bugreport = None
+        self.file_build_details = None
+        self.file_system_logs = None
+        self.file_event_logs = None
+        self.file_radio_logs = None
+        self.file_kernel_logs = None
 
 
 OPT = Options()
 WS = WorkSpace()
 
 
+
+def get_line(symbol='-', len=90):
+    line = symbol * len
+    return line + '\n'
+
+def get_empty_line():
+    line = '' + '\n'
+    return line
+
 def print_line(symbol='-', len=90):
     print symbol * len
-
 
 def print_empty_line():
     print ''
