@@ -1,12 +1,15 @@
 import sys
 import os
 import getopt
-import utils as util
-import config
 import mimetypes
 import zipfile
 import shutil
 import glob
+
+import utils as util
+import config
+import logPattern as patt
+
 '''
 This is tool to get bugreport analysis
 
@@ -70,7 +73,7 @@ def prepare_bugreport_raw_data():
         return False
 
     if is_unzip_required:
-        print ' Extracting ...'
+        util.PLOGV(TAG, 'Extracting ... : ' + OPT.file_name)
         with zipfile.ZipFile(OPT.zip_file, 'r') as bug_zip:
             try:
                 bug_zip.extractall(util.ws_out)
@@ -107,15 +110,15 @@ def set_files_path():
     util.PLOGV(TAG, files_list)
 
     for file_and_folder in files_list:
-        if util.pattern_version_file_wt_txt_ext.search(file_and_folder):
+        if patt.pattern_version_file_wt_txt_ext.search(file_and_folder):
             WS.version_file = file_and_folder
-        elif util.pattern_dumpstate_log_file_wt_txt_ext.search(file_and_folder):
+        elif patt.pattern_dumpstate_log_file_wt_txt_ext.search(file_and_folder):
             WS.dumpstate_log_file = file_and_folder
-        elif util.pattern_main_entry_file_wt_txt_ext.search(file_and_folder):
+        elif patt.pattern_main_entry_file_wt_txt_ext.search(file_and_folder):
             WS.main_entry_file = file_and_folder
-        elif util.pattern_FS_dir.search(file_and_folder):
+        elif patt.pattern_FS_dir.search(file_and_folder):
             WS.FS_dir = file_and_folder
-        elif util.pattern_bug_rpt_file_wt_txt_ext.search(file_and_folder):
+        elif patt.pattern_bug_rpt_file_wt_txt_ext.search(file_and_folder):
             WS.bugreport_file = file_and_folder
 
     util.PLOGV(TAG, WS.bugreport_file)
@@ -129,8 +132,47 @@ def set_files_path():
     return True
 
 
-def dump_build_details():
-    print 'dump_build_details'
+def analyze_bugreport():
+    # Get build details
+    # Build: T5911INDURD-147 release-keys
+    # Build fingerprint: 'Smartron/tphoneE/rimoE:8.1.0/T5911INDURD-147/147:user/release-keys'
+    # Bootloader: unknown
+    # Radio: MPSS.TA.2.3.c1-00605-8953_GEN_PACK-1.142704.1-Apr 24 2018
+    # Network: , Jio 4G
+    # # 1 SMP PREEMPT Tue Apr 24 01:19:21 IST 2018
+    # Kernel: Linux version 3.18.71-perf(jenkins@tron6)(gcc version 4.9.x 20150123 (prerelease)(GCC))
+    # Command line: sched_enable_hmp = 1 sched_enable_power_aware = 1 console = ttyHSL0, 115200, n8 androidboot.console = ttyHSL0 androidboot.hardware = qcom msm_rtb.filter = 0x237 ehci-hcd.park = 3 lpm_levels.sleep_disabled = 1 androidboot.bootdevice = 7824900.sdhci earlycon = msm_hsl_uart, 0x78af000 androidboot.selinux = permissive buildvariant = user androidboot.emmc = true androidboot.verifiedbootstate = green androidboot.veritymode = enforcing androidboot.keymaster = 1 androidboot.serialno = 4c4fc6c9 androidboot.authorized_kernel = true androidboot.baseband = msm mdss_mdp.panel = 1: dsi: 0: qcom, mdss_dsi_nt36672_1080p_hx_huashi_video: 1: none: cfg: single_dsi
+    # Bugreport format version: 1.0
+    # Dumpstate info: id = 1 pid = 5752 dry_run = 0 args = /system/bin/dumpstate - S - d - z - o / data/user_de/0/com.android.shell/files/bugreports/bugreport extra_options =
+    print '-' * 80
+    util.PLOGV(TAG, 'Enter  - analyze_bugreport')
+
+    def dump_build_details():
+        try:
+            f = open(WS.bugreport_file, 'rU')
+        except IOError as err:
+            err_str = 'failed to open file : ' + \
+                WS.bugreport_file + '\n' + str(err)
+            util.PLOGE(TAG, err_str)
+            return False
+
+        util.PLOGV(TAG, ' --- Build details ---')
+
+        for line in f:
+            if patt.start_of_file.match(line):
+                continue
+            if patt.start_dumpsys_meminfo.search(line):
+                break
+            print line,
+
+        f.close()
+        return True
+
+    if not dump_build_details():
+        util.PLOGE(TAG, 'Failed to get build details')
+        return False
+
+    util.PLOGV(TAG, 'Exit   - analyze_bugreport')
     return True
 
 
@@ -192,8 +234,8 @@ def start_analysis():
         util.PLOGE(TAG, 'Prepare bugreport data failed', exit=True)
     if not set_files_path():
         util.PLOGE(TAG, 'failed to set file path', exit=True)
-    if not dump_build_details():
-        util.PLOGE(TAG, 'Failed to get build details', exit=True)
+    if not analyze_bugreport():
+        util.PLOGE(TAG, 'Failed to analyze bugreport', exit=True)
 
 
 def main():
