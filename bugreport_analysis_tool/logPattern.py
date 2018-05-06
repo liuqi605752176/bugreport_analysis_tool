@@ -21,17 +21,17 @@ start_of_file = re.compile(r'^[==]+')
 start_dumpsys_meminfo = re.compile(r'^(------ DUMPSYS MEMINFO)')
 end_dumsys_meminfo = re.compile(r"('DUMPSYS MEMINFO' ------)$")
 
+start_kernel_log = re.compile(r'^(------ KERNEL LOG)')
+end_kernel_log = re.compile(r"(duration of 'KERNEL LOG)")
 start_system_log = re.compile(r'^(------ SYSTEM LOG)')
 end_system_log = re.compile(r"('SYSTEM LOG' ------)$")
 start_event_log = re.compile(r'^(------ EVENT LOG)')
 end_event_log = re.compile(r"('EVENT LOG' ------)$")
 start_radio_log = re.compile(r'^(------ RADIO LOG)')
 end_radio_log = re.compile(r"('RADIO LOG' ------)$")
-start_kernel_log = re.compile(r'^(------ KERNEL LOG)')
-end_kenel_log = re.compile(r"(duration of 'KERNEL LOG')")
+
 
 # ------ 0.656s was the duration of 'SYSTEM LOG' - -----
 # ------ 0.116s was the duration of 'EVENT LOG' - -----
 # ------ 0.288s was the duration of 'RADIO LOG' - -----
-
 # ------ 0.006s was the duration of 'KERNEL LOG (dmesg)' - -----

@@ -129,10 +129,10 @@ def set_files_path():
             WS.file_bugreport = file_and_folder
 
     WS.file_build_details   = util.ws_analysis_build_details
+    WS.file_kernel_logs     = util.ws_analysis_kernel_logs
     WS.file_system_logs     = util.ws_analysis_sys_logs
     WS.file_event_logs      = util.ws_analysis_event_logs
     WS.file_radio_logs      = util.ws_analysis_radio_logs
-    WS.file_kernel_logs     = util.ws_analysis_kernel_logs
 
     util.PLOGV(TAG, WS.file_version)
     util.PLOGV(TAG, WS.file_dumpstate_log)
@@ -141,11 +141,10 @@ def set_files_path():
     util.PLOGV(TAG, WS.file_bugreport)
 
     util.PLOGV(TAG,WS.file_build_details)
+    util.PLOGV(TAG,WS.file_kernel_logs)
     util.PLOGV(TAG,WS.file_system_logs)
     util.PLOGV(TAG,WS.file_event_logs)
     util.PLOGV(TAG,WS.file_radio_logs)
-    util.PLOGV(TAG,WS.file_kernel_logs)
-
 
     if not WS.file_bugreport:
         return False
@@ -191,6 +190,37 @@ def analyze_bugreport():
         f_build_details.close()
         return True
 
+    ## TODO: optimise in single function
+    def dump_kernel_logs(file_buf):
+        bool_start_dump = False
+        try:
+            f_kernel_logs = open(WS.file_kernel_logs,'w+')
+        except IOError as err:
+            err_str = 'failed to create file : ' + WS.file_kernel_logs + \
+                '\n' + str(err)
+            util.PLOGE(TAG,err_str)
+            return False
+
+        f_kernel_logs.write(util.get_line())
+        f_kernel_logs.write('--- Kernel logs (dmesg) ---\n')
+        f_kernel_logs.write(util.get_line())
+
+        for line in file_buf:
+            # print line,
+            if bool_start_dump:
+                f_kernel_logs.write(line)
+            if patt.start_kernel_log.search(line):
+                print 'kernel logs found'
+                bool_start_dump = True
+            if patt.end_kernel_log.search(line):
+                bool_start_dump = False
+                break
+
+        f_kernel_logs.write(util.get_empty_line())
+        f_kernel_logs.close()
+        return True
+
+    ## TODO: optimise in single function
     def dump_system_logs(file_buf):
         bool_start_dump = False
         try:
@@ -211,12 +241,70 @@ def analyze_bugreport():
                 bool_start_dump = True
             if patt.end_system_log.search(line):
                 bool_start_dump = False
+                break
             # if bool_start_dump:
             #     f_sys_log_buf.write(line)
 
         f_sys_log_buf.write(util.get_line())
         f_sys_log_buf.close()
         return True
+
+    ## TODO: optimise in single function
+    def dump_event_logs(file_buf):
+        bool_start_dump = False
+        try:
+            f_event_logs = open(WS.file_event_logs,'w+')
+        except IOError as err:
+            err_str = 'failed to create file : ' + WS.file_event_logs + \
+                '\n' + str(err)
+            util.PLOGE(TAG,err_str)
+            return False
+
+        f_event_logs.write(util.get_line())
+        f_event_logs.write('--- Events logs ---\n')
+        f_event_logs.write(util.get_line())
+
+        for line in file_buf:
+            if bool_start_dump:
+                f_event_logs.write(line)
+            if patt.start_event_log.search(line):
+                bool_start_dump = True
+            if patt.end_event_log.search(line):
+                bool_start_dump = False
+                break
+
+        f_event_logs.write(util.get_empty_line())
+        f_event_logs.close()
+        return True
+
+    ## TODO: optimise in single function
+    def dump_radio_logs(file_buf):
+        bool_start_dump = False
+        try:
+            f_radio_logs = open(WS.file_radio_logs,'w+')
+        except IOError as err:
+            err_str = 'failed to create file : ' + WS.file_radio_logs + \
+                '\n' + str(err)
+            util.PLOGE(TAG,err_str)
+            return False
+
+        f_radio_logs.write(util.get_line())
+        f_radio_logs.write('--- Radio logs ---\n')
+        f_radio_logs.write(util.get_line())
+
+        for line in file_buf:
+            if bool_start_dump:
+                f_radio_logs.write(line)
+            if patt.start_radio_log.search(line):
+                bool_start_dump = True
+            if patt.end_radio_log.search(line):
+                bool_start_dump = False
+                break
+
+        f_radio_logs.write(util.get_empty_line())
+        f_radio_logs.close()
+        return True
+
 
     def extract_data_files():
         bool_ret = False
@@ -230,9 +318,14 @@ def analyze_bugreport():
 
         if not dump_build_details(f_bug_rpt):
             util.PLOGE(TAG, 'Failed to get build details')
+        if not dump_kernel_logs(f_bug_rpt):
+            util.PLOGE(TAG,'Failed to get kernel logs')
         if not dump_system_logs(f_bug_rpt):
             util.PLOGE(TAG,'Failed to get system logs')
-
+        if not dump_event_logs(f_bug_rpt):
+            util.PLOGE(TAG,'Failed to get events logs')
+        if not dump_radio_logs(f_bug_rpt):
+            util.PLOGE(TAG,'Failed to get radio logs')
 
     extract_data_files()
     util.PLOGV(TAG, 'Exit   - analyze_bugreport')

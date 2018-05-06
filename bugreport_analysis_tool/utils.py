@@ -54,10 +54,11 @@ class WorkSpace(object):
         self.dir_FS = None
         self.file_bugreport = None
         self.file_build_details = None
+        self.file_kernel_logs = None
         self.file_system_logs = None
         self.file_event_logs = None
         self.file_radio_logs = None
-        self.file_kernel_logs = None
+
 
 
 OPT = Options()
