@@ -167,17 +167,6 @@ def set_files_path():
 
 def analyze_bugreport():
     # Get build details
-    # Build: T5911INDURD-147 release-keys
-    # Build fingerprint: 'Smartron/tphoneE/rimoE:8.1.0/T5911INDURD-147/147:user/release-keys'
-    # Bootloader: unknown
-    # Radio: MPSS.TA.2.3.c1-00605-8953_GEN_PACK-1.142704.1-Apr 24 2018
-    # Network: , Jio 4G
-    # # 1 SMP PREEMPT Tue Apr 24 01:19:21 IST 2018
-    # Kernel: Linux version 3.18.71-perf(jenkins@tron6)(gcc version 4.9.x 20150123 (prerelease)(GCC))
-    # Command line: sched_enable_hmp = 1 sched_enable_power_aware = 1 console = ttyHSL0, 115200, n8 androidboot.console = ttyHSL0 androidboot.hardware = qcom msm_rtb.filter = 0x237 ehci-hcd.park = 3 lpm_levels.sleep_disabled = 1 androidboot.bootdevice = 7824900.sdhci earlycon = msm_hsl_uart, 0x78af000 androidboot.selinux = permissive buildvariant = user androidboot.emmc = true androidboot.verifiedbootstate = green androidboot.veritymode = enforcing androidboot.keymaster = 1 androidboot.serialno = 4c4fc6c9 androidboot.authorized_kernel = true androidboot.baseband = msm mdss_mdp.panel = 1: dsi: 0: qcom, mdss_dsi_nt36672_1080p_hx_huashi_video: 1: none: cfg: single_dsi
-    # Bugreport format version: 1.0
-    # Dumpstate info: id = 1 pid = 5752 dry_run = 0 args = /system/bin/dumpstate - S - d - z - o / data/user_de/0/com.android.shell/files/bugreports/bugreport extra_options =
-    print '-' * 80
     util.PLOGV(TAG, 'Enter  - analyze_bugreport')
 
     def dump_build_details(file_buf):
