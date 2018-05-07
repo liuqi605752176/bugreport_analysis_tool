@@ -5,6 +5,7 @@ import mimetypes
 import zipfile
 import shutil
 import glob
+import re
 
 import utils as util
 import config
@@ -50,11 +51,21 @@ TAG = 'bugreport_analysis'
 
 
 def setup_ws():
+    WS.dir_out              = OPT.out
+    WS.dir_ws               = OPT.out + '/' + util.dir_ws
+    WS.dir_ws_analysis      = OPT.out + '/' + util.dir_ws_analysis
+    WS.file_build_details   = OPT.out + '/' + util.file_ws_analysis_build_details
+    WS.file_kernel_logs     = OPT.out + '/' + util.file_ws_analysis_kernel_logs
+    WS.file_system_logs     = OPT.out + '/' + util.file_ws_analysis_sys_logs
+    WS.file_event_logs      = OPT.out + '/' + util.file_ws_analysis_event_logs
+    WS.file_radio_logs      = OPT.out + '/' + util.file_ws_analysis_radio_logs
+
     try:
-        if os.path.exists(util.ws_out):
-            shutil.rmtree(util.ws_out)
-        os.makedirs(util.ws_out)
-        os.makedirs(util.ws_analysis)
+        if os.path.exists(WS.dir_out):
+            shutil.rmtree(WS.dir_out)
+        os.makedirs(WS.dir_out)
+        os.makedirs(WS.dir_ws)
+        os.makedirs(WS.dir_ws_analysis)
     except os.error as err:
         util.PLOGE(TAG, str(err), exit=False)
         return False
@@ -77,7 +88,7 @@ def prepare_bugreport_raw_data():
         util.PLOGV(TAG, 'Extracting ... : ' + OPT.file_name)
         with zipfile.ZipFile(OPT.zip_file, 'r') as bug_zip:
             try:
-                bug_zip.extractall(util.ws_out)
+                bug_zip.extractall(WS.dir_ws)
             except zipfile.BadZipfile:
                 util.PLOGE(TAG, 'Badzipfile', exit=False)
                 return False
@@ -91,6 +102,15 @@ def check_prerequisite():
 
     if not OPT.file_name:
         util.PLOGE(TAG,'bug report file not given in termial command line ')
+        return False
+
+    if not OPT.out:
+        util.PLOGE(TAG,'out dir not givent in terminal command line')
+        return False
+
+    patt_out = re.compile(r'^[.]')
+    if patt_out.search(OPT.out):
+        util.PLOGE(TAG,'out dir is a current or previous dir. please give name for dir')
         return False
 
     OPT.zip_file = os.path.abspath(OPT.file_name)
@@ -112,7 +132,7 @@ def check_prerequisite():
 
 
 def set_files_path():
-    files_list = glob.glob(util.ws_out + '/*')
+    files_list = glob.glob(WS.dir_ws + '/*')
     util.PLOGV(TAG, 'Files in side zip')
     util.PLOGV(TAG, files_list)
 
@@ -127,12 +147,6 @@ def set_files_path():
             WS.dir_FS = file_and_folder
         elif patt.pattern_bug_rpt_file_wt_txt_ext.search(file_and_folder):
             WS.file_bugreport = file_and_folder
-
-    WS.file_build_details   = util.ws_analysis_build_details
-    WS.file_kernel_logs     = util.ws_analysis_kernel_logs
-    WS.file_system_logs     = util.ws_analysis_sys_logs
-    WS.file_event_logs      = util.ws_analysis_event_logs
-    WS.file_radio_logs      = util.ws_analysis_radio_logs
 
     util.PLOGV(TAG, WS.file_version)
     util.PLOGV(TAG, WS.file_dumpstate_log)
@@ -210,7 +224,6 @@ def analyze_bugreport():
             if bool_start_dump:
                 f_kernel_logs.write(line)
             if patt.start_kernel_log.search(line):
-                print 'kernel logs found'
                 bool_start_dump = True
             if patt.end_kernel_log.search(line):
                 bool_start_dump = False
@@ -340,12 +353,13 @@ def usage():
     print '\t-h,--help\t\t - print help'
     print '\t-v,--verbose\t\t - print verbose logging'
     print '\t--file <filename>\t - zip or txt file of bugreport'
+    print '\t--out <out_dir>\t\t - output dir'
     print '\t--version\t\t - print version'
     util.print_empty_line()
 
 
 def parse_argument(argv):
-    long_opts = ['help', 'version', 'verbose', 'file=']
+    long_opts = ['help', 'version', 'verbose', 'file=', 'out=']
     short_opts = 'hvl'
 
     try:
@@ -366,6 +380,8 @@ def parse_argument(argv):
     for opt, val in opts_list:
         if opt == '--file':
             util.OPT.file_name = val
+        elif opt == '--out':
+            util.OPT.out = val
         elif opt in ['-h', '--help']:
             usage()
             return False

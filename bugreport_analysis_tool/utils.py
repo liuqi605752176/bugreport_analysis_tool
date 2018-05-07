@@ -6,13 +6,14 @@ import re
 
 prog_name = ''
 
-ws_out = 'bugreport_analysis'
-ws_analysis = ws_out + '/' + 'analysis'
-ws_analysis_build_details = ws_analysis + '/' + 'build_details.txt'
-ws_analysis_sys_logs = ws_analysis + '/' + 'system_logs.txt'
-ws_analysis_event_logs = ws_analysis + '/' + 'event_logs.txt'
-ws_analysis_radio_logs = ws_analysis + '/' + 'radio_logs.txt'
-ws_analysis_kernel_logs = ws_analysis + '/' + 'kernel_logs.txt'
+dir_ws                          = 'bugreport_analysis'
+dir_ws_analysis                 = dir_ws + '/' + 'analysis'
+file_ws_analysis_build_details  = dir_ws_analysis + '/' + 'build_details.txt'
+file_ws_analysis_sys_logs       = dir_ws_analysis + '/' + 'system_logs.txt'
+file_ws_analysis_event_logs     = dir_ws_analysis + '/' + 'event_logs.txt'
+file_ws_analysis_radio_logs     = dir_ws_analysis + '/' + 'radio_logs.txt'
+file_ws_analysis_kernel_logs    = dir_ws_analysis + '/' + 'kernel_logs.txt'
+
 
 
 ws_build_details = 'build_details.txt'
@@ -39,6 +40,7 @@ class Options(object):
         self.verbose = None
         self.is_unzip_required = None
         self.zip_file = None
+        self.out = None
 
 
 class WorkSpace(object):
@@ -48,6 +50,10 @@ class WorkSpace(object):
     '''
 
     def __init__(self):
+        self.dir_out = None
+        self.dir_ws = None
+        self.dir_ws_analysis = None
+
         self.file_version = None
         self.file_dumpstate_log = None
         self.file_main_entry = None
