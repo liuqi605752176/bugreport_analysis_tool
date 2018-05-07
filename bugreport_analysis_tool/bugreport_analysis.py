@@ -126,7 +126,7 @@ def check_prerequisite():
             TAG, 'bugreport file type wrong, expected TEXT or ZIP ', exit=False)
         return False
     else:
-        util.PLOGD(TAG,'bugreport zip file found : ' + str(is_unzip_required))
+        util.PLOGV(TAG,'bugreport zip file found : ' + str(is_unzip_required))
 
     return True
 

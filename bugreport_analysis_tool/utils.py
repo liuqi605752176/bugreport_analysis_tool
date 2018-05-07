@@ -14,20 +14,10 @@ file_ws_analysis_event_logs     = dir_ws_analysis + '/' + 'event_logs.txt'
 file_ws_analysis_radio_logs     = dir_ws_analysis + '/' + 'radio_logs.txt'
 file_ws_analysis_kernel_logs    = dir_ws_analysis + '/' + 'kernel_logs.txt'
 
-
-
-ws_build_details = 'build_details.txt'
-ws_report = 'report.txt'
-
 # version
 major_ver = '1'
 minor_ver = '01'
-
 mime_type_list = ['text/plain', 'application/zip']
-
-# filename pattern
-# bugreport-tphoneE-T5911INDURD-147-2018-04-25-11-45-07.txt
-
 
 class Options(object):
     '''
