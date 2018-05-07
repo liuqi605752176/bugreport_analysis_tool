@@ -59,7 +59,7 @@ def setup_ws():
     WS.file_system_logs     = OPT.out + '/' + util.file_ws_analysis_sys_logs
     WS.file_event_logs      = OPT.out + '/' + util.file_ws_analysis_event_logs
     WS.file_radio_logs      = OPT.out + '/' + util.file_ws_analysis_radio_logs
-
+    WS.file_sys_prop        = OPT.out + '/' + util.file_ws_analysis_sys_prop
     try:
         if os.path.exists(WS.dir_out):
             shutil.rmtree(WS.dir_out)
@@ -159,7 +159,7 @@ def set_files_path():
     util.PLOGV(TAG,WS.file_system_logs)
     util.PLOGV(TAG,WS.file_event_logs)
     util.PLOGV(TAG,WS.file_radio_logs)
-
+    util.PLOGV(TAG,WS.file_sys_prop)
     if not WS.file_bugreport:
         return False
     return True
@@ -307,6 +307,35 @@ def analyze_bugreport():
         f_radio_logs.close()
         return True
 
+    def dump_sys_prop(file_buf):
+        bool_start_dump = False
+
+        try:
+            f_sys_prop = open(WS.file_sys_prop, 'w+')
+        except IOError as err:
+            err_str = 'failed to create file : ' + Ws.file_sys_prop + \
+                str(err)
+            util.PLOGE(TAG,err_str)
+            return False
+
+        f_sys_prop.write(util.get_line())
+        f_sys_prop.write('--- system properties ---\n')
+        f_sys_prop.write(util.get_line())
+
+        for line in file_buf:
+            if bool_start_dump:
+                f_sys_prop.write(line)
+
+            if patt.start_sys_properties.search(line):
+                bool_start_dump = True
+
+            if patt.end_sys_properties.search(line):
+                bool_start_dump = False
+                break
+
+        f_sys_prop.write(util.get_empty_line())
+        f_sys_prop.close()
+        return True
 
     def extract_data_files():
         bool_ret = False
@@ -328,6 +357,8 @@ def analyze_bugreport():
             util.PLOGE(TAG,'Failed to get events logs')
         if not dump_radio_logs(f_bug_rpt):
             util.PLOGE(TAG,'Failed to get radio logs')
+        if not dump_sys_prop(f_bug_rpt):
+            util.PLOGE(TAG,'Failed to get sys prop')
 
     extract_data_files()
     util.PLOGV(TAG, 'Exit   - analyze_bugreport')
