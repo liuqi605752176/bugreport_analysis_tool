@@ -308,6 +308,12 @@ def analyze_bugreport():
         return True
 
     def dump_sys_prop(file_buf):
+
+        def get_prop_val(prop):
+            list_prop_val = str(prop).split(': [')
+           # print list_prop_val
+            return list_prop_val[1].strip('\n').strip(']')
+
         bool_start_dump = False
 
         try:
@@ -334,6 +340,81 @@ def analyze_bugreport():
                 break
 
         f_sys_prop.write(util.get_empty_line())
+        f_sys_prop.close()
+
+        # dump device info at runtime
+
+        try:
+            f_sys_prop = open(WS.file_sys_prop, 'r')
+        except IOError as err:
+            err_str  = 'failed to read file : ' + WS.file_sys_prop + str(err)
+            util.PLOGE(TAG,err_str)
+            return False
+
+        device_product_name = ''
+        device_factory_serial_num = ''
+        device_hw_serial_num = ''
+        device_build_id = ''
+        device_build_fingerprint = ''
+        device_build_date = ''
+        device_kernel_build_date = ''
+        device_kernel_build_user = ''
+        device_mpss_baseband1_build = ''
+        device_mpss_baseband_build = ''
+        device_gms_build = ''
+        device_kernel_build_user = ''
+        device_security_patch_level = ''
+        device_slot_suffix = ''
+
+        for line in f_sys_prop:
+            if patt.device_product_name.search(line):
+                device_product_name = 'Device product name                 : ' + get_prop_val(line)
+            elif patt.device_factory_serial_num.search(line):
+                device_factory_serial_num = 'Device factory serial number        : ' + get_prop_val(line)
+            elif patt.device_hw_serial_num.search(line):
+                device_hw_serial_num = 'Device hardware serial number name  : ' + get_prop_val(line)
+            elif patt.device_build_id.search(line):
+                device_build_id = 'Device build id                     : ' + get_prop_val(line)
+            elif patt.device_build_fingerprint.search(line):
+                device_build_fingerprint = 'Device build fingerprint            : ' + get_prop_val(line)
+            elif patt.device_build_date.search(line):
+                device_build_date = 'Device build date                   : ' + get_prop_val(line)
+            elif patt.device_kernel_build_date.search(line):
+                device_kernel_build_date = 'Device kernel build date            : ' + get_prop_val(line)
+            elif patt.device_kernel_build_user.search(line):
+                device_kernel_build_user = 'Device kernel build user            : ' + get_prop_val(line)
+            elif patt.device_mpss_baseband1_build.search(line):
+                device_mpss_baseband1_build = 'Device mpss baseband1 build         : ' + get_prop_val(line)
+            elif patt.device_mpss_baseband_build.search(line):
+                device_mpss_baseband_build = 'Device mpss baseband build          : ' + get_prop_val(line)
+            elif patt.device_gms_build.search(line):
+                device_gms_build = 'Device gms build                    : ' + get_prop_val(line)
+            elif patt.device_kernel_build_user.search(line):
+                device_kernel_build_user = 'Device product name                 : ' + get_prop_val(line)
+            elif patt.device_security_patch_level.search(line):
+                device_security_patch_level = 'Device product name                 : ' + get_prop_val(line)
+            elif patt.device_slot_suffix.search(line):
+                device_slot_suffix = 'Device product name                 : ' + get_prop_val(line)
+            else:
+                continue
+
+        util.PLOGV(TAG,device_product_name)
+        util.PLOGV(TAG,device_factory_serial_num)
+        util.PLOGV(TAG,device_hw_serial_num)
+        util.PLOGV(TAG,device_build_id)
+        util.PLOGV(TAG,device_build_fingerprint)
+        util.PLOGV(TAG,device_build_date)
+        util.PLOGV(TAG,device_kernel_build_date)
+        util.PLOGV(TAG,device_kernel_build_user)
+        util.PLOGV(TAG,device_mpss_baseband1_build)
+        util.PLOGV(TAG,device_mpss_baseband_build)
+        util.PLOGV(TAG,device_gms_build)
+        util.PLOGV(TAG,device_kernel_build_user)
+        util.PLOGV(TAG,device_security_patch_level)
+        util.PLOGV(TAG,device_slot_suffix)
+
+
+
         f_sys_prop.close()
         return True
 

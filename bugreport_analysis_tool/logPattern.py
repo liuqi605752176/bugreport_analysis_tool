@@ -29,7 +29,20 @@ start_sys_properties        = re.compile(r"^(------ SYSTEM PROPERTIES)")
 end_sys_properties          = re.compile(r"('SYSTEM PROPERTIES' ------)$")
 
 
-# ------ 0.656s was the duration of 'SYSTEM LOG' - -----
-# ------ 0.116s was the duration of 'EVENT LOG' - -----
-# ------ 0.288s was the duration of 'RADIO LOG' - -----
-# ------ 0.006s was the duration of 'KERNEL LOG (dmesg)' - -----
+#############################################
+# system prop TAG pattern
+############################################
+
+device_product_name         = re.compile(r'(ro.product.name)')
+device_factory_serial_num   = re.compile(r'(ro.serialno)[]]')
+device_hw_serial_num        = re.compile(r'(ro.serialnohw)')
+device_build_id             = re.compile(r'(ro.build.display.id)')
+device_build_fingerprint    = re.compile(r'(ro.build.fingerprint)')
+device_build_date           = re.compile(r'(ro.build.date)[]]')
+device_kernel_build_date    = re.compile(r'(ro.bootimage.build.date)[]]')
+device_kernel_build_user    = re.compile(r'(ro.build.user)')
+device_mpss_baseband_build  = re.compile(r'(gsm.version.baseband)')
+device_mpss_baseband1_build = re.compile(r'(gsm.version.baseband1)')
+device_gms_build            = re.compile(r'(ro.com.google.gmsversion)')
+device_security_patch_level = re.compile(r'(ro.build.version.security_patch)')
+device_slot_suffix          = re.compile(r'(ro.boot.slot_suffix)')
