@@ -63,6 +63,7 @@ def setup_ws():
     WS.file_radio_logs      = OPT.out + '/' + util.file_ws_analysis_radio_logs
     WS.file_sys_prop        = OPT.out + '/' + util.file_ws_analysis_sys_prop
     WS.file_devinfo         = OPT.out + '/' + util.file_ws_analysis_devinfo
+    WS.file_avc_logs        = OPT.out + '/' + util.file_ws_analysis_avc_logs
 
     try:
         if os.path.exists(WS.dir_out):
@@ -164,6 +165,8 @@ def set_files_path():
     util.PLOGV(TAG,WS.file_event_logs)
     util.PLOGV(TAG,WS.file_radio_logs)
     util.PLOGV(TAG,WS.file_sys_prop)
+    util.PLOGV(TAG,WS.file_avc_logs)
+
     if not WS.file_bugreport:
         return False
     return True
@@ -173,7 +176,9 @@ def analyze_bugreport():
     # Get build details
     util.PLOGV(TAG, 'Enter  - analyze_bugreport')
     dump.extract_data_files(WS)
+    dump.avc_logs(WS)
     util.PLOGV(TAG, 'Exit   - analyze_bugreport')
+ 
     return True
 
 def start_analysis():

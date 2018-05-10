@@ -15,7 +15,7 @@ file_ws_analysis_radio_logs     = dir_ws_analysis + '/' + 'radio_logs.txt'
 file_ws_analysis_kernel_logs    = dir_ws_analysis + '/' + 'kernel_logs.txt'
 file_ws_analysis_sys_prop       = dir_ws_analysis + '/' + 'system_prop.txt'
 file_ws_analysis_devinfo        = dir_ws_analysis + '/' + 'devinfo.txt'
-
+file_ws_analysis_avc_logs       = dir_ws_analysis + '/' + 'avc_logs.txt'
 # version
 major_ver = '1'
 minor_ver = '01'
@@ -58,7 +58,7 @@ class WorkSpace(object):
         self.file_radio_logs = None
         self.file_sys_prop = None
         self.file_devinfo = None
-
+        self.file_avc_logs = None
 
 
 OPT = Options()

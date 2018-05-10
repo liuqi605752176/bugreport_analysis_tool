@@ -48,4 +48,10 @@ device_security_patch_level = re.compile(r'(ro.build.version.security_patch)')
 device_slot_suffix          = re.compile(r'(ro.boot.slot_suffix)')
 
 
+# avc pattern
+
+pattern_avc = 'avc:'
+pattern_denied = 'denied'
+pattern_comm = 'comm='
+pattern_name = 'name='
 

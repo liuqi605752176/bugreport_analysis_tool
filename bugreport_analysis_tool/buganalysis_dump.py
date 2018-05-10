@@ -4,6 +4,9 @@ import buganalysis_utils as util
 import buganalysis_config as config
 import buganalysis_pattern as patt
 import buganalysis_dump as dump
+import os
+from analyzer import dump_avc as dmpavc
+
 
 TAG = 'buganalysis_dump'
 
@@ -304,3 +307,116 @@ def extract_data_files(WS):
     if not dump_sys_prop(WS,f_bug_rpt):
         util.PLOGE(TAG,'Failed to get sys prop')
     return True
+
+def avc_logs(WS):
+    AVC_PATTERN = patt.pattern_avc
+    DENIED_PATTERN = patt.pattern_denied
+    COMM_PATTERN = patt.pattern_comm
+    NAME_PATTERN = patt.pattern_name
+
+    comm_list = []
+    name_list = []
+    split_list = []
+    scontext_list = []
+    temp_avc_file = '/tmp/temp_avc_file.txt'
+    TAG = 'dump_avc.py'
+
+    def avc_filter(WS):
+        try:
+            sys_log_buf = open(WS.file_system_logs, 'rU')
+        except IOError as err:
+            err_string = 'failed to read : ' + WS.file_system_logs + \
+            'error : ' + err
+            util.PLOGE(TAG,err_string)
+            return False
+
+        try:
+            f_tmp_avc = open(temp_avc_file,'w+')
+        except IOError:
+            util.PLOGE(TAG,'failed to create : ' + temp_avc_file)
+            return False
+
+        for line in sys_log_buf:
+            if not AVC_PATTERN in line:
+                continue
+            if not DENIED_PATTERN in line:
+                continue
+            if COMM_PATTERN in line or NAME_PATTERN in line:
+                f_tmp_avc.write(line)
+                split_list = line.split()
+                for word in split_list:
+                    data = []
+                    if 'comm=' in word or 'name=' in word:
+                        print line,
+                        data = word.split('=')
+                        data[1] = data[1].strip('"')
+                        if data[1] == 'comm':
+                            if data[1] not in comm_list:
+                                comm_list.append(data[1])
+                        else:
+                            if data[1] not in name_list:
+                                name_list.append(data[1])
+
+                    if 'scontext=' in word:
+                        data = word.split(':')
+                        if data[2] not in scontext_list:
+                            scontext_list.append(data[2])
+
+        sys_log_buf.close()
+        f_tmp_avc.close()
+        return comm_list, scontext_list
+
+
+    def write_to_file(WS):
+        # Now we have list of commands
+        dash_line = '-' * 90 + '\n'
+        if os.path.isfile(WS.file_avc_logs):
+            os.remove(WS.file_avc_logs)
+        f = open(WS.file_avc_logs, 'a+')
+
+        f.write(dash_line)
+        f.write('\t' + 'comm' + '\n')
+        f.write(dash_line)
+        for cmd in comm_list:
+            f.write(cmd + '\n')
+        f.write('\n')
+
+        f.write(dash_line)
+        f.write('\t' + 'name' + '\n')
+        f.write(dash_line)
+        for cmd in name_list:
+            f.write(cmd + '\n')
+        f.write('\n')
+
+
+        f.write(dash_line)
+        f.write('\t' + 'scontext' + '\n')
+        f.write(dash_line)
+        for scontext in scontext_list:
+            f.write(scontext + '\n')
+        f.write('\n')
+
+        f.write(dash_line)
+        f.write('\t' + 'Logs' + '\n')
+        f.write(dash_line)
+
+        for cmd in comm_list:
+            f.write(' \n')
+            f.write(cmd + ' \n')
+            f.write(dash_line)
+
+            logcat_buf = open(WS.file_system_logs, 'rU')
+
+            for line in logcat_buf:
+                if AVC_PATTERN in line and DENIED_PATTERN in line and COMM_PATTERN in line:
+                    if cmd in line:
+                        f.write(line)
+            f.write(' \n')
+            logcat_buf.close()
+
+        f.close()
+    
+    avc_filter(WS)
+    write_to_file(WS)
+
+
