@@ -7,10 +7,10 @@ import shutil
 import glob
 import re
 
-import utils as util
-import config
-import logPattern as patt
-
+import buganalysis_utils as util
+import buganalysis_config as config
+import buganalysis_pattern as patt
+import buganalysis_dump as dump
 '''
 This is tool to get bugreport analysis
 
@@ -47,7 +47,7 @@ WS = util.WS
 debug_enable = config.MODE_DEBUG
 test_enable = config.MODE_TEST
 
-TAG = 'bugreport_analysis'
+TAG = 'buganalysis'
 
 
 def setup_ws():
@@ -251,7 +251,7 @@ def analyze_bugreport():
         f_sys_log_buf.close()
         return True
 
-    ## TODO: optimise in single function
+    # TODO: optimise in single function
     def dump_event_logs(file_buf):
         bool_start_dump = False
         try:
@@ -319,7 +319,7 @@ def analyze_bugreport():
         try:
             f_sys_prop = open(WS.file_sys_prop, 'w+')
         except IOError as err:
-            err_str = 'failed to create file : ' + Ws.file_sys_prop + \
+            err_str = 'failed to create file : ' + WS.file_sys_prop + \
                 str(err)
             util.PLOGE(TAG,err_str)
             return False
@@ -412,8 +412,6 @@ def analyze_bugreport():
         util.PLOGV(TAG,device_kernel_build_user)
         util.PLOGV(TAG,device_security_patch_level)
         util.PLOGV(TAG,device_slot_suffix)
-
-
 
         f_sys_prop.close()
         return True
