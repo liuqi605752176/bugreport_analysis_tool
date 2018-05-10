@@ -62,6 +62,8 @@ def setup_ws():
     WS.file_event_logs      = OPT.out + '/' + util.file_ws_analysis_event_logs
     WS.file_radio_logs      = OPT.out + '/' + util.file_ws_analysis_radio_logs
     WS.file_sys_prop        = OPT.out + '/' + util.file_ws_analysis_sys_prop
+    WS.file_devinfo         = OPT.out + '/' + util.file_ws_analysis_devinfo
+
     try:
         if os.path.exists(WS.dir_out):
             shutil.rmtree(WS.dir_out)

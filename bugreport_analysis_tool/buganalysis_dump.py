@@ -145,6 +145,29 @@ def dump_radio_logs(WS,file_buf):
     f_radio_logs.close()
     return True
 
+# dump devinfo 
+def dump_devinfo(WS,dict_devinfo):
+    try:
+        f_devinfo = open(WS.file_devinfo, 'w+')
+    except IOError as err:
+        err_str = 'failed to create file : ' + WS.file_devinfo + \
+            str(err)
+        util.PLOGE(TAG,err_str)
+        return False
+
+    f_devinfo.write(util.get_line())
+    f_devinfo.write('--- devinfo ---\n')
+    f_devinfo.write(util.get_line())
+
+    for item in dict_devinfo:
+       f_devinfo.write(util.get_empty_line())
+       f_devinfo.write(dict_devinfo[item])
+
+    f_devinfo.write(util.get_empty_line())
+    f_devinfo.close()
+    return True
+
+
 def dump_sys_prop(WS,file_buf):
 
     def get_prop_val(prop):
@@ -188,70 +211,91 @@ def dump_sys_prop(WS,file_buf):
         err_str  = 'failed to read file : ' + WS.file_sys_prop + str(err)
         util.PLOGE(TAG,err_str)
         return False
-
-    device_product_name = ''
-    device_factory_serial_num = ''
-    device_hw_serial_num = ''
-    device_build_id = ''
-    device_build_fingerprint = ''
-    device_build_date = ''
-    device_kernel_build_date = ''
-    device_kernel_build_user = ''
-    device_mpss_baseband1_build = ''
-    device_mpss_baseband_build = ''
-    device_gms_build = ''
-    device_kernel_build_user = ''
-    device_security_patch_level = ''
-    device_slot_suffix = ''
+    dict_devinfo = {
+        'device_product_name' : '',
+        'device_factory_serial_num' : '',
+        'device_hw_serial_num' : '',
+        'device_build_id' : '',
+        'device_build_fingerprint' : '',
+        'device_build_date' : '',
+        'device_kernel_build_date' : '',
+        'device_kernel_build_user' : '',
+        'device_mpss_baseband1_build' : '',
+        'device_mpss_baseband_build' : '',
+        'device_gms_build' : '',
+        'device_kernel_build_user' : '',
+        'device_security_patch_level' : '',
+        'device_slot_suffix' : ''
+    }
 
     for line in f_sys_prop:
         if patt.device_product_name.search(line):
-            device_product_name = 'Device product name                 : ' + get_prop_val(line)
+            dict_devinfo['device_product_name'] = 'Device product name                 : ' + get_prop_val(line)
         elif patt.device_factory_serial_num.search(line):
-            device_factory_serial_num = 'Device factory serial number        : ' + get_prop_val(line)
+            dict_devinfo['device_factory_serial_num'] = 'Device factory serial number        : ' + get_prop_val(line)
         elif patt.device_hw_serial_num.search(line):
-            device_hw_serial_num = 'Device hardware serial number name  : ' + get_prop_val(line)
+            dict_devinfo['device_hw_serial_num'] = 'Device hardware serial number name  : ' + get_prop_val(line)
         elif patt.device_build_id.search(line):
-            device_build_id = 'Device build id                     : ' + get_prop_val(line)
+            dict_devinfo['device_build_id'] = 'Device build id                     : ' + get_prop_val(line)
         elif patt.device_build_fingerprint.search(line):
-            device_build_fingerprint = 'Device build fingerprint            : ' + get_prop_val(line)
+            dict_devinfo['device_build_fingerprint'] = 'Device build fingerprint            : ' + get_prop_val(line)
         elif patt.device_build_date.search(line):
-            device_build_date = 'Device build date                   : ' + get_prop_val(line)
+            dict_devinfo['device_build_date'] = 'Device build date                   : ' + get_prop_val(line)
         elif patt.device_kernel_build_date.search(line):
-            device_kernel_build_date = 'Device kernel build date            : ' + get_prop_val(line)
+            dict_devinfo['device_kernel_build_date'] = 'Device kernel build date            : ' + get_prop_val(line)
         elif patt.device_kernel_build_user.search(line):
-            device_kernel_build_user = 'Device kernel build user            : ' + get_prop_val(line)
+            dict_devinfo['device_kernel_build_user'] = 'Device kernel build user            : ' + get_prop_val(line)
         elif patt.device_mpss_baseband1_build.search(line):
-            device_mpss_baseband1_build = 'Device mpss baseband1 build         : ' + get_prop_val(line)
+            dict_devinfo['device_mpss_baseband1_build']= 'Device mpss baseband1 build         : ' + get_prop_val(line)
         elif patt.device_mpss_baseband_build.search(line):
-            device_mpss_baseband_build = 'Device mpss baseband build          : ' + get_prop_val(line)
+            dict_devinfo['device_mpss_baseband_build'] = 'Device mpss baseband build          : ' + get_prop_val(line)
         elif patt.device_gms_build.search(line):
-            device_gms_build = 'Device gms build                    : ' + get_prop_val(line)
+            dict_devinfo['device_gms_build'] = 'Device gms build                    : ' + get_prop_val(line)
         elif patt.device_kernel_build_user.search(line):
-            device_kernel_build_user = 'Device product name                 : ' + get_prop_val(line)
+            dict_devinfo['device_kernel_build_user'] = 'Device product name                 : ' + get_prop_val(line)
         elif patt.device_security_patch_level.search(line):
-            device_security_patch_level = 'Device product name                 : ' + get_prop_val(line)
+            dict_devinfo['device_security_patch_level'] = 'Device product name                 : ' + get_prop_val(line)
         elif patt.device_slot_suffix.search(line):
-            device_slot_suffix = 'Device product name                 : ' + get_prop_val(line)
+            dict_devinfo['device_slot_suffix'] = 'Device product name                 : ' + get_prop_val(line)
         else:
             continue
 
-    util.PLOGV(TAG,device_product_name)
-    util.PLOGV(TAG,device_factory_serial_num)
-    util.PLOGV(TAG,device_hw_serial_num)
-    util.PLOGV(TAG,device_build_id)
-    util.PLOGV(TAG,device_build_fingerprint)
-    util.PLOGV(TAG,device_build_date)
-    util.PLOGV(TAG,device_kernel_build_date)
-    util.PLOGV(TAG,device_kernel_build_user)
-    util.PLOGV(TAG,device_mpss_baseband1_build)
-    util.PLOGV(TAG,device_mpss_baseband_build)
-    util.PLOGV(TAG,device_gms_build)
-    util.PLOGV(TAG,device_kernel_build_user)
-    util.PLOGV(TAG,device_security_patch_level)
-    util.PLOGV(TAG,device_slot_suffix)
-
     f_sys_prop.close()
+
+    util.PLOGV(TAG,dict_devinfo['device_product_name'])
+    util.PLOGV(TAG,dict_devinfo['device_factory_serial_num'])
+    util.PLOGV(TAG,dict_devinfo['device_hw_serial_num'])
+    util.PLOGV(TAG,dict_devinfo['device_build_id'])
+    util.PLOGV(TAG,dict_devinfo['device_build_fingerprint'])
+    util.PLOGV(TAG,dict_devinfo['device_build_date'])
+    util.PLOGV(TAG,dict_devinfo['device_kernel_build_date'])
+    util.PLOGV(TAG,dict_devinfo['device_kernel_build_user'])
+    util.PLOGV(TAG,dict_devinfo['device_mpss_baseband1_build'])
+    util.PLOGV(TAG,dict_devinfo['device_mpss_baseband_build'])
+    util.PLOGV(TAG,dict_devinfo['device_gms_build'])
+    util.PLOGV(TAG,dict_devinfo['device_kernel_build_user'])
+    util.PLOGV(TAG,dict_devinfo['device_security_patch_level'])
+    util.PLOGV(TAG,dict_devinfo['device_slot_suffix'])
+
+    dump_devinfo(WS,dict_devinfo)
+
+    # dict_devinfo['device_product_name']
+    # dict_devinfo['device_factory_serial_num']
+    # dict_devinfo['device_hw_serial_num']
+    # dict_devinfo['device_build_id']
+    # dict_devinfo['device_build_fingerprint']
+    # dict_devinfo['device_build_date']
+    # dict_devinfo['device_kernel_build_date']
+    # dict_devinfo['device_kernel_build_user']
+    # dict_devinfo['device_mpss_baseband1_build']
+    # dict_devinfo['device_mpss_baseband_build']
+    # dict_devinfo['device_gms_build']
+    # dict_devinfo['device_kernel_build_user']
+    # dict_devinfo['device_security_patch_level']
+    # dict_devinfo['device_slot_suffix']
+
+
+
     return True
 
 def extract_data_files(WS):
