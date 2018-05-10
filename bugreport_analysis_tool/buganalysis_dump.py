@@ -277,24 +277,8 @@ def dump_sys_prop(WS,file_buf):
     util.PLOGV(TAG,dict_devinfo['device_security_patch_level'])
     util.PLOGV(TAG,dict_devinfo['device_slot_suffix'])
 
-    dump_devinfo(WS,dict_devinfo)
-
-    # dict_devinfo['device_product_name']
-    # dict_devinfo['device_factory_serial_num']
-    # dict_devinfo['device_hw_serial_num']
-    # dict_devinfo['device_build_id']
-    # dict_devinfo['device_build_fingerprint']
-    # dict_devinfo['device_build_date']
-    # dict_devinfo['device_kernel_build_date']
-    # dict_devinfo['device_kernel_build_user']
-    # dict_devinfo['device_mpss_baseband1_build']
-    # dict_devinfo['device_mpss_baseband_build']
-    # dict_devinfo['device_gms_build']
-    # dict_devinfo['device_kernel_build_user']
-    # dict_devinfo['device_security_patch_level']
-    # dict_devinfo['device_slot_suffix']
-
-
+    if not dump_devinfo(WS,dict_devinfo):
+        util.PLOGE(TAG, 'Failed to dump devinfo')
 
     return True
 
