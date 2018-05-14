@@ -5,7 +5,6 @@ import buganalysis_config as config
 import buganalysis_pattern as patt
 import buganalysis_dump as dump
 import os
-from analyzer import dump_avc as dmpavc
 
 
 TAG = 'buganalysis_dump'
@@ -316,14 +315,13 @@ def avc_logs(WS):
 
     comm_list = []
     name_list = []
-    split_list = []
     scontext_list = []
     temp_avc_file = '/tmp/temp_avc_file.txt'
     TAG = 'dump_avc.py'
 
     def avc_filter(WS):
         try:
-            sys_log_buf = open(WS.file_system_logs, 'rU')
+            sys_log_buf = open(WS.file_event_logs, 'rU')
         except IOError as err:
             err_string = 'failed to read : ' + WS.file_system_logs + \
             'error : ' + err
@@ -347,14 +345,15 @@ def avc_logs(WS):
                 for word in split_list:
                     data = []
                     if 'comm=' in word or 'name=' in word:
-                        print line,
                         data = word.split('=')
                         data[1] = data[1].strip('"')
-                        if data[1] == 'comm':
+                        if data[0] == 'comm':
                             if data[1] not in comm_list:
+                                # print 'adding : ' + data[1] + 'in comm_list'
                                 comm_list.append(data[1])
-                        else:
+                        elif data[0] == 'name':
                             if data[1] not in name_list:
+                                # print 'adding : ' + data[1] + 'in name_list'
                                 name_list.append(data[1])
 
                     if 'scontext=' in word:
@@ -400,22 +399,28 @@ def avc_logs(WS):
         f.write('\t' + 'Logs' + '\n')
         f.write(dash_line)
 
+        avc_count = 1
         for cmd in comm_list:
             f.write(' \n')
             f.write(cmd + ' \n')
             f.write(dash_line)
 
-            logcat_buf = open(WS.file_system_logs, 'rU')
+            logcat_buf = open(temp_avc_file, 'rU')
 
             for line in logcat_buf:
                 if AVC_PATTERN in line and DENIED_PATTERN in line and COMM_PATTERN in line:
                     if cmd in line:
                         f.write(line)
+
             f.write(' \n')
             logcat_buf.close()
+            avc_count += 1
 
         f.close()
-    
+        avc_summary = str(avc_count) + ' : type of avc logs found'
+        util.PLOGV(TAG,avc_summary)
+
+    ## called from avc_logs function 
     avc_filter(WS)
     write_to_file(WS)
 
