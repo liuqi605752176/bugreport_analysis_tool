@@ -13,6 +13,7 @@ import buganalysis_pattern as patt
 import buganalysis_dump as dump
 from analyzer import system
 
+import buganalysis_analyzer as analyzer
 '''
 This is tool to get bugreport analysis
 
@@ -177,6 +178,7 @@ def analyze_bugreport():
     util.PLOGV(TAG, 'Enter  - analyze_bugreport')
     dump.extract_data_files(WS)
     dump.avc_logs(WS)
+    analyzer.start_event_log_analyzer(WS)
     util.PLOGV(TAG, 'Exit   - analyze_bugreport')
  
     return True
