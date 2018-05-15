@@ -87,6 +87,7 @@ def get_version():
 
 
 def get_log_msg(tag, log_type, msg, arg=None):
+    tag = tag  + ' ' * (25 - len(tag))
     if type(msg) != str:
         log_msg = tag + ' ' + log_type + ':  ' + str(msg) + ' ' + arg
     else:
@@ -94,25 +95,33 @@ def get_log_msg(tag, log_type, msg, arg=None):
     return log_msg
 
 
-def PLOGE(tag='tag', msg=None, arg='None', exit=False):
+def PLOGE(tag='tag', msg=None, arg='None', exit=False ,strip=False):
     log_type = 'E'
     log_msg = get_log_msg(tag, log_type, msg, arg)
-    print log_msg
+    if not strip:
+        print log_msg
+    else:
+        print log_msg,
     if exit is True:
         os.sys.exit(-1)
 
 
-def PLOGD(tag='', msg='', arg=''):
+def PLOGD(tag='', msg='', arg='',strip=False):
     log_type = 'D'
     log_msg = get_log_msg(tag, log_type, msg, arg)
-    print log_msg
+    if not strip:
+        print log_msg
+    else:
+        print log_msg,
 
-
-def PLOGV(tag='', msg='', arg=''):
+def PLOGV(tag='', msg='', arg='',strip=False):
     if OPT.verbose:
         log_type = 'V'
         log_msg = get_log_msg(tag, log_type, msg, arg)
-        print log_msg
+        if not strip:
+            print log_msg
+        else:
+            print log_msg,
 
 
 def is_unzip_required(file_path):
@@ -127,3 +136,10 @@ def is_unzip_required(file_path):
         return True, False
     else:
         return False, False
+
+def dump_data_to_screen(tag,file):
+    if os.path.isfile(file):
+        with open(file,'rU') as f_buf:
+            for line in f_buf:
+                PLOGD(tag,line,strip=True)
+            f_buf.close()
