@@ -7,10 +7,31 @@ or file buf
 '''
 TAG = 'buganalysis_filter.py'
 
-def get_file_buf(pattern_string):
+def get_tmp_file():
     try:
-        f_tmp = tmp.NamedTemporaryFile(delete=False)
+        file_tmp = tmp.NamedTemporaryFile(delete=False)
     except IOError as err:
         util.PLOGE(TAG,"failed to create tmp file : " + err )
-    util.PLOGV(TAG,str(f_tmp.name))    
-    return 1
+        return False
+    util.PLOGV(TAG,str(file_tmp.name))
+    return file_tmp.name
+
+def get_file_with_filter_data(src_file,pattern_string):
+    temp_file  = get_tmp_file()
+    if not temp_file:
+        util.PLOGE(TAG,'failed to get tmp file ')
+        return False
+    try:
+        f_outfile = open(temp_file,'w+')
+    except Exception as err:
+        util.PLOGE(TAG,"failed to create file :  " + str(err) )
+        return False
+    with open(src_file,'rU') as f_event_log:
+        for line in f_event_log:
+            if not pattern_string in line:
+                print 'skip',
+                continue
+            f_outfile.write(line)
+        f_event_log.close()
+    f_outfile.close()
+    return temp_file
