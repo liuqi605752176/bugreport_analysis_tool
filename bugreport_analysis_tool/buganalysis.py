@@ -66,12 +66,22 @@ def setup_ws():
     WS.file_devinfo         = OPT.out + '/' + util.file_ws_analysis_devinfo
     WS.file_avc_logs        = OPT.out + '/' + util.file_ws_analysis_avc_logs
 
+    # events logs
+    WS.dir_ws_analysis_events           = OPT.out + '/' + util.dir_ws_analysis_events
+    WS.file_ws_events_JP_data           = OPT.out + '/' + util.file_ws_events_JP_data
+    WS.file_ws_events_am_proc_start     = OPT.out + '/' + util.file_ws_events_am_proc_start
+    WS.file_ws_events_am_proc_bound     = OPT.out + '/' + util.file_ws_events_am_proc_bound
+    WS.file_ws_events_am_proc_died      = OPT.out + '/' + util.file_ws_events_am_proc_died
+
+
     try:
         if os.path.exists(WS.dir_out):
             shutil.rmtree(WS.dir_out)
         os.makedirs(WS.dir_out)
         os.makedirs(WS.dir_ws)
         os.makedirs(WS.dir_ws_analysis)
+        os.makedirs(WS.dir_ws_analysis_events)
+
     except os.error as err:
         util.PLOGE(TAG, str(err), exit=False)
         return False

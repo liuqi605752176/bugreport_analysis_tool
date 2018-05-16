@@ -34,6 +34,16 @@ def start_event_log_analyzer(WS):
         util.PLOGE(TAG,'failed to read file : ' + str(err) )
         return False
 
+    try:
+        f_event_aps_buf  = open(WS.file_ws_events_am_proc_start,'w+')
+    except IOError as err:
+        util.PLOGE(TAG,'failed to read file : ' + str(err) )
+        return False
+
+    process_data_aps_title = '##log_timestamp user pid uid name p_typ component data_aps'
+    f_event_aps_buf.write(process_data_aps_title)
+    f_event_aps_buf.write(util.get_empty_line())
+
     # get all pid list from am_proc_start
     unwanted = re.compile(r'^[[]+')
     unwanted_1 = re.compile(r'[]\n]+$')
@@ -68,11 +78,12 @@ def start_event_log_analyzer(WS):
                             str(JP.name) + ' ' + \
                             str(JP.p_type) + ' ' + \
                             str(JP.component)
-        print process_data_aps
+        # print process_data_aps
+        f_event_aps_buf.write(process_data_aps)
+        f_event_aps_buf.write(util.get_empty_line())
 
-    
-    
     f_buf.close()
+    f_event_aps_buf.close()
     clean_me(filename)
 
 

@@ -16,6 +16,14 @@ file_ws_analysis_kernel_logs    = dir_ws_analysis + '/' + 'kernel_logs.txt'
 file_ws_analysis_sys_prop       = dir_ws_analysis + '/' + 'system_prop.txt'
 file_ws_analysis_devinfo        = dir_ws_analysis + '/' + 'devinfo.txt'
 file_ws_analysis_avc_logs       = dir_ws_analysis + '/' + 'avc_logs.txt'
+
+# events logs
+dir_ws_analysis_events          = dir_ws_analysis + '/' + 'events'
+file_ws_events_JP_data          = dir_ws_analysis_events + '/' + 'events_jp_data.txt'
+file_ws_events_am_proc_start    = dir_ws_analysis_events + '/' + 'events_am_proc_start.txt'
+file_ws_events_am_proc_bound    = dir_ws_analysis_events + '/' + 'events_am_proc_bound.txt'
+file_ws_events_am_proc_died     = dir_ws_analysis_events + '/' + 'events_am_proc_died.txt'
+
 # version
 major_ver = '1'
 minor_ver = '01'
@@ -59,6 +67,13 @@ class WorkSpace(object):
         self.file_sys_prop = None
         self.file_devinfo = None
         self.file_avc_logs = None
+
+        # events logs
+        self.dir_ws_analysis_events = None
+        self.file_ws_events_JP_data = None
+        self.file_ws_events_am_proc_start = None
+        self.file_ws_events_am_proc_bound = None
+        self.file_ws_events_am_proc_died = None
 
 class JavaProcess(object):
     """ 
