@@ -55,3 +55,8 @@ pattern_denied = 'denied'
 pattern_comm = 'comm='
 pattern_name = 'name='
 
+
+## event logs pattern
+am_proc_start = re.compile('am_proc_start:')
+am_proc_died  = re.compile('am_proc_died:')
+am_proc_bound = re.compile('am_proc_died:')

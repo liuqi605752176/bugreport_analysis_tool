@@ -1,4 +1,4 @@
-import sys
+# import sys
 import os
 import mimetypes
 import zipfile
@@ -60,10 +60,26 @@ class WorkSpace(object):
         self.file_devinfo = None
         self.file_avc_logs = None
 
+class JavaProcess(object):
+    """ 
+     a class to hold java process info
+    
+     """
+    def __init__(self):
+        self.log_timestamp = None
+        self.user = None
+        self.pid = None
+        self.uid = None
+        self.name = None
+        self.p_type= None
+        self.component = None
+        self.data_aps = None
+
+
 
 OPT = Options()
 WS = WorkSpace()
-
+JP = JavaProcess()
 
 
 def get_line(symbol='-', len=90):
@@ -137,9 +153,13 @@ def is_unzip_required(file_path):
     else:
         return False, False
 
-def dump_data_to_screen(tag,file):
-    if os.path.isfile(file):
-        with open(file,'rU') as f_buf:
+def dump_data_to_screen(tag,buf):
+    if os.path.isfile(buf):
+        with open(buf,'rU') as f_buf:
             for line in f_buf:
                 PLOGD(tag,line,strip=True)
-            f_buf.close()
+        f_buf.close()
+    elif type(buf) == str:
+        PLOGD(tag,buf,strip=True)
+    else:
+        PLOGD(tag,str(buf),strip=True)

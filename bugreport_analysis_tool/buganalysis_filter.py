@@ -16,7 +16,7 @@ def get_tmp_file():
     util.PLOGV(TAG,str(file_tmp.name))
     return file_tmp.name
 
-def get_file_with_filter_data(src_file,pattern_string):
+def get_file_with_filter_data(src_file,pattr):
     temp_file  = get_tmp_file()
     if not temp_file:
         util.PLOGE(TAG,'failed to get tmp file ')
@@ -28,8 +28,7 @@ def get_file_with_filter_data(src_file,pattern_string):
         return False
     with open(src_file,'rU') as f_event_log:
         for line in f_event_log:
-            if not pattern_string in line:
-                print 'skip',
+            if not pattr.search(line):
                 continue
             f_outfile.write(line)
         f_event_log.close()
