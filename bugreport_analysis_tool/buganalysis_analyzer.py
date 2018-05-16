@@ -75,8 +75,11 @@ def start_event_log_analyzer(WS):
                             str(JP.user) + ' ' + \
                             str(JP.pid) + ' ' + \
                             str(JP.uid) + ' ' + \
+                            ' '* (6 - len(JP.uid)) + \
                             str(JP.name) + ' ' + \
+                            ' '* (50 - len(JP.name)) + \
                             str(JP.p_type) + ' ' + \
+                            ' '* (20 - len(JP.p_type)) + \
                             str(JP.component)
         # print process_data_aps
         f_event_aps_buf.write(process_data_aps)
