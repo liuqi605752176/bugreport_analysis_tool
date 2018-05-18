@@ -24,6 +24,9 @@ file_ws_events_am_proc_start    = dir_ws_analysis_events + '/' + 'events_am_proc
 file_ws_events_am_proc_bound    = dir_ws_analysis_events + '/' + 'events_am_proc_bound.txt'
 file_ws_events_am_proc_died     = dir_ws_analysis_events + '/' + 'events_am_proc_died.txt'
 
+# pid data
+dir_ws_analysis_bypid         = dir_ws_analysis + '/' + 'byPid'
+
 # version
 major_ver = '1'
 minor_ver = '01'
@@ -75,6 +78,9 @@ class WorkSpace(object):
         self.file_ws_events_am_proc_bound = None
         self.file_ws_events_am_proc_died = None
 
+        # by pid data 
+        self.dir_ws_analysis_bypid = None
+        
 class JavaProcess(object):
     """ 
      a class to hold java process info
@@ -96,6 +102,13 @@ OPT = Options()
 WS = WorkSpace()
 JP = JavaProcess()
 
+
+def clean_me(filename):
+    if not os.path.isfile(filename):
+        PLOGE('Error','file not found : ' + str(filename))
+        return False
+    os.remove(filename)
+    return True
 
 def get_line(symbol='-', len=90):
     line = symbol * len
@@ -169,11 +182,15 @@ def is_unzip_required(file_path):
         return False, False
 
 def dump_data_to_screen(tag,buf):
-    if os.path.isfile(buf):
-        with open(buf,'rU') as f_buf:
-            for line in f_buf:
-                PLOGD(tag,line,strip=True)
-        f_buf.close()
+    if type(list):
+      for item in buf:
+         PLOGD(tag,item)
+    elif type(file):
+        if os.path.isfile(str(buf)):
+            with open(buf,'rU') as f_buf:
+                for line in f_buf:
+                    PLOGD(tag,line,strip=True)
+            f_buf.close()
     elif type(buf) == str:
         PLOGD(tag,buf,strip=True)
     else:

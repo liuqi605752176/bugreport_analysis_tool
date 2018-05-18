@@ -11,7 +11,7 @@ import buganalysis_utils as util
 import buganalysis_config as config
 import buganalysis_pattern as patt
 import buganalysis_dump as dump
-from analyzer import system
+
 
 import buganalysis_analyzer as analyzer
 '''
@@ -72,7 +72,9 @@ def setup_ws():
     WS.file_ws_events_am_proc_start     = OPT.out + '/' + util.file_ws_events_am_proc_start
     WS.file_ws_events_am_proc_bound     = OPT.out + '/' + util.file_ws_events_am_proc_bound
     WS.file_ws_events_am_proc_died      = OPT.out + '/' + util.file_ws_events_am_proc_died
-
+    
+    # By pid data
+    WS.dir_ws_analysis_bypid            = OPT.out + '/' + util.dir_ws_analysis_bypid
 
     try:
         if os.path.exists(WS.dir_out):
@@ -81,6 +83,7 @@ def setup_ws():
         os.makedirs(WS.dir_ws)
         os.makedirs(WS.dir_ws_analysis)
         os.makedirs(WS.dir_ws_analysis_events)
+        os.makedirs(WS.dir_ws_analysis_bypid)
 
     except os.error as err:
         util.PLOGE(TAG, str(err), exit=False)
@@ -188,7 +191,7 @@ def analyze_bugreport():
     util.PLOGV(TAG, 'Enter  - analyze_bugreport')
     dump.extract_data_files(WS)
     dump.avc_logs(WS)
-    analyzer.start_event_log_analyzer(WS)
+    analyzer.StartEventAnaylzer(WS)
     util.PLOGV(TAG, 'Exit   - analyze_bugreport')
  
     return True
