@@ -1,44 +1,23 @@
 import buganalysis_utils as util
 import filter as filt
-
-
+import buganalysis_pattern as pattr
+import os
+import re
 
 TAG = 'event_analyzer'
 
-def start_event_log_analyzer(WS):
-    '''
-    # am_proc_start 
-    # 43 30014 am_proc_start (User|1|5),(PID|1|5),(UID|1|5),(Process Name|3),(Type|3),(Component|3)
-    04-25 11:43:38.771  1000  1656  2900 I am_proc_start: [0,5092,10007,com.android.cellbroadcastreceiver,broadcast,com.android.cellbroadcastreceiver/.CellBroadcastReceiver]
+def FilterByPid(WS):
+    # WS = util.WorkSpace()
+    dir_bypid  = WS.dir_ws_analysis_events_bypid
+    file_am_proc_start = WS.dir_ws_analysis_events
 
-    '''
-    list_event_tag_files = filt.FilterByTagInFilesList(WS)
-
-    util.dump_data_to_screen(TAG,list_event_tag_files)
-
-    """
-    def DumpEventlogByTag(WS):
-    """
-    # Sort events logs by Tag
-    """
-
-        try:
-            f_event_log = open(WS.file_event_logs,'rU')
-        except IOError as err:
-            util.PLOGE(TAG,'failed to read file : ' + str(err) )
-            return False
-
-        file_lists_by_tag_name = filter.get_files_with_filter_data_list(WS.file_event_logs)
-
-
-
-    filename = filter.get_file_with_filter_data(WS.file_event_logs,pattr.am_proc_start)
-    if (not filename) or not (os.path.isfile(filename)):
+    tmpfile = filt.get_file_with_filter_data(WS.file_event_logs,pattr.am_proc_start)
+    if (not tmpfile) or not (os.path.isfile(tmpfile)):
         util.PLOGE(TAG,'failed to set filter')
         return False
 
     try:
-        f_buf = open(filename,'r')
+        f_buf = open(tmpfile,'r')
     except IOError as err:
         util.PLOGE(TAG,'failed to read file : ' + str(err) )
         return False
@@ -105,12 +84,12 @@ def start_event_log_analyzer(WS):
         file_jp_pid_ =  pid_dir_name + '/' + 'radio_' + JP.pid +'.txt'
         os.makedirs(pid_dir_name)
 
-        # ## Open main events file and check for current JP.pid 
+        # ## Open main events file and check for current JP.pid
 
         # try:
         #     f_event_buf = open(WS.file_event_logs,'rU')
         # except IOError as err:
-        #     error_str = 'failed to create event file for pid : ' + \ 
+        #     error_str = 'failed to create event file for pid : ' + \
         #     JP.pid  + '\n' + str(err)
         #     util.PLOGE(TAG,error_str)
         #     return False
@@ -118,12 +97,26 @@ def start_event_log_analyzer(WS):
         # for event_line in f_event_buf:
         #     list_main_event = str(event_line).split(': ')
         #     list_main_event_p_data = str(event_line[1]).split(',')
-        #     if JP.pid != 
+        #     if JP.pid !=
 
 
     f_buf.close()
     f_event_aps_buf.close()
-    util.clean_me(filename)
+    util.clean_me(tmpfile)
 
     # def get_jp_pid_list():
- """
+
+
+def start_event_log_analyzer(WS):
+    '''
+    # am_proc_start
+    # 43 30014 am_proc_start (User|1|5),(PID|1|5),(UID|1|5),(Process Name|3),(Type|3),(Component|3)
+    04-25 11:43:38.771  1000  1656  2900 I am_proc_start: [0,5092,10007,com.android.cellbroadcastreceiver,broadcast,com.android.cellbroadcastreceiver/.CellBroadcastReceiver]
+
+    '''
+    list_event_tag_files = filt.FilterByTagInFilesList(WS)
+    # util.dump_data_to_screen(TAG,list_event_tag_files)
+
+    FilterByPid(WS)
+
+

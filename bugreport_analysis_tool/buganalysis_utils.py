@@ -20,9 +20,9 @@ file_ws_analysis_avc_logs       = dir_ws_analysis + '/' + 'avc_logs.txt'
 # events logs
 dir_ws_analysis_events          = dir_ws_analysis + '/' + 'events'
 file_ws_events_JP_data          = dir_ws_analysis_events + '/' + 'events_jp_data.txt'
-file_ws_events_am_proc_start    = dir_ws_analysis_events + '/' + 'events_am_proc_start.txt'
-file_ws_events_am_proc_bound    = dir_ws_analysis_events + '/' + 'events_am_proc_bound.txt'
-file_ws_events_am_proc_died     = dir_ws_analysis_events + '/' + 'events_am_proc_died.txt'
+file_ws_events_am_proc_start    = dir_ws_analysis_events + '/' + '01_events_am_proc_start.txt'
+file_ws_events_am_proc_bound    = dir_ws_analysis_events + '/' + '02_events_am_proc_bound.txt'
+file_ws_events_am_proc_died     = dir_ws_analysis_events + '/' + '03_events_am_proc_died.txt'
 
 # pid data
 dir_ws_analysis_bypid         = dir_ws_analysis + '/' + 'byPid'
@@ -79,7 +79,7 @@ class WorkSpace(object):
         self.file_ws_events_am_proc_died = None
 
         # by pid data 
-        self.dir_ws_analysis_bypid = None
+        self.dir_ws_analysis_events_bypid = None
         
 class JavaProcess(object):
     """ 

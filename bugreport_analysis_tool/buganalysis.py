@@ -72,7 +72,7 @@ def setup_ws():
     WS.file_ws_events_am_proc_start     = OPT.out + '/' + util.file_ws_events_am_proc_start
     WS.file_ws_events_am_proc_bound     = OPT.out + '/' + util.file_ws_events_am_proc_bound
     WS.file_ws_events_am_proc_died      = OPT.out + '/' + util.file_ws_events_am_proc_died
-    
+
     # By pid data
     WS.dir_ws_analysis_bypid            = OPT.out + '/' + util.dir_ws_analysis_bypid
 
