@@ -3,14 +3,41 @@ import filter as filt
 import buganalysis_pattern as pattr
 import os
 import re
+from analyzer import event_classes as evntClasses
 
 TAG = 'event_analyzer'
 
-def FilterByPid(WS):
-    # WS = util.WorkSpace()
-    dir_bypid  = WS.dir_ws_analysis_events_bypid
-    file_am_proc_start = WS.dir_ws_analysis_events
+def IsLineContainPid(pid,line):
 
+    # print pattr_str
+    pattern_pid  = re.compile(',' + pid)
+    pattern_pid1 = re.compile(r'[ ]' + pid)
+    pattern_pid2 = re.compile(pid + ',')
+    st = pattern_pid.search(line)
+    st1 = pattern_pid1.search(line)
+    st2 = pattern_pid2.search(line)
+
+    if not (st or st1 or st2 ):
+        return False
+
+    return True
+
+def GetEventTag(tag,line):
+
+    if not line:
+        return False
+    list_raw_words = str(line).split(': ')
+    list_words = list_raw_words[0].split()
+    tag.date = list_words[0]
+    tag.time = list_words[1]
+    tag.log_uid = list_words[2]
+    tag.log_pid = list_words[3]
+    tag.log_tid = list_words[4]
+    tag.log_level = list_words[5]
+    tag.tag_name = list_words[6]
+    return True
+
+def FilterByPid(WS):
     tmpfile = filt.get_file_with_filter_data(WS.file_event_logs,pattr.am_proc_start)
     if (not tmpfile) or not (os.path.isfile(tmpfile)):
         util.PLOGE(TAG,'failed to set filter')
@@ -80,25 +107,43 @@ def FilterByPid(WS):
 
         pid_dir_name = WS.dir_ws_analysis_bypid + '/' + JP.pid
         file_jp_pid_events =  pid_dir_name + '/' + 'events_' + JP.pid +'.txt'
-        file_jp_pid_system =  pid_dir_name + '/' + 'system_' + JP.pid +'.txt'
-        file_jp_pid_ =  pid_dir_name + '/' + 'radio_' + JP.pid +'.txt'
         os.makedirs(pid_dir_name)
 
         # ## Open main events file and check for current JP.pid
+        # util.PLOGV(TAG,"----------------------------------------------")
+        # util.PLOGV(TAG," dump data for : " + pid_dir_name)
+        # util.PLOGV(TAG,"----------------------------------------------")
+        try:
+            f_event_buf = open(WS.file_event_logs,'rU')
+        except IOError as err:
+            error_str = 'failed to read event file for pid : ' + \
+            JP.pid  + '\n' + str(err)
+            util.PLOGE(TAG,error_str)
+            return False
 
-        # try:
-        #     f_event_buf = open(WS.file_event_logs,'rU')
-        # except IOError as err:
-        #     error_str = 'failed to create event file for pid : ' + \
-        #     JP.pid  + '\n' + str(err)
-        #     util.PLOGE(TAG,error_str)
-        #     return False
+        try:
+            f_jp_pid_events = open(file_jp_pid_events,'a+')
+        except IOError as err:
+            error_str = 'failed to create file_jp_pid_events file for pid : ' + \
+            JP.pid  + '\n' + str(err)
+            util.PLOGE(TAG,error_str)
+            return False
 
-        # for event_line in f_event_buf:
-        #     list_main_event = str(event_line).split(': ')
-        #     list_main_event_p_data = str(event_line[1]).split(',')
-        #     if JP.pid !=
 
+        ## skip title lines
+        for each in [1,2,3]:
+            f_event_buf.readline()
+
+        for event_line in f_event_buf:
+            if pattr.end_event_log.search(event_line):
+                break
+            mTag = evntClasses.Tag()
+            if not GetEventTag(mTag,event_line):
+                continue
+            if not IsLineContainPid(JP.pid,event_line):
+                continue
+            f_jp_pid_events.write(event_line)
+        f_event_buf.close()
 
     f_buf.close()
     f_event_aps_buf.close()
