@@ -8,7 +8,6 @@ from analyzer import event_classes as evntClasses
 TAG = 'event_analyzer'
 
 def IsLineContainPid(pid,line):
-
     # print pattr_str
     pattern_pid  = re.compile(',' + pid)
     pattern_pid1 = re.compile(r'[ ]' + pid)

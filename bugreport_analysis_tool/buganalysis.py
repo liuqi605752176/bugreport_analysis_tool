@@ -132,6 +132,15 @@ def check_prerequisite():
         util.PLOGE(TAG,'out dir is a current or previous dir. please give name for dir')
         return False
 
+    file_path = os.path.dirname(os.path.realpath(OPT.file_name))
+    util.PLOGV(TAG," file : " + file_path )
+    util.PLOGV(TAG," out  : " + os.path.realpath(OPT.out))
+
+    if file_path == os.path.realpath(OPT.out):
+        util.PLOGE(TAG,'out dir and file is in same dir. please give different dir')
+        return False
+
+
     OPT.zip_file = os.path.abspath(OPT.file_name)
     if not os.path.isfile(OPT.zip_file):
         util.PLOGE(TAG, 'File not found or is not a file : ',
