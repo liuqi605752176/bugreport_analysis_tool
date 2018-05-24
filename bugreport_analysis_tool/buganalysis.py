@@ -6,6 +6,7 @@ import zipfile
 import shutil
 import glob
 import re
+import time
 
 import buganalysis_utils as util
 import buganalysis_config as config
@@ -14,6 +15,8 @@ import buganalysis_dump as dump
 
 
 import buganalysis_analyzer as analyzer
+
+start_time = time.time()
 '''
 This is tool to get bugreport analysis
 
@@ -273,6 +276,8 @@ def main():
     if not parse_argument(sys.argv):
         util.PLOGE(TAG, 'parse argument failed', exit=True)
     start_analysis()
+    time_str = "--- %s seconds ---" % (time.time() - start_time)
+    util.PLOGD(TAG,time_str)
 
 
 if __name__ == '__main__':

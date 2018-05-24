@@ -99,18 +99,23 @@ def FilterByPid(WS):
         f_event_aps_buf.write(process_data_aps)
         f_event_aps_buf.write(util.get_empty_line())
 
+        set_warning = None
         if not JP.pid in list_jp_pid:
             list_jp_pid.append(JP.pid)
         else:
             util.PLOGV(TAG,"The duplicate pid found : " + str(JP.pid))
+            set_warning = True
+            list_jp_pid.append(JP.pid)
 
         pid_dir_name = WS.dir_ws_analysis_bypid + '/' + JP.pid
         file_jp_pid_events =  pid_dir_name + '/' + 'events_' + JP.pid +'.txt'
-        os.makedirs(pid_dir_name)
+
+        if not os.path.exists(pid_dir_name):
+            os.makedirs(pid_dir_name)
 
         # ## Open main events file and check for current JP.pid
         # util.PLOGV(TAG,"----------------------------------------------")
-        # util.PLOGV(TAG," dump data for : " + pid_dir_name)
+        util.PLOGV(TAG," dump event data for : " + pid_dir_name)
         # util.PLOGV(TAG,"----------------------------------------------")
         try:
             f_event_buf = open(WS.file_event_logs,'rU')
@@ -127,7 +132,19 @@ def FilterByPid(WS):
             JP.pid  + '\n' + str(err)
             util.PLOGE(TAG,error_str)
             return False
+        if set_warning:
+            msg_warn_L1 = "Warning *********************************************************** \n"
+            msg_warn_L2 = "Warning ** The " +  JP.pid + " might be dumplicate please check *** \n"
+            msg_warn_L3 = "Warning *********************************************************** \n"
+            util.PLOGV(TAG,msg_warn_L1)
+            util.PLOGV(TAG,msg_warn_L2)
+            util.PLOGV(TAG,msg_warn_L3)
 
+            f_jp_pid_events.write(msg_warn_L1 + msg_warn_L2 + msg_warn_L3)
+            set_warning = None
+            msg_warn_L1 = None
+            msg_warn_L2 = None
+            msg_warn_L3 = None
 
         ## skip title lines
         for each in [1,2,3]:
