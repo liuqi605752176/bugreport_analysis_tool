@@ -33,7 +33,7 @@ def monitorFdLeakFor(PROCESS):
         usage()
         return False
 
-    curr_dir = os.path.dirname(os.path.realpath(os.path.curdir))
+    curr_dir = os.path.dirname(os.path.realpath(util.prog_name))
     util.PLOGV(TAG," wS : " + curr_dir )
     util.PLOGV(TAG," out  : " + os.path.realpath(util.OPT.out))
 
@@ -43,6 +43,7 @@ def monitorFdLeakFor(PROCESS):
 
     if os.path.exists(util.OPT.out):
         shutil.rmtree(util.OPT.out)
+        util.PLOGV(TAG,"remove old  dir")
 
     os.mkdir(util.OPT.out)
 
