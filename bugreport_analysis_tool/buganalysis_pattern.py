@@ -59,5 +59,9 @@ am_proc_died  = re.compile('am_proc_died:')
 am_proc_bound = re.compile('am_proc_died:')
 
 # Native Crash
-crash_native_start          = re.compile(r'F DEBUG   : [*]+')
-crash_native_conti_end      = re.compile('F DEBUG   :')
+start_crash_native          = re.compile(r'F DEBUG   : [*]+')
+end_crash_native_conti      = re.compile('F DEBUG   :')
+
+# Application crash
+start_crash_application     = re.compile(r'E AndroidRuntime: FATAL EXCEPTION:')
+end_crash_application       = re.compile(r'E AndroidRuntime:')

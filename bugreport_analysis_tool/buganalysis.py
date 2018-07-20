@@ -78,6 +78,7 @@ def setup_ws():
 
     # system logs
     WS.file_ws_system_native_crash      = OPT.out + '/' + util.file_ws_system_native_crash
+    WS.file_ws_system_app_crash         = OPT.out + '/' + util.file_ws_system_app_crash
 
     # By pid data
     WS.dir_ws_analysis_bypid            = OPT.out + '/' + util.dir_ws_analysis_bypid
@@ -201,6 +202,7 @@ def set_files_path():
     util.PLOGV(TAG,WS.file_avc_logs)
     util.PLOGV(TAG,WS.file_analysis_rpt)
     util.PLOGV(TAG,WS.file_ws_system_native_crash)
+    util.PLOGV(TAG,WS.file_ws_system_app_crash)
 
     if not WS.file_bugreport:
         return False

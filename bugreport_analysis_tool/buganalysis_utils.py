@@ -26,11 +26,12 @@ file_ws_events_am_proc_died     = dir_ws_analysis_events + '/' + '03_events_am_p
 
 # system logs
 file_ws_system_native_crash     = dir_ws_analysis + '/' + 'native_crashes.txt'
+file_ws_system_app_crash        = dir_ws_analysis + '/' + 'app_crashes.txt'
 
 # pid data
 dir_ws_analysis_bypid         = dir_ws_analysis + '/' + 'byPid'
 
-# report 
+# report
 file_ws_analysis_rpt            = dir_ws_analysis + '/' + 'report.txt'
 
 # version
@@ -86,7 +87,7 @@ class WorkSpace(object):
 
         # system logs
         self.file_ws_system_native_crash = None
-
+        self.file_ws_system_app_crash = None
         # by pid data
         self.dir_ws_analysis_events_bypid = None
 
