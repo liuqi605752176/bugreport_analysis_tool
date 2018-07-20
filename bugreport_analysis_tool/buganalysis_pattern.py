@@ -65,3 +65,7 @@ end_crash_native_conti      = re.compile('F DEBUG   :')
 # Application crash
 start_crash_application     = re.compile(r'E AndroidRuntime: FATAL EXCEPTION:')
 end_crash_application       = re.compile(r'E AndroidRuntime:')
+
+# Application ANR
+start_anr_application       = re.compile(r'E ActivityManager: ANR in')
+end_anr_application         = re.compile(r'E ActivityManager: ')

@@ -16,4 +16,5 @@ def StartEventAnaylzer(WS):
 def StartSystemAnaylzer(WS):
     system.GetNativeCrashes(WS)
     system.GetAppCrashes(WS)
+    system.GetAppAnr(WS)
 
