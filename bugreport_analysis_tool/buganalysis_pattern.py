@@ -28,7 +28,6 @@ end_radio_log               = re.compile(r"('RADIO LOG' ------)$")
 start_sys_properties        = re.compile(r"^(------ SYSTEM PROPERTIES)")
 end_sys_properties          = re.compile(r"('SYSTEM PROPERTIES' ------)$")
 
-
 #############################################
 # system prop TAG pattern
 ############################################
@@ -49,14 +48,16 @@ device_slot_suffix          = re.compile(r'(ro.boot.slot_suffix)')
 
 
 # avc pattern
-
 pattern_avc = 'avc:'
 pattern_denied = 'denied'
 pattern_comm = 'comm='
 pattern_name = 'name='
 
-
-## event logs pattern
+# event logs pattern
 am_proc_start = re.compile('am_proc_start:')
 am_proc_died  = re.compile('am_proc_died:')
 am_proc_bound = re.compile('am_proc_died:')
+
+# Native Crash
+crash_native_start          = re.compile(r'F DEBUG   : [*]+')
+crash_native_conti_end      = re.compile('F DEBUG   :')

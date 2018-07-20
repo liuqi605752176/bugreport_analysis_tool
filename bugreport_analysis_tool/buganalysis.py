@@ -76,8 +76,15 @@ def setup_ws():
     WS.file_ws_events_am_proc_bound     = OPT.out + '/' + util.file_ws_events_am_proc_bound
     WS.file_ws_events_am_proc_died      = OPT.out + '/' + util.file_ws_events_am_proc_died
 
+    # system logs
+    WS.file_ws_system_native_crash      = OPT.out + '/' + util.file_ws_system_native_crash
+
     # By pid data
     WS.dir_ws_analysis_bypid            = OPT.out + '/' + util.dir_ws_analysis_bypid
+
+    # report
+    WS.file_analysis_rpt                = OPT.out + '/' + util.file_ws_analysis_rpt
+
 
     try:
         if os.path.exists(WS.dir_out):
@@ -192,6 +199,8 @@ def set_files_path():
     util.PLOGV(TAG,WS.file_radio_logs)
     util.PLOGV(TAG,WS.file_sys_prop)
     util.PLOGV(TAG,WS.file_avc_logs)
+    util.PLOGV(TAG,WS.file_analysis_rpt)
+    util.PLOGV(TAG,WS.file_ws_system_native_crash)
 
     if not WS.file_bugreport:
         return False
@@ -204,8 +213,20 @@ def analyze_bugreport():
     dump.extract_data_files(WS)
     dump.avc_logs(WS)
     analyzer.StartEventAnaylzer(WS)
+    analyzer.StartSystemAnaylzer(WS)
+
     util.PLOGV(TAG, 'Exit   - analyze_bugreport')
- 
+    return True
+
+def GenReport():
+    try:
+        file_rpt = open(WS.file_analysis_rpt,'w+')
+    except IOError as err:
+        errstring = 'failed to create file ' + WS.file_analysis_rpt \
+        + ' Err: ' + str(err)
+        util.PLOGE(errstring)
+        return False
+
     return True
 
 def start_analysis():
@@ -219,6 +240,8 @@ def start_analysis():
         util.PLOGE(TAG, 'failed to set file path', exit=True)
     if not analyze_bugreport():
         util.PLOGE(TAG, 'Failed to analyze bugreport', exit=True)
+    if not GenReport():
+        util.PLOGE(TAG,'failed to get report', exit=True)
 
 def usage():
     util.print_empty_line()

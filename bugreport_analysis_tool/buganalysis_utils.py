@@ -24,8 +24,14 @@ file_ws_events_am_proc_start    = dir_ws_analysis_events + '/' + '01_events_am_p
 file_ws_events_am_proc_bound    = dir_ws_analysis_events + '/' + '02_events_am_proc_bound.txt'
 file_ws_events_am_proc_died     = dir_ws_analysis_events + '/' + '03_events_am_proc_died.txt'
 
+# system logs
+file_ws_system_native_crash     = dir_ws_analysis + '/' + 'native_crashes.txt'
+
 # pid data
 dir_ws_analysis_bypid         = dir_ws_analysis + '/' + 'byPid'
+
+# report 
+file_ws_analysis_rpt            = dir_ws_analysis + '/' + 'report.txt'
 
 # version
 major_ver = '1'
@@ -78,9 +84,15 @@ class WorkSpace(object):
         self.file_ws_events_am_proc_bound = None
         self.file_ws_events_am_proc_died = None
 
-        # by pid data 
+        # system logs
+        self.file_ws_system_native_crash = None
+
+        # by pid data
         self.dir_ws_analysis_events_bypid = None
-        
+
+        # report
+        self.file_analysis_rpt = None
+
 class JavaProcess(object):
     """ 
      a class to hold java process info
