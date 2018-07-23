@@ -157,7 +157,7 @@ def check_prerequisite():
     OPT.zip_file = os.path.abspath(OPT.file_name)
     if not os.path.isfile(OPT.zip_file):
         util.PLOGE(TAG, 'File not found or is not a file : ',
-                    OPT.zip_file, exit=False)
+                   OPT.zip_file, exit=False)
         return False
 
     is_unzip_required, error = util.is_unzip_required(OPT.zip_file)
@@ -257,7 +257,7 @@ def GenReport():
         file_rpt = open(WS.file_analysis_rpt,'w+')
     except IOError as err:
         errstring = 'failed to create file ' + WS.file_analysis_rpt \
-        + ' Err: ' + str(err)
+                    + ' Err: ' + str(err)
         util.PLOGE(errstring)
         return False
 

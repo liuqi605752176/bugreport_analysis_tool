@@ -73,9 +73,9 @@ def FilterByPid(WS):
 
         for idx , item in enumerate(list_aps_process_data):
             if unwanted.search(item):
-               list_aps_process_data[idx] = str(item).strip('[')
+                list_aps_process_data[idx] = str(item).strip('[')
             if unwanted_1.search(item):
-               list_aps_process_data[idx] = str(item).strip(']\n')
+                list_aps_process_data[idx] = str(item).strip(']\n')
 
         JP.log_timestamp    = str(list_aps_time_data[0]) + '_' + str(list_aps_time_data[1])
         JP.user             = list_aps_process_data[0]
@@ -121,7 +121,7 @@ def FilterByPid(WS):
             f_event_buf = open(WS.file_event_logs,'rU')
         except IOError as err:
             error_str = 'failed to read event file for pid : ' + \
-            JP.pid  + '\n' + str(err)
+                        JP.pid  + '\n' + str(err)
             util.PLOGE(TAG,error_str)
             return False
 
@@ -129,7 +129,7 @@ def FilterByPid(WS):
             f_jp_pid_events = open(file_jp_pid_events,'a+')
         except IOError as err:
             error_str = 'failed to create file_jp_pid_events file for pid : ' + \
-            JP.pid  + '\n' + str(err)
+                        JP.pid  + '\n' + str(err)
             util.PLOGE(TAG,error_str)
             return False
         if set_warning:
@@ -188,7 +188,7 @@ def dumpScreenOnOffLogs(WS):
 
     for line in f_event_logs_buf:
         if pattr.screen_on.search(line) or \
-            pattr.screen_off.search(line) :
+                pattr.screen_off.search(line) :
             f_power_logs_buf.write(line)
     f_power_logs_buf.write(util.get_empty_line())
 

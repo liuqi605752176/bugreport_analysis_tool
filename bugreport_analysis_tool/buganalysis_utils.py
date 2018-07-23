@@ -202,8 +202,8 @@ def is_unzip_required(file_path):
 
 def dump_data_to_screen(tag,buf):
     if type(list):
-      for item in buf:
-         PLOGD(tag,item)
+        for item in buf:
+            PLOGD(tag,item)
     elif type(file):
         if os.path.isfile(str(buf)):
             with open(buf,'rU') as f_buf:

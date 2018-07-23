@@ -14,7 +14,7 @@ def dump_build_details(WS,file_buf):
         f_build_details = open(WS.file_build_details,'w+')
     except IOError as err:
         err_str = 'failed to create file : ' + \
-            WS.file_build_details + '\n' + str(err)
+                  WS.file_build_details + '\n' + str(err)
         util.PLOGE(TAG, err_str)
         return False
 
@@ -40,7 +40,7 @@ def dump_kernel_logs(WS,file_buf):
         f_kernel_logs = open(WS.file_kernel_logs,'w+')
     except IOError as err:
         err_str = 'failed to create file : ' + WS.file_kernel_logs + \
-            '\n' + str(err)
+                  '\n' + str(err)
         util.PLOGE(TAG,err_str)
         return False
 
@@ -69,7 +69,7 @@ def dump_system_logs(WS,file_buf):
         f_sys_log_buf = open(WS.file_system_logs,'w+')
     except IOError as err:
         err_str = 'failed to create file : ' \
-            + WS.file_system_logs + '\n' + str(err)
+                  + WS.file_system_logs + '\n' + str(err)
         util.PLOGE(TAG,err_str)
         return False
     f_sys_log_buf.write(util.get_line())
@@ -98,7 +98,7 @@ def dump_event_logs(WS,file_buf):
         f_event_logs = open(WS.file_event_logs,'w+')
     except IOError as err:
         err_str = 'failed to create file : ' + WS.file_event_logs + \
-            '\n' + str(err)
+                  '\n' + str(err)
         util.PLOGE(TAG,err_str)
         return False
 
@@ -126,7 +126,7 @@ def dump_radio_logs(WS,file_buf):
         f_radio_logs = open(WS.file_radio_logs,'w+')
     except IOError as err:
         err_str = 'failed to create file : ' + WS.file_radio_logs + \
-            '\n' + str(err)
+                  '\n' + str(err)
         util.PLOGE(TAG,err_str)
         return False
 
@@ -153,7 +153,7 @@ def dump_devinfo(WS,dict_devinfo):
         f_devinfo = open(WS.file_devinfo, 'w+')
     except IOError as err:
         err_str = 'failed to create file : ' + WS.file_devinfo + \
-            str(err)
+                  str(err)
         util.PLOGE(TAG,err_str)
         return False
 
@@ -162,8 +162,8 @@ def dump_devinfo(WS,dict_devinfo):
     f_devinfo.write(util.get_line())
 
     for item in dict_devinfo:
-       f_devinfo.write(util.get_empty_line())
-       f_devinfo.write(dict_devinfo[item])
+        f_devinfo.write(util.get_empty_line())
+        f_devinfo.write(dict_devinfo[item])
 
     f_devinfo.write(util.get_empty_line())
     f_devinfo.close()
@@ -183,7 +183,7 @@ def dump_sys_prop(WS,file_buf):
         f_sys_prop = open(WS.file_sys_prop, 'w+')
     except IOError as err:
         err_str = 'failed to create file : ' + WS.file_sys_prop + \
-            str(err)
+                  str(err)
         util.PLOGE(TAG,err_str)
         return False
 
@@ -289,7 +289,7 @@ def extract_data_files(WS):
         f_bug_rpt = open(WS.file_bugreport,'rU')
     except IOError as err:
         err_str = 'failed to open file : ' + \
-            WS.file_bugreport + '\n' + str(err)
+                  WS.file_bugreport + '\n' + str(err)
         util.PLOGE(TAG, err_str)
         return False
 
@@ -324,7 +324,7 @@ def avc_logs(WS):
             sys_log_buf = open(WS.file_event_logs, 'rU')
         except IOError as err:
             err_string = 'failed to read : ' + WS.file_system_logs + \
-            'error : ' + err
+                         'error : ' + err
             util.PLOGE(TAG,err_string)
             return False
 

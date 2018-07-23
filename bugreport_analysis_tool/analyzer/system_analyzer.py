@@ -12,7 +12,7 @@ def GetNativeCrashes(WS):
         f_system_log_buf = open(WS.file_system_logs,'r')
     except IOError as err:
         errorString = "failed to read system logs " + \
-            str(err)
+                      str(err)
         util.PLOGE(errorString)
         return False
 
@@ -20,7 +20,7 @@ def GetNativeCrashes(WS):
         f_native_crash_buf = open(WS.file_ws_system_native_crash,'w+')
     except IOError as err:
         errorString = 'failed to create native crash log file ' + \
-            str(err)
+                      str(err)
         util.PLOGE(TAG,errorString)
         return False
 
@@ -52,7 +52,7 @@ def GetAppCrashes(WS):
         f_system_log_buf = open(WS.file_system_logs,'r')
     except IOError as err:
         errorString = "failed to read system logs " + \
-            str(err)
+                      str(err)
         util.PLOGE(errorString)
         return False
 
@@ -60,7 +60,7 @@ def GetAppCrashes(WS):
         f_app_crash_buf = open(WS.file_ws_system_app_crash,'w+')
     except IOError as err:
         errorString = 'failed to create application crash log file ' + \
-            str(err)
+                      str(err)
         util.PLOGE(errorString)
         return False
 
@@ -94,7 +94,7 @@ def GetAppAnr(WS):
         f_system_log_buf = open(WS.file_system_logs,'r')
     except IOError as err:
         errorString = "failed to read system logs " + \
-            str(err)
+                      str(err)
         util.PLOGE(errorString)
         return False
 
@@ -102,7 +102,7 @@ def GetAppAnr(WS):
         f_app_anr_buf = open(WS.file_ws_system_anr,'w+')
     except IOError as err:
         errorString = 'failed to create application anr log file ' + \
-            str(err)
+                      str(err)
         util.PLOGE(errorString)
         return False
 

@@ -1,7 +1,7 @@
 
 ## Tag information
 class Tag(object):
-     def __init__(self):
+    def __init__(self):
         self.date = None
         self.time = None
         self.log_uid = None
