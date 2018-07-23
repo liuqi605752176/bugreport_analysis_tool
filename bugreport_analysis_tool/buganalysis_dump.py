@@ -311,6 +311,35 @@ def dump_accounts(WS,file_buf):
     f_accounts.close()
     return True
 
+def dump_uptime(WS,file_buf):
+    bool_start_dump = False
+    try:
+        f_other = open(WS.file_other, 'w+')
+    except IOError as err:
+        err_str = 'failed to create file : ' + WS.file_accounts + \
+                  '\n' + str(err)
+        util.PLOGE(TAG, err_str)
+        return False
+
+    f_other.write(util.get_line())
+    f_other.write('--- Other ---\n')
+    f_other.write(util.get_line())
+    f_other.write(util.get_empty_line())
+
+    for line in file_buf:
+        if bool_start_dump:
+            f_other.write(line)
+        if patt.start_uptime.search(line):
+            f_other.write(line)
+            bool_start_dump = True
+        if patt.end_uptime.search(line):
+            bool_start_dump = False
+            break
+
+    f_other.write(util.get_empty_line())
+    f_other.close()
+    return True
+
 def extract_data_files(WS):
     try:
         f_bug_rpt = open(WS.file_bugreport,'rU')
@@ -322,6 +351,8 @@ def extract_data_files(WS):
 
     if not dump_build_details(WS,f_bug_rpt):
         util.PLOGE(TAG, 'Failed to get build details')
+    if not dump_uptime(WS, f_bug_rpt):
+        util.PLOGE(TAG, 'Failed to get uptime logs')
     if not dump_kernel_logs(WS,f_bug_rpt):
         util.PLOGE(TAG,'Failed to get kernel logs')
     if not dump_system_logs(WS,f_bug_rpt):

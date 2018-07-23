@@ -19,6 +19,10 @@ TAG = os.path.basename(__file__)
 # Uptime     :
 # Storage    :
 # Network    :
+# Native crash :
+# Application Crash :
+# Application ANR :
+
 
 
 def GenReport(WS):
@@ -71,7 +75,7 @@ def GenReport(WS):
         WriteTitleAndValue('Build ID',build_id[1:])
 
     def WriteDeviceDetails():
-        WriteTitleAndValue('Device info', ' --->>>')
+        WriteTitleAndValue('Device info', '--->>>')
         with open(WS.file_devinfo,'r') as device:
             for line in device:
                 if re.compile(r'Device ').search(line):
@@ -82,21 +86,119 @@ def GenReport(WS):
                     mFile_rpt_buf.write(keyValue[1])
         device.close()
 
-    def WriteDeviceAccount():
+    def WriteDeviceOwnerAndAccount():
+        user = None
         acc_list = []
-        with open(WS.file_system_logs, 'r') as system:
+        with open(WS.file_accounts, 'r') as system:
             for line in system:
                 email_match = re.search(r'([\w.-]+)@([\w.-]+)', line)
-                acc_list.append(email_match.group())
+                if email_match:
+                    acc_list.append(email_match.group())
+                if re.compile(r'UserInfo').search(line):
+                    user=line.split(':')[1]
+        WriteTitleAndValue('Device onwer',user)
+        WriteTitleAndValue('Device Accounts','--->>>')
+        for account in acc_list:
+            mFile_rpt_buf.write((' ' * 32)  + account)
+            mFile_rpt_buf.write(util.get_empty_line())
+
+        system.close()
+
+    def WriteUptime():
+        uptime = None
+        uptime_found = False
+        with open(WS.file_other, 'r') as other:
+            for line in other:
+                if uptime_found:
+                    uptime = line.split(',').pop(0).strip()
+                    break
+                if pattr.start_uptime.search(line):
+                    uptime_found = True
+
+        print uptime
+        WriteTitleAndValue('Up time',uptime)
+        other.close()
+
+    def WriteNetwork():
+        network=None
+        with open(WS.file_build_details,'r') as build:
+            for line in build:
+                if re.compile(r'Network:').search(line):
+                    network = line.split(':').pop(1)
+                    break
+        build.close()
+        WriteTitleAndValue('Network',network[1:])
+    #
+    # util.PrintTerminalLink(WS.file_ws_system_native_crash)
+    # util.PrintTerminalLink(WS.file_ws_system_app_crash)
+    # util.PrintTerminalLink(WS.file_ws_system_anr)
+    def WriteNativeCrash():
+        native_crash = None
+        native_crash_list = []
+        cont = False
+        if os.path.exists(WS.file_ws_system_native_crash):
+            with open(WS.file_ws_system_native_crash) as native_crash_buf:
+                for line in native_crash_buf:
+                    if cont or re.compile('F DEBUG   : pid:').search(line):
+                        native_crash = True
+                        cont = True
+                        native_crash_list.append(line)
+                    if re.compile('F DEBUG   : Abort message:').search(line):
+                        native_crash_list.append('#')
+                        cont = False
+            print native_crash_list
+            WriteTitleAndValue('Native crash','--->>>')
+            mFile_rpt_buf.write(util.get_empty_line())
+
+            if native_crash is not None:
+                for item in native_crash_list:
+                    if item == '#':
+                        mFile_rpt_buf.write(util.get_empty_line())
+                        continue
+                    mFile_rpt_buf.write(item)
+
+            native_crash_buf.close()
+
+    def WriteApplicationCrash():
+        native_crash = None
+        native_crash_list = []
+        cont = False
+        if os.path.exists(WS.file_ws_system_native_crash):
+            with open(WS.file_ws_system_native_crash) as native_crash_buf:
+                for line in native_crash_buf:
+                    if cont or re.compile('F DEBUG   : pid:').search(line):
+                        native_crash = True
+                        cont = True
+                        native_crash_list.append(line)
+                    if re.compile('F DEBUG   : Abort message:').search(line):
+                        native_crash_list.append('#')
+                        cont = False
+            print native_crash_list
+            WriteTitleAndValue('Native crash','--->>>')
+            mFile_rpt_buf.write(util.get_empty_line())
+
+            if native_crash is not None:
+                for item in native_crash_list:
+                    if item == '#':
+                        mFile_rpt_buf.write(util.get_empty_line())
+                        continue
+                    mFile_rpt_buf.write(item)
+
+            native_crash_buf.close()
 
     ## Dump report
     WriteReportTitle()
-    WriteBugID()
+    # WriteBugID()
     WriteBugTitle()
     WriteDevEngineer()
     WriteTestEngineer()
     WriteBuildDetails()
     WriteDeviceDetails()
+    WriteDeviceOwnerAndAccount()
+    WriteUptime()
+    WriteNetwork()
+    WriteNativeCrash()
+    WriteApplicationCrash()
 
 
     return True

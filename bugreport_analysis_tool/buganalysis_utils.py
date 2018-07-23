@@ -19,7 +19,7 @@ file_ws_analysis_devinfo        = dir_ws_analysis + '/' + 'devinfo.txt'
 file_ws_analysis_avc_logs       = dir_ws_analysis + '/' + 'avc_logs.txt'
 file_ws_analysis_power_logs     = dir_ws_analysis + '/' + 'power_log.txt'
 file_ws_analysis_accounts_logs  = dir_ws_analysis + '/' + 'accounts.txt'
-
+file_ws_analysis_other_logs     = dir_ws_analysis  + '/' + 'other.txt'
 
 # events logs
 dir_ws_analysis_events          = dir_ws_analysis + '/' + 'events'
@@ -90,6 +90,8 @@ class WorkSpace(object):
         self.file_avc_logs = None
         self.file_ws_analysis_power_logs = None
         self.file_accounts = None
+        self.file_other = None
+
 
         # events logs
         self.dir_ws_analysis_events = None
@@ -225,7 +227,7 @@ def dump_data_to_screen(tag,buf):
 
 # gen file open link for termial
 def PrintTerminalLink(path):
-    if not os.path.exists(WS.dir_out):
+    if not os.path.exists(path):
         return
     pathLink = 'file://' + os.path.abspath(path)
     PLOGV("link",pathLink)

@@ -71,6 +71,7 @@ def setup_ws():
     WS.file_avc_logs        = OPT.out + '/' + util.file_ws_analysis_avc_logs
     WS.file_ws_analysis_power_logs = OPT.out + '/' + util.file_ws_analysis_power_logs
     WS.file_accounts        = OPT.out + '/' + util.file_ws_analysis_accounts_logs
+    WS.file_other           = OPT.out + '/' + util.file_ws_analysis_other_logs
 
     # events logs
     WS.dir_ws_analysis_events           = OPT.out + '/' + util.dir_ws_analysis_events
@@ -240,6 +241,7 @@ def DumpAnalysisPaths():
     util.PrintTerminalLink(WS.dir_ws_analysis_bypid)
     util.PrintTerminalLink(WS.file_analysis_rpt)
     util.PrintTerminalLink(WS.file_accounts)
+    util.PrintTerminalLink(WS.file_other)
 
     # report
     util.PLOGV(TAG,util.get_line())
@@ -251,7 +253,6 @@ def analyze_bugreport():
     dump.avc_logs(WS)
     analyzer.StartEventAnaylzer(WS)
     analyzer.StartSystemAnaylzer(WS)
-    DumpAnalysisPaths()
     util.PLOGV(TAG, 'Exit   - analyze_bugreport')
     return True
 
@@ -343,6 +344,7 @@ def main():
         util.PLOGE(TAG, 'parse argument failed', exit=True)
     start_analysis()
     GenReport()
+    DumpAnalysisPaths()
     time_str = "--- %s seconds ---" % (time.time() - start_time)
     util.PLOGD(TAG,time_str)
 

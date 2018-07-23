@@ -38,12 +38,13 @@ def GetNativeCrashes(WS):
         if pattr.end_crash_native_conti.search(line):
             f_native_crash_buf.write(line)
 
-    if not found_crash:
-        f_native_crash_buf.write("Opps, No native crash")
-        util.PLOGV(TAG,"Opps, No native crash")
-
     f_system_log_buf.close()
     f_native_crash_buf.close()
+
+    if not found_crash:
+        os.remove(WS.file_ws_system_native_crash)
+        util.PLOGV(TAG,"Opps, No native crash")
+
     return True
 
 # Get Applicaton crashes
@@ -78,12 +79,13 @@ def GetAppCrashes(WS):
         if pattr.end_crash_application.search(line):
             f_app_crash_buf.write(line)
 
-    if not found_crash:
-        f_app_crash_buf.write("Opps, No application crash")
-        util.PLOGV(TAG,"Opps, No application crash")
 
     f_system_log_buf.close()
     f_app_crash_buf.close()
+
+    if not found_crash:
+        os.remove(WS.file_ws_system_app_crash)
+        util.PLOGV(TAG,"Opps, No application crash")
 
     return True
 
@@ -120,12 +122,12 @@ def GetAppAnr(WS):
         if found_crash and pattr.end_anr_application.search(line):
             f_app_anr_buf.write(line)
 
-    if not found_crash:
-        f_app_anr_buf.write("Opps, No application ANR")
-        util.PLOGV(TAG,"Opps, No application ANR")
-
     f_system_log_buf.close()
     f_app_anr_buf.close()
+
+    if not found_crash:
+        os.remove(WS.file_ws_system_anr)
+        util.PLOGV(TAG,"Opps, No application ANR")
 
     return True
 
