@@ -128,3 +128,58 @@ def GetAppAnr(WS):
     f_app_anr_buf.close()
 
     return True
+
+# Dump power logs:
+# device_sys_sleep_power_button
+# device_sys_sleep_screen_timeout
+# device_sys_wake_up
+# device_kernel_sleep
+# device_kernel_wakeup
+def DumpPowerLogs(WS):
+    try:
+        f_power_logs_buf = open(WS.file_ws_analysis_power_logs, 'a+')
+    except IOError as err:
+        error = 'failed to create power log file : ' + str(err)
+        util.PLOGE(TAG, error)
+
+    try:
+        f_sys_logs_buf = open(WS.file_system_logs, 'r')
+    except IOError as err:
+        error = 'failed to read event log file : ' + str(err)
+        util.PLOGE(TAG, error)
+
+    try:
+        f_kernel_logs_buf = open(WS.file_kernel_logs, 'r')
+    except IOError as err:
+        error = 'failed to read event log file : ' + str(err)
+        util.PLOGE(TAG, error)
+
+
+    f_power_logs_buf.write('--- PowerManager ---')
+    f_power_logs_buf.write(util.get_empty_line())
+    f_power_logs_buf.write(util.get_empty_line())
+
+
+    for line in f_sys_logs_buf:
+        if pattr.device_sys_sleep_power_button.search(line) or \
+                pattr.device_sys_sleep_screen_timeout.search(line) or \
+                pattr.device_sys_wake_up.search(line):
+            f_power_logs_buf.write(line)
+    f_power_logs_buf.write(util.get_empty_line())
+
+    f_power_logs_buf.write('--- Kernel ---')
+    f_power_logs_buf.write(util.get_empty_line())
+    f_power_logs_buf.write(util.get_empty_line())
+
+
+    for line in f_kernel_logs_buf:
+        if pattr.device_kernel_sleep.search(line) or \
+                pattr.device_sys_sleep_screen_timeout.search(line) or \
+                pattr.device_kernel_wakeup.search(line):
+            f_power_logs_buf.write(line)
+    f_power_logs_buf.write(util.get_empty_line())
+
+    f_power_logs_buf.close()
+    f_sys_logs_buf.close()
+    f_kernel_logs_buf.close()
+

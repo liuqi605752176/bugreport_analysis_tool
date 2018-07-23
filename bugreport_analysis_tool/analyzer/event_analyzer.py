@@ -181,11 +181,16 @@ def dumpScreenOnOffLogs(WS):
         util.PLOGE(TAG, error)
 
     util.print_title(f_power_logs_buf,'Power logs')
+    f_power_logs_buf.write('--- Screen ON and OFF ---')
+    f_power_logs_buf.write(util.get_empty_line())
+    f_power_logs_buf.write(util.get_empty_line())
+
 
     for line in f_event_logs_buf:
         if pattr.screen_on.search(line) or \
             pattr.screen_off.search(line) :
             f_power_logs_buf.write(line)
+    f_power_logs_buf.write(util.get_empty_line())
 
     f_power_logs_buf.close()
     f_event_logs_buf.close()
