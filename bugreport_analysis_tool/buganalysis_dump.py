@@ -284,6 +284,33 @@ def dump_sys_prop(WS,file_buf):
 
     return True
 
+def dump_accounts(WS,file_buf):
+    bool_start_dump = False
+    try:
+        f_accounts = open(WS.file_accounts, 'w+')
+    except IOError as err:
+        err_str = 'failed to create file : ' + WS.file_accounts + \
+                  '\n' + str(err)
+        util.PLOGE(TAG, err_str)
+        return False
+
+    f_accounts.write(util.get_line())
+    f_accounts.write('--- Accounts ---\n')
+    f_accounts.write(util.get_line())
+
+    for line in file_buf:
+        if bool_start_dump:
+            f_accounts.write(line)
+        if patt.start_accounts.search(line):
+            bool_start_dump = True
+        if patt.end_accounts.search(line):
+            bool_start_dump = False
+            break
+
+    f_accounts.write(util.get_empty_line())
+    f_accounts.close()
+    return True
+
 def extract_data_files(WS):
     try:
         f_bug_rpt = open(WS.file_bugreport,'rU')
@@ -305,6 +332,8 @@ def extract_data_files(WS):
         util.PLOGE(TAG,'Failed to get radio logs')
     if not dump_sys_prop(WS,f_bug_rpt):
         util.PLOGE(TAG,'Failed to get sys prop')
+    if not dump_accounts(WS,f_bug_rpt):
+        util.PLOGE(TAG,'failed to get account details')
     return True
 
 def avc_logs(WS):

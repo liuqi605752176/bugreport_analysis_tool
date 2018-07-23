@@ -70,6 +70,7 @@ def setup_ws():
     WS.file_devinfo         = OPT.out + '/' + util.file_ws_analysis_devinfo
     WS.file_avc_logs        = OPT.out + '/' + util.file_ws_analysis_avc_logs
     WS.file_ws_analysis_power_logs = OPT.out + '/' + util.file_ws_analysis_power_logs
+    WS.file_accounts        = OPT.out + '/' + util.file_ws_analysis_accounts_logs
 
     # events logs
     WS.dir_ws_analysis_events           = OPT.out + '/' + util.dir_ws_analysis_events
@@ -238,6 +239,7 @@ def DumpAnalysisPaths():
     util.PrintTerminalLink(WS.file_ws_system_anr)
     util.PrintTerminalLink(WS.dir_ws_analysis_bypid)
     util.PrintTerminalLink(WS.file_analysis_rpt)
+    util.PrintTerminalLink(WS.file_accounts)
 
     # report
     util.PLOGV(TAG,util.get_line())
@@ -252,21 +254,6 @@ def analyze_bugreport():
     DumpAnalysisPaths()
     util.PLOGV(TAG, 'Exit   - analyze_bugreport')
     return True
-# Generate report
-# Bug ID        :
-# Bug title     :
-# Dev Enginner  :
-# Test Enginner :
-# Build details :
-# Device details:
-# Device onwer  :
-# Device account:
-#
-# Root cause :
-# Uptime     :
-# Storage    :
-# Network    :
-
 
 def GenReport():
     if not rpt.GenReport(WS):
@@ -295,12 +282,17 @@ def usage():
     print '\t--file <filename>\t - zip or txt file of bugreport'
     print '\t--out <out_dir>\t\t - output dir'
     print '\t--bugnum <bug number>\t\t - Redmine bug number'
+    print '\t--bugtitle <bug title>\t\t - Redmine bug title'
+    print '\t--dev <developer name>\t\t - Developer name'
+    print '\t--tester <tester name>\t\t - Test engineer name'
+
     print '\t--version\t\t - print version'
     util.print_empty_line()
 
 
 def parse_argument(argv):
-    long_opts = ['help', 'version', 'verbose', 'file=', 'out=', 'bugnum=']
+    long_opts = ['help', 'version', 'verbose', 'file=', 'out=', 'bugnum=', 'bugtitle=', \
+                 'dev=','tester=']
     short_opts = 'hvl'
 
     try:
@@ -325,6 +317,12 @@ def parse_argument(argv):
             util.OPT.out = val
         elif opt == '--bugnum':
             util.OPT.bug_num = val
+        elif opt == '--bugtitle':
+            util.OPT.bug_title = val
+        elif opt == '--dev':
+            util.OPT.dev_name = val
+        elif opt == '--tester':
+            util.OPT.tester_name = val
         elif opt in ['-h', '--help']:
             usage()
             return False

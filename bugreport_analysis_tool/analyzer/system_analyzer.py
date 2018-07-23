@@ -154,11 +154,9 @@ def DumpPowerLogs(WS):
         error = 'failed to read event log file : ' + str(err)
         util.PLOGE(TAG, error)
 
-
     f_power_logs_buf.write('--- PowerManager ---')
     f_power_logs_buf.write(util.get_empty_line())
     f_power_logs_buf.write(util.get_empty_line())
-
 
     for line in f_sys_logs_buf:
         if pattr.device_sys_sleep_power_button.search(line) or \

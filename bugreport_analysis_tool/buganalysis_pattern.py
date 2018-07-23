@@ -27,7 +27,8 @@ start_radio_log             = re.compile(r'^(------ RADIO LOG)')
 end_radio_log               = re.compile(r"('RADIO LOG' ------)$")
 start_sys_properties        = re.compile(r"^(------ SYSTEM PROPERTIES)")
 end_sys_properties          = re.compile(r"('SYSTEM PROPERTIES' ------)$")
-
+start_accounts               = re.compile(r'DUMP OF SERVICE account:')
+end_accounts                = re.compile(r'the duration of dumpsys account')
 #############################################
 # system prop TAG pattern
 ############################################
@@ -93,3 +94,4 @@ start_bugreport_kernel              = re.compile(r"init: starting service 'dumps
 #----------------- PID mapping ------------------
 start_PID_mapping               = re.compile(r'PID mappings:')
 end_PID_mapping_conti           = re.compile(r'PID #')
+

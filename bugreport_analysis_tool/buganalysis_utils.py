@@ -18,7 +18,7 @@ file_ws_analysis_sys_prop       = dir_ws_analysis + '/' + 'system_prop.txt'
 file_ws_analysis_devinfo        = dir_ws_analysis + '/' + 'devinfo.txt'
 file_ws_analysis_avc_logs       = dir_ws_analysis + '/' + 'avc_logs.txt'
 file_ws_analysis_power_logs     = dir_ws_analysis + '/' + 'power_log.txt'
-
+file_ws_analysis_accounts_logs  = dir_ws_analysis + '/' + 'accounts.txt'
 
 
 # events logs
@@ -56,7 +56,12 @@ class Options(object):
         self.is_unzip_required = None
         self.zip_file = None
         self.out = None
-        self.bug_num=None
+        self.bug_num = None
+        self.bug_title = None
+        self.dev_name = None
+        self.tester_name = None
+
+
 
 
 class WorkSpace(object):
@@ -84,6 +89,7 @@ class WorkSpace(object):
         self.file_devinfo = None
         self.file_avc_logs = None
         self.file_ws_analysis_power_logs = None
+        self.file_accounts = None
 
         # events logs
         self.dir_ws_analysis_events = None
