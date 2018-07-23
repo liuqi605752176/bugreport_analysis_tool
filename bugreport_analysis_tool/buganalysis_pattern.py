@@ -53,11 +53,16 @@ pattern_denied = 'denied'
 pattern_comm = 'comm='
 pattern_name = 'name='
 
-# event logs pattern
+#-------------- event logs ---------------------
 am_proc_start = re.compile('am_proc_start:')
 am_proc_died  = re.compile('am_proc_died:')
 am_proc_bound = re.compile('am_proc_died:')
 
+# Power screen on off and keygurad done
+screen_off      = re.compile(r'screen_toggled: 0')
+screen_on       = re.compile(r'screen_toggled: 1')
+
+#-------------- system logs ---------------------
 # Native Crash
 start_crash_native          = re.compile(r'F DEBUG   : [*]+')
 end_crash_native_conti      = re.compile('F DEBUG   :')
@@ -69,3 +74,22 @@ end_crash_application       = re.compile(r'E AndroidRuntime:')
 # Application ANR
 start_anr_application       = re.compile(r'E ActivityManager: ANR in')
 end_anr_application         = re.compile(r'E ActivityManager: ')
+
+# Process start
+start_proc                  = re.compile(r'ActivityManager: Start proc')
+
+# Power manager
+device_sys_sleep_power_button   = re.compile(r'PowerManagerService: Going to sleep due to power button')
+device_sys_sleep_screen_timeout = re.compile(r'PowerManagerService: Going to sleep due to screen timeout')
+device_sys_wake_up              = re.compile(r'PowerManagerService: Waking up from dozing')
+device_kernel_sleep             = re.compile(r'PM: suspend entry')
+device_kernel_wakeup            = re.compile(r'PM: suspend exit')
+
+#bug report start
+start_bugreport_sys                 = re.compile(r'dumpstate: begin')
+start_bugreport_kernel              = re.compile(r"init: starting service 'dumpstatez'")
+
+
+#----------------- PID mapping ------------------
+start_PID_mapping               = re.compile(r'PID mappings:')
+end_PID_mapping_conti           = re.compile(r'PID #')

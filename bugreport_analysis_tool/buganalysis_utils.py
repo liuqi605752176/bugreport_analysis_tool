@@ -16,6 +16,9 @@ file_ws_analysis_kernel_logs    = dir_ws_analysis + '/' + 'kernel_logs.txt'
 file_ws_analysis_sys_prop       = dir_ws_analysis + '/' + 'system_prop.txt'
 file_ws_analysis_devinfo        = dir_ws_analysis + '/' + 'devinfo.txt'
 file_ws_analysis_avc_logs       = dir_ws_analysis + '/' + 'avc_logs.txt'
+file_ws_analysis_power_logs     = dir_ws_analysis + '/' + 'power_log.txt'
+
+
 
 # events logs
 dir_ws_analysis_events          = dir_ws_analysis + '/' + 'events'
@@ -30,7 +33,7 @@ file_ws_system_app_crash        = dir_ws_analysis + '/' + 'app_crashes.txt'
 file_ws_system_anr              = dir_ws_analysis + '/' + 'anr.txt'
 
 # pid data
-dir_ws_analysis_bypid         = dir_ws_analysis + '/' + 'byPid'
+dir_ws_analysis_bypid           = dir_ws_analysis + '/' + 'byPid'
 
 # report
 file_ws_analysis_rpt            = dir_ws_analysis + '/' + 'report.txt'
@@ -78,6 +81,7 @@ class WorkSpace(object):
         self.file_sys_prop = None
         self.file_devinfo = None
         self.file_avc_logs = None
+        self.file_ws_analysis_power_logs = None
 
         # events logs
         self.dir_ws_analysis_events = None
@@ -210,3 +214,17 @@ def dump_data_to_screen(tag,buf):
         PLOGD(tag,buf,strip=True)
     else:
         PLOGD(tag,str(buf),strip=True)
+
+# gen file open link for termial
+def PrintTerminalLink(path):
+    if not os.path.exists(WS.dir_out):
+        return
+    pathLink = 'file://' + os.path.abspath(path)
+    PLOGV("link",pathLink)
+
+def print_title(file_buf,title):
+    file_buf.write(get_line())
+    file_buf.write("--- " + title + "---")
+    file_buf.write(get_empty_line())
+    file_buf.write(get_line())
+    file_buf.write(get_empty_line())

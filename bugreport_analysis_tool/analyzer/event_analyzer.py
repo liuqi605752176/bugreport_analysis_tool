@@ -167,6 +167,31 @@ def FilterByPid(WS):
 
     # def get_jp_pid_list():
 
+def dumpScreenOnOffLogs(WS):
+    try:
+        f_power_logs_buf = open(WS.file_ws_analysis_power_logs,'w+')
+    except IOError as err:
+        error = 'failed to create power log file : ' + str(err)
+        util.PLOGE(TAG,error)
+
+    try:
+        f_event_logs_buf = open(WS.file_event_logs,'r')
+    except IOError as err:
+        error = 'failed to read event log file : ' + str(err)
+        util.PLOGE(TAG, error)
+
+    util.print_title(f_power_logs_buf,'Power logs')
+
+    for line in f_event_logs_buf:
+        if pattr.screen_on.search(line) or \
+            pattr.screen_off.search(line) :
+            f_power_logs_buf.write(line)
+
+    f_power_logs_buf.close()
+    f_event_logs_buf.close()
+
+
+
 
 def start_event_log_analyzer(WS):
     '''
@@ -175,9 +200,15 @@ def start_event_log_analyzer(WS):
     04-25 11:43:38.771  1000  1656  2900 I am_proc_start: [0,5092,10007,com.android.cellbroadcastreceiver,broadcast,com.android.cellbroadcastreceiver/.CellBroadcastReceiver]
 
     '''
+
     list_event_tag_files = filt.FilterByTagInFilesList(WS)
     # util.dump_data_to_screen(TAG,list_event_tag_files)
 
     FilterByPid(WS)
+    dumpScreenOnOffLogs(WS)
+
+
+
+
 
 

@@ -68,6 +68,7 @@ def setup_ws():
     WS.file_sys_prop        = OPT.out + '/' + util.file_ws_analysis_sys_prop
     WS.file_devinfo         = OPT.out + '/' + util.file_ws_analysis_devinfo
     WS.file_avc_logs        = OPT.out + '/' + util.file_ws_analysis_avc_logs
+    WS.file_ws_analysis_power_logs = OPT.out + '/' + util.file_ws_analysis_power_logs
 
     # events logs
     WS.dir_ws_analysis_events           = OPT.out + '/' + util.dir_ws_analysis_events
@@ -201,6 +202,8 @@ def set_files_path():
     util.PLOGV(TAG,WS.file_radio_logs)
     util.PLOGV(TAG,WS.file_sys_prop)
     util.PLOGV(TAG,WS.file_avc_logs)
+    util.PLOGV(TAG,WS.file_ws_analysis_power_logs)
+
     util.PLOGV(TAG,WS.file_analysis_rpt)
     util.PLOGV(TAG,WS.file_ws_system_native_crash)
     util.PLOGV(TAG,WS.file_ws_system_app_crash)
@@ -210,6 +213,33 @@ def set_files_path():
         return False
     return True
 
+def DumpAnalysisPaths():
+    util.PLOGV(TAG,util.get_line())
+    util.PrintTerminalLink(WS.dir_out)
+    util.PrintTerminalLink(WS.dir_ws)
+    util.PrintTerminalLink(WS.dir_ws_analysis)
+    util.PrintTerminalLink(WS.file_build_details)
+    util.PrintTerminalLink(WS.file_kernel_logs)
+    util.PrintTerminalLink(WS.file_system_logs)
+    util.PrintTerminalLink(WS.file_event_logs)
+    util.PrintTerminalLink(WS.file_radio_logs)
+    util.PrintTerminalLink(WS.file_sys_prop)
+    util.PrintTerminalLink(WS.file_devinfo)
+    util.PrintTerminalLink(WS.file_avc_logs)
+    util.PrintTerminalLink(WS.file_ws_analysis_power_logs)
+    util.PrintTerminalLink(WS.dir_ws_analysis_events)
+    util.PrintTerminalLink(WS.file_ws_events_JP_data)
+    util.PrintTerminalLink(WS.file_ws_events_am_proc_start)
+    util.PrintTerminalLink(WS.file_ws_events_am_proc_bound)
+    util.PrintTerminalLink(WS.file_ws_events_am_proc_died)
+    util.PrintTerminalLink(WS.file_ws_system_native_crash)
+    util.PrintTerminalLink(WS.file_ws_system_app_crash)
+    util.PrintTerminalLink(WS.file_ws_system_anr)
+    util.PrintTerminalLink(WS.dir_ws_analysis_bypid)
+    util.PrintTerminalLink(WS.file_analysis_rpt)
+
+    # report
+    util.PLOGV(TAG,util.get_line())
 
 def analyze_bugreport():
     # Get build details
@@ -218,7 +248,7 @@ def analyze_bugreport():
     dump.avc_logs(WS)
     analyzer.StartEventAnaylzer(WS)
     analyzer.StartSystemAnaylzer(WS)
-
+    DumpAnalysisPaths()
     util.PLOGV(TAG, 'Exit   - analyze_bugreport')
     return True
 

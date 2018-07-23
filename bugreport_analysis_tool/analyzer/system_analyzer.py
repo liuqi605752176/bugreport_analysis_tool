@@ -21,7 +21,7 @@ def GetNativeCrashes(WS):
     except IOError as err:
         errorString = 'failed to create native crash log file ' + \
             str(err)
-        util.PLOGE(errorString)
+        util.PLOGE(TAG,errorString)
         return False
 
     f_native_crash_buf.write(util.get_line())
@@ -44,7 +44,6 @@ def GetNativeCrashes(WS):
 
     f_system_log_buf.close()
     f_native_crash_buf.close()
-
     return True
 
 # Get Applicaton crashes

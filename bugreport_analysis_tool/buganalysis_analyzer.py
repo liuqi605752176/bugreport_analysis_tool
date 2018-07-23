@@ -18,3 +18,4 @@ def StartSystemAnaylzer(WS):
     system.GetAppCrashes(WS)
     system.GetAppAnr(WS)
 
+
