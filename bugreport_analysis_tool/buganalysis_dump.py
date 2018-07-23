@@ -7,7 +7,7 @@ import buganalysis_dump as dump
 import os
 
 
-TAG = 'buganalysis_dump'
+TAG = os.path.basename(__file__)
 
 def dump_build_details(WS,file_buf):
     try:

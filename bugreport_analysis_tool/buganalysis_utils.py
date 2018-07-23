@@ -4,6 +4,7 @@ import mimetypes
 import zipfile
 import re
 
+TAG = os.path.basename(__file__)
 prog_name = ''
 
 dir_ws                          = 'bugreport_analysis'
@@ -55,6 +56,7 @@ class Options(object):
         self.is_unzip_required = None
         self.zip_file = None
         self.out = None
+        self.bug_num=None
 
 
 class WorkSpace(object):

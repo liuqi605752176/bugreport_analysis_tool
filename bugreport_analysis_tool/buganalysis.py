@@ -15,6 +15,7 @@ import buganalysis_dump as dump
 
 
 import buganalysis_analyzer as analyzer
+from reports import report as rpt
 
 start_time = time.time()
 '''
@@ -53,7 +54,7 @@ WS = util.WS
 debug_enable = config.MODE_DEBUG
 test_enable = config.MODE_TEST
 
-TAG = 'buganalysis'
+TAG = os.path.basename(__file__)
 
 
 def setup_ws():
@@ -251,17 +252,25 @@ def analyze_bugreport():
     DumpAnalysisPaths()
     util.PLOGV(TAG, 'Exit   - analyze_bugreport')
     return True
+# Generate report
+# Bug ID        :
+# Bug title     :
+# Dev Enginner  :
+# Test Enginner :
+# Build details :
+# Device details:
+# Device onwer  :
+# Device account:
+#
+# Root cause :
+# Uptime     :
+# Storage    :
+# Network    :
+
 
 def GenReport():
-    try:
-        file_rpt = open(WS.file_analysis_rpt,'w+')
-    except IOError as err:
-        errstring = 'failed to create file ' + WS.file_analysis_rpt \
-                    + ' Err: ' + str(err)
-        util.PLOGE(errstring)
-        return False
-
-    return True
+    if not rpt.GenReport(WS):
+        util.PLOGE(TAG,'failed to get report', exit=True)
 
 def start_analysis():
     # check cmd line args
@@ -274,8 +283,7 @@ def start_analysis():
         util.PLOGE(TAG, 'failed to set file path', exit=True)
     if not analyze_bugreport():
         util.PLOGE(TAG, 'Failed to analyze bugreport', exit=True)
-    if not GenReport():
-        util.PLOGE(TAG,'failed to get report', exit=True)
+
 
 def usage():
     util.print_empty_line()
@@ -286,12 +294,13 @@ def usage():
     print '\t-v,--verbose\t\t - print verbose logging'
     print '\t--file <filename>\t - zip or txt file of bugreport'
     print '\t--out <out_dir>\t\t - output dir'
+    print '\t--bugnum <bug number>\t\t - Redmine bug number'
     print '\t--version\t\t - print version'
     util.print_empty_line()
 
 
 def parse_argument(argv):
-    long_opts = ['help', 'version', 'verbose', 'file=', 'out=']
+    long_opts = ['help', 'version', 'verbose', 'file=', 'out=', 'bugnum=']
     short_opts = 'hvl'
 
     try:
@@ -314,6 +323,8 @@ def parse_argument(argv):
             util.OPT.file_name = val
         elif opt == '--out':
             util.OPT.out = val
+        elif opt == '--bugnum':
+            util.OPT.bug_num = val
         elif opt in ['-h', '--help']:
             usage()
             return False
@@ -333,6 +344,7 @@ def main():
     if not parse_argument(sys.argv):
         util.PLOGE(TAG, 'parse argument failed', exit=True)
     start_analysis()
+    GenReport()
     time_str = "--- %s seconds ---" % (time.time() - start_time)
     util.PLOGD(TAG,time_str)
 

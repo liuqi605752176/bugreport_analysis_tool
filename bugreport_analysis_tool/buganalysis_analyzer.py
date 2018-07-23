@@ -8,7 +8,7 @@ import re
 '''
 The buganalysis_analyzer module to analyze data and genrate report
 '''
-TAG = 'buganalysis_analyzer.py'
+TAG = os.path.basename(__file__)
 
 def StartEventAnaylzer(WS):
     evnt.start_event_log_analyzer(WS)
@@ -18,6 +18,5 @@ def StartSystemAnaylzer(WS):
     system.GetAppCrashes(WS)
     system.GetAppAnr(WS)
     system.DumpPowerLogs(WS)
-
 
 

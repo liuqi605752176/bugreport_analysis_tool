@@ -5,7 +5,7 @@ import os
 import re
 from analyzer import event_classes as evntClasses
 
-TAG = 'event_analyzer'
+TAG = os.path.basename(__file__)
 
 def IsLineContainPid(pid,line):
     # print pattr_str
