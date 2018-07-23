@@ -217,7 +217,8 @@ def set_files_path():
     return True
 
 def DumpAnalysisPaths():
-    util.PLOGV(TAG,util.get_line())
+    util.PLOGD(TAG,"Check analysis at below path")
+    util.PLOGD(TAG,util.get_line())
     util.PrintTerminalLink(WS.dir_out)
     util.PrintTerminalLink(WS.dir_ws)
     util.PrintTerminalLink(WS.dir_ws_analysis)
@@ -244,7 +245,7 @@ def DumpAnalysisPaths():
     util.PrintTerminalLink(WS.file_other)
 
     # report
-    util.PLOGV(TAG,util.get_line())
+    util.PLOGD(TAG,util.get_line())
 
 def analyze_bugreport():
     # Get build details
@@ -275,7 +276,9 @@ def start_analysis():
 
 def usage():
     util.print_empty_line()
-    print util.prog_name + ' ' + '<options> ' + ' --file ' + ' bugreport.zip '
+    print util.prog_name + ' ' + '<options> ' + ' --file ' + ' bugreport.zip ' + \
+            '--out' + ' /tmp/test '
+
     util.print_line()
     print 'options:'
     print '\t-h,--help\t\t - print help'

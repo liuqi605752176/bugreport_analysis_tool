@@ -230,7 +230,7 @@ def PrintTerminalLink(path):
     if not os.path.exists(path):
         return
     pathLink = 'file://' + os.path.abspath(path)
-    PLOGV("link",pathLink)
+    PLOGD("link",pathLink)
 
 def print_title(file_buf,title):
     file_buf.write(get_line())
