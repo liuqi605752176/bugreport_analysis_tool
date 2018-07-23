@@ -93,7 +93,8 @@ def GenReport(WS):
             for line in system:
                 email_match = re.search(r'([\w.-]+)@([\w.-]+)', line)
                 if email_match:
-                    acc_list.append(email_match.group())
+                    if email_match.group() not in acc_list:
+                        acc_list.append(email_match.group())
                 if re.compile(r'UserInfo').search(line):
                     user=line.split(':')[1]
         WriteTitleAndValue('Device onwer',user)
@@ -133,7 +134,7 @@ def GenReport(WS):
     # util.PrintTerminalLink(WS.file_ws_system_app_crash)
     # util.PrintTerminalLink(WS.file_ws_system_anr)
     def WriteNativeCrash():
-        native_crash = None
+        native_crash = False
         native_crash_list = []
         cont = False
         if os.path.exists(WS.file_ws_system_native_crash):
@@ -146,45 +147,89 @@ def GenReport(WS):
                     if re.compile('F DEBUG   : Abort message:').search(line):
                         native_crash_list.append('#')
                         cont = False
-            print native_crash_list
-            WriteTitleAndValue('Native crash','--->>>')
-            mFile_rpt_buf.write(util.get_empty_line())
+                WriteTitleAndValue('Native crash', '--->>>')
+                mFile_rpt_buf.write(util.get_line())
 
-            if native_crash is not None:
                 for item in native_crash_list:
                     if item == '#':
                         mFile_rpt_buf.write(util.get_empty_line())
                         continue
                     mFile_rpt_buf.write(item)
 
-            native_crash_buf.close()
+                native_crash_buf.close()
+
+        if not native_crash :
+            WriteTitleAndValue('Native crash','None')
+            mFile_rpt_buf.write(util.get_line())
+            return
+
+
 
     def WriteApplicationCrash():
-        native_crash = None
-        native_crash_list = []
+        app_crash = None
+        app_crash_list = []
         cont = False
-        if os.path.exists(WS.file_ws_system_native_crash):
-            with open(WS.file_ws_system_native_crash) as native_crash_buf:
-                for line in native_crash_buf:
-                    if cont or re.compile('F DEBUG   : pid:').search(line):
-                        native_crash = True
+        if os.path.exists(WS.file_ws_system_app_crash):
+            with open(WS.file_ws_system_app_crash) as app_crash_buf:
+                for line in app_crash_buf:
+                    if cont or re.compile('E AndroidRuntime: FATAL EXCEPTION:').search(line):
+                        app_crash = True
                         cont = True
-                        native_crash_list.append(line)
-                    if re.compile('F DEBUG   : Abort message:').search(line):
-                        native_crash_list.append('#')
+                        app_crash_list.append(line)
+                    if re.compile('E AndroidRuntime: android.os.').search(line) or \
+                            re.compile('E AndroidRuntime: java.lang.').search(line):
+                        app_crash_list.append('#')
                         cont = False
-            print native_crash_list
-            WriteTitleAndValue('Native crash','--->>>')
-            mFile_rpt_buf.write(util.get_empty_line())
 
-            if native_crash is not None:
-                for item in native_crash_list:
+            WriteTitleAndValue('Application crash','--->>>')
+            mFile_rpt_buf.write(util.get_line())
+
+            if app_crash is not None:
+                for item in app_crash_list:
                     if item == '#':
                         mFile_rpt_buf.write(util.get_empty_line())
                         continue
                     mFile_rpt_buf.write(item)
 
-            native_crash_buf.close()
+            app_crash_buf.close()
+
+        if app_crash is None:
+            WriteTitleAndValue('Application crash',app_crash)
+            mFile_rpt_buf.write(util.get_line())
+            return
+
+    def WriteApplicationAnr():
+        app_anr = None
+        app_anr_list = []
+        cont = False
+        if os.path.exists(WS.file_ws_system_anr):
+            with open(WS.file_ws_system_anr) as app_anr_buf:
+                for line in app_anr_buf:
+                    if cont or re.compile('E ActivityManager: ANR in ').search(line):
+                        app_anr = True
+                        cont = True
+                        app_anr_list.append(line)
+                    if re.compile('E ActivityManager: Reason: ').search(line):
+                        app_anr_list.append('#')
+                        cont = False
+
+            WriteTitleAndValue('Application ANR','--->>>')
+            mFile_rpt_buf.write(util.get_line())
+
+            if app_anr is not None:
+                for item in app_anr_list:
+                    if item == '#':
+                        mFile_rpt_buf.write(util.get_empty_line())
+                        continue
+                    mFile_rpt_buf.write(item)
+
+            app_anr_buf.close()
+
+        if app_anr is None:
+            WriteTitleAndValue('Application ANR',app_anr)
+            mFile_rpt_buf.write(util.get_line())
+            return
+
 
     ## Dump report
     WriteReportTitle()
@@ -199,6 +244,7 @@ def GenReport(WS):
     WriteNetwork()
     WriteNativeCrash()
     WriteApplicationCrash()
+    WriteApplicationAnr()
 
 
     return True
