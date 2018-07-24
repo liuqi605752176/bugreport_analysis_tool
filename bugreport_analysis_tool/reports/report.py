@@ -57,8 +57,8 @@ def GenReport(WS):
         WriteTitleAndValue('Bug title',util.OPT.bug_title)
 
     def WriteDevEngineer():
-        if util.OPT.dev_name is None:
-            util.OPT.dev_name = os.getlogin()
+        # if util.OPT.dev_name is None:
+        #     util.OPT.dev_name = os.getlogin()
         WriteTitleAndValue('Dev Enginner',util.OPT.dev_name)
 
     def WriteTestEngineer():
@@ -97,7 +97,7 @@ def GenReport(WS):
                         acc_list.append(email_match.group())
                 if re.compile(r'UserInfo').search(line):
                     user=line.split(':')[1]
-        WriteTitleAndValue('Device onwer',user)
+        WriteTitleAndValue('Device owner',user)
         WriteTitleAndValue('Device Accounts','--->>>')
         for account in acc_list:
             mFile_rpt_buf.write((' ' * 32)  + account)
