@@ -29,3 +29,9 @@ Uptime     :
 Storage    :
 Network    :
 
+
+--------------------------
+1. Seperate service list
+2. Seperate service dumps
+
+

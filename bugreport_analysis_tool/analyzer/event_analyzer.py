@@ -208,7 +208,6 @@ def start_event_log_analyzer(WS):
 
     list_event_tag_files = filt.FilterByTagInFilesList(WS)
     # util.dump_data_to_screen(TAG,list_event_tag_files)
-
     FilterByPid(WS)
     dumpScreenOnOffLogs(WS)
 

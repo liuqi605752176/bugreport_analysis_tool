@@ -7,6 +7,7 @@ import shutil
 import glob
 import re
 import time
+import threading
 
 import buganalysis_utils as util
 import buganalysis_config as config
@@ -19,27 +20,16 @@ from reports import report as rpt
 
 start_time = time.time()
 '''
-This is tool to get bugreport analysis
+This is tool to analysis bugreport
 
 TODO:
-1. Open bugreport from cmdline
-    - check , Is it zip or .txt
-    - Extract if it is zip and open .txt
-2. Get build details for .txt file
-3. Display build details and device information
-4. Prepare CLI to shor the data as per user request
-5. Add CLI option to short data with default configuration
-
-Structure:
-
-bugreport_analysis/
-|-- build_details.txt
-`-- report.txt
-
+1. 
 
 command:
-    bugreport_analysis.py -v --file bugreport.zip
-
+    buganalysis.py -v --file bugreport.zip --out <dir location> --bugid <bug number> \
+                   --bugname <"bug titile"> --dev <"dev engineer name"> 
+                   --tester  <"Test engineer name">
+    
 '''
 
 # ------------------------
@@ -252,8 +242,17 @@ def analyze_bugreport():
     util.PLOGV(TAG, 'Enter  - analyze_bugreport')
     dump.extract_data_files(WS)
     dump.avc_logs(WS)
-    analyzer.StartEventAnaylzer(WS)
-    analyzer.StartSystemAnaylzer(WS)
+    evtAnaylzerThread = threading.Thread(target=analyzer.StartEventAnaylzer, name='evtAnaylzerThread', args=(WS,))
+    sysAnaylzerThread = threading.Thread(target=analyzer.StartSystemAnaylzer, name='sysAnaylzerThread', args=(WS,))
+
+    sysAnaylzerThread.start()
+    evtAnaylzerThread.start()
+
+    sysAnaylzerThread.join()
+    evtAnaylzerThread.join()
+
+    # analyzer.StartEventAnaylzer(WS)
+    # analyzer.StartSystemAnaylzer(WS)
     util.PLOGV(TAG, 'Exit   - analyze_bugreport')
     return True
 
@@ -285,7 +284,7 @@ def usage():
     print '\t-v,--verbose\t\t - print verbose logging'
     print '\t--file <filename>\t - zip or txt file of bugreport'
     print '\t--out <out_dir>\t\t - output dir'
-    print '\t--bugnum <bug number>\t\t - Redmine bug number'
+    print '\t--bugid <bug number>\t\t - Redmine bug number'
     print '\t--bugtitle <bug title>\t\t - Redmine bug title'
     print '\t--dev <developer name>\t\t - Developer name'
     print '\t--tester <tester name>\t\t - Test engineer name'
@@ -295,7 +294,7 @@ def usage():
 
 
 def parse_argument(argv):
-    long_opts = ['help', 'version', 'verbose', 'file=', 'out=', 'bugnum=', 'bugtitle=', \
+    long_opts = ['help', 'version', 'verbose', 'file=', 'out=', 'bugid=', 'bugtitle=', \
                  'dev=','tester=']
     short_opts = 'hvl'
 
@@ -319,7 +318,7 @@ def parse_argument(argv):
             util.OPT.file_name = val
         elif opt == '--out':
             util.OPT.out = val
-        elif opt == '--bugnum':
+        elif opt == '--bugid':
             util.OPT.bug_num = val
         elif opt == '--bugtitle':
             util.OPT.bug_title = val
