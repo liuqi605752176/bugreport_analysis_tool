@@ -1,12 +1,19 @@
-# import sys
 import os
 import mimetypes
 import zipfile
-import re
+"""buganalysis_utils.py module has WorkSpace class and loging  
+
+"""
 
 TAG = os.path.basename(__file__)
 prog_name = ''
 
+# version
+major_ver = '1'
+minor_ver = '01'
+mime_type_list = ['text/plain', 'application/zip']
+
+# Workspace directory and file structure
 dir_ws                          = 'bugreport_analysis'
 dir_ws_analysis                 = dir_ws + '/' + 'analysis'
 file_ws_analysis_build_details  = dir_ws_analysis + '/' + 'build_details.txt'
@@ -39,17 +46,10 @@ dir_ws_analysis_bypid           = dir_ws_analysis + '/' + 'byPid'
 # report
 file_ws_analysis_rpt            = dir_ws_analysis + '/' + 'report.txt'
 
-# version
-major_ver = '1'
-minor_ver = '01'
-mime_type_list = ['text/plain', 'application/zip']
 
 class Options(object):
-    '''
-    a class to store options to share accross
-    global
-    '''
-
+    """ Options class to store command line args/options
+    """
     def __init__(self):
         self.file_name = None
         self.verbose = None
@@ -61,20 +61,13 @@ class Options(object):
         self.dev_name = None
         self.tester_name = None
 
-
-
-
 class WorkSpace(object):
-    '''
-    a class to store options to share accross
-    global
-    '''
-
+    """WorkSpace class to maintain all file and directory structure
+    """
     def __init__(self):
         self.dir_out = None
         self.dir_ws = None
         self.dir_ws_analysis = None
-
         self.file_version = None
         self.file_dumpstate_log = None
         self.file_main_entry = None
@@ -92,7 +85,6 @@ class WorkSpace(object):
         self.file_accounts = None
         self.file_other = None
 
-
         # events logs
         self.dir_ws_analysis_events = None
         self.file_ws_events_JP_data = None
@@ -104,6 +96,7 @@ class WorkSpace(object):
         self.file_ws_system_native_crash = None
         self.file_ws_system_app_crash = None
         self.file_ws_system_anr = None
+
         # by pid data
         self.dir_ws_analysis_events_bypid = None
 
@@ -111,10 +104,8 @@ class WorkSpace(object):
         self.file_analysis_rpt = None
 
 class JavaProcess(object):
-    """ 
-     a class to hold java process info
-    
-     """
+    """JavaProcess class to hold java process details
+    """
     def __init__(self):
         self.log_timestamp = None
         self.user = None
@@ -125,14 +116,15 @@ class JavaProcess(object):
         self.component = None
         self.data_aps = None
 
-
-
+# create object for
 OPT = Options()
-WS = WorkSpace()
-JP = JavaProcess()
+WS  = WorkSpace()
+JP  = JavaProcess()
 
 
 def clean_me(filename):
+    """Remove file
+    """
     if not os.path.isfile(filename):
         PLOGE('Error','file not found : ' + str(filename))
         return False
@@ -140,26 +132,32 @@ def clean_me(filename):
     return True
 
 def get_line(symbol='-', len=90):
+    """Print dash line
+    """
     line = symbol * len
     return line + '\n'
 
 def get_empty_line():
+    """Print empty line
+    """
     line = '' + '\n'
     return line
 
-def print_line(symbol='-', len=90):
-    print symbol * len
+# def print_line(symbol='-', len=90):
+#     print symbol * len
+#
+# def print_empty_line():
+#     print ''
 
-def print_empty_line():
-    print ''
 
-
-def get_version():
+def GetVersion():
+    """ Get app version
+    """
     version = 'Bugreport anaysis' + '- V' + major_ver + '.' + minor_ver
     return version
 
 
-def get_log_msg(tag, log_type, msg, arg=None):
+def GetLogMsg(tag, log_type, msg, arg=None):
     tag = tag  + ' ' * (25 - len(tag))
     if type(msg) != str:
         log_msg = tag + ' ' + log_type + ':  ' + str(msg) + ' ' + arg
@@ -169,8 +167,10 @@ def get_log_msg(tag, log_type, msg, arg=None):
 
 
 def PLOGE(tag='tag', msg=None, arg='None', exit=False ,strip=False):
+    """Print Error logs
+    """
     log_type = 'E'
-    log_msg = get_log_msg(tag, log_type, msg, arg)
+    log_msg = GetLogMsg(tag, log_type, msg, arg)
     if not strip:
         print log_msg
     else:
@@ -180,24 +180,30 @@ def PLOGE(tag='tag', msg=None, arg='None', exit=False ,strip=False):
 
 
 def PLOGD(tag='', msg='', arg='',strip=False):
+    """Print Debug logs
+    """
     log_type = 'D'
-    log_msg = get_log_msg(tag, log_type, msg, arg)
+    log_msg = GetLogMsg(tag, log_type, msg, arg)
     if not strip:
         print log_msg
     else:
         print log_msg,
 
 def PLOGV(tag='', msg='', arg='',strip=False):
+    """Print Verbose logs
+    """
     if OPT.verbose:
         log_type = 'V'
-        log_msg = get_log_msg(tag, log_type, msg, arg)
+        log_msg = GetLogMsg(tag, log_type, msg, arg)
         if not strip:
             print log_msg
         else:
             print log_msg,
 
 
-def is_unzip_required(file_path):
+def IsUnzipRequired(file_path):
+    """ Check zip file type
+    """
     mime_type = mimetypes.guess_type(file_path)
 
     if mime_type[0] not in mime_type_list:
@@ -210,7 +216,9 @@ def is_unzip_required(file_path):
     else:
         return False, False
 
-def dump_data_to_screen(tag,buf):
+def DumpDataToScreen(tag,buf):
+    """ Dump data to terminal screen
+    """
     if type(list):
         for item in buf:
             PLOGD(tag,item)
@@ -225,14 +233,17 @@ def dump_data_to_screen(tag,buf):
     else:
         PLOGD(tag,str(buf),strip=True)
 
-# gen file open link for termial
 def PrintTerminalLink(path):
+    """ Generate file link on terminal
+    """
     if not os.path.exists(path):
         return
     pathLink = 'file://' + os.path.abspath(path)
     PLOGD("link",pathLink)
 
-def print_title(file_buf,title):
+def PrintLogFileTitle(file_buf,title):
+    """ Print log file title
+    """
     file_buf.write(get_line())
     file_buf.write("--- " + title + "---")
     file_buf.write(get_empty_line())

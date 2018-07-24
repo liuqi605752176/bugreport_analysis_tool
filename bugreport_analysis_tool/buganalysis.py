@@ -93,7 +93,7 @@ def PrepareBugreportRawData():
         util.PLOGE(TAG, 'failed to setup ws', exit=False)
         return False
 
-    is_unzip_required, error = util.is_unzip_required(OPT.zip_file)
+    is_unzip_required, error = util.IsUnzipRequired(OPT.zip_file)
 
     if error:
         util.PLOGE(
@@ -145,7 +145,7 @@ def CheckPrerequisite():
                    OPT.zip_file, exit=False)
         return False
 
-    is_unzip_required, error = util.is_unzip_required(OPT.zip_file)
+    is_unzip_required, error = util.IsUnzipRequired(OPT.zip_file)
 
     if error:
         util.PLOGE(

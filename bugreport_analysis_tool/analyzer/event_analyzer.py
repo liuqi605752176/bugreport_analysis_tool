@@ -1,14 +1,17 @@
 import buganalysis_utils as util
-import filter as filt
+import filter
 import buganalysis_pattern as pattr
 import os
 import re
 from analyzer import event_classes as evntClasses
 
+""" event_analyzer.py module to analyze only event logs
+"""
 TAG = os.path.basename(__file__)
 
 def IsLineContainPid(pid,line):
-    # print pattr_str
+    """ Check pid number exists in event log line
+    """
     pattern_pid  = re.compile(',' + pid)
     pattern_pid1 = re.compile(r'[ ]' + pid)
     pattern_pid2 = re.compile(pid + ',')
@@ -22,6 +25,8 @@ def IsLineContainPid(pid,line):
     return True
 
 def GetEventTag(tag,line):
+    """Read line and fill tag data
+    """
 
     if not line:
         return False
@@ -37,7 +42,9 @@ def GetEventTag(tag,line):
     return True
 
 def FilterByPid(WS):
-    tmpfile = filt.get_file_with_filter_data(WS.file_event_logs,pattr.am_proc_start)
+    """ Filter event logs by PID from am_start_proc filter
+    """
+    tmpfile = filter.get_file_with_filter_data(WS.file_event_logs,pattr.am_proc_start)
     if (not tmpfile) or not (os.path.isfile(tmpfile)):
         util.PLOGE(TAG,'failed to set filter')
         return False
@@ -61,10 +68,8 @@ def FilterByPid(WS):
     # get all pid list from am_proc_start
     unwanted = re.compile(r'^[[]+')
     unwanted_1 = re.compile(r'[]\n]+$')
-    # list of proccess data and process log timestampdata
-    list_aps_process_data = []
-    list_aps_time_data = []
     list_jp_pid = []
+
     for line_am_proc_start in f_buf:
         JP = util.JavaProcess()
         list_am_proc_start = str(line_am_proc_start).split(': ')
@@ -113,10 +118,8 @@ def FilterByPid(WS):
         if not os.path.exists(pid_dir_name):
             os.makedirs(pid_dir_name)
 
-        # ## Open main events file and check for current JP.pid
-        # util.PLOGV(TAG,"----------------------------------------------")
+        #Open main events file and check for current JP.pid
         util.PLOGV(TAG," dump event data for : " + pid_dir_name)
-        # util.PLOGV(TAG,"----------------------------------------------")
         try:
             f_event_buf = open(WS.file_event_logs,'rU')
         except IOError as err:
@@ -146,7 +149,7 @@ def FilterByPid(WS):
             msg_warn_L2 = None
             msg_warn_L3 = None
 
-        ## skip title lines
+        #skip title lines
         for each in [1,2,3]:
             f_event_buf.readline()
 
@@ -165,9 +168,10 @@ def FilterByPid(WS):
     f_event_aps_buf.close()
     util.clean_me(tmpfile)
 
-    # def get_jp_pid_list():
 
-def dumpScreenOnOffLogs(WS):
+def DumpScreenOnOffLogs(WS):
+    """ Dump screen on and off logs i.e display on off
+    """
     try:
         f_power_logs_buf = open(WS.file_power_logs,'w+')
     except IOError as err:
@@ -180,7 +184,7 @@ def dumpScreenOnOffLogs(WS):
         error = 'failed to read event log file : ' + str(err)
         util.PLOGE(TAG, error)
 
-    util.print_title(f_power_logs_buf,'Power logs')
+    util.PrintLogFileTitle(f_power_logs_buf,'Power logs')
     f_power_logs_buf.write('--- Screen ON and OFF ---')
     f_power_logs_buf.write(util.get_empty_line())
     f_power_logs_buf.write(util.get_empty_line())
@@ -196,20 +200,12 @@ def dumpScreenOnOffLogs(WS):
     f_event_logs_buf.close()
 
 
-
-
-def start_event_log_analyzer(WS):
-    '''
-    # am_proc_start
-    # 43 30014 am_proc_start (User|1|5),(PID|1|5),(UID|1|5),(Process Name|3),(Type|3),(Component|3)
-    04-25 11:43:38.771  1000  1656  2900 I am_proc_start: [0,5092,10007,com.android.cellbroadcastreceiver,broadcast,com.android.cellbroadcastreceiver/.CellBroadcastReceiver]
-
-    '''
-
-    list_event_tag_files = filt.FilterByTagInFilesList(WS)
-    # util.dump_data_to_screen(TAG,list_event_tag_files)
+def StartAnalyzer(WS):
+    """ Event log analyzer func
+    """
+    filter.FilterByTagInFilesList(WS)
     FilterByPid(WS)
-    dumpScreenOnOffLogs(WS)
+    DumpScreenOnOffLogs(WS)
 
 
 

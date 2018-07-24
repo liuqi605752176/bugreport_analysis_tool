@@ -9,7 +9,7 @@ TAG = os.path.basename(__file__)
 def StartEventAnaylzer(WS):
     """Event logs anaylzer
     """
-    event.start_event_log_analyzer(WS)
+    event.StartAnalyzer(WS)
 
 def StartSystemAnaylzer(WS):
     """System logs anaylzer

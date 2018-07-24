@@ -1,9 +1,9 @@
-# dump file
-
 import buganalysis_utils as util
 import buganalysis_pattern as patt
 import os
-
+""" bugnanalysis_dump module to dump various log in to 
+    seperate files 
+"""
 
 TAG = os.path.basename(__file__)
 
@@ -505,5 +505,3 @@ def FilterAvcLogs(WS):
     # Start avc filter
     AvcLogs(WS)
     WriteToFile(WS)
-
-
