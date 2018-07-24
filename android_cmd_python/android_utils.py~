@@ -24,8 +24,6 @@ class Options(object):
         self.is_unzip_required = None
         self.zip_file = None
         self.out = None
-        self.debug = None
-        self.pid = None
 
 
 
@@ -81,13 +79,12 @@ def PLOGE(tag='tag', msg=None, arg='None', exit=False ,strip=False):
 
 
 def PLOGD(tag='', msg='', arg='',strip=False):
-    if OPT.debug:
-        log_type = 'D'
-        log_msg = get_log_msg(tag, log_type, msg, arg)
-        if not strip:
-            print log_msg
-        else:
-            print log_msg,
+    log_type = 'D'
+    log_msg = get_log_msg(tag, log_type, msg, arg)
+    if not strip:
+        print log_msg
+    else:
+        print log_msg,
 
 def PLOGV(tag='', msg='', arg='',strip=False):
     if OPT.verbose:
