@@ -139,7 +139,7 @@ def GetAppAnr(WS):
 # device_kernel_wakeup
 def DumpPowerLogs(WS):
     try:
-        f_power_logs_buf = open(WS.file_ws_analysis_power_logs, 'a+')
+        f_power_logs_buf = open(WS.file_power_logs, 'a+')
     except IOError as err:
         error = 'failed to create power log file : ' + str(err)
         util.PLOGE(TAG, error)

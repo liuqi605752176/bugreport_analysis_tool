@@ -88,7 +88,7 @@ class WorkSpace(object):
         self.file_sys_prop = None
         self.file_devinfo = None
         self.file_avc_logs = None
-        self.file_ws_analysis_power_logs = None
+        self.file_power_logs = None
         self.file_accounts = None
         self.file_other = None
 

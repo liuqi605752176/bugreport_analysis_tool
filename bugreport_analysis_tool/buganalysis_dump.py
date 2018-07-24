@@ -1,15 +1,15 @@
 # dump file
 
 import buganalysis_utils as util
-import buganalysis_config as config
 import buganalysis_pattern as patt
-import buganalysis_dump as dump
 import os
 
 
 TAG = os.path.basename(__file__)
 
-def dump_build_details(WS,file_buf):
+def DumpBuildDetails(WS,file_buf):
+    """Dump build details
+    """
     try:
         f_build_details = open(WS.file_build_details,'w+')
     except IOError as err:
@@ -34,7 +34,9 @@ def dump_build_details(WS,file_buf):
     return True
 
 ## TODO: optimise in single function
-def dump_kernel_logs(WS,file_buf):
+def DumpKernelLogs(WS,file_buf):
+    """Dump kernel logs
+    """
     bool_start_dump = False
     try:
         f_kernel_logs = open(WS.file_kernel_logs,'w+')
@@ -63,7 +65,9 @@ def dump_kernel_logs(WS,file_buf):
     return True
 
 ## TODO: optimise in single function
-def dump_system_logs(WS,file_buf):
+def DumpSystemLogs(WS,file_buf):
+    """ Dump system logs
+    """
     bool_start_dump = False
     try:
         f_sys_log_buf = open(WS.file_system_logs,'w+')
@@ -92,7 +96,9 @@ def dump_system_logs(WS,file_buf):
     return True
 
 # TODO: optimise in single function
-def dump_event_logs(WS,file_buf):
+def DumpEventLogs(WS,file_buf):
+    """Dump event logs
+    """
     bool_start_dump = False
     try:
         f_event_logs = open(WS.file_event_logs,'w+')
@@ -120,7 +126,9 @@ def dump_event_logs(WS,file_buf):
     return True
 
 ## TODO: optimise in single function
-def dump_radio_logs(WS,file_buf):
+def DumpRadioLogs(WS,file_buf):
+    """ Dump radio logs
+    """
     bool_start_dump = False
     try:
         f_radio_logs = open(WS.file_radio_logs,'w+')
@@ -147,8 +155,10 @@ def dump_radio_logs(WS,file_buf):
     f_radio_logs.close()
     return True
 
-# dump devinfo 
-def dump_devinfo(WS,dict_devinfo):
+
+def DumpDevinfo(WS,dict_devinfo):
+    """Dump device information
+    """
     try:
         f_devinfo = open(WS.file_devinfo, 'w+')
     except IOError as err:
@@ -170,8 +180,9 @@ def dump_devinfo(WS,dict_devinfo):
     return True
 
 
-def dump_sys_prop(WS,file_buf):
-
+def DumpSysProp(WS,file_buf):
+    """Dump system properties
+    """
     def get_prop_val(prop):
         list_prop_val = str(prop).split(': [')
         # print list_prop_val
@@ -279,12 +290,14 @@ def dump_sys_prop(WS,file_buf):
     util.PLOGV(TAG,dict_devinfo['device_security_patch_level'])
     util.PLOGV(TAG,dict_devinfo['device_slot_suffix'])
 
-    if not dump_devinfo(WS,dict_devinfo):
+    if not DumpDevinfo(WS,dict_devinfo):
         util.PLOGE(TAG, 'Failed to dump devinfo')
 
     return True
 
-def dump_accounts(WS,file_buf):
+def DumpAccounts(WS,file_buf):
+    """Dump Account information
+    """
     bool_start_dump = False
     try:
         f_accounts = open(WS.file_accounts, 'w+')
@@ -311,7 +324,9 @@ def dump_accounts(WS,file_buf):
     f_accounts.close()
     return True
 
-def dump_uptime(WS,file_buf):
+def DumpUptime(WS,file_buf):
+    """Dump uptime
+    """
     bool_start_dump = False
     try:
         f_other = open(WS.file_other, 'w+')
@@ -340,7 +355,9 @@ def dump_uptime(WS,file_buf):
     f_other.close()
     return True
 
-def extract_data_files(WS):
+def ExtractLogs(WS):
+    """Extract data files
+    """
     try:
         f_bug_rpt = open(WS.file_bugreport,'rU')
     except IOError as err:
@@ -349,25 +366,27 @@ def extract_data_files(WS):
         util.PLOGE(TAG, err_str)
         return False
 
-    if not dump_build_details(WS,f_bug_rpt):
+    if not DumpBuildDetails(WS,f_bug_rpt):
         util.PLOGE(TAG, 'Failed to get build details')
-    if not dump_uptime(WS, f_bug_rpt):
+    if not DumpUptime(WS, f_bug_rpt):
         util.PLOGE(TAG, 'Failed to get uptime logs')
-    if not dump_kernel_logs(WS,f_bug_rpt):
+    if not DumpKernelLogs(WS,f_bug_rpt):
         util.PLOGE(TAG,'Failed to get kernel logs')
-    if not dump_system_logs(WS,f_bug_rpt):
+    if not DumpSystemLogs(WS,f_bug_rpt):
         util.PLOGE(TAG,'Failed to get system logs')
-    if not dump_event_logs(WS,f_bug_rpt):
+    if not DumpEventLogs(WS,f_bug_rpt):
         util.PLOGE(TAG,'Failed to get events logs')
-    if not dump_radio_logs(WS,f_bug_rpt):
+    if not DumpRadioLogs(WS,f_bug_rpt):
         util.PLOGE(TAG,'Failed to get radio logs')
-    if not dump_sys_prop(WS,f_bug_rpt):
+    if not DumpSysProp(WS,f_bug_rpt):
         util.PLOGE(TAG,'Failed to get sys prop')
-    if not dump_accounts(WS,f_bug_rpt):
+    if not DumpAccounts(WS,f_bug_rpt):
         util.PLOGE(TAG,'failed to get account details')
     return True
 
-def avc_logs(WS):
+def FilterAvcLogs(WS):
+    """Filter out acv denied logs
+    """
     AVC_PATTERN = patt.pattern_avc
     DENIED_PATTERN = patt.pattern_denied
     COMM_PATTERN = patt.pattern_comm
@@ -379,7 +398,10 @@ def avc_logs(WS):
     temp_avc_file = '/tmp/temp_avc_file.txt'
     TAG = 'dump_avc.py'
 
-    def avc_filter(WS):
+    def AvcLogs(WS):
+        """FilterAvcLogs :
+            filter avc denied
+        """
         try:
             sys_log_buf = open(WS.file_event_logs, 'rU')
         except IOError as err:
@@ -409,11 +431,9 @@ def avc_logs(WS):
                         data[1] = data[1].strip('"')
                         if data[0] == 'comm':
                             if data[1] not in comm_list:
-                                # print 'adding : ' + data[1] + 'in comm_list'
                                 comm_list.append(data[1])
                         elif data[0] == 'name':
                             if data[1] not in name_list:
-                                # print 'adding : ' + data[1] + 'in name_list'
                                 name_list.append(data[1])
 
                     if 'scontext=' in word:
@@ -426,8 +446,10 @@ def avc_logs(WS):
         return comm_list, scontext_list
 
 
-    def write_to_file(WS):
-        # Now we have list of commands
+    def WriteToFile(WS):
+        """FilterAvcLogs
+            Dump filtered avc logs in to file
+        """
         dash_line = '-' * 90 + '\n'
         if os.path.isfile(WS.file_avc_logs):
             os.remove(WS.file_avc_logs)
@@ -480,9 +502,8 @@ def avc_logs(WS):
         avc_summary = str(avc_count) + ' : type of avc logs found'
         util.PLOGV(TAG,avc_summary)
 
-    ## called from avc_logs function 
-    avc_filter(WS)
-    write_to_file(WS)
+    # Start avc filter
+    AvcLogs(WS)
+    WriteToFile(WS)
 
-    
 

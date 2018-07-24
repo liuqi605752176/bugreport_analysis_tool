@@ -1,7 +1,6 @@
 import sys
 import os
 import getopt
-import mimetypes
 import zipfile
 import shutil
 import glob
@@ -13,41 +12,34 @@ import buganalysis_utils as util
 import buganalysis_config as config
 import buganalysis_pattern as patt
 import buganalysis_dump as dump
-
-
 import buganalysis_analyzer as analyzer
 from reports import report as rpt
 
-start_time = time.time()
 '''
 This is tool to analysis bugreport
-
-TODO:
-1. 
 
 command:
     buganalysis.py -v --file bugreport.zip --out <dir location> --bugid <bug number> \
                    --bugname <"bug titile"> --dev <"dev engineer name"> 
                    --tester  <"Test engineer name">
-    
+  
 '''
 
-# ------------------------
-# this
-# -----------------------
+#Record start time
+start_time = time.time()
 
-# get options object and all config
+# get options and workspace object and all config
 OPT = util.OPT
 WS = util.WS
-
-
 debug_enable = config.MODE_DEBUG
 test_enable = config.MODE_TEST
 
+# Log tag name
 TAG = os.path.basename(__file__)
 
-
-def setup_ws():
+def SetupWs():
+    """Setup workspace class object
+    """
     WS.dir_out              = OPT.out
     WS.dir_ws               = OPT.out + '/' + util.dir_ws
     WS.dir_ws_analysis      = OPT.out + '/' + util.dir_ws_analysis
@@ -59,7 +51,7 @@ def setup_ws():
     WS.file_sys_prop        = OPT.out + '/' + util.file_ws_analysis_sys_prop
     WS.file_devinfo         = OPT.out + '/' + util.file_ws_analysis_devinfo
     WS.file_avc_logs        = OPT.out + '/' + util.file_ws_analysis_avc_logs
-    WS.file_ws_analysis_power_logs = OPT.out + '/' + util.file_ws_analysis_power_logs
+    WS.file_power_logs      = OPT.out + '/' + util.file_ws_analysis_power_logs
     WS.file_accounts        = OPT.out + '/' + util.file_ws_analysis_accounts_logs
     WS.file_other           = OPT.out + '/' + util.file_ws_analysis_other_logs
 
@@ -69,18 +61,15 @@ def setup_ws():
     WS.file_ws_events_am_proc_start     = OPT.out + '/' + util.file_ws_events_am_proc_start
     WS.file_ws_events_am_proc_bound     = OPT.out + '/' + util.file_ws_events_am_proc_bound
     WS.file_ws_events_am_proc_died      = OPT.out + '/' + util.file_ws_events_am_proc_died
+    WS.dir_ws_analysis_bypid            = OPT.out + '/' + util.dir_ws_analysis_bypid
 
     # system logs
     WS.file_ws_system_native_crash      = OPT.out + '/' + util.file_ws_system_native_crash
     WS.file_ws_system_app_crash         = OPT.out + '/' + util.file_ws_system_app_crash
     WS.file_ws_system_anr               = OPT.out + '/' + util.file_ws_system_anr
 
-    # By pid data
-    WS.dir_ws_analysis_bypid            = OPT.out + '/' + util.dir_ws_analysis_bypid
-
     # report
     WS.file_analysis_rpt                = OPT.out + '/' + util.file_ws_analysis_rpt
-
 
     try:
         if os.path.exists(WS.dir_out):
@@ -97,8 +86,10 @@ def setup_ws():
     return True
 
 
-def prepare_bugreport_raw_data():
-    if not setup_ws():
+def PrepareBugreportRawData():
+    """Extract bugreport.zip if bugreport is in zip format
+    """
+    if not SetupWs():
         util.PLOGE(TAG, 'failed to setup ws', exit=False)
         return False
 
@@ -123,8 +114,9 @@ def prepare_bugreport_raw_data():
     return True
 
 
-def check_prerequisite():
-
+def CheckPrerequisite():
+    """Validate commandline args and check prerequisite
+    """
     if not OPT.file_name:
         util.PLOGE(TAG,'bug report file not given in termial command line ')
         return False
@@ -139,8 +131,8 @@ def check_prerequisite():
         return False
 
     file_path = os.path.dirname(os.path.realpath(OPT.file_name))
-    util.PLOGV(TAG," file : " + file_path )
-    util.PLOGV(TAG," out  : " + os.path.realpath(OPT.out))
+    util.PLOGV(TAG,'file : ' + file_path )
+    util.PLOGV(TAG,'out  : ' + os.path.realpath(OPT.out))
 
     if file_path == os.path.realpath(OPT.out):
         util.PLOGE(TAG,'out dir and file is in same dir. please give different dir')
@@ -165,7 +157,10 @@ def check_prerequisite():
     return True
 
 
-def set_files_path():
+def SetFilesPath():
+    """Walk through in extracted bugreport folder structure
+    and store bugreport.txt and other files path in workspace object
+    """
     files_list = glob.glob(WS.dir_ws + '/*')
     util.PLOGV(TAG, 'Files in side zip')
     util.PLOGV(TAG, files_list)
@@ -195,7 +190,7 @@ def set_files_path():
     util.PLOGV(TAG,WS.file_radio_logs)
     util.PLOGV(TAG,WS.file_sys_prop)
     util.PLOGV(TAG,WS.file_avc_logs)
-    util.PLOGV(TAG,WS.file_ws_analysis_power_logs)
+    util.PLOGV(TAG,WS.file_power_logs)
 
     util.PLOGV(TAG,WS.file_analysis_rpt)
     util.PLOGV(TAG,WS.file_ws_system_native_crash)
@@ -207,6 +202,8 @@ def set_files_path():
     return True
 
 def DumpAnalysisPaths():
+    """Dump file link to terminal to open file using mouse (Ctrl + right click)
+     """
     util.PLOGD(TAG,"Check analysis at below path")
     util.PLOGD(TAG,util.get_line())
     util.PrintTerminalLink(WS.dir_out)
@@ -220,7 +217,7 @@ def DumpAnalysisPaths():
     util.PrintTerminalLink(WS.file_sys_prop)
     util.PrintTerminalLink(WS.file_devinfo)
     util.PrintTerminalLink(WS.file_avc_logs)
-    util.PrintTerminalLink(WS.file_ws_analysis_power_logs)
+    util.PrintTerminalLink(WS.file_power_logs)
     util.PrintTerminalLink(WS.dir_ws_analysis_events)
     util.PrintTerminalLink(WS.file_ws_events_JP_data)
     util.PrintTerminalLink(WS.file_ws_events_am_proc_start)
@@ -237,43 +234,50 @@ def DumpAnalysisPaths():
     # report
     util.PLOGD(TAG,util.get_line())
 
-def analyze_bugreport():
-    # Get build details
+def AnalyzeBugreport():
+    """ start event and system analyzer
+    """
     util.PLOGV(TAG, 'Enter  - analyze_bugreport')
-    dump.extract_data_files(WS)
-    dump.avc_logs(WS)
+    dump.ExtractLogs(WS)
+    dump.FilterAvcLogs(WS)
+
+    # Create seperate thread for event and system analyzer
     evtAnaylzerThread = threading.Thread(target=analyzer.StartEventAnaylzer, name='evtAnaylzerThread', args=(WS,))
     sysAnaylzerThread = threading.Thread(target=analyzer.StartSystemAnaylzer, name='sysAnaylzerThread', args=(WS,))
-
     sysAnaylzerThread.start()
     evtAnaylzerThread.start()
 
+    # wait for to finish analyzer threads
     sysAnaylzerThread.join()
     evtAnaylzerThread.join()
 
-    # analyzer.StartEventAnaylzer(WS)
-    # analyzer.StartSystemAnaylzer(WS)
     util.PLOGV(TAG, 'Exit   - analyze_bugreport')
     return True
 
 def GenReport():
+    """Generate tiny text analysis report
+    """
     if not rpt.GenReport(WS):
         util.PLOGE(TAG,'failed to get report', exit=True)
 
-def start_analysis():
+def StartAnalysis():
+    """Check prerequisites, extract required logs and start
+    analysis"""
+
     # check cmd line args
-    if not check_prerequisite():
-        usage()
+    if not CheckPrerequisite():
+        Usage()
         util.PLOGE(TAG, 'check prerequitsite failed', exit=True)
-    if not prepare_bugreport_raw_data():
+    if not PrepareBugreportRawData():
         util.PLOGE(TAG, 'Prepare bugreport data failed', exit=True)
-    if not set_files_path():
+    if not SetFilesPath():
         util.PLOGE(TAG, 'failed to set file path', exit=True)
-    if not analyze_bugreport():
+    if not AnalyzeBugreport():
         util.PLOGE(TAG, 'Failed to analyze bugreport', exit=True)
 
-
-def usage():
+def Usage():
+    """Print usage
+    """
     util.print_empty_line()
     print util.prog_name + ' ' + '<options> ' + ' --file ' + ' bugreport.zip ' + \
             '--out' + ' /tmp/test '
@@ -288,12 +292,12 @@ def usage():
     print '\t--bugtitle <bug title>\t\t - Redmine bug title'
     print '\t--dev <developer name>\t\t - Developer name'
     print '\t--tester <tester name>\t\t - Test engineer name'
-
     print '\t--version\t\t - print version'
     util.print_empty_line()
 
-
-def parse_argument(argv):
+def ParseArgument(argv):
+    """Parse commandline args
+    """
     long_opts = ['help', 'version', 'verbose', 'file=', 'out=', 'bugid=', 'bugtitle=', \
                  'dev=','tester=']
     short_opts = 'hvl'
@@ -303,14 +307,14 @@ def parse_argument(argv):
     except getopt.GetoptError:
         util.print_empty_line()
         print 'Error : args parser '
-        usage()
+        Usage()
         return False
 
     util.PLOGV(TAG, 'opts are :', str(opts_list))
     util.PLOGV(TAG, 'args are :', str(args_pos))
 
     if args_pos:
-        usage()
+        Usage()
         return False
 
     for opt, val in opts_list:
@@ -327,7 +331,7 @@ def parse_argument(argv):
         elif opt == '--tester':
             util.OPT.tester_name = val
         elif opt in ['-h', '--help']:
-            usage()
+            Usage()
             return False
         elif opt == '--version':
             print util.get_version()
@@ -341,15 +345,21 @@ def parse_argument(argv):
     return True
 
 def main():
-    util.prog_name = sys.argv[0]
-    if not parse_argument(sys.argv):
+    # Parse args
+    if not ParseArgument(sys.argv):
         util.PLOGE(TAG, 'parse argument failed', exit=True)
-    start_analysis()
+
+    # start analysis
+    StartAnalysis()
+
+    # Generate report
     GenReport()
+
+    # Dump file links to terminal
     DumpAnalysisPaths()
+
     time_str = "--- %s seconds ---" % (time.time() - start_time)
     util.PLOGD(TAG,time_str)
-
 
 if __name__ == '__main__':
     main()
