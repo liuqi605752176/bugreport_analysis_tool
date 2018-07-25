@@ -1,13 +1,18 @@
-import sys
 import buganalysis_utils as util
-import filter as filt
 import buganalysis_pattern as pattr
 import os
-import re
+
+"""system_analyzer.py class to analyze system logs
+"""
 
 TAG = os.path.basename(__file__)
-# WS = util.WS.file_system_logs
+
 def GetNativeCrashes(WS):
+    """Dump native crash logs
+
+    :param WS: WorkSpace object
+    :return: True on Success and False on Failure
+    """
     try:
         f_system_log_buf = open(WS.file_system_logs,'r')
     except IOError as err:
@@ -47,8 +52,12 @@ def GetNativeCrashes(WS):
 
     return True
 
-# Get Applicaton crashes
 def GetAppCrashes(WS):
+    """Dump application crash logs
+
+    :param WS: WorkSpace object
+    :return: True on Success and False on Failure
+    """
     try:
         f_system_log_buf = open(WS.file_system_logs,'r')
     except IOError as err:
@@ -89,9 +98,13 @@ def GetAppCrashes(WS):
 
     return True
 
-# Get ANR logs
-# Get Applicaton crashes
+
 def GetAppAnr(WS):
+    """Dump application ANR logs
+
+    :param WS: WorkSpace object
+    :return: True on Success and False on Failure
+    """
     try:
         f_system_log_buf = open(WS.file_system_logs,'r')
     except IOError as err:
@@ -131,30 +144,32 @@ def GetAppAnr(WS):
 
     return True
 
-# Dump power logs:
-# device_sys_sleep_power_button
-# device_sys_sleep_screen_timeout
-# device_sys_wake_up
-# device_kernel_sleep
-# device_kernel_wakeup
 def DumpPowerLogs(WS):
+    """Dump power logs
+
+    :param WS: WorkSpace object
+    :return: True on Success and False on Failure
+    """
     try:
         f_power_logs_buf = open(WS.file_power_logs, 'a+')
     except IOError as err:
         error = 'failed to create power log file : ' + str(err)
         util.PLOGE(TAG, error)
+        return False
 
     try:
         f_sys_logs_buf = open(WS.file_system_logs, 'r')
     except IOError as err:
         error = 'failed to read event log file : ' + str(err)
         util.PLOGE(TAG, error)
+        return False
 
     try:
         f_kernel_logs_buf = open(WS.file_kernel_logs, 'r')
     except IOError as err:
         error = 'failed to read event log file : ' + str(err)
         util.PLOGE(TAG, error)
+        return False
 
     f_power_logs_buf.write('--- PowerManager ---')
     f_power_logs_buf.write(util.get_empty_line())
@@ -182,4 +197,5 @@ def DumpPowerLogs(WS):
     f_power_logs_buf.close()
     f_sys_logs_buf.close()
     f_kernel_logs_buf.close()
+    return True
 

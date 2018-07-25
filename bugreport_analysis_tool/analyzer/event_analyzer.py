@@ -44,7 +44,7 @@ def GetEventTag(tag,line):
 def FilterByPid(WS):
     """ Filter event logs by PID from am_start_proc filter
     """
-    tmpfile = filter.get_file_with_filter_data(WS.file_event_logs,pattr.am_proc_start)
+    tmpfile = filter.GetFileWithFilterData(WS.file_event_logs,pattr.am_proc_start)
     if (not tmpfile) or not (os.path.isfile(tmpfile)):
         util.PLOGE(TAG,'failed to set filter')
         return False

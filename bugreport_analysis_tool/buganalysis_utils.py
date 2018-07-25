@@ -143,11 +143,11 @@ def get_empty_line():
     line = '' + '\n'
     return line
 
-# def print_line(symbol='-', len=90):
-#     print symbol * len
-#
-# def print_empty_line():
-#     print ''
+def PrintLine(symbol='-', len=90):
+    print symbol * len
+
+def PrintEmptyLine():
+    print ''
 
 
 def GetVersion():

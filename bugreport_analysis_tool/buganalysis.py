@@ -278,22 +278,22 @@ def StartAnalysis():
 def Usage():
     """Print usage
     """
-    util.print_empty_line()
-    print util.prog_name + ' ' + '<options> ' + ' --file ' + ' bugreport.zip ' + \
+    util.PrintLine()
+    print TAG + ' ' + '<options> ' + ' --file ' + ' bugreport.zip ' + \
             '--out' + ' /tmp/test '
 
-    util.print_line()
+    util.PrintEmptyLine()
     print 'options:'
     print '\t-h,--help\t\t - print help'
     print '\t-v,--verbose\t\t - print verbose logging'
     print '\t--file <filename>\t - zip or txt file of bugreport'
     print '\t--out <out_dir>\t\t - output dir'
-    print '\t--bugid <bug number>\t\t - Redmine bug number'
-    print '\t--bugtitle <bug title>\t\t - Redmine bug title'
-    print '\t--dev <developer name>\t\t - Developer name'
-    print '\t--tester <tester name>\t\t - Test engineer name'
+    print '\t--bugid <bug number>\t - Redmine bug number'
+    print '\t--bugtitle <bug title>\t - Redmine bug title'
+    print '\t--dev <developer name>\t - Developer name'
+    print '\t--tester <tester name>\t - Test engineer name'
     print '\t--version\t\t - print version'
-    util.print_empty_line()
+    util.PrintEmptyLine()
 
 def ParseArgument(argv):
     """Parse commandline args
@@ -305,7 +305,7 @@ def ParseArgument(argv):
     try:
         opts_list, args_pos = getopt.getopt(argv[1:], short_opts, long_opts)
     except getopt.GetoptError:
-        util.print_empty_line()
+        util.PrintEmptyLine()
         print 'Error : args parser '
         Usage()
         return False
@@ -332,10 +332,10 @@ def ParseArgument(argv):
             util.OPT.tester_name = val
         elif opt in ['-h', '--help']:
             Usage()
-            return False
+            os._exit(0)
         elif opt == '--version':
-            print util.get_version()
-            return False
+            print util.GetVersion()
+            os._exit(0)
         elif opt in ['-v', '--verbose']:
             util.OPT.verbose = True
         else:

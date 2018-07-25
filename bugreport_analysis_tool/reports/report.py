@@ -3,29 +3,16 @@ import buganalysis_utils as util
 import buganalysis_pattern as pattr
 import re
 
+"""report.py class generate small text report
+"""
 TAG = os.path.basename(__file__)
 
-# Generate report
-# Bug ID        :
-# Bug title     :
-# Dev Enginner  :
-# Test Enginner :
-# Build details :
-# Device details:
-# Device onwer  :
-# Device account:
-#
-# Root cause :
-# Uptime     :
-# Storage    :
-# Network    :
-# Native crash :
-# Application Crash :
-# Application ANR :
-
-
-
 def GenReport(WS):
+    """Create text report
+
+    :param WS: WorkSpace object
+    :return: True on Success and False on Failure
+    """
     try:
         mFile_rpt_buf = open(WS.file_analysis_rpt, 'w+')
     except IOError as err:
@@ -57,8 +44,6 @@ def GenReport(WS):
         WriteTitleAndValue('Bug title',util.OPT.bug_title)
 
     def WriteDevEngineer():
-        # if util.OPT.dev_name is None:
-        #     util.OPT.dev_name = os.getlogin()
         WriteTitleAndValue('Dev Enginner',util.OPT.dev_name)
 
     def WriteTestEngineer():
@@ -129,10 +114,7 @@ def GenReport(WS):
                     break
         build.close()
         WriteTitleAndValue('Network',network[1:])
-    #
-    # util.PrintTerminalLink(WS.file_ws_system_native_crash)
-    # util.PrintTerminalLink(WS.file_ws_system_app_crash)
-    # util.PrintTerminalLink(WS.file_ws_system_anr)
+
     def WriteNativeCrash():
         native_crash = False
         native_crash_list = []
@@ -231,7 +213,7 @@ def GenReport(WS):
             return
 
 
-    ## Dump report
+    # Create report
     WriteReportTitle()
     # WriteBugID()
     WriteBugTitle()
@@ -245,7 +227,4 @@ def GenReport(WS):
     WriteNativeCrash()
     WriteApplicationCrash()
     WriteApplicationAnr()
-
-
     return True
-    

@@ -3,13 +3,14 @@ import buganalysis_utils as util
 import tempfile as tmp
 import event_classes as bugClasses
 import buganalysis_pattern as pattr
-'''
-The buganalysis_filter module to filter various data and return a tmp buf
-or file buf
-'''
-TAG = 'buganalysis_filter.py'
+"""filter.py module has various filters for logs
+"""
 
-def get_tmp_file():
+TAG = os.path.basename(__file__)
+
+def GetTempFile():
+    """Create temp file and open it and return fd.
+    """
     try:
         file_tmp = tmp.NamedTemporaryFile(delete=False)
     except IOError as err:
@@ -18,8 +19,13 @@ def get_tmp_file():
     util.PLOGV(TAG,str(file_tmp.name))
     return file_tmp.name
 
-def get_file_with_filter_data(src_file,pattr):
-    temp_file  = get_tmp_file()
+def GetFileWithFilterData(src_file,pattr):
+    """ Filter file data with given pattern
+    :param src_file: file to be filter
+    :param pattr: filter pattern
+    :return: filtered content in file format
+    """
+    temp_file  = GetTempFile()
     if not temp_file:
         util.PLOGE(TAG,'failed to get tmp file ')
         return False
@@ -37,25 +43,20 @@ def get_file_with_filter_data(src_file,pattr):
     f_outfile.close()
     return temp_file
 
-"""
-04-25 11:42:23.412  root  2638  2638 I chatty  : uid=0(root) /vendor/bin/sh identical 7 lines
-04-25 11:42:23.412  root  2638  2638 I auditd  : type=1400 audit(0.0:66): avc: denied { write } for comm="init.qcom.post_" name="b3000.dcc" dev="sysfs" ino=12833 scontext=u:r:qti_init_shell:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=0
-04-25 11:42:23.462  root  2638  2638 I auditd  : type=1400 audit(0.0:67): avc: denied { write } for comm="init.qcom.post_" name="interactive" dev="sysfs" ino=38679 scontext=u:r:qti_init_shell:s0 tcontext=u:object_r:sysfs_devices_system_cpu:s0 tclass=dir permissive=0
-04-25 11:42:23.757  1000  1656  1656 I am_uid_running: 10090
-04-25 11:42:23.772  1000  1656  1656 I am_proc_start: [0,2701,10090,com.google.android.marvin.talkback,broadcast,com.google.android.marvin.talkback/com.google.android.accessibility.talkback.BootReceiver]
-04-25 11:42:23.788  1000  1656  1888 I netstats_mobile_sample: [0,0,0,0,0,0,0,0,0,0,0,0,-1]
-04-25 11:42:23.788  1000  1656  1888 I netstats_wifi_sample: [0,0,0,0,0,0,0,0,0,0,0,0,-1] """
-
 def FilterByTagInFilesList(WS):
-    '''
-    - Open src_file and get list of tag from src_file
-    - Sort lines with tag and make tmp files with tag name
-    - retrun a list of files from actual dir
-    '''
-    # WS = util.WorkSpace()
+    """Extract the event log tags and create file of each tag
+    with filtered data by that tag
 
-    def getTag(tag,line):
+    :param WS: workspace object
+    :return: List of tags in event log
+    """
+    def GetTag(tag,line):
+        """ Fill tag object from line content
 
+        :param tag: Tag class object
+        :param line: event log line
+        :return: None
+        """
         if not line:
             return False
         list_raw_words = str(line).split(': ')
@@ -70,6 +71,12 @@ def FilterByTagInFilesList(WS):
         return True
 
     def WriteToFile(file,buf):
+        """Write given buffer to given file
+
+        :param file: File name
+        :param buf: data to be write
+        :return: True on Success and False on Failure
+        """
         try:
             f_buf = open(file,'a+')
         except IOError as err:
@@ -79,7 +86,7 @@ def FilterByTagInFilesList(WS):
         f_buf.close()
         return True
 
-        ## get sort
+    # Get list tag from event log
     list_tag = []
     list_tag_files = []
     try:
@@ -88,7 +95,7 @@ def FilterByTagInFilesList(WS):
         util.PLOGE(TAG,'failed read file : ' + str(err))
         return False
 
-    ## skip title lines
+    # skip title lines
     for each in [1,2,3]:
         f_buf.readline()
 
@@ -98,7 +105,7 @@ def FilterByTagInFilesList(WS):
             break
         mTag = bugClasses.Tag()
         # get the tag
-        if not getTag(mTag,line):
+        if not GetTag(mTag,line):
             util.PLOGE(TAG,'failed to get tag', exit=False)
             return False
 
@@ -108,6 +115,7 @@ def FilterByTagInFilesList(WS):
         if not mTag.tag_name in list_tag:
             continue
 
+        # Create file with tag name
         file_name = os.path.abspath(WS.dir_ws_analysis_events + '/' + str(mTag.tag_name))
         if not file_name in list_tag_files:
             list_tag_files.append(file_name)
@@ -115,6 +123,5 @@ def FilterByTagInFilesList(WS):
         if not WriteToFile(file_name,line):
             continue
 
-    # util.dump_data_to_screen(TAG,list_tag)
     f_buf.close()
     return list_tag_files
