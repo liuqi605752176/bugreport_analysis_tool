@@ -10,7 +10,11 @@ from analyzer import event_classes as evntClasses
 TAG = os.path.basename(__file__)
 
 def IsLineContainPid(pid,line):
-    """ Check pid number exists in event log line
+    """Check pid number exists in event log line
+
+    :param pid: process id to be check in line
+    :param line: log line
+    :return: True on success and Flase on failure
     """
     pattern_pid  = re.compile(',' + pid)
     pattern_pid1 = re.compile(r'[ ]' + pid)
@@ -26,8 +30,11 @@ def IsLineContainPid(pid,line):
 
 def GetEventTag(tag,line):
     """Read line and fill tag data
-    """
 
+    :param tag: Tag class object
+    :param line: line to be filter
+    :return: True on success and False on Failure
+    """
     if not line:
         return False
     list_raw_words = str(line).split(': ')
@@ -43,6 +50,9 @@ def GetEventTag(tag,line):
 
 def FilterByPid(WS):
     """ Filter event logs by PID from am_start_proc filter
+
+    :param WS: WorkSpace object
+    :return:True on success and False on Failure
     """
     tmpfile = filter.GetFileWithFilterData(WS.file_event_logs,pattr.am_proc_start)
     if (not tmpfile) or not (os.path.isfile(tmpfile)):
@@ -171,6 +181,9 @@ def FilterByPid(WS):
 
 def DumpScreenOnOffLogs(WS):
     """ Dump screen on and off logs i.e display on off
+
+    :param WS: Workspace object
+    :return: True on sccess and False on failure
     """
     try:
         f_power_logs_buf = open(WS.file_power_logs,'w+')
@@ -201,7 +214,10 @@ def DumpScreenOnOffLogs(WS):
 
 
 def StartAnalyzer(WS):
-    """ Event log analyzer func
+    """Event log analyzer func
+
+    :param WS: WrokSpace class object1
+    :return: None
     """
     filter.FilterByTagInFilesList(WS)
     FilterByPid(WS)
