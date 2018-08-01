@@ -101,7 +101,6 @@ def GenReport(WS):
                 if pattr.start_uptime.search(line):
                     uptime_found = True
 
-        print uptime
         WriteTitleAndValue('Up time',uptime)
         other.close()
 

@@ -180,7 +180,7 @@ def GetLogMsg(tag, log_type, msg, arg=None):
     return log_msg
 
 
-def PLOGE(tag='tag', msg=None, arg='None', exit=False ,strip=False):
+def PLOGE(tag='tag', msg=None, arg='', exit=False ,strip=False):
     """Print Error logs
     """
     log_type = 'E'
