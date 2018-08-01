@@ -73,6 +73,8 @@ end_crash_application       = re.compile(r'E AndroidRuntime:')
 # System logs application ANR pattern
 start_anr_application       = re.compile(r'E ActivityManager: ANR in')
 end_anr_application         = re.compile(r'E ActivityManager: ')
+start_anr_all               = re.compile(r'------ VM TRACES JUST NOW')
+end_anr_all                 = re.compile(r"the duration of 'VM TRACES JUST NOW'")
 
 # System logs process start pattern
 start_proc                  = re.compile(r'ActivityManager: Start proc')

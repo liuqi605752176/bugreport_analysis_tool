@@ -355,6 +355,37 @@ def DumpUptime(WS,file_buf):
     f_other.close()
     return True
 
+def DumpVMtracesForNow(WS,file_buf):
+    """Dump VM TRACES FOR NOW for anr
+    """
+    bool_start_dump = False
+    try:
+        f_other = open(WS.file_anr_logs, 'w+')
+    except IOError as err:
+        err_str = 'failed to create file : ' + WS.file_anr_logs + \
+                  '\n' + str(err)
+        util.PLOGE(TAG, err_str)
+        return False
+
+    f_other.write(util.get_line())
+    f_other.write('--- VM TRACES FOR NOW for anr ---\n')
+    f_other.write(util.get_line())
+    f_other.write(util.get_empty_line())
+
+    for line in file_buf:
+        if bool_start_dump:
+            f_other.write(line)
+        if patt.start_anr_all.search(line):
+            f_other.write(line)
+            bool_start_dump = True
+        if patt.end_anr_all.search(line):
+            bool_start_dump = False
+            break
+
+    f_other.write(util.get_empty_line())
+    f_other.close()
+    return True
+
 def ExtractLogs(WS):
     """Extract data files
     """
@@ -378,6 +409,8 @@ def ExtractLogs(WS):
         util.PLOGE(TAG,'Failed to get events logs')
     if not DumpRadioLogs(WS,f_bug_rpt):
         util.PLOGE(TAG,'Failed to get radio logs')
+    if not DumpVMtracesForNow(WS, f_bug_rpt):
+         util.PLOGE(TAG, 'Failed to get VM traces for anr logs')
     if not DumpSysProp(WS,f_bug_rpt):
         util.PLOGE(TAG,'Failed to get sys prop')
     if not DumpAccounts(WS,f_bug_rpt):

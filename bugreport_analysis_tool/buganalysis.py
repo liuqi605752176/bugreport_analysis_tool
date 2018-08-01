@@ -55,6 +55,12 @@ def SetupWs():
     WS.file_accounts        = OPT.out + '/' + util.file_ws_analysis_accounts_logs
     WS.file_other           = OPT.out + '/' + util.file_ws_analysis_other_logs
 
+    # anr logs
+    WS.dir_FS_data_anr      = OPT.out + '/' + util.dir_ws_FS_data_anr
+    WS.dir_analysis_anr     = OPT.out + '/' + util.dir_ws_analysis_anr
+    WS.file_anr_logs        = OPT.out + '/' + util.file_ws_analysis_anr_logs
+
+
     # events logs
     WS.dir_ws_analysis_events           = OPT.out + '/' + util.dir_ws_analysis_events
     WS.file_ws_events_JP_data           = OPT.out + '/' + util.file_ws_events_JP_data
@@ -79,6 +85,7 @@ def SetupWs():
         os.makedirs(WS.dir_ws_analysis)
         os.makedirs(WS.dir_ws_analysis_events)
         os.makedirs(WS.dir_ws_analysis_bypid)
+        os.makedirs(WS.dir_analysis_anr)
 
     except os.error as err:
         util.PLOGE(TAG, str(err), exit=False)
@@ -191,6 +198,7 @@ def SetFilesPath():
     util.PLOGV(TAG,WS.file_sys_prop)
     util.PLOGV(TAG,WS.file_avc_logs)
     util.PLOGV(TAG,WS.file_power_logs)
+    util.PLOGV(TAG,WS.file_anr_logs)
 
     util.PLOGV(TAG,WS.file_analysis_rpt)
     util.PLOGV(TAG,WS.file_ws_system_native_crash)
@@ -206,32 +214,68 @@ def DumpAnalysisPaths():
      """
     util.PLOGD(TAG,"Check analysis at below path")
     util.PLOGD(TAG,util.get_line())
+
+    # Analysis
+    util.PLOGD(TAG,'--- Analysis ---')
     util.PrintTerminalLink(WS.dir_out)
     util.PrintTerminalLink(WS.dir_ws)
     util.PrintTerminalLink(WS.dir_ws_analysis)
-    util.PrintTerminalLink(WS.file_build_details)
-    util.PrintTerminalLink(WS.file_kernel_logs)
-    util.PrintTerminalLink(WS.file_system_logs)
-    util.PrintTerminalLink(WS.file_event_logs)
-    util.PrintTerminalLink(WS.file_radio_logs)
-    util.PrintTerminalLink(WS.file_sys_prop)
+    util.get_empty_line()
+
+    # anr
+    util.PLOGD(TAG, '--- Device ---')
     util.PrintTerminalLink(WS.file_devinfo)
-    util.PrintTerminalLink(WS.file_avc_logs)
-    util.PrintTerminalLink(WS.file_power_logs)
+    util.PrintTerminalLink(WS.file_build_details)
+    util.PrintTerminalLink(WS.file_accounts)
+    util.get_empty_line()
+
+    # anr
+    util.PLOGD(TAG,'--- ANR ---')
+    util.PrintTerminalLink(WS.dir_FS_data_anr)
+    util.PrintTerminalLink(WS.dir_analysis_anr)
+    util.PrintTerminalLink(WS.file_anr_logs)
+    util.get_empty_line()
+
+    # event
+    util.PLOGD(TAG,'--- Event ---')
     util.PrintTerminalLink(WS.dir_ws_analysis_events)
+    util.PrintTerminalLink(WS.file_event_logs)
     util.PrintTerminalLink(WS.file_ws_events_JP_data)
     util.PrintTerminalLink(WS.file_ws_events_am_proc_start)
     util.PrintTerminalLink(WS.file_ws_events_am_proc_bound)
     util.PrintTerminalLink(WS.file_ws_events_am_proc_died)
+    util.PrintTerminalLink(WS.dir_ws_analysis_bypid)
+    util.get_empty_line()
+
+    # system
+    util.PLOGD(TAG,'--- System ---')
+    util.PrintTerminalLink(WS.file_system_logs)
+    util.PrintTerminalLink(WS.file_sys_prop)
     util.PrintTerminalLink(WS.file_ws_system_native_crash)
     util.PrintTerminalLink(WS.file_ws_system_app_crash)
     util.PrintTerminalLink(WS.file_ws_system_anr)
-    util.PrintTerminalLink(WS.dir_ws_analysis_bypid)
-    util.PrintTerminalLink(WS.file_analysis_rpt)
-    util.PrintTerminalLink(WS.file_accounts)
-    util.PrintTerminalLink(WS.file_other)
+    util.get_empty_line()
 
-    # report
+    # Kernel
+    util.PLOGD(TAG,'--- Kernel ---')
+    util.PrintTerminalLink(WS.file_kernel_logs)
+    util.get_empty_line()
+
+    # Radio
+    util.PLOGD(TAG,'--- Radio ---')
+    util.PrintTerminalLink(WS.file_radio_logs)
+    util.get_empty_line()
+
+    # Other
+    util.PLOGD(TAG,'--- Other ---')
+    util.PrintTerminalLink(WS.file_avc_logs)
+    util.PrintTerminalLink(WS.file_power_logs)
+    util.PrintTerminalLink(WS.file_other)
+    util.get_empty_line()
+
+    # Report
+    util.PLOGD(TAG,'--- Report ---')
+    util.PrintTerminalLink(WS.file_analysis_rpt)
     util.PLOGD(TAG,util.get_line())
 
 def AnalyzeBugreport():

@@ -26,7 +26,12 @@ file_ws_analysis_devinfo        = dir_ws_analysis + '/' + 'devinfo.txt'
 file_ws_analysis_avc_logs       = dir_ws_analysis + '/' + 'avc_logs.txt'
 file_ws_analysis_power_logs     = dir_ws_analysis + '/' + 'power_log.txt'
 file_ws_analysis_accounts_logs  = dir_ws_analysis + '/' + 'accounts.txt'
-file_ws_analysis_other_logs     = dir_ws_analysis  + '/' + 'other.txt'
+file_ws_analysis_other_logs     = dir_ws_analysis + '/' + 'other.txt'
+
+# anr logs
+dir_ws_FS_data_anr              = dir_ws + '/' + 'FS/data/anr'
+dir_ws_analysis_anr             = dir_ws_analysis + '/' + 'anr'
+file_ws_analysis_anr_logs       = dir_ws_analysis_anr + '/' + 'anr_logs.txt'
 
 # events logs
 dir_ws_analysis_events          = dir_ws_analysis + '/' + 'events'
@@ -39,6 +44,7 @@ file_ws_events_am_proc_died     = dir_ws_analysis_events + '/' + '03_events_am_p
 file_ws_system_native_crash     = dir_ws_analysis + '/' + 'native_crashes.txt'
 file_ws_system_app_crash        = dir_ws_analysis + '/' + 'app_crashes.txt'
 file_ws_system_anr              = dir_ws_analysis + '/' + 'anr.txt'
+
 
 # pid data
 dir_ws_analysis_bypid           = dir_ws_analysis + '/' + 'byPid'
@@ -86,6 +92,12 @@ class WorkSpace(object):
         self.file_power_logs = None
         self.file_accounts = None
         self.file_other = None
+
+        # anr logs
+        self.dir_FS_data_anr = None
+        self.dir_analysis_anr = None
+        self.file_anr_logs = None
+
 
         # events logs
         self.dir_ws_analysis_events = None
