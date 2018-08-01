@@ -292,6 +292,7 @@ def Usage():
     print '\t--bugtitle <bug title>\t - Redmine bug title'
     print '\t--dev <developer name>\t - Developer name'
     print '\t--tester <tester name>\t - Test engineer name'
+    print '\t--eventbypid\t\t - Filter event logs by pid'
     print '\t--version\t\t - print version'
     util.PrintEmptyLine()
 

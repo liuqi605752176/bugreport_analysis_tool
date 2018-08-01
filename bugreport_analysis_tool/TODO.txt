@@ -35,3 +35,15 @@ Network    :
 2. Seperate service dumps
 
 
+
+-------------
+Project TODO
+1. Convert all modules in Class
+2. Use multi-threading
+3. Represent data in graph or timeline
+4. Prepare rootcause
+5. find framework reboot
+6. Separate ANR from bugreport
+
+
+
