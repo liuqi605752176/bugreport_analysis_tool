@@ -220,7 +220,8 @@ def StartAnalyzer(WS):
     :return: None
     """
     filter.FilterByTagInFilesList(WS)
-    FilterByPid(WS)
+    if util.OPT.event_log_by_pid:
+        FilterByPid(WS)
     DumpScreenOnOffLogs(WS)
 
 

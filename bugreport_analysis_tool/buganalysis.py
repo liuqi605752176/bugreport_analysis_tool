@@ -25,10 +25,10 @@ command:
   
 '''
 
-#Record start time
+# Record start time
 start_time = time.time()
 
-# get options and workspace object and all config
+# Get options and workspace object and all config
 OPT = util.OPT
 WS = util.WS
 debug_enable = config.MODE_DEBUG
@@ -298,7 +298,7 @@ def Usage():
 def ParseArgument(argv):
     """Parse commandline args
     """
-    long_opts = ['help', 'version', 'verbose', 'file=', 'out=', 'bugid=', 'bugtitle=', \
+    long_opts = ['help', 'version', 'verbose', 'eventbypid', 'file=', 'out=', 'bugid=', 'bugtitle=', \
                  'dev=','tester=']
     short_opts = 'hvl'
 
@@ -338,6 +338,8 @@ def ParseArgument(argv):
             os._exit(0)
         elif opt in ['-v', '--verbose']:
             util.OPT.verbose = True
+        elif opt == '--eventbypid':
+            util.OPT.event_log_by_pid = True
         else:
             print 'Error: wrong option : ' + opt
             return False

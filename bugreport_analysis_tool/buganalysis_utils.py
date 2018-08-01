@@ -60,6 +60,8 @@ class Options(object):
         self.bug_title = None
         self.dev_name = None
         self.tester_name = None
+        self.event_log_by_pid = None
+
 
 class WorkSpace(object):
     """WorkSpace class to maintain all file and directory structure
