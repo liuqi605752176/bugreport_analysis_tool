@@ -1,0 +1,106 @@
+------ 8.309s was the duration of 'DUMPSYS MEMINFO' ------
+------ 0.032s was the duration of 'DUMPSYS CPUINFO' ------
+------ 4.885s was the duration of 'DUMP TRACES' ------
+------ 0.080s was the duration of 'for_each_pid' ------
+------ 0.039s was the duration of 'IPTABLES' ------
+------ 0.023s was the duration of 'IP6TABLES' ------
+------ 0.018s was the duration of 'IPTABLES NAT' ------
+------ 0.021s was the duration of 'IPTABLES MANGLE' ------
+------ 0.019s was the duration of 'IP6TABLES MANGLE' ------
+------ 0.017s was the duration of 'IPTABLES RAW' ------
+------ 0.019s was the duration of 'IP6TABLES RAW' ------
+------ 0.067s was the duration of 'IP XFRM POLICY' ------
+------ 0.007s was the duration of 'DETAILED SOCKET STATE' ------
+------ 0.061s was the duration of 'UPTIME' ------
+------ 0.022s was the duration of 'DUMP BLOCK STAT' ------
+------ 0.004s was the duration of 'MEMORY INFO' ------
+------ 1.366s was the duration of 'CPU INFO' ------
+------ 0.000s was the duration of 'PROCRANK' ------
+------ 0.002s was the duration of 'VIRTUAL MEMORY STATS' ------
+------ 0.020s was the duration of 'VMALLOC INFO' ------
+------ 0.005s was the duration of 'SLAB INFO' ------
+------ 0.003s was the duration of 'ZONEINFO' ------
+------ 0.002s was the duration of 'PAGETYPEINFO' ------
+------ 0.002s was the duration of 'BUDDYINFO' ------
+------ 0.003s was the duration of 'FRAGMENTATION INFO' ------
+------ 0.005s was the duration of 'KERNEL WAKE SOURCES' ------
+------ 0.004s was the duration of 'KERNEL CPUFREQ' ------
+------ 0.003s was the duration of 'KERNEL SYNC' ------
+------ 0.608s was the duration of 'PROCESSES AND THREADS' ------
+------ 0.000s was the duration of 'LIBRANK' ------
+------ 0.000s was the duration of 'HARDWARE HALS' ------
+------ 0.023s was the duration of 'PRINTENV' ------
+------ 0.037s was the duration of 'NETSTAT' ------
+------ 0.006s was the duration of 'KERNEL LOG (dmesg)' ------
+------ 0.000s was the duration of 'LIST OF OPEN FILES' ------
+------ 0.047s was the duration of 'for_each_pid(SMAPS OF ALL PROCESSES)' ------
+------ 0.194s was the duration of 'for_each_tid(BLOCKED PROCESS WAIT-CHANNELS)' ------
+------ 0.052s was the duration of 'for_each_pid(PROCESS TIMES (pid cmd user system iowait+percentage))' ------
+------ 0.656s was the duration of 'SYSTEM LOG' ------
+------ 0.116s was the duration of 'EVENT LOG' ------
+------ 0.288s was the duration of 'RADIO LOG' ------
+------ 0.061s was the duration of 'LOG STATISTICS' ------
+------ 0.036s was the duration of 'LAST LOGCAT' ------
+------ 0.011s was the duration of 'VM TRACES JUST NOW' ------
+------ 0.046s was the duration of 'NETWORK DEV INFO' ------
+------ 0.005s was the duration of 'QTAGUID NETWORK INTERFACES INFO' ------
+------ 0.003s was the duration of 'QTAGUID NETWORK INTERFACES INFO (xt)' ------
+------ 0.003s was the duration of 'QTAGUID CTRL INFO' ------
+------ 0.004s was the duration of 'QTAGUID STATS INFO' ------
+------ 0.004s was the duration of 'LAST KMSG' ------
+------ 0.034s was the duration of 'NETWORK INTERFACES' ------
+------ 0.018s was the duration of 'IPv4 ADDRESSES' ------
+------ 0.018s was the duration of 'IPv6 ADDRESSES' ------
+------ 0.018s was the duration of 'IP RULES' ------
+------ 0.019s was the duration of 'IP RULES v6' ------
+------ 0.002s was the duration of 'RT_TABLES' ------
+------ 0.017s was the duration of 'ROUTE TABLE IPv4' ------
+------ 0.019s was the duration of 'ROUTE TABLE IPv6' ------
+------ 0.018s was the duration of 'ROUTE TABLE IPv4' ------
+------ 0.016s was the duration of 'ROUTE TABLE IPv6' ------
+------ 0.016s was the duration of 'ROUTE TABLE IPv4' ------
+------ 0.016s was the duration of 'ROUTE TABLE IPv6' ------
+------ 0.016s was the duration of 'ROUTE TABLE IPv4' ------
+------ 0.016s was the duration of 'ROUTE TABLE IPv6' ------
+------ 0.016s was the duration of 'ROUTE TABLE IPv4' ------
+------ 0.016s was the duration of 'ROUTE TABLE IPv6' ------
+------ 0.018s was the duration of 'ROUTE TABLE IPv4' ------
+------ 0.018s was the duration of 'ROUTE TABLE IPv6' ------
+------ 0.019s was the duration of 'ROUTE TABLE IPv4' ------
+------ 0.018s was the duration of 'ROUTE TABLE IPv6' ------
+------ 0.017s was the duration of 'ROUTE TABLE IPv4' ------
+------ 0.020s was the duration of 'ROUTE TABLE IPv6' ------
+------ 0.019s was the duration of 'ROUTE TABLE IPv4' ------
+------ 0.035s was the duration of 'ROUTE TABLE IPv6' ------
+------ 0.018s was the duration of 'ROUTE TABLE IPv4' ------
+------ 0.019s was the duration of 'ROUTE TABLE IPv6' ------
+------ 0.371s was the duration of 'DUMP ROUTE TABLES' ------
+------ 0.016s was the duration of 'ARP CACHE' ------
+------ 0.016s was the duration of 'IPv6 ND CACHE' ------
+------ 0.019s was the duration of 'MULTICAST ADDRESSES' ------
+------ 4.904s was the duration of 'NETWORK DIAGNOSTICS' ------
+------ 0.045s was the duration of 'SYSTEM PROPERTIES' ------
+------ 0.074s was the duration of 'VOLD DUMP' ------
+------ 0.019s was the duration of 'SECURE CONTAINERS' ------
+------ 0.033s was the duration of 'STORAGED TASKIOINFO' ------
+------ 0.022s was the duration of 'FILESYSTEMS & FREE SPACE' ------
+------ 0.004s was the duration of 'LAST RADIO LOG' ------
+------ 0.002s was the duration of 'BINDER FAILED TRANSACTION LOG' ------
+------ 0.002s was the duration of 'BINDER TRANSACTION LOG' ------
+------ 0.044s was the duration of 'BINDER TRANSACTIONS' ------
+------ 0.022s was the duration of 'BINDER STATS' ------
+------ 0.073s was the duration of 'BINDER STATE' ------
+------ 0.002s was the duration of 'dumpstate_board()' ------
+------ 3.463s was the duration of 'DUMPSYS' ------
+------ 0.332s was the duration of 'CHECKIN BATTERYSTATS' ------
+------ 6.272s was the duration of 'CHECKIN MEMINFO' ------
+------ 0.026s was the duration of 'CHECKIN NETSTATS' ------
+------ 0.188s was the duration of 'CHECKIN PROCSTATS' ------
+------ 0.318s was the duration of 'CHECKIN USAGESTATS' ------
+------ 0.031s was the duration of 'CHECKIN PACKAGE' ------
+------ 0.047s was the duration of 'APP ACTIVITIES' ------
+------ 1.284s was the duration of 'APP SERVICES' ------
+------ 0.768s was the duration of 'APP PROVIDERS' ------
+------ 0.036s was the duration of 'DROPBOX SYSTEM SERVER CRASHES' ------
+------ 0.032s was the duration of 'DROPBOX SYSTEM APP CRASHES' ------
+------ 22.552s was the duration of 'DUMPSTATE' ------
