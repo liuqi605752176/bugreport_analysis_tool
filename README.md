@@ -1,5 +1,7 @@
 The bugreport analysis tool to sort bug report data
 
+cd bugreport_analysis_tool
+
 Usage:<br>
 buganalysis.py <options>  --file  bugreport.zip --out /tmp/test <br>
 
