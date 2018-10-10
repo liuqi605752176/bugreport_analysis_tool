@@ -1,0 +1,17 @@
+------------------------------------------------------------------------------------------
+--- devinfo ---
+------------------------------------------------------------------------------------------
+
+Device factory serial number        : RY02111617
+Device product name                 : 2018-06-05
+Device build date                   : Fri Jul 13 01:16:33 IST 2018
+Device build fingerprint            : Smartron/tphoneY/rimoY:8.1.0/T5711INDURG-264/264:user/release-keys
+Device gms build                    : 8.1_201804
+Device mpss baseband build          : MPSS.TA.2.3.c1-00605-8953_GEN_PACK-1.142704.1.147138.1-Jul 13 2018
+Device build id                     : T5711INDURG-264 release-keys
+Device mpss baseband1 build         : MPSS.TA.2.3.c1-00605-8953_GEN_PACK-1.142704.1.147138.1-Jul 13 2018
+Device kernel build date            : Fri Jul 13 01:16:33 IST 2018
+
+Device kernel build user            : jenkins
+Device product name                 : tphoneY
+

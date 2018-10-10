@@ -1,0 +1,108 @@
+can't find the pid
+Failed to find: /data/misc/anrd/
+Skipping systrace because '/sys/kernel/debug/tracing/tracing_on' content is '0'
+Setting progress (Shell): 120/5000
+Adding dir /cache/recovery (recursive: 1)
+Duration of '/cache/recovery': 0.001s
+Adding dir /data/misc/recovery (recursive: 1)
+Duration of '/data/misc/recovery': 0.008s
+Adding dir /data/misc/logd (recursive: 0)
+/data/misc/logd: No such file or directory
+Duration of '/data/misc/logd': 0.000s
+MOUNT INFO: 47 entries added to zip file
+Duration of 'MOUNT INFO': 0.101s
+execvp on command 'ss -eionptu' failed (error: No such file or directory)
+*** command 'ss -eionptu' failed: exit code 1
+Setting progress (Shell): 220/5000
+/sys/block/zram0: Permission denied
+Setting progress (Shell): 325/5000
+open(/bugreports/dumpstate_lshal.txt): No such file or directory
+Skipping 'lsmod' because /proc/modules does not exist
+Setting progress (Shell): 425/5000
+Setting progress (Shell): 525/5000
+Setting progress (Shell): 625/5000
+Setting progress (Shell): 725/5000
+Setting progress (Shell): 825/5000
+Setting progress (Shell): 925/5000
+Setting progress (Shell): 1025/5000
+Setting progress (Shell): 1125/5000
+Setting progress (Shell): 1225/5000
+Setting progress (Shell): 1325/5000
+Setting progress (Shell): 1425/5000
+Setting progress (Shell): 1525/5000
+Setting progress (Shell): 1625/5000
+Setting progress (Shell): 1725/5000
+Setting progress (Shell): 1825/5000
+Setting progress (Shell): 1925/5000
+Setting progress (Shell): 2025/5000
+Setting progress (Shell): 2125/5000
+Setting progress (Shell): 2225/5000
+Setting progress (Shell): 2325/5000
+Setting progress (Shell): 2425/5000
+Setting progress (Shell): 2525/5000
+Setting progress (Shell): 2625/5000
+Setting progress (Shell): 2725/5000
+Setting progress (Shell): 2825/5000
+Setting progress (Shell): 2925/5000
+Setting progress (Shell): 3025/5000
+Setting progress (Shell): 3125/5000
+Setting progress (Shell): 3225/5000
+Setting progress (Shell): 3325/5000
+Setting progress (Shell): 3425/5000
+Setting progress (Shell): 3525/5000
+Setting progress (Shell): 3625/5000
+Setting progress (Shell): 3725/5000
+Setting progress (Shell): 3825/5000
+Setting progress (Shell): 3925/5000
+Setting progress (Shell): 4025/5000
+Setting progress (Shell): 4125/5000
+Setting progress (Shell): 4225/5000
+Setting progress (Shell): 4325/5000
+Setting progress (Shell): 4425/5000
+Setting progress (Shell): 4525/5000
+Setting progress (Shell): 4625/5000
+Setting progress (Shell): 4725/5000
+Setting progress (Shell): 4825/5000
+Setting progress (Shell): 4925/5000
+Adjusting max progress from 5000 to 5505
+Setting progress (Shell): 5025/5505
+Setting progress (Shell): 5125/5505
+Setting progress (Shell): 5225/5505
+Setting progress (Shell): 5325/5505
+Setting progress (Shell): 5425/5505
+Adjusting max progress from 5505 to 6066
+Setting progress (Shell): 5525/6066
+Setting progress (Shell): 5625/6066
+Setting progress (Shell): 5725/6066
+Setting progress (Shell): 5825/6066
+Setting progress (Shell): 5925/6066
+Adding dir /data/misc/bluetooth/logs (recursive: 1)
+Duration of '/data/misc/bluetooth/logs': 0.004s
+Setting progress (Shell): 6026/6066
+Adjusting max progress from 6066 to 6679
+logcat read failure
+*** command 'logcat -L -b all -v threadtime -v printable -v uid -d *:v' failed: exit code 1
+AddAnrTraceDir(): dump_traces_file=/data/anr/dumptrace_aBlbdA, anr_traces_dir=/data/anr
+Dumping current ANR traces (/data/anr/dumptrace_aBlbdA) to the main bugreport entry
+Error unlinking temporary trace path /data/anr/dumptrace_aBlbdA: Permission denied
+Setting progress (Shell): 6127/6679
+Setting progress (Shell): 6232/6679
+Setting progress (Shell): 6332/6679
+Setting progress (Shell): 6432/6679
+execvp on command 'parse_radio_log /proc/last_radio_log' failed (error: No such file or directory)
+*** command 'parse_radio_log /proc/last_radio_log' failed: exit code 1
+Setting progress (Shell): 6532/6679
+No IDumpstateDevice implementation
+Error dumping service info: (Unknown error -2147483646) android.os.UpdateEngineService
+Can't find service: android.service.gatekeeper.IGateKeeperService
+Error dumping service info: (Unknown error -2147483646) dumpstate
+Error dumping service info: (Unknown error -2147483646) installd
+Error dumping service info: (Unknown error -2147483646) storaged
+Setting progress (Shell): 6642/6679
+Adjusting max progress from 6679 to 7372
+Setting progress (Shell): 6762/7372
+Setting progress (Shell): 6882/7372
+Adding main entry (bugreport-tphoneE-T5911INDABURF-57-2018-06-05-18-10-30.txt) from /data/user_de/0/com.android.shell/files/bugreports/bugreport-tphoneE-T5911INDABURF-57-2018-06-05-18-10-30.tmp to .zip bugreport
+dumpstate id 1 finished around 2018/06/05 18:11:27 (57 s)
+Adding zip text entry main_entry.txt
+dumpstate_log.txt entry on zip file logged up to here

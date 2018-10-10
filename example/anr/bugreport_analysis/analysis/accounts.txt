@@ -1,0 +1,45 @@
+------------------------------------------------------------------------------------------
+--- Accounts ---
+------------------------------------------------------------------------------------------
+User UserInfo{0:Owner:13}:
+  Accounts: 3
+    Account {name=upendrafresher2014@gmail.com, type=com.google}
+    Account {name=Duo, type=com.google.android.gms.matchstick}
+    Account {name=Duo, type=com.google.android.apps.tachyon}
+  
+  AccountId, Action_Type, timestamp, UID, TableName, Key
+  Accounts History
+  -1,action_called_account_add,2018-06-05 14:37:59,10028,accounts,0
+  1,action_account_add,2018-06-05 14:38:55,10016,accounts,1
+  1,action_set_password,2018-06-05 14:38:55,10016,accounts,2
+  -1,action_called_account_remove,2018-06-05 14:39:05,10016,accounts,3
+  2,action_account_add,2018-06-05 14:39:10,10016,accounts,4
+  -1,action_called_account_remove,2018-06-05 14:46:58,10060,accounts,5
+  -1,action_called_account_remove,2018-06-05 15:41:57,10060,accounts,6
+  -1,action_called_account_remove,2018-06-05 18:00:11,10060,accounts,7
+  3,action_account_add,2018-06-05 18:00:34,10060,accounts,8
+  
+  Active Sessions: 0
+  
+  RegisteredServicesCache: 16 services
+    ServiceInfo: AuthenticatorDescription {type=com.google.android.gm.pop3}, ComponentInfo{com.google.android.gm/com.android.email.service.Pop3AuthenticatorService}, uid 10065
+    ServiceInfo: AuthenticatorDescription {type=com.android.sim}, ComponentInfo{com.qualcomm.simcontacts/com.qualcomm.simcontacts.SimAuthenticateService}, uid 1001
+    ServiceInfo: AuthenticatorDescription {type=com.smartron.tronx.account.SMARTRONACCOUNT}, ComponentInfo{com.smartron.tronx/com.smartron.tronx.account.AuthenticatorService}, uid 10041
+    ServiceInfo: AuthenticatorDescription {type=com.google}, ComponentInfo{com.google.android.gms/com.google.android.gms.auth.account.authenticator.GoogleAccountAuthenticatorService}, uid 10016
+    ServiceInfo: AuthenticatorDescription {type=com.google.android.apps.tachyon}, ComponentInfo{com.google.android.apps.tachyon/com.google.android.apps.tachyon.contacts.sync.DuoAccountService}, uid 10060
+    ServiceInfo: AuthenticatorDescription {type=com.imo.android.imoimbeta}, ComponentInfo{com.imo.android.imoimbeta/com.imo.android.imoim.syncadapter.AuthenticatorService}, uid 10109
+    ServiceInfo: AuthenticatorDescription {type=com.microsoft.office}, ComponentInfo{com.microsoft.office.word/com.microsoft.office.msohttp.keystore.OfficeAuthenticationService}, uid 10022
+    ServiceInfo: AuthenticatorDescription {type=com.android.localphone}, ComponentInfo{com.qualcomm.simcontacts/com.qualcomm.simcontacts.PhoneAuthenticateService}, uid 1001
+    ServiceInfo: AuthenticatorDescription {type=com.google.android.gm.exchange}, ComponentInfo{com.google.android.gm/com.android.email.service.EasAuthenticatorService}, uid 10065
+    ServiceInfo: AuthenticatorDescription {type=com.linkedin.android}, ComponentInfo{com.linkedin.android/com.linkedin.android.growth.contactsync.AuthenticatorService}, uid 10116
+    ServiceInfo: AuthenticatorDescription {type=com.google.android.gms.matchstick}, ComponentInfo{com.google.android.gms/com.google.android.gms.matchstick.contacts.sync.TachystickAccountService}, uid 10016
+    ServiceInfo: AuthenticatorDescription {type=com.google.android.apps.fireball}, ComponentInfo{com.google.android.apps.fireball/com.google.android.apps.fireball.voiceactions.AccountAuthenticatorService}, uid 10093
+    ServiceInfo: AuthenticatorDescription {type=org.telegram.messenger}, ComponentInfo{org.telegram.messenger/org.telegram.messenger.AuthenticatorService}, uid 10096
+    ServiceInfo: AuthenticatorDescription {type=com.google.android.gm.legacyimap}, ComponentInfo{com.google.android.gm/com.android.email.service.LegacyImapAuthenticatorService}, uid 10065
+    ServiceInfo: AuthenticatorDescription {type=net.one97.paytm}, ComponentInfo{net.one97.paytm/net.one97.paytm.contact.PaytmAccountService}, uid 10106
+    ServiceInfo: AuthenticatorDescription {type=com.sgiggle.production.account}, ComponentInfo{com.sgiggle.production/com.sgiggle.app.sync.AccountAuthenticatorService}, uid 10104
+  
+  Account visibility:
+  
+--------- 0.006s was the duration of dumpsys account, ending at: 2018-06-05 18:11:04
+

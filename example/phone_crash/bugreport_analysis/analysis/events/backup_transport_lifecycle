@@ -1,0 +1,8 @@
+07-30 08:01:44.076  1000  1310  1310 I backup_transport_lifecycle: [android/com.android.internal.backup.LocalTransportService,1]
+07-30 08:02:52.247  1000  2741  2741 I backup_transport_lifecycle: [android/com.android.internal.backup.LocalTransportService,1]
+07-30 08:02:53.620  1000  2741  2741 I backup_transport_lifecycle: [com.google.android.gms/.backup.component.D2dTransportService,1]
+07-30 08:02:57.717  1000  2741  2741 I backup_transport_lifecycle: [com.google.android.gms/.backup.BackupTransportService,1]
+07-30 15:45:40.397  1000  2741  2741 I backup_transport_lifecycle: [com.google.android.gms/.backup.component.D2dTransportService,0]
+07-30 15:45:40.397  1000  2741  2741 I backup_transport_lifecycle: [com.google.android.gms/.backup.BackupTransportService,0]
+07-30 15:45:52.096  1000  2741  2741 I backup_transport_lifecycle: [com.google.android.gms/.backup.component.D2dTransportService,1]
+07-30 15:45:52.179  1000  2741  2741 I backup_transport_lifecycle: [com.google.android.gms/.backup.BackupTransportService,1]

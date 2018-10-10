@@ -1,0 +1,1174 @@
+
+----- pid 6580 at 2018-07-29 17:19:09 -----
+Cmd line: com.android.bluetooth
+Build fingerprint: 'Smartron/tphoneY/rimoY:8.1.0/T5711INDURG-264/264:user/release-keys'
+ABI: 'arm64'
+Build type: optimized
+Zygote loaded classes=5029 post zygote classes=164
+Intern table: 43914 strong; 135 weak
+JNI: CheckJNI is off; globals=546 (plus 28 weak)
+Libraries: /system/app/Bluetooth/lib/arm64/libbluetooth_jni.so /system/lib64/libandroid.so /system/lib64/libcompiler_rt.so /system/lib64/libjavacrypto.so /system/lib64/libjnigraphics.so /system/lib64/libmedia_jni.so /system/lib64/libsoundpool.so /system/lib64/libwebviewchromium_loader.so libjavacore.so libopenjdk.so (10)
+Heap: 90% free, 1294KB/13MB; 15274 objects
+Dumping cumulative Gc timings
+Start Dumping histograms for 10 iterations for concurrent copying
+ProcessMarkStack:	Sum: 78.638ms 99% C.I. 2.928ms-14.010ms Avg: 7.863ms Max: 14.126ms
+VisitConcurrentRoots:	Sum: 68.793ms 99% C.I. 4.439ms-10.507ms Avg: 6.879ms Max: 10.507ms
+ScanImmuneSpaces:	Sum: 46.746ms 99% C.I. 2.798ms-6.609ms Avg: 4.674ms Max: 6.609ms
+VisitNonThreadRoots:	Sum: 18.718ms 99% C.I. 0.188ms-5.320ms Avg: 1.871ms Max: 5.337ms
+RecordFree:	Sum: 17.351ms 99% C.I. 0.458ms-5.930ms Avg: 1.735ms Max: 6.093ms
+FlipOtherThreads:	Sum: 10.711ms 99% C.I. 0.434ms-1.823ms Avg: 1.071ms Max: 1.823ms
+GrayAllDirtyImmuneObjects:	Sum: 10.379ms 99% C.I. 0.150ms-3.150ms Avg: 1.037ms Max: 3.208ms
+InitializePhase:	Sum: 7.906ms 99% C.I. 324us-2145us Avg: 790.600us Max: 2164us
+EnqueueFinalizerReferences:	Sum: 7.788ms 99% C.I. 56us-3772.500us Avg: 778.800us Max: 3850us
+SweepSystemWeaks:	Sum: 6.284ms 99% C.I. 210us-1852.500us Avg: 628.400us Max: 1871us
+ClearFromSpace:	Sum: 6.113ms 99% C.I. 172us-2175us Avg: 611.300us Max: 2237us
+MarkZygoteLargeObjects:	Sum: 1.666ms 99% C.I. 36us-862.500us Avg: 166.600us Max: 891us
+MarkStackAsLive:	Sum: 1.600ms 99% C.I. 14us-1002.499us Avg: 160us Max: 1048us
+ProcessReferences:	Sum: 1.157ms 99% C.I. 3us-307us Avg: 57.850us Max: 307us
+SweepAllocSpace:	Sum: 926us 99% C.I. 34us-209us Avg: 92.600us Max: 209us
+SweepLargeObjects:	Sum: 753us 99% C.I. 47us-119us Avg: 75.300us Max: 119us
+ThreadListFlip:	Sum: 553us 99% C.I. 24us-152us Avg: 55.300us Max: 152us
+MarkingPhase:	Sum: 512us 99% C.I. 33us-93us Avg: 51.200us Max: 93us
+(Paused)GrayAllNewlyDirtyImmuneObjects:	Sum: 397us 99% C.I. 23us-73us Avg: 39.700us Max: 73us
+ClearRegionSpaceCards:	Sum: 305us 99% C.I. 9us-45us Avg: 30.500us Max: 45us
+ForwardSoftReferences:	Sum: 258us 99% C.I. 16us-47us Avg: 25.800us Max: 47us
+ReclaimPhase:	Sum: 224us 99% C.I. 9us-44us Avg: 22.400us Max: 44us
+ResumeRunnableThreads:	Sum: 219us 99% C.I. 9us-36us Avg: 21.900us Max: 36us
+(Paused)SetFromSpace:	Sum: 195us 99% C.I. 4us-66us Avg: 19.500us Max: 66us
+EmptyRBMarkBitStack:	Sum: 143us 99% C.I. 9us-25us Avg: 14.300us Max: 25us
+Sweep:	Sum: 92us 99% C.I. 4us-13us Avg: 9.200us Max: 13us
+FlipThreadRoots:	Sum: 87us 99% C.I. 4us-22us Avg: 8.700us Max: 22us
+(Paused)ClearCards:	Sum: 85us 99% C.I. 250ns-9000ns Avg: 386ns Max: 9000ns
+ResumeOtherThreads:	Sum: 33us 99% C.I. 1us-9us Avg: 3.300us Max: 9us
+UnBindBitmaps:	Sum: 22us 99% C.I. 2us-3us Avg: 2.200us Max: 3us
+Done Dumping histograms
+concurrent copying paused:	Sum: 1.294ms 99% C.I. 61us-279us Avg: 129.400us Max: 279us
+concurrent copying total time: 288.934ms mean time: 28.893ms
+concurrent copying freed: 236311 objects with total size 13MB
+concurrent copying throughput: 820524/s / 46MB/s
+Cumulative bytes moved 3483040
+Cumulative objects moved 69009
+Total time spent in GC: 288.934ms
+Mean GC size throughput: 44MB/s
+Mean GC object throughput: 817782 objects/s
+Total number of allocations 251559
+Total bytes allocated 14MB
+Total bytes freed 12MB
+Free memory 11MB
+Free memory until GC 11MB
+Free memory until OOME 190MB
+Total memory 13MB
+Max memory 192MB
+Zygote space size 520KB
+Total mutator paused time: 1.294ms
+Total time waiting for GC to complete: 20.052us
+Total GC count: 10
+Total GC time: 288.934ms
+Total blocking GC count: 4
+Total blocking GC time: 104.166ms
+Histogram of GC count per 10000 ms: 0:16887,1:9
+Histogram of blocking GC count per 10000 ms: 0:16892,1:4
+Registered native bytes allocated: 64454
+/system/framework/oat/arm64/javax.obex.odex: quicken
+/system/app/Bluetooth/oat/arm64/Bluetooth.odex: quicken
+Current JIT code cache size: 50KB
+Current JIT data cache size: 31KB
+Current JIT capacity: 128KB
+Current number of JIT code cache entries: 69
+Total number of JIT compilations: 69
+Total number of JIT compilations for on stack replacement: 0
+Total number of JIT code cache collections: 1
+Memory used for stack maps: Avg: 291B Max: 1888B Min: 24B
+Memory used for compiled code: Avg: 711B Max: 3KB Min: 8B
+Memory used for profiling info: Avg: 123B Max: 776B Min: 32B
+Start Dumping histograms for 70 iterations for JIT timings
+Compiling:	Sum: 3.758s 99% C.I. 0.357ms-164.079ms Avg: 54.474ms Max: 169.534ms
+TrimMaps:	Sum: 6.581ms 99% C.I. 17us-482.749us Avg: 95.376us Max: 483us
+Code cache collection:	Sum: 1.060ms 99% C.I. 1.060ms-1.060ms Avg: 1.060ms Max: 1.060ms
+Done Dumping histograms
+Memory used for compilation: Avg: 185KB Max: 1087KB Min: 23KB
+ProfileSaver total_bytes_written=0
+ProfileSaver total_number_of_writes=0
+ProfileSaver total_number_of_code_cache_queries=6
+ProfileSaver total_number_of_skipped_writes=6
+ProfileSaver total_number_of_failed_writes=0
+ProfileSaver total_ms_of_sleep=162632417
+ProfileSaver total_ms_of_work=123
+ProfileSaver max_number_profile_entries_cached=0
+ProfileSaver total_number_of_hot_spikes=0
+ProfileSaver total_number_of_wake_ups=6
+
+suspend all histogram:	Sum: 1.908ms 99% C.I. 3us-1058.560us Avg: 59.625us Max: 1223us
+DALVIK THREADS (20):
+"Signal Catcher" daemon prio=5 tid=3 Runnable
+  | group="system" sCount=0 dsCount=0 flags=0 obj=0x12e80218 self=0x75e745fe00
+  | sysTid=6590 nice=0 cgrp=default sched=0/0 handle=0x75ded504f0
+  | state=R schedstat=( 271701617 77502130 219 ) utm=17 stm=10 core=1 HZ=100
+  | stack=0x75dec56000-0x75dec58000 stackSize=1005KB
+  | held mutexes= "mutator lock"(shared held)
+  native: #00 pc 00000000003c9518  /system/lib64/libart.so (art::DumpNativeStack(std::__1::basic_ostream<char, std::__1::char_traits<char>>&, int, BacktraceMap*, char const*, art::ArtMethod*, void*)+208)
+  native: #01 pc 00000000004997c4  /system/lib64/libart.so (art::Thread::DumpStack(std::__1::basic_ostream<char, std::__1::char_traits<char>>&, bool, BacktraceMap*, bool) const+348)
+  native: #02 pc 00000000004b1350  /system/lib64/libart.so (art::DumpCheckpoint::Run(art::Thread*)+884)
+  native: #03 pc 00000000004a9bfc  /system/lib64/libart.so (art::ThreadList::RunCheckpoint(art::Closure*, art::Closure*)+480)
+  native: #04 pc 00000000004a9598  /system/lib64/libart.so (art::ThreadList::Dump(std::__1::basic_ostream<char, std::__1::char_traits<char>>&, bool)+792)
+  native: #05 pc 00000000004a91b0  /system/lib64/libart.so (art::ThreadList::DumpForSigQuit(std::__1::basic_ostream<char, std::__1::char_traits<char>>&)+912)
+  native: #06 pc 000000000047df50  /system/lib64/libart.so (art::Runtime::DumpForSigQuit(std::__1::basic_ostream<char, std::__1::char_traits<char>>&)+196)
+  native: #07 pc 0000000000487d48  /system/lib64/libart.so (art::SignalCatcher::HandleSigQuit()+1932)
+  native: #08 pc 0000000000486878  /system/lib64/libart.so (art::SignalCatcher::Run(void*)+348)
+  native: #09 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  native: #10 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+  (no managed stack frames)
+
+"main" prio=5 tid=1 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x73ed06b0 self=0x75e745ea00
+  | sysTid=6580 nice=0 cgrp=default sched=0/0 handle=0x766c0299a8
+  | state=S schedstat=( 5171407065 16418925975 22781 ) utm=316 stm=201 core=4 HZ=100
+  | stack=0x7fd8a13000-0x7fd8a15000 stackSize=8MB
+  | held mutexes=
+  kernel: __switch_to+0x84/0x90
+  kernel: binder_thread_read+0x3b4/0x10f4
+  kernel: binder_ioctl_write_read.constprop.41+0x1c8/0x2f8
+  kernel: binder_ioctl+0x1f8/0x658
+  kernel: do_vfs_ioctl+0x610/0x6f8
+  kernel: SyS_ioctl+0x60/0x88
+  kernel: __sys_trace_return+0x0/0x4
+  native: #00 pc 000000000006a48c  /system/lib64/libc.so (__ioctl+4)
+  native: #01 pc 00000000000243f8  /system/lib64/libc.so (ioctl+136)
+  native: #02 pc 0000000000054950  /system/lib64/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+256)
+  native: #03 pc 00000000000556ac  /system/lib64/libbinder.so (android::IPCThreadState::waitForResponse(android::Parcel*, int*)+340)
+  native: #04 pc 00000000000553f8  /system/lib64/libbinder.so (android::IPCThreadState::transact(int, unsigned int, android::Parcel const&, android::Parcel*, unsigned int)+224)
+  native: #05 pc 000000000004c230  /system/lib64/libbinder.so (android::BpBinder::transact(unsigned int, android::Parcel const&, android::Parcel*, unsigned int)+72)
+  native: #06 pc 000000000011eb68  /system/lib64/libandroid_runtime.so (???)
+  native: #07 pc 0000000000901b74  /system/framework/arm64/boot-framework.oat (Java_android_os_BinderProxy_transactNative__ILandroid_os_Parcel_2Landroid_os_Parcel_2I+196)
+  at android.os.BinderProxy.transactNative(Native method)
+  at android.os.BinderProxy.transact(Binder.java:764)
+  at android.app.IActivityManager$Stub$Proxy.publishService(IActivityManager.java:4979)
+  at android.app.ActivityThread.handleBindService(ActivityThread.java:3367)
+  at android.app.ActivityThread.-wrap2(ActivityThread.java:-1)
+  at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1682)
+  at android.os.Handler.dispatchMessage(Handler.java:106)
+  at android.os.Looper.loop(Looper.java:164)
+  at android.app.ActivityThread.main(ActivityThread.java:6501)
+  at java.lang.reflect.Method.invoke(Native method)
+  at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+
+"Jit thread pool worker thread 0" daemon prio=5 tid=2 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x12e80190 self=0x75e745f400
+  | sysTid=6585 nice=9 cgrp=default sched=0/0 handle=0x75dee514f0
+  | state=S schedstat=( 537279326 726514069 2531 ) utm=28 stm=25 core=7 HZ=100
+  | stack=0x75ded53000-0x75ded55000 stackSize=1021KB
+  | held mutexes=
+  kernel: __switch_to+0x84/0x90
+  kernel: futex_wait_queue_me+0xd8/0x130
+  kernel: futex_wait+0xec/0x200
+  kernel: do_futex+0xe0/0xa00
+  kernel: SyS_futex+0x110/0x19c
+  kernel: __sys_trace_return+0x0/0x4
+  native: #00 pc 000000000001dbec  /system/lib64/libc.so (syscall+28)
+  native: #01 pc 00000000000e661c  /system/lib64/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+152)
+  native: #02 pc 00000000004b2af8  /system/lib64/libart.so (art::ThreadPool::GetTask(art::Thread*)+256)
+  native: #03 pc 00000000004b21f0  /system/lib64/libart.so (art::ThreadPoolWorker::Run()+124)
+  native: #04 pc 00000000004b1cc4  /system/lib64/libart.so (art::ThreadPoolWorker::Callback(void*)+148)
+  native: #05 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  native: #06 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+  (no managed stack frames)
+
+"ReferenceQueueDaemon" daemon prio=5 tid=4 Waiting
+  | group="system" sCount=1 dsCount=0 flags=1 obj=0x12e802a0 self=0x75e7460800
+  | sysTid=6591 nice=4 cgrp=default sched=0/0 handle=0x75d1e794f0
+  | state=S schedstat=( 3197864 6855782 39 ) utm=0 stm=0 core=7 HZ=100
+  | stack=0x75d1d77000-0x75d1d79000 stackSize=1037KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x0337b3b4> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+  at java.lang.Daemons$ReferenceQueueDaemon.runInternal(Daemons.java:178)
+  - locked <0x0337b3b4> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+  at java.lang.Daemons$Daemon.run(Daemons.java:103)
+  at java.lang.Thread.run(Thread.java:764)
+
+"Binder:6580_1" prio=5 tid=5 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x12e80328 self=0x75e7530c00
+  | sysTid=6596 nice=0 cgrp=default sched=0/0 handle=0x75d19674f0
+  | state=S schedstat=( 2209867325 2911863915 11385 ) utm=114 stm=106 core=7 HZ=100
+  | stack=0x75d186d000-0x75d186f000 stackSize=1005KB
+  | held mutexes=
+  kernel: __switch_to+0x84/0x90
+  kernel: binder_thread_read+0x3b4/0x10f4
+  kernel: binder_ioctl_write_read.constprop.41+0x1c8/0x2f8
+  kernel: binder_ioctl+0x1f8/0x658
+  kernel: do_vfs_ioctl+0x610/0x6f8
+  kernel: SyS_ioctl+0x60/0x88
+  kernel: __sys_trace_return+0x0/0x4
+  native: #00 pc 000000000006a48c  /system/lib64/libc.so (__ioctl+4)
+  native: #01 pc 00000000000243f8  /system/lib64/libc.so (ioctl+136)
+  native: #02 pc 0000000000054950  /system/lib64/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+256)
+  native: #03 pc 0000000000054abc  /system/lib64/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+24)
+  native: #04 pc 0000000000055178  /system/lib64/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+60)
+  native: #05 pc 0000000000076200  /system/lib64/libbinder.so (???)
+  native: #06 pc 00000000000114d4  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+280)
+  native: #07 pc 00000000000aa6a8  /system/lib64/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+140)
+  native: #08 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  native: #09 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+  (no managed stack frames)
+
+"FinalizerWatchdogDaemon" daemon prio=5 tid=6 Waiting
+  | group="system" sCount=1 dsCount=0 flags=1 obj=0x12e803b0 self=0x75e752f800
+  | sysTid=6594 nice=4 cgrp=default sched=0/0 handle=0x75d1c6f4f0
+  | state=S schedstat=( 1893646 21324742 24 ) utm=0 stm=0 core=4 HZ=100
+  | stack=0x75d1b6d000-0x75d1b6f000 stackSize=1037KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x08b08bdd> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+  at java.lang.Daemons$FinalizerWatchdogDaemon.sleepUntilNeeded(Daemons.java:297)
+  - locked <0x08b08bdd> (a java.lang.Daemons$FinalizerWatchdogDaemon)
+  at java.lang.Daemons$FinalizerWatchdogDaemon.runInternal(Daemons.java:277)
+  at java.lang.Daemons$Daemon.run(Daemons.java:103)
+  at java.lang.Thread.run(Thread.java:764)
+
+"Binder:6580_2" prio=5 tid=7 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x12e80438 self=0x75e7531600
+  | sysTid=6597 nice=0 cgrp=default sched=0/0 handle=0x75d186a4f0
+  | state=S schedstat=( 4587058729 5177959913 24543 ) utm=252 stm=206 core=5 HZ=100
+  | stack=0x75d1770000-0x75d1772000 stackSize=1005KB
+  | held mutexes=
+  kernel: __switch_to+0x84/0x90
+  kernel: binder_thread_read+0x3b4/0x10f4
+  kernel: binder_ioctl_write_read.constprop.41+0x1c8/0x2f8
+  kernel: binder_ioctl+0x1f8/0x658
+  kernel: do_vfs_ioctl+0x610/0x6f8
+  kernel: SyS_ioctl+0x60/0x88
+  kernel: __sys_trace_return+0x0/0x4
+  native: #00 pc 000000000006a48c  /system/lib64/libc.so (__ioctl+4)
+  native: #01 pc 00000000000243f8  /system/lib64/libc.so (ioctl+136)
+  native: #02 pc 0000000000054950  /system/lib64/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+256)
+  native: #03 pc 0000000000054abc  /system/lib64/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+24)
+  native: #04 pc 0000000000055178  /system/lib64/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+60)
+  native: #05 pc 0000000000076200  /system/lib64/libbinder.so (???)
+  native: #06 pc 00000000000114d4  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+280)
+  native: #07 pc 00000000000aa6a8  /system/lib64/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+140)
+  native: #08 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  native: #09 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+  (no managed stack frames)
+
+"HeapTaskDaemon" daemon prio=5 tid=8 Blocked
+  | group="system" sCount=1 dsCount=0 flags=1 obj=0x12e80bf0 self=0x75e7530200
+  | sysTid=6595 nice=4 cgrp=default sched=0/0 handle=0x75d1b6a4f0
+  | state=S schedstat=( 183901412 48546669 154 ) utm=13 stm=5 core=7 HZ=100
+  | stack=0x75d1a68000-0x75d1a6a000 stackSize=1037KB
+  | held mutexes=
+  kernel: __switch_to+0x84/0x90
+  kernel: futex_wait_queue_me+0xd8/0x130
+  kernel: futex_wait+0xec/0x200
+  kernel: do_futex+0xe0/0xa00
+  kernel: SyS_futex+0x110/0x19c
+  kernel: __sys_trace_return+0x0/0x4
+  native: #00 pc 000000000001dbec  /system/lib64/libc.so (syscall+28)
+  native: #01 pc 00000000000e661c  /system/lib64/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+152)
+  native: #02 pc 00000000002523f0  /system/lib64/libart.so (art::gc::TaskProcessor::GetTask(art::Thread*)+300)
+  native: #03 pc 0000000000252ce0  /system/lib64/libart.so (art::gc::TaskProcessor::RunAllTasks(art::Thread*)+92)
+  native: #04 pc 00000000001f2f3c  /system/framework/arm64/boot-core-libart.oat (Java_dalvik_system_VMRuntime_runHeapTasks__+124)
+  at dalvik.system.VMRuntime.runHeapTasks(Native method)
+  - waiting to lock an unknown object
+  at java.lang.Daemons$HeapTaskDaemon.runInternal(Daemons.java:461)
+  at java.lang.Daemons$Daemon.run(Daemons.java:103)
+  at java.lang.Thread.run(Thread.java:764)
+
+"Binder:6580_3" prio=5 tid=9 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x12e804c0 self=0x75e7550000
+  | sysTid=6598 nice=0 cgrp=default sched=0/0 handle=0x75d176d4f0
+  | state=S schedstat=( 5505725771 6054380874 26852 ) utm=324 stm=227 core=4 HZ=100
+  | stack=0x75d1673000-0x75d1675000 stackSize=1005KB
+  | held mutexes=
+  kernel: __switch_to+0x84/0x90
+  kernel: binder_thread_read+0x3b4/0x10f4
+  kernel: binder_ioctl_write_read.constprop.41+0x1c8/0x2f8
+  kernel: binder_ioctl+0x1f8/0x658
+  kernel: do_vfs_ioctl+0x610/0x6f8
+  kernel: SyS_ioctl+0x60/0x88
+  kernel: __sys_trace_return+0x0/0x4
+  native: #00 pc 000000000006a48c  /system/lib64/libc.so (__ioctl+4)
+  native: #01 pc 00000000000243f8  /system/lib64/libc.so (ioctl+136)
+  native: #02 pc 0000000000054950  /system/lib64/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+256)
+  native: #03 pc 0000000000054abc  /system/lib64/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+24)
+  native: #04 pc 0000000000055178  /system/lib64/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+60)
+  native: #05 pc 0000000000076200  /system/lib64/libbinder.so (???)
+  native: #06 pc 00000000000114d4  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+280)
+  native: #07 pc 00000000000aa6a8  /system/lib64/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+140)
+  native: #08 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  native: #09 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+  (no managed stack frames)
+
+"FinalizerDaemon" daemon prio=5 tid=10 Waiting
+  | group="system" sCount=1 dsCount=0 flags=1 obj=0x12e80548 self=0x75e7461200
+  | sysTid=6592 nice=4 cgrp=default sched=0/0 handle=0x75d1d744f0
+  | state=S schedstat=( 103912447 155297605 2411 ) utm=6 stm=4 core=4 HZ=100
+  | stack=0x75d1c72000-0x75d1c74000 stackSize=1037KB
+  | held mutexes=
+  at java.lang.Object.wait(Native method)
+  - waiting on <0x07b71352> (a java.lang.Object)
+  at java.lang.Object.wait(Object.java:422)
+  at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:188)
+  - locked <0x07b71352> (a java.lang.Object)
+  at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:209)
+  at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:232)
+  at java.lang.Daemons$Daemon.run(Daemons.java:103)
+  at java.lang.Thread.run(Thread.java:764)
+
+"Profile Saver" daemon prio=5 tid=11 Native
+  | group="system" sCount=1 dsCount=0 flags=1 obj=0x12e805d0 self=0x75e7550a00
+  | sysTid=6600 nice=9 cgrp=default sched=0/0 handle=0x75d0f874f0
+  | state=S schedstat=( 57470570 68991461 105 ) utm=4 stm=1 core=6 HZ=100
+  | stack=0x75d0e8d000-0x75d0e8f000 stackSize=1005KB
+  | held mutexes=
+  kernel: __switch_to+0x84/0x90
+  kernel: futex_wait_queue_me+0xd8/0x130
+  kernel: futex_wait+0xec/0x200
+  kernel: do_futex+0xe0/0xa00
+  kernel: SyS_futex+0x110/0x19c
+  kernel: __sys_trace_return+0x0/0x4
+  native: #00 pc 000000000001dbec  /system/lib64/libc.so (syscall+28)
+  native: #01 pc 00000000000e661c  /system/lib64/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+152)
+  native: #02 pc 00000000003346cc  /system/lib64/libart.so (art::ProfileSaver::Run()+360)
+  native: #03 pc 0000000000337234  /system/lib64/libart.so (art::ProfileSaver::RunProfileSaverThread(void*)+92)
+  native: #04 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  native: #05 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+  (no managed stack frames)
+
+"BluetoothAdapterState:" prio=5 tid=12 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x12e80658 self=0x75e7551400
+  | sysTid=6611 nice=0 cgrp=default sched=0/0 handle=0x75d06444f0
+  | state=S schedstat=( 17440001 25708903 71 ) utm=0 stm=1 core=3 HZ=100
+  | stack=0x75d0542000-0x75d0544000 stackSize=1037KB
+  | held mutexes=
+  kernel: __switch_to+0x84/0x90
+  kernel: binder_thread_read+0x3b4/0x10f4
+  kernel: binder_ioctl_write_read.constprop.41+0x1c8/0x2f8
+  kernel: binder_ioctl+0x1f8/0x658
+  kernel: do_vfs_ioctl+0x610/0x6f8
+  kernel: SyS_ioctl+0x60/0x88
+  kernel: __sys_trace_return+0x0/0x4
+  native: #00 pc 000000000006a48c  /system/lib64/libc.so (__ioctl+4)
+  native: #01 pc 00000000000243f8  /system/lib64/libc.so (ioctl+136)
+  native: #02 pc 0000000000054950  /system/lib64/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+256)
+  native: #03 pc 00000000000556ac  /system/lib64/libbinder.so (android::IPCThreadState::waitForResponse(android::Parcel*, int*)+340)
+  native: #04 pc 00000000000553f8  /system/lib64/libbinder.so (android::IPCThreadState::transact(int, unsigned int, android::Parcel const&, android::Parcel*, unsigned int)+224)
+  native: #05 pc 000000000004c230  /system/lib64/libbinder.so (android::BpBinder::transact(unsigned int, android::Parcel const&, android::Parcel*, unsigned int)+72)
+  native: #06 pc 000000000011eb68  /system/lib64/libandroid_runtime.so (???)
+  native: #07 pc 0000000000901b74  /system/framework/arm64/boot-framework.oat (Java_android_os_BinderProxy_transactNative__ILandroid_os_Parcel_2Landroid_os_Parcel_2I+196)
+  at android.os.BinderProxy.transactNative(Native method)
+  at android.os.BinderProxy.transact(Binder.java:764)
+  at android.app.IActivityManager$Stub$Proxy.startService(IActivityManager.java:4873)
+  at android.app.ContextImpl.startServiceCommon(ContextImpl.java:1507)
+  at android.app.ContextImpl.startService(ContextImpl.java:1477)
+  at android.content.ContextWrapper.startService(ContextWrapper.java:650)
+  at com.android.bluetooth.btservice.AdapterService.setProfileServiceState(AdapterService.java:806)
+  at com.android.bluetooth.btservice.AdapterService.startCoreServices(AdapterService.java:554)
+  at com.android.bluetooth.btservice.AdapterState$BleOnState.processMessage(AdapterState.java:196)
+  at com.android.internal.util.StateMachine$SmHandler.processMsg(StateMachine.java:992)
+  at com.android.internal.util.StateMachine$SmHandler.handleMessage(StateMachine.java:809)
+  at android.os.Handler.dispatchMessage(Handler.java:106)
+  at android.os.Looper.loop(Looper.java:164)
+  at android.os.HandlerThread.run(HandlerThread.java:65)
+
+"BT Service Callback Thread" prio=5 tid=13 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x12e80740 self=0x75e7551e00
+  | sysTid=6624 nice=0 cgrp=default sched=0/0 handle=0x75d004e4f0
+  | state=S schedstat=( 881034572 950081069 7411 ) utm=52 stm=36 core=0 HZ=100
+  | stack=0x75cff54000-0x75cff56000 stackSize=1005KB
+  | held mutexes=
+  kernel: __switch_to+0x84/0x90
+  kernel: futex_wait_queue_me+0xd8/0x130
+  kernel: futex_wait+0xec/0x200
+  kernel: do_futex+0xe0/0xa00
+  kernel: SyS_futex+0x110/0x19c
+  kernel: __sys_trace_return+0x0/0x4
+  native: #00 pc 000000000001dbec  /system/lib64/libc.so (syscall+28)
+  native: #01 pc 00000000000e661c  /system/lib64/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+152)
+  native: #02 pc 00000000003834c8  /system/lib64/libart.so (_ZN3art3JNI17NewPrimitiveArrayIP11_jbyteArrayNS_6mirror14PrimitiveArrayIaEEEET_P7_JNIEnvi+440)
+  native: #03 pc 000000000000af28  /system/lib64/libbluetooth_jni.so (???)
+  native: #04 pc 00000000000a6214  /system/lib64/hw/bluetooth.default.so (???)
+  native: #05 pc 00000000000a11d4  /system/lib64/hw/bluetooth.default.so (???)
+  native: #06 pc 0000000000084950  /system/lib64/libchrome.so (base::debug::TaskAnnotator::RunTask(char const*, base::PendingTask const&)+188)
+  native: #07 pc 000000000009ee98  /system/lib64/libchrome.so (base::MessageLoop::RunTask(base::PendingTask const&)+444)
+  native: #08 pc 000000000009f160  /system/lib64/libchrome.so (base::MessageLoop::DeferOrRunPendingTask(base::PendingTask)+52)
+  native: #09 pc 000000000009f58c  /system/lib64/libchrome.so (base::MessageLoop::DoWork()+356)
+  native: #10 pc 00000000000a0794  /system/lib64/libchrome.so (base::MessagePumpDefault::Run(base::MessagePump::Delegate*)+220)
+  native: #11 pc 00000000000b9ee8  /system/lib64/libchrome.so (base::RunLoop::Run()+136)
+  native: #12 pc 000000000009f76c  /system/lib64/hw/bluetooth.default.so (???)
+  native: #13 pc 00000000001c3c08  /system/lib64/hw/bluetooth.default.so (???)
+  native: #14 pc 00000000001c1dc0  /system/lib64/hw/bluetooth.default.so (???)
+  native: #15 pc 00000000001c1c58  /system/lib64/hw/bluetooth.default.so (???)
+  native: #16 pc 00000000001c3618  /system/lib64/hw/bluetooth.default.so (???)
+  native: #17 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  native: #18 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+  (no managed stack frames)
+
+"BondStateMachine:" prio=5 tid=14 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x12e807c8 self=0x75e7553c00
+  | sysTid=6627 nice=0 cgrp=default sched=0/0 handle=0x75cff514f0
+  | state=S schedstat=( 1369585 7516094 11 ) utm=0 stm=0 core=4 HZ=100
+  | stack=0x75cfe4f000-0x75cfe51000 stackSize=1037KB
+  | held mutexes=
+  kernel: __switch_to+0x84/0x90
+  kernel: SyS_epoll_wait+0x29c/0x384
+  kernel: SyS_epoll_pwait+0xb4/0x138
+  kernel: __sys_trace_return+0x0/0x4
+  native: #00 pc 000000000006a3a0  /system/lib64/libc.so (__epoll_pwait+8)
+  native: #01 pc 000000000001f9e4  /system/lib64/libc.so (epoll_pwait+52)
+  native: #02 pc 0000000000015d7c  /system/lib64/libutils.so (android::Looper::pollInner(int)+144)
+  native: #03 pc 0000000000015c64  /system/lib64/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+108)
+  native: #04 pc 0000000000110910  /system/lib64/libandroid_runtime.so (???)
+  native: #05 pc 00000000001dcd6c  /system/framework/arm64/boot-framework.oat (Java_android_os_MessageQueue_nativePollOnce__JI+140)
+  at android.os.MessageQueue.nativePollOnce(Native method)
+  at android.os.MessageQueue.next(MessageQueue.java:325)
+  at android.os.Looper.loop(Looper.java:142)
+  at android.os.HandlerThread.run(HandlerThread.java:65)
+
+"BluetoothAdvertiseManager" prio=5 tid=16 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x12e808b0 self=0x75dbefd000
+  | sysTid=6633 nice=0 cgrp=default sched=0/0 handle=0x75cfd474f0
+  | state=S schedstat=( 1270729 4664428 11 ) utm=0 stm=0 core=4 HZ=100
+  | stack=0x75cfc45000-0x75cfc47000 stackSize=1037KB
+  | held mutexes=
+  kernel: __switch_to+0x84/0x90
+  kernel: SyS_epoll_wait+0x29c/0x384
+  kernel: SyS_epoll_pwait+0xb4/0x138
+  kernel: __sys_trace_return+0x0/0x4
+  native: #00 pc 000000000006a3a0  /system/lib64/libc.so (__epoll_pwait+8)
+  native: #01 pc 000000000001f9e4  /system/lib64/libc.so (epoll_pwait+52)
+  native: #02 pc 0000000000015d7c  /system/lib64/libutils.so (android::Looper::pollInner(int)+144)
+  native: #03 pc 0000000000015c64  /system/lib64/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+108)
+  native: #04 pc 0000000000110910  /system/lib64/libandroid_runtime.so (???)
+  native: #05 pc 00000000001dcd6c  /system/framework/arm64/boot-framework.oat (Java_android_os_MessageQueue_nativePollOnce__JI+140)
+  at android.os.MessageQueue.nativePollOnce(Native method)
+  at android.os.MessageQueue.next(MessageQueue.java:325)
+  at android.os.Looper.loop(Looper.java:142)
+  at android.os.HandlerThread.run(HandlerThread.java:65)
+
+"BluetoothScanManager" prio=5 tid=19 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x12e80998 self=0x75dbefee00
+  | sysTid=6634 nice=0 cgrp=default sched=0/0 handle=0x75cfa384f0
+  | state=S schedstat=( 2715046786 2952813960 20599 ) utm=163 stm=108 core=4 HZ=100
+  | stack=0x75cf936000-0x75cf938000 stackSize=1037KB
+  | held mutexes=
+  kernel: __switch_to+0x84/0x90
+  kernel: SyS_epoll_wait+0x29c/0x384
+  kernel: SyS_epoll_pwait+0xb4/0x138
+  kernel: __sys_trace_return+0x0/0x4
+  native: #00 pc 000000000006a3a0  /system/lib64/libc.so (__epoll_pwait+8)
+  native: #01 pc 000000000001f9e4  /system/lib64/libc.so (epoll_pwait+52)
+  native: #02 pc 0000000000015d7c  /system/lib64/libutils.so (android::Looper::pollInner(int)+144)
+  native: #03 pc 0000000000015c64  /system/lib64/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+108)
+  native: #04 pc 0000000000110910  /system/lib64/libandroid_runtime.so (???)
+  native: #05 pc 00000000001dcd6c  /system/framework/arm64/boot-framework.oat (Java_android_os_MessageQueue_nativePollOnce__JI+140)
+  at android.os.MessageQueue.nativePollOnce(Native method)
+  at android.os.MessageQueue.next(MessageQueue.java:325)
+  at android.os.Looper.loop(Looper.java:142)
+  at android.os.HandlerThread.run(HandlerThread.java:65)
+
+"queued-work-looper" prio=5 tid=20 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x12e80a80 self=0x75dbeff800
+  | sysTid=6635 nice=-2 cgrp=default sched=0/0 handle=0x75cf9334f0
+  | state=S schedstat=( 1429218 16973022 20 ) utm=0 stm=0 core=5 HZ=100
+  | stack=0x75cf831000-0x75cf833000 stackSize=1037KB
+  | held mutexes=
+  kernel: __switch_to+0x84/0x90
+  kernel: SyS_epoll_wait+0x29c/0x384
+  kernel: SyS_epoll_pwait+0xb4/0x138
+  kernel: __sys_trace_return+0x0/0x4
+  native: #00 pc 000000000006a3a0  /system/lib64/libc.so (__epoll_pwait+8)
+  native: #01 pc 000000000001f9e4  /system/lib64/libc.so (epoll_pwait+52)
+  native: #02 pc 0000000000015d7c  /system/lib64/libutils.so (android::Looper::pollInner(int)+144)
+  native: #03 pc 0000000000015c64  /system/lib64/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+108)
+  native: #04 pc 0000000000110910  /system/lib64/libandroid_runtime.so (???)
+  native: #05 pc 00000000001dcd6c  /system/framework/arm64/boot-framework.oat (Java_android_os_MessageQueue_nativePollOnce__JI+140)
+  at android.os.MessageQueue.nativePollOnce(Native method)
+  at android.os.MessageQueue.next(MessageQueue.java:325)
+  at android.os.Looper.loop(Looper.java:142)
+  at android.os.HandlerThread.run(HandlerThread.java:65)
+
+"HwBinder:6580_1" prio=5 tid=17 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x12e80b68 self=0x75dbefda00
+  | sysTid=6641 nice=-20 cgrp=default sched=1073741825/1 handle=0x75cf82e4f0
+  | state=S schedstat=( 2731811014 853551982 16547 ) utm=122 stm=151 core=3 HZ=100
+  | stack=0x75cf734000-0x75cf736000 stackSize=1005KB
+  | held mutexes=
+  kernel: __switch_to+0x84/0x90
+  kernel: binder_thread_read+0x3b4/0x10f4
+  kernel: binder_ioctl_write_read.constprop.41+0x1c8/0x2f8
+  kernel: binder_ioctl+0x1f8/0x658
+  kernel: do_vfs_ioctl+0x610/0x6f8
+  kernel: SyS_ioctl+0x60/0x88
+  kernel: __sys_trace_return+0x0/0x4
+  native: #00 pc 000000000006a48c  /system/lib64/libc.so (__ioctl+4)
+  native: #01 pc 00000000000243f8  /system/lib64/libc.so (ioctl+136)
+  native: #02 pc 0000000000014e8c  /system/lib64/libhwbinder.so (android::hardware::IPCThreadState::talkWithDriver(bool)+256)
+  native: #03 pc 0000000000014ff8  /system/lib64/libhwbinder.so (android::hardware::IPCThreadState::getAndExecuteCommand()+24)
+  native: #04 pc 0000000000015780  /system/lib64/libhwbinder.so (android::hardware::IPCThreadState::joinThreadPool(bool)+60)
+  native: #05 pc 000000000001f9e0  /system/lib64/libhwbinder.so (???)
+  native: #06 pc 00000000000114d4  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+280)
+  native: #07 pc 00000000000aa6a8  /system/lib64/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+140)
+  native: #08 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  native: #09 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+  (no managed stack frames)
+
+"HeadsetStateMachine" prio=5 tid=15 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x12c49370 self=0x75e7552800
+  | sysTid=18222 nice=0 cgrp=default sched=0/0 handle=0x75cfe4c4f0
+  | state=S schedstat=( 1361042 8436198 3 ) utm=0 stm=0 core=7 HZ=100
+  | stack=0x75cfd4a000-0x75cfd4c000 stackSize=1037KB
+  | held mutexes=
+  kernel: __switch_to+0x84/0x90
+  kernel: SyS_epoll_wait+0x29c/0x384
+  kernel: SyS_epoll_pwait+0xb4/0x138
+  kernel: __sys_trace_return+0x0/0x4
+  native: #00 pc 000000000006a3a0  /system/lib64/libc.so (__epoll_pwait+8)
+  native: #01 pc 000000000001f9e4  /system/lib64/libc.so (epoll_pwait+52)
+  native: #02 pc 0000000000015d7c  /system/lib64/libutils.so (android::Looper::pollInner(int)+144)
+  native: #03 pc 0000000000015c64  /system/lib64/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+108)
+  native: #04 pc 0000000000110910  /system/lib64/libandroid_runtime.so (???)
+  native: #05 pc 00000000001dcd6c  /system/framework/arm64/boot-framework.oat (Java_android_os_MessageQueue_nativePollOnce__JI+140)
+  at android.os.MessageQueue.nativePollOnce(Native method)
+  at android.os.MessageQueue.next(MessageQueue.java:325)
+  at android.os.Looper.loop(Looper.java:142)
+  at android.os.HandlerThread.run(HandlerThread.java:65)
+
+"Binder:6580_4" prio=5 tid=18 Native
+  | group="main" sCount=1 dsCount=0 flags=1 obj=0x12e00020 self=0x75e7553200
+  | sysTid=18250 nice=0 cgrp=default sched=0/0 handle=0x75cf33d4f0
+  | state=S schedstat=( 1869166 310104 5 ) utm=0 stm=0 core=7 HZ=100
+  | stack=0x75cf243000-0x75cf245000 stackSize=1005KB
+  | held mutexes=
+  kernel: __switch_to+0x84/0x90
+  kernel: binder_thread_read+0x3b4/0x10f4
+  kernel: binder_ioctl_write_read.constprop.41+0x1c8/0x2f8
+  kernel: binder_ioctl+0x1f8/0x658
+  kernel: do_vfs_ioctl+0x610/0x6f8
+  kernel: SyS_ioctl+0x60/0x88
+  kernel: __sys_trace_return+0x0/0x4
+  native: #00 pc 000000000006a48c  /system/lib64/libc.so (__ioctl+4)
+  native: #01 pc 00000000000243f8  /system/lib64/libc.so (ioctl+136)
+  native: #02 pc 0000000000054950  /system/lib64/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+256)
+  native: #03 pc 0000000000054abc  /system/lib64/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+24)
+  native: #04 pc 0000000000055178  /system/lib64/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+60)
+  native: #05 pc 0000000000076200  /system/lib64/libbinder.so (???)
+  native: #06 pc 00000000000114d4  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+280)
+  native: #07 pc 00000000000aa6a8  /system/lib64/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+140)
+  native: #08 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  native: #09 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+  (no managed stack frames)
+
+"stack_manager" prio=5 (not attached)
+  | sysTid=6612 nice=0 cgrp=default
+  | state=S schedstat=( 18049735 58101721 43 ) utm=1 stm=0 core=5 HZ=100
+  kernel: __switch_to+0x84/0x90
+  kernel: SyS_epoll_wait+0x29c/0x384
+  kernel: SyS_epoll_pwait+0xb4/0x138
+  kernel: __sys_trace_return+0x0/0x4
+
+"POSIX timer 0" prio=5 (not attached)
+  | sysTid=6615 nice=0 cgrp=default
+  | state=S schedstat=( 401668 319322 7 ) utm=0 stm=0 core=7 HZ=100
+  kernel: __switch_to+0x84/0x90
+  kernel: do_sigtimedwait+0xe4/0x1c8
+  kernel: SyS_rt_sigtimedwait+0xc8/0x118
+  kernel: __sys_trace_return+0x0/0x4
+
+"POSIX timer 1" prio=5 (not attached)
+  | sysTid=6617 nice=0 cgrp=default
+  | state=S schedstat=( 54202482 113727714 744 ) utm=1 stm=4 core=7 HZ=100
+  kernel: __switch_to+0x84/0x90
+  kernel: do_sigtimedwait+0xe4/0x1c8
+  kernel: SyS_rt_sigtimedwait+0xc8/0x118
+  kernel: __sys_trace_return+0x0/0x4
+
+"alarm_default_c" prio=5 (not attached)
+  | sysTid=6618 nice=0 cgrp=default
+  | state=S schedstat=( 344583 6621302 3 ) utm=0 stm=0 core=3 HZ=100
+  kernel: __switch_to+0x84/0x90
+  kernel: SyS_epoll_wait+0x29c/0x384
+  kernel: SyS_epoll_pwait+0xb4/0x138
+  kernel: __sys_trace_return+0x0/0x4
+
+"alarm_dispatche" prio=5 (not attached)
+  | sysTid=6619 nice=0 cgrp=default
+  | state=S schedstat=( 3203284844 17728820744 163240 ) utm=16 stm=304 core=1 HZ=100
+  kernel: __switch_to+0x84/0x90
+  kernel: eventfd_ctx_read+0xd8/0x194
+  kernel: eventfd_read+0x44/0xf4
+  kernel: vfs_read+0x90/0x160
+  kernel: SyS_read+0x54/0xa4
+  kernel: __sys_trace_return+0x0/0x4
+
+"hci_thread" prio=5 (not attached)
+  | sysTid=6640 nice=0 cgrp=default
+  | state=S schedstat=( 2593956985 933364364 19655 ) utm=109 stm=150 core=3 HZ=100
+  kernel: __switch_to+0x84/0x90
+  kernel: futex_wait_queue_me+0xd8/0x130
+  kernel: futex_wait+0xec/0x200
+  kernel: do_futex+0xe0/0xa00
+  kernel: SyS_futex+0x110/0x19c
+  kernel: __sys_trace_return+0x0/0x4
+
+"bt_workqueue" prio=5 (not attached)
+  | sysTid=6653 nice=0 cgrp=default
+  | state=S schedstat=( 4771824 1761198 14 ) utm=0 stm=0 core=6 HZ=100
+  kernel: __switch_to+0x84/0x90
+  kernel: SyS_epoll_wait+0x29c/0x384
+  kernel: SyS_epoll_pwait+0xb4/0x138
+  kernel: __sys_trace_return+0x0/0x4
+
+"btu message loo" prio=5 (not attached)
+  | sysTid=6656 nice=0 cgrp=default
+  | state=S schedstat=( 1862488169 1096052426 20807 ) utm=74 stm=112 core=2 HZ=100
+  kernel: __switch_to+0x84/0x90
+  kernel: futex_wait_queue_me+0xd8/0x130
+  kernel: futex_wait+0xec/0x200
+  kernel: do_futex+0xe0/0xa00
+  kernel: SyS_futex+0x110/0x19c
+  kernel: __sys_trace_return+0x0/0x4
+
+"btif_sock_poll" prio=5 (not attached)
+  | sysTid=6667 nice=0 cgrp=default
+  | state=S schedstat=( 8866648477 20889006492 162949 ) utm=18 stm=869 core=7 HZ=100
+  kernel: __switch_to+0x84/0x90
+  kernel: poll_schedule_timeout+0x40/0x60
+  kernel: do_sys_poll+0x354/0x460
+  kernel: SyS_ppoll+0x11c/0x1c4
+  kernel: __sys_trace_return+0x0/0x4
+
+"btif_sock" prio=5 (not attached)
+  | sysTid=6668 nice=0 cgrp=default
+  | state=S schedstat=( 342604 7671562 4 ) utm=0 stm=0 core=7 HZ=100
+  kernel: __switch_to+0x84/0x90
+  kernel: SyS_epoll_wait+0x29c/0x384
+  kernel: SyS_epoll_pwait+0xb4/0x138
+  kernel: __sys_trace_return+0x0/0x4
+
+"media_worker" prio=5 (not attached)
+  | sysTid=18254 nice=0 cgrp=default
+  | state=S schedstat=( 2726667 1191041 4 ) utm=0 stm=0 core=2 HZ=100
+  kernel: __switch_to+0x84/0x90
+  kernel: SyS_epoll_wait+0x29c/0x384
+  kernel: SyS_epoll_pwait+0xb4/0x138
+  kernel: __sys_trace_return+0x0/0x4
+
+"uipc-main" prio=5 (not attached)
+  | sysTid=18255 nice=0 cgrp=default
+  | state=S schedstat=( 178959 30676 2 ) utm=0 stm=0 core=2 HZ=100
+  kernel: __switch_to+0x84/0x90
+  kernel: poll_schedule_timeout+0x40/0x60
+  kernel: do_select+0x4c0/0x518
+  kernel: core_sys_select+0x230/0x38c
+  kernel: SyS_pselect6+0x208/0x2ac
+  kernel: __sys_trace_return+0x0/0x4
+
+----- end 6580 -----
+
+
+----- pid 6580 at 2018-07-29 17:19:09 -----
+Cmd line: com.android.bluetooth
+ABI: 'arm64'
+
+"droid.bluetooth" sysTid=6580
+  #00 pc 000000000006a48c  /system/lib64/libc.so (__ioctl+4)
+  #01 pc 00000000000243f8  /system/lib64/libc.so (ioctl+136)
+  #02 pc 0000000000054950  /system/lib64/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+256)
+  #03 pc 00000000000556ac  /system/lib64/libbinder.so (android::IPCThreadState::waitForResponse(android::Parcel*, int*)+340)
+  #04 pc 00000000000553f8  /system/lib64/libbinder.so (android::IPCThreadState::transact(int, unsigned int, android::Parcel const&, android::Parcel*, unsigned int)+224)
+  #05 pc 000000000004c230  /system/lib64/libbinder.so (android::BpBinder::transact(unsigned int, android::Parcel const&, android::Parcel*, unsigned int)+72)
+  #06 pc 000000000011eb68  /system/lib64/libandroid_runtime.so (android_os_BinderProxy_transact(_JNIEnv*, _jobject*, int, _jobject*, _jobject*, int)+152)
+  #07 pc 0000000000f1ab74  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.BinderProxy.transactNative+196)
+  #08 pc 0000000000f1a918  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.BinderProxy.transact+744)
+  #09 pc 000000000078f398  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.app.IActivityManager$Stub$Proxy.registerReceiver+600)
+  #10 pc 000000000072a9c0  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.app.ContextImpl.registerReceiverInternal+624)
+  #11 pc 00000000007334a0  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.app.ContextImpl.registerReceiver+128)
+  #12 pc 000000000073335c  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.app.ContextImpl.registerReceiver [DEDUPED]+60)
+  #13 pc 000000000061f858  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.content.ContextWrapper.registerReceiver+72)
+  #14 pc 0000000000547188  /system/lib64/libart.so (art_quick_invoke_stub+584)
+  #15 pc 00000000000dc574  /system/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+200)
+  #16 pc 00000000002996d0  /system/lib64/libart.so (art::interpreter::ArtInterpreterToCompiledCodeBridge(art::Thread*, art::ArtMethod*, art::ShadowFrame*, unsigned short, art::JValue*)+344)
+  #17 pc 0000000000293cb8  /system/lib64/libart.so (_ZN3art11interpreter6DoCallILb0ELb0EEEbPNS_9ArtMethodEPNS_6ThreadERNS_11ShadowFrameEPKNS_11InstructionEtPNS_6JValueE+696)
+  #18 pc 0000000000531fdc  /system/lib64/libart.so (MterpInvokeVirtualQuick+812)
+  #19 pc 000000000053cb94  /system/lib64/libart.so (ExecuteMterpImpl+29972)
+  #20 pc 000000000027411c  /system/lib64/libart.so (art::interpreter::Execute(art::Thread*, art::DexFile::CodeItem const*, art::ShadowFrame&, art::JValue, bool)+444)
+  #21 pc 0000000000279d24  /system/lib64/libart.so (art::interpreter::ArtInterpreterToInterpreterBridge(art::Thread*, art::DexFile::CodeItem const*, art::ShadowFrame*, art::JValue*)+216)
+  #22 pc 0000000000293c98  /system/lib64/libart.so (_ZN3art11interpreter6DoCallILb0ELb0EEEbPNS_9ArtMethodEPNS_6ThreadERNS_11ShadowFrameEPKNS_11InstructionEtPNS_6JValueE+664)
+  #23 pc 0000000000530338  /system/lib64/libart.so (MterpInvokeDirect+344)
+  #24 pc 0000000000538f14  /system/lib64/libart.so (ExecuteMterpImpl+14484)
+  #25 pc 000000000027411c  /system/lib64/libart.so (art::interpreter::Execute(art::Thread*, art::DexFile::CodeItem const*, art::ShadowFrame&, art::JValue, bool)+444)
+  #26 pc 0000000000521c98  /system/lib64/libart.so (artQuickToInterpreterBridge+1052)
+  #27 pc 000000000055030c  /system/lib64/libart.so (art_quick_to_interpreter_bridge+92)
+  #28 pc 000000000054744c  /system/lib64/libart.so (art_quick_invoke_static_stub+604)
+  #29 pc 00000000000dc5b0  /system/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+260)
+  #30 pc 00000000002996d0  /system/lib64/libart.so (art::interpreter::ArtInterpreterToCompiledCodeBridge(art::Thread*, art::ArtMethod*, art::ShadowFrame*, unsigned short, art::JValue*)+344)
+  #31 pc 0000000000293cb8  /system/lib64/libart.so (_ZN3art11interpreter6DoCallILb0ELb0EEEbPNS_9ArtMethodEPNS_6ThreadERNS_11ShadowFrameEPKNS_11InstructionEtPNS_6JValueE+696)
+  #32 pc 0000000000530520  /system/lib64/libart.so (MterpInvokeStatic+264)
+  #33 pc 0000000000538f94  /system/lib64/libart.so (ExecuteMterpImpl+14612)
+  #34 pc 000000000027411c  /system/lib64/libart.so (art::interpreter::Execute(art::Thread*, art::DexFile::CodeItem const*, art::ShadowFrame&, art::JValue, bool)+444)
+  #35 pc 0000000000279d24  /system/lib64/libart.so (art::interpreter::ArtInterpreterToInterpreterBridge(art::Thread*, art::DexFile::CodeItem const*, art::ShadowFrame*, art::JValue*)+216)
+  #36 pc 0000000000293c98  /system/lib64/libart.so (_ZN3art11interpreter6DoCallILb0ELb0EEEbPNS_9ArtMethodEPNS_6ThreadERNS_11ShadowFrameEPKNS_11InstructionEtPNS_6JValueE+664)
+  #37 pc 0000000000531fdc  /system/lib64/libart.so (MterpInvokeVirtualQuick+812)
+  #38 pc 000000000053cb94  /system/lib64/libart.so (ExecuteMterpImpl+29972)
+  #39 pc 000000000027411c  /system/lib64/libart.so (art::interpreter::Execute(art::Thread*, art::DexFile::CodeItem const*, art::ShadowFrame&, art::JValue, bool)+444)
+  #40 pc 0000000000279d24  /system/lib64/libart.so (art::interpreter::ArtInterpreterToInterpreterBridge(art::Thread*, art::DexFile::CodeItem const*, art::ShadowFrame*, art::JValue*)+216)
+  #41 pc 0000000000293c98  /system/lib64/libart.so (_ZN3art11interpreter6DoCallILb0ELb0EEEbPNS_9ArtMethodEPNS_6ThreadERNS_11ShadowFrameEPKNS_11InstructionEtPNS_6JValueE+664)
+  #42 pc 0000000000530338  /system/lib64/libart.so (MterpInvokeDirect+344)
+  #43 pc 0000000000538f14  /system/lib64/libart.so (ExecuteMterpImpl+14484)
+  #44 pc 000000000027411c  /system/lib64/libart.so (art::interpreter::Execute(art::Thread*, art::DexFile::CodeItem const*, art::ShadowFrame&, art::JValue, bool)+444)
+  #45 pc 0000000000521c98  /system/lib64/libart.so (artQuickToInterpreterBridge+1052)
+  #46 pc 000000000055030c  /system/lib64/libart.so (art_quick_to_interpreter_bridge+92)
+  #47 pc 00000000006d7384  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.app.ActivityThread.handleServiceArgs+308)
+  #48 pc 00000000006c8fb4  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.app.ActivityThread.-wrap20+52)
+  #49 pc 00000000006c4e64  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.app.ActivityThread$H.handleMessage+5348)
+  #50 pc 00000000006c1924  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.Handler.dispatchMessage+180)
+  #51 pc 0000000000f7548c  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.Looper.loop+1164)
+  #52 pc 00000000006db040  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.app.ActivityThread.main+880)
+  #53 pc 000000000054744c  /system/lib64/libart.so (art_quick_invoke_static_stub+604)
+  #54 pc 00000000000dc5b0  /system/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+260)
+  #55 pc 000000000046ba28  /system/lib64/libart.so (art::InvokeWithArgArray(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::ArgArray*, art::JValue*, char const*)+100)
+  #56 pc 000000000046d5bc  /system/lib64/libart.so (art::InvokeMethod(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jobject*, _jobject*, unsigned long)+1452)
+  #57 pc 00000000003f0a5c  /system/lib64/libart.so (art::Method_invoke(_JNIEnv*, _jobject*, _jobject*, _jobject*)+52)
+  #58 pc 0000000000260f14  /system/framework/arm64/boot-core-oj.oat (offset 0x1da000) (java.lang.Class.getDeclaredMethodInternal [DEDUPED]+180)
+  #59 pc 0000000001656534  /system/framework/arm64/boot-framework.oat (offset 0x619000) (com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run+132)
+  #60 pc 000000000165f794  /system/framework/arm64/boot-framework.oat (offset 0x619000) (com.android.internal.os.ZygoteInit.main+2900)
+  #61 pc 000000000054744c  /system/lib64/libart.so (art_quick_invoke_static_stub+604)
+  #62 pc 00000000000dc5b0  /system/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+260)
+  #63 pc 000000000046ba28  /system/lib64/libart.so (art::InvokeWithArgArray(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::ArgArray*, art::JValue*, char const*)+100)
+
+"Jit thread pool" sysTid=6585
+  #00 pc 000000000001dbec  /system/lib64/libc.so (syscall+28)
+  #01 pc 00000000000e661c  /system/lib64/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+152)
+  #02 pc 00000000004b2af8  /system/lib64/libart.so (art::ThreadPool::GetTask(art::Thread*)+256)
+  #03 pc 00000000004b21f0  /system/lib64/libart.so (art::ThreadPoolWorker::Run()+124)
+  #04 pc 00000000004b1cc4  /system/lib64/libart.so (art::ThreadPoolWorker::Callback(void*)+148)
+  #05 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #06 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"Signal Catcher" sysTid=6590
+  #00 pc 000000000006a580  /system/lib64/libc.so (__rt_sigtimedwait+8)
+  #01 pc 00000000000289d8  /system/lib64/libc.so (sigwait+60)
+  #02 pc 00000000004884e8  /system/lib64/libart.so (art::SignalSet::Wait()+44)
+  #03 pc 0000000000487ffc  /system/lib64/libart.so (art::SignalCatcher::WaitForSignal(art::Thread*, art::SignalSet&)+248)
+  #04 pc 0000000000486828  /system/lib64/libart.so (art::SignalCatcher::Run(void*)+268)
+  #05 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #06 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"ReferenceQueueD" sysTid=6591
+  #00 pc 000000000001dbec  /system/lib64/libc.so (syscall+28)
+  #01 pc 00000000000e661c  /system/lib64/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+152)
+  #02 pc 00000000003c47dc  /system/lib64/libart.so (art::Monitor::Wait(art::Thread*, long, int, bool, art::ThreadState)+636)
+  #03 pc 00000000003c624c  /system/lib64/libart.so (art::Monitor::Wait(art::Thread*, art::mirror::Object*, long, int, bool, art::ThreadState)+376)
+  #04 pc 00000000001da70c  /system/framework/arm64/boot-core-oj.oat (offset 0x1da000) (java.lang.Object.notify [DEDUPED]+124)
+  #05 pc 00000000002cceb4  /system/framework/arm64/boot-core-libart.oat (offset 0xd6000) (java.lang.Daemons$ReferenceQueueDaemon.runInternal+116)
+  #06 pc 00000000002cb6ec  /system/framework/arm64/boot-core-libart.oat (offset 0xd6000) (java.lang.Daemons$Daemon.run+76)
+  #07 pc 00000000001f97b8  /system/framework/arm64/boot-core-oj.oat (offset 0x1da000) (java.lang.Thread.run+72)
+  #08 pc 0000000000547188  /system/lib64/libart.so (art_quick_invoke_stub+584)
+  #09 pc 00000000000dc574  /system/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+200)
+  #10 pc 000000000046ba28  /system/lib64/libart.so (art::InvokeWithArgArray(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::ArgArray*, art::JValue*, char const*)+100)
+  #11 pc 000000000046cc54  /system/lib64/libart.so (art::InvokeVirtualOrInterfaceWithJValues(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jmethodID*, jvalue*)+836)
+  #12 pc 0000000000493540  /system/lib64/libart.so (art::Thread::CreateCallback(void*)+1120)
+  #13 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #14 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"FinalizerDaemon" sysTid=6592
+  #00 pc 000000000001dbec  /system/lib64/libc.so (syscall+28)
+  #01 pc 00000000000e661c  /system/lib64/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+152)
+  #02 pc 00000000003c47dc  /system/lib64/libart.so (art::Monitor::Wait(art::Thread*, long, int, bool, art::ThreadState)+636)
+  #03 pc 00000000003c624c  /system/lib64/libart.so (art::Monitor::Wait(art::Thread*, art::mirror::Object*, long, int, bool, art::ThreadState)+376)
+  #04 pc 00000000001daaec  /system/framework/arm64/boot-core-oj.oat (offset 0x1da000) (java.lang.Object.wait [DEDUPED]+140)
+  #05 pc 00000000002de030  /system/framework/arm64/boot-core-oj.oat (offset 0x1da000) (java.lang.ref.ReferenceQueue.remove+544)
+  #06 pc 00000000002ddd6c  /system/framework/arm64/boot-core-oj.oat (offset 0x1da000) (java.lang.ref.ReferenceQueue.remove+44)
+  #07 pc 00000000002cbeb4  /system/framework/arm64/boot-core-libart.oat (offset 0xd6000) (java.lang.Daemons$FinalizerDaemon.runInternal+356)
+  #08 pc 00000000002cb6ec  /system/framework/arm64/boot-core-libart.oat (offset 0xd6000) (java.lang.Daemons$Daemon.run+76)
+  #09 pc 00000000001f97b8  /system/framework/arm64/boot-core-oj.oat (offset 0x1da000) (java.lang.Thread.run+72)
+  #10 pc 0000000000547188  /system/lib64/libart.so (art_quick_invoke_stub+584)
+  #11 pc 00000000000dc574  /system/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+200)
+  #12 pc 000000000046ba28  /system/lib64/libart.so (art::InvokeWithArgArray(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::ArgArray*, art::JValue*, char const*)+100)
+  #13 pc 000000000046cc54  /system/lib64/libart.so (art::InvokeVirtualOrInterfaceWithJValues(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jmethodID*, jvalue*)+836)
+  #14 pc 0000000000493540  /system/lib64/libart.so (art::Thread::CreateCallback(void*)+1120)
+  #15 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #16 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"FinalizerWatchd" sysTid=6594
+  #00 pc 000000000001dbec  /system/lib64/libc.so (syscall+28)
+  #01 pc 00000000000e661c  /system/lib64/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+152)
+  #02 pc 00000000003c47dc  /system/lib64/libart.so (art::Monitor::Wait(art::Thread*, long, int, bool, art::ThreadState)+636)
+  #03 pc 00000000003c624c  /system/lib64/libart.so (art::Monitor::Wait(art::Thread*, art::mirror::Object*, long, int, bool, art::ThreadState)+376)
+  #04 pc 00000000001da70c  /system/framework/arm64/boot-core-oj.oat (offset 0x1da000) (java.lang.Object.notify [DEDUPED]+124)
+  #05 pc 00000000002cc798  /system/framework/arm64/boot-core-libart.oat (offset 0xd6000) (java.lang.Daemons$FinalizerWatchdogDaemon.sleepUntilNeeded+72)
+  #06 pc 00000000002ccb10  /system/framework/arm64/boot-core-libart.oat (offset 0xd6000) (java.lang.Daemons$FinalizerWatchdogDaemon.runInternal+80)
+  #07 pc 00000000002cb6ec  /system/framework/arm64/boot-core-libart.oat (offset 0xd6000) (java.lang.Daemons$Daemon.run+76)
+  #08 pc 00000000001f97b8  /system/framework/arm64/boot-core-oj.oat (offset 0x1da000) (java.lang.Thread.run+72)
+  #09 pc 0000000000547188  /system/lib64/libart.so (art_quick_invoke_stub+584)
+  #10 pc 00000000000dc574  /system/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+200)
+  #11 pc 000000000046ba28  /system/lib64/libart.so (art::InvokeWithArgArray(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::ArgArray*, art::JValue*, char const*)+100)
+  #12 pc 000000000046cc54  /system/lib64/libart.so (art::InvokeVirtualOrInterfaceWithJValues(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jmethodID*, jvalue*)+836)
+  #13 pc 0000000000493540  /system/lib64/libart.so (art::Thread::CreateCallback(void*)+1120)
+  #14 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #15 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"HeapTaskDaemon" sysTid=6595
+  #00 pc 000000000001dbec  /system/lib64/libc.so (syscall+28)
+  #01 pc 00000000000e661c  /system/lib64/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+152)
+  #02 pc 00000000002523f0  /system/lib64/libart.so (art::gc::TaskProcessor::GetTask(art::Thread*)+300)
+  #03 pc 0000000000252ce0  /system/lib64/libart.so (art::gc::TaskProcessor::RunAllTasks(art::Thread*)+92)
+  #04 pc 00000000002c8f3c  /system/framework/arm64/boot-core-libart.oat (offset 0xd6000) (dalvik.system.VMRuntime.clampGrowthLimit [DEDUPED]+124)
+  #05 pc 00000000002ccdc4  /system/framework/arm64/boot-core-libart.oat (offset 0xd6000) (java.lang.Daemons$HeapTaskDaemon.runInternal+196)
+  #06 pc 00000000002cb6ec  /system/framework/arm64/boot-core-libart.oat (offset 0xd6000) (java.lang.Daemons$Daemon.run+76)
+  #07 pc 00000000001f97b8  /system/framework/arm64/boot-core-oj.oat (offset 0x1da000) (java.lang.Thread.run+72)
+  #08 pc 0000000000547188  /system/lib64/libart.so (art_quick_invoke_stub+584)
+  #09 pc 00000000000dc574  /system/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+200)
+  #10 pc 000000000046ba28  /system/lib64/libart.so (art::InvokeWithArgArray(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::ArgArray*, art::JValue*, char const*)+100)
+  #11 pc 000000000046cc54  /system/lib64/libart.so (art::InvokeVirtualOrInterfaceWithJValues(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jmethodID*, jvalue*)+836)
+  #12 pc 0000000000493540  /system/lib64/libart.so (art::Thread::CreateCallback(void*)+1120)
+  #13 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #14 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"Binder:6580_1" sysTid=6596
+  #00 pc 000000000006a48c  /system/lib64/libc.so (__ioctl+4)
+  #01 pc 00000000000243f8  /system/lib64/libc.so (ioctl+136)
+  #02 pc 0000000000054950  /system/lib64/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+256)
+  #03 pc 0000000000054abc  /system/lib64/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+24)
+  #04 pc 0000000000055178  /system/lib64/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+60)
+  #05 pc 0000000000076200  /system/lib64/libbinder.so (android::PoolThread::threadLoop()+24)
+  #06 pc 00000000000114d4  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+280)
+  #07 pc 00000000000aa6a8  /system/lib64/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+140)
+  #08 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #09 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"Binder:6580_2" sysTid=6597
+  #00 pc 000000000006a48c  /system/lib64/libc.so (__ioctl+4)
+  #01 pc 00000000000243f8  /system/lib64/libc.so (ioctl+136)
+  #02 pc 0000000000054950  /system/lib64/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+256)
+  #03 pc 0000000000054abc  /system/lib64/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+24)
+  #04 pc 0000000000055178  /system/lib64/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+60)
+  #05 pc 0000000000076200  /system/lib64/libbinder.so (android::PoolThread::threadLoop()+24)
+  #06 pc 00000000000114d4  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+280)
+  #07 pc 00000000000aa6a8  /system/lib64/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+140)
+  #08 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #09 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"Binder:6580_3" sysTid=6598
+  #00 pc 000000000006a48c  /system/lib64/libc.so (__ioctl+4)
+  #01 pc 00000000000243f8  /system/lib64/libc.so (ioctl+136)
+  #02 pc 0000000000054950  /system/lib64/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+256)
+  #03 pc 0000000000054abc  /system/lib64/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+24)
+  #04 pc 0000000000055178  /system/lib64/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+60)
+  #05 pc 0000000000076200  /system/lib64/libbinder.so (android::PoolThread::threadLoop()+24)
+  #06 pc 00000000000114d4  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+280)
+  #07 pc 00000000000aa6a8  /system/lib64/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+140)
+  #08 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #09 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"Profile Saver" sysTid=6600
+  #00 pc 000000000001dbec  /system/lib64/libc.so (syscall+28)
+  #01 pc 00000000000e661c  /system/lib64/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+152)
+  #02 pc 00000000003346cc  /system/lib64/libart.so (art::ProfileSaver::Run()+360)
+  #03 pc 0000000000337234  /system/lib64/libart.so (art::ProfileSaver::RunProfileSaverThread(void*)+92)
+  #04 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #05 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"BluetoothAdapte" sysTid=6611
+  #00 pc 000000000006a48c  /system/lib64/libc.so (__ioctl+4)
+  #01 pc 00000000000243f8  /system/lib64/libc.so (ioctl+136)
+  #02 pc 0000000000054950  /system/lib64/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+256)
+  #03 pc 00000000000556ac  /system/lib64/libbinder.so (android::IPCThreadState::waitForResponse(android::Parcel*, int*)+340)
+  #04 pc 00000000000553f8  /system/lib64/libbinder.so (android::IPCThreadState::transact(int, unsigned int, android::Parcel const&, android::Parcel*, unsigned int)+224)
+  #05 pc 000000000004c230  /system/lib64/libbinder.so (android::BpBinder::transact(unsigned int, android::Parcel const&, android::Parcel*, unsigned int)+72)
+  #06 pc 000000000011eb68  /system/lib64/libandroid_runtime.so (android_os_BinderProxy_transact(_JNIEnv*, _jobject*, int, _jobject*, _jobject*, int)+152)
+  #07 pc 0000000000f1ab74  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.BinderProxy.transactNative+196)
+  #08 pc 0000000000f1a918  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.BinderProxy.transact+744)
+  #09 pc 00000000007a164c  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.app.IActivityManager$Stub$Proxy.stopService+444)
+  #10 pc 000000000072b34c  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.app.ContextImpl.stopServiceCommon+332)
+  #11 pc 0000000000738438  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.app.ContextImpl.stopService+88)
+  #12 pc 00000000006214c0  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.content.ContextWrapper.stopService+64)
+  #13 pc 0000000000547188  /system/lib64/libart.so (art_quick_invoke_stub+584)
+  #14 pc 00000000000dc574  /system/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+200)
+  #15 pc 00000000002996d0  /system/lib64/libart.so (art::interpreter::ArtInterpreterToCompiledCodeBridge(art::Thread*, art::ArtMethod*, art::ShadowFrame*, unsigned short, art::JValue*)+344)
+  #16 pc 0000000000293cb8  /system/lib64/libart.so (_ZN3art11interpreter6DoCallILb0ELb0EEEbPNS_9ArtMethodEPNS_6ThreadERNS_11ShadowFrameEPKNS_11InstructionEtPNS_6JValueE+696)
+  #17 pc 0000000000531fdc  /system/lib64/libart.so (MterpInvokeVirtualQuick+812)
+  #18 pc 000000000053cb94  /system/lib64/libart.so (ExecuteMterpImpl+29972)
+  #19 pc 000000000027411c  /system/lib64/libart.so (art::interpreter::Execute(art::Thread*, art::DexFile::CodeItem const*, art::ShadowFrame&, art::JValue, bool)+444)
+  #20 pc 0000000000279d24  /system/lib64/libart.so (art::interpreter::ArtInterpreterToInterpreterBridge(art::Thread*, art::DexFile::CodeItem const*, art::ShadowFrame*, art::JValue*)+216)
+  #21 pc 0000000000293c98  /system/lib64/libart.so (_ZN3art11interpreter6DoCallILb0ELb0EEEbPNS_9ArtMethodEPNS_6ThreadERNS_11ShadowFrameEPKNS_11InstructionEtPNS_6JValueE+664)
+  #22 pc 0000000000531fdc  /system/lib64/libart.so (MterpInvokeVirtualQuick+812)
+  #23 pc 000000000053cb94  /system/lib64/libart.so (ExecuteMterpImpl+29972)
+  #24 pc 000000000027411c  /system/lib64/libart.so (art::interpreter::Execute(art::Thread*, art::DexFile::CodeItem const*, art::ShadowFrame&, art::JValue, bool)+444)
+  #25 pc 0000000000521c98  /system/lib64/libart.so (artQuickToInterpreterBridge+1052)
+  #26 pc 000000000055030c  /system/lib64/libart.so (art_quick_to_interpreter_bridge+92)
+  #27 pc 000000000171d91c  /system/framework/arm64/boot-framework.oat (offset 0x619000) (com.android.internal.util.StateMachine$SmHandler.processMsg+460)
+  #28 pc 000000000171eb60  /system/framework/arm64/boot-framework.oat (offset 0x619000) (com.android.internal.util.StateMachine$SmHandler.handleMessage+672)
+  #29 pc 00000000006c1924  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.Handler.dispatchMessage+180)
+  #30 pc 0000000000f7548c  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.Looper.loop+1164)
+  #31 pc 0000000000c16ae0  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.HandlerThread.run+624)
+  #32 pc 0000000000547188  /system/lib64/libart.so (art_quick_invoke_stub+584)
+  #33 pc 00000000000dc574  /system/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+200)
+  #34 pc 000000000046ba28  /system/lib64/libart.so (art::InvokeWithArgArray(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::ArgArray*, art::JValue*, char const*)+100)
+  #35 pc 000000000046cc54  /system/lib64/libart.so (art::InvokeVirtualOrInterfaceWithJValues(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jmethodID*, jvalue*)+836)
+  #36 pc 0000000000493540  /system/lib64/libart.so (art::Thread::CreateCallback(void*)+1120)
+  #37 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #38 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"stack_manager" sysTid=6612
+  #00 pc 000000000006a3a0  /system/lib64/libc.so (__epoll_pwait+8)
+  #01 pc 000000000001f9e4  /system/lib64/libc.so (epoll_pwait+52)
+  #02 pc 00000000001c1d28  /system/lib64/hw/bluetooth.default.so (run_reactor(reactor_t*, int)+164)
+  #03 pc 00000000001c1c58  /system/lib64/hw/bluetooth.default.so (reactor_start(reactor_t*)+84)
+  #04 pc 00000000001c3618  /system/lib64/hw/bluetooth.default.so (run_thread(void*)+184)
+  #05 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #06 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"POSIX timer 0" sysTid=6615
+  #00 pc 000000000006a580  /system/lib64/libc.so (__rt_sigtimedwait+8)
+  #01 pc 0000000000026fac  /system/lib64/libc.so (__timer_thread_start(void*)+92)
+  #02 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #03 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"POSIX timer 1" sysTid=6617
+  #00 pc 000000000006a580  /system/lib64/libc.so (__rt_sigtimedwait+8)
+  #01 pc 0000000000026fac  /system/lib64/libc.so (__timer_thread_start(void*)+92)
+  #02 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #03 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"alarm_default_c" sysTid=6618
+  #00 pc 000000000006a3a0  /system/lib64/libc.so (__epoll_pwait+8)
+  #01 pc 000000000001f9e4  /system/lib64/libc.so (epoll_pwait+52)
+  #02 pc 00000000001c1d28  /system/lib64/hw/bluetooth.default.so (run_reactor(reactor_t*, int)+164)
+  #03 pc 00000000001c1c58  /system/lib64/hw/bluetooth.default.so (reactor_start(reactor_t*)+84)
+  #04 pc 00000000001c3618  /system/lib64/hw/bluetooth.default.so (run_thread(void*)+184)
+  #05 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #06 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"alarm_dispatche" sysTid=6619
+  #00 pc 000000000006af0c  /system/lib64/libc.so (read+4)
+  #01 pc 000000000001fd88  /system/lib64/libc.so (eventfd_read+12)
+  #02 pc 00000000001c2984  /system/lib64/hw/bluetooth.default.so (semaphore_wait(semaphore_t*)+132)
+  #03 pc 00000000001b986c  /system/lib64/hw/bluetooth.default.so (callback_dispatch(void*)+468)
+  #04 pc 00000000001c3c08  /system/lib64/hw/bluetooth.default.so (work_queue_read_cb(void*)+92)
+  #05 pc 00000000001c1dc0  /system/lib64/hw/bluetooth.default.so (run_reactor(reactor_t*, int)+316)
+  #06 pc 00000000001c1c58  /system/lib64/hw/bluetooth.default.so (reactor_start(reactor_t*)+84)
+  #07 pc 00000000001c3618  /system/lib64/hw/bluetooth.default.so (run_thread(void*)+184)
+  #08 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #09 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"BT Service Call" sysTid=6624
+  #00 pc 000000000001dbec  /system/lib64/libc.so (syscall+28)
+  #01 pc 00000000000674b8  /system/lib64/libc.so (pthread_cond_wait+96)
+  #02 pc 00000000000ca33c  /system/lib64/libchrome.so (base::WaitableEvent::TimedWait(base::TimeDelta const&)+316)
+  #03 pc 00000000000ca1d8  /system/lib64/libchrome.so (base::WaitableEvent::Wait()+44)
+  #04 pc 00000000000a077c  /system/lib64/libchrome.so (base::MessagePumpDefault::Run(base::MessagePump::Delegate*)+196)
+  #05 pc 00000000000b9ee8  /system/lib64/libchrome.so (base::RunLoop::Run()+136)
+  #06 pc 000000000009f76c  /system/lib64/hw/bluetooth.default.so (run_message_loop(void*)+268)
+  #07 pc 00000000001c3c08  /system/lib64/hw/bluetooth.default.so (work_queue_read_cb(void*)+92)
+  #08 pc 00000000001c1dc0  /system/lib64/hw/bluetooth.default.so (run_reactor(reactor_t*, int)+316)
+  #09 pc 00000000001c1c58  /system/lib64/hw/bluetooth.default.so (reactor_start(reactor_t*)+84)
+  #10 pc 00000000001c3618  /system/lib64/hw/bluetooth.default.so (run_thread(void*)+184)
+  #11 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #12 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"BondStateMachin" sysTid=6627
+  #00 pc 000000000006a3a0  /system/lib64/libc.so (__epoll_pwait+8)
+  #01 pc 000000000001f9e4  /system/lib64/libc.so (epoll_pwait+52)
+  #02 pc 0000000000015d7c  /system/lib64/libutils.so (android::Looper::pollInner(int)+144)
+  #03 pc 0000000000015c64  /system/lib64/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+108)
+  #04 pc 0000000000110910  /system/lib64/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long, int)+44)
+  #05 pc 00000000007f5d6c  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.app.NativeActivity.onWindowFocusChangedNative [DEDUPED]+140)
+  #06 pc 0000000000f7b330  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.MessageQueue.next+192)
+  #07 pc 0000000000f751f4  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.Looper.loop+500)
+  #08 pc 0000000000c16ae0  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.HandlerThread.run+624)
+  #09 pc 0000000000547188  /system/lib64/libart.so (art_quick_invoke_stub+584)
+  #10 pc 00000000000dc574  /system/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+200)
+  #11 pc 000000000046ba28  /system/lib64/libart.so (art::InvokeWithArgArray(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::ArgArray*, art::JValue*, char const*)+100)
+  #12 pc 000000000046cc54  /system/lib64/libart.so (art::InvokeVirtualOrInterfaceWithJValues(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jmethodID*, jvalue*)+836)
+  #13 pc 0000000000493540  /system/lib64/libart.so (art::Thread::CreateCallback(void*)+1120)
+  #14 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #15 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"BluetoothAdvert" sysTid=6633
+  #00 pc 000000000006a3a0  /system/lib64/libc.so (__epoll_pwait+8)
+  #01 pc 000000000001f9e4  /system/lib64/libc.so (epoll_pwait+52)
+  #02 pc 0000000000015d7c  /system/lib64/libutils.so (android::Looper::pollInner(int)+144)
+  #03 pc 0000000000015c64  /system/lib64/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+108)
+  #04 pc 0000000000110910  /system/lib64/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long, int)+44)
+  #05 pc 00000000007f5d6c  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.app.NativeActivity.onWindowFocusChangedNative [DEDUPED]+140)
+  #06 pc 0000000000f7b330  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.MessageQueue.next+192)
+  #07 pc 0000000000f751f4  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.Looper.loop+500)
+  #08 pc 0000000000c16ae0  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.HandlerThread.run+624)
+  #09 pc 0000000000547188  /system/lib64/libart.so (art_quick_invoke_stub+584)
+  #10 pc 00000000000dc574  /system/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+200)
+  #11 pc 000000000046ba28  /system/lib64/libart.so (art::InvokeWithArgArray(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::ArgArray*, art::JValue*, char const*)+100)
+  #12 pc 000000000046cc54  /system/lib64/libart.so (art::InvokeVirtualOrInterfaceWithJValues(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jmethodID*, jvalue*)+836)
+  #13 pc 0000000000493540  /system/lib64/libart.so (art::Thread::CreateCallback(void*)+1120)
+  #14 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #15 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"BluetoothScanMa" sysTid=6634
+  #00 pc 000000000006a3a0  /system/lib64/libc.so (__epoll_pwait+8)
+  #01 pc 000000000001f9e4  /system/lib64/libc.so (epoll_pwait+52)
+  #02 pc 0000000000015d7c  /system/lib64/libutils.so (android::Looper::pollInner(int)+144)
+  #03 pc 0000000000015c64  /system/lib64/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+108)
+  #04 pc 0000000000110910  /system/lib64/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long, int)+44)
+  #05 pc 00000000007f5d6c  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.app.NativeActivity.onWindowFocusChangedNative [DEDUPED]+140)
+  #06 pc 0000000000f7b330  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.MessageQueue.next+192)
+  #07 pc 0000000000f751f4  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.Looper.loop+500)
+  #08 pc 0000000000c16ae0  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.HandlerThread.run+624)
+  #09 pc 0000000000547188  /system/lib64/libart.so (art_quick_invoke_stub+584)
+  #10 pc 00000000000dc574  /system/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+200)
+  #11 pc 000000000046ba28  /system/lib64/libart.so (art::InvokeWithArgArray(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::ArgArray*, art::JValue*, char const*)+100)
+  #12 pc 000000000046cc54  /system/lib64/libart.so (art::InvokeVirtualOrInterfaceWithJValues(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jmethodID*, jvalue*)+836)
+  #13 pc 0000000000493540  /system/lib64/libart.so (art::Thread::CreateCallback(void*)+1120)
+  #14 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #15 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"queued-work-loo" sysTid=6635
+  #00 pc 000000000006a3a0  /system/lib64/libc.so (__epoll_pwait+8)
+  #01 pc 000000000001f9e4  /system/lib64/libc.so (epoll_pwait+52)
+  #02 pc 0000000000015d7c  /system/lib64/libutils.so (android::Looper::pollInner(int)+144)
+  #03 pc 0000000000015c64  /system/lib64/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+108)
+  #04 pc 0000000000110910  /system/lib64/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long, int)+44)
+  #05 pc 00000000007f5d6c  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.app.NativeActivity.onWindowFocusChangedNative [DEDUPED]+140)
+  #06 pc 0000000000f7b330  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.MessageQueue.next+192)
+  #07 pc 0000000000f751f4  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.Looper.loop+500)
+  #08 pc 0000000000c16ae0  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.HandlerThread.run+624)
+  #09 pc 0000000000547188  /system/lib64/libart.so (art_quick_invoke_stub+584)
+  #10 pc 00000000000dc574  /system/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+200)
+  #11 pc 000000000046ba28  /system/lib64/libart.so (art::InvokeWithArgArray(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::ArgArray*, art::JValue*, char const*)+100)
+  #12 pc 000000000046cc54  /system/lib64/libart.so (art::InvokeVirtualOrInterfaceWithJValues(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jmethodID*, jvalue*)+836)
+  #13 pc 0000000000493540  /system/lib64/libart.so (art::Thread::CreateCallback(void*)+1120)
+  #14 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #15 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"hci_thread" sysTid=6640
+  #00 pc 000000000001dbec  /system/lib64/libc.so (syscall+28)
+  #01 pc 00000000000674b8  /system/lib64/libc.so (pthread_cond_wait+96)
+  #02 pc 00000000000ca33c  /system/lib64/libchrome.so (base::WaitableEvent::TimedWait(base::TimeDelta const&)+316)
+  #03 pc 00000000000ca1d8  /system/lib64/libchrome.so (base::WaitableEvent::Wait()+44)
+  #04 pc 00000000000a077c  /system/lib64/libchrome.so (base::MessagePumpDefault::Run(base::MessagePump::Delegate*)+196)
+  #05 pc 00000000000b9ee8  /system/lib64/libchrome.so (base::RunLoop::Run()+136)
+  #06 pc 00000000000ee6a0  /system/lib64/hw/bluetooth.default.so (message_loop_run(void*)+244)
+  #07 pc 00000000001c3c08  /system/lib64/hw/bluetooth.default.so (work_queue_read_cb(void*)+92)
+  #08 pc 00000000001c1dc0  /system/lib64/hw/bluetooth.default.so (run_reactor(reactor_t*, int)+316)
+  #09 pc 00000000001c1c58  /system/lib64/hw/bluetooth.default.so (reactor_start(reactor_t*)+84)
+  #10 pc 00000000001c3618  /system/lib64/hw/bluetooth.default.so (run_thread(void*)+184)
+  #11 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #12 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"HwBinder:6580_1" sysTid=6641
+  #00 pc 000000000006a48c  /system/lib64/libc.so (__ioctl+4)
+  #01 pc 00000000000243f8  /system/lib64/libc.so (ioctl+136)
+  #02 pc 0000000000014e8c  /system/lib64/libhwbinder.so (android::hardware::IPCThreadState::talkWithDriver(bool)+256)
+  #03 pc 0000000000014ff8  /system/lib64/libhwbinder.so (android::hardware::IPCThreadState::getAndExecuteCommand()+24)
+  #04 pc 0000000000015780  /system/lib64/libhwbinder.so (android::hardware::IPCThreadState::joinThreadPool(bool)+60)
+  #05 pc 000000000001f9e0  /system/lib64/libhwbinder.so (android::hardware::PoolThread::threadLoop()+24)
+  #06 pc 00000000000114d4  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+280)
+  #07 pc 00000000000aa6a8  /system/lib64/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+140)
+  #08 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #09 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"bt_workqueue" sysTid=6653
+  #00 pc 000000000006a3a0  /system/lib64/libc.so (__epoll_pwait+8)
+  #01 pc 000000000001f9e4  /system/lib64/libc.so (epoll_pwait+52)
+  #02 pc 00000000001c1d28  /system/lib64/hw/bluetooth.default.so (run_reactor(reactor_t*, int)+164)
+  #03 pc 00000000001c1c58  /system/lib64/hw/bluetooth.default.so (reactor_start(reactor_t*)+84)
+  #04 pc 00000000001c3618  /system/lib64/hw/bluetooth.default.so (run_thread(void*)+184)
+  #05 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #06 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"btu message loo" sysTid=6656
+  #00 pc 000000000001dbec  /system/lib64/libc.so (syscall+28)
+  #01 pc 00000000000674b8  /system/lib64/libc.so (pthread_cond_wait+96)
+  #02 pc 00000000000ca33c  /system/lib64/libchrome.so (base::WaitableEvent::TimedWait(base::TimeDelta const&)+316)
+  #03 pc 00000000000ca1d8  /system/lib64/libchrome.so (base::WaitableEvent::Wait()+44)
+  #04 pc 00000000000a077c  /system/lib64/libchrome.so (base::MessagePumpDefault::Run(base::MessagePump::Delegate*)+196)
+  #05 pc 00000000000b9ee8  /system/lib64/libchrome.so (base::RunLoop::Run()+136)
+  #06 pc 0000000000157858  /system/lib64/hw/bluetooth.default.so (btu_message_loop_run(void*)+244)
+  #07 pc 00000000001c3c08  /system/lib64/hw/bluetooth.default.so (work_queue_read_cb(void*)+92)
+  #08 pc 00000000001c1dc0  /system/lib64/hw/bluetooth.default.so (run_reactor(reactor_t*, int)+316)
+  #09 pc 00000000001c1c58  /system/lib64/hw/bluetooth.default.so (reactor_start(reactor_t*)+84)
+  #10 pc 00000000001c3618  /system/lib64/hw/bluetooth.default.so (run_thread(void*)+184)
+  #11 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #12 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"btif_sock_poll" sysTid=6667
+  #00 pc 000000000006a4bc  /system/lib64/libc.so (__ppoll+4)
+  #01 pc 00000000000269bc  /system/lib64/libc.so (poll+88)
+  #02 pc 00000000000e0718  /system/lib64/hw/bluetooth.default.so (sock_poll_thread(void*)+476)
+  #03 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #04 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"btif_sock" sysTid=6668
+  #00 pc 000000000006a3a0  /system/lib64/libc.so (__epoll_pwait+8)
+  #01 pc 000000000001f9e4  /system/lib64/libc.so (epoll_pwait+52)
+  #02 pc 00000000001c1d28  /system/lib64/hw/bluetooth.default.so (run_reactor(reactor_t*, int)+164)
+  #03 pc 00000000001c1c58  /system/lib64/hw/bluetooth.default.so (reactor_start(reactor_t*)+84)
+  #04 pc 00000000001c3618  /system/lib64/hw/bluetooth.default.so (run_thread(void*)+184)
+  #05 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #06 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"HeadsetStateMac" sysTid=18222
+  #00 pc 000000000006a3a0  /system/lib64/libc.so (__epoll_pwait+8)
+  #01 pc 000000000001f9e4  /system/lib64/libc.so (epoll_pwait+52)
+  #02 pc 0000000000015d7c  /system/lib64/libutils.so (android::Looper::pollInner(int)+144)
+  #03 pc 0000000000015c64  /system/lib64/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+108)
+  #04 pc 0000000000110910  /system/lib64/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long, int)+44)
+  #05 pc 00000000007f5d6c  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.app.NativeActivity.onWindowFocusChangedNative [DEDUPED]+140)
+  #06 pc 0000000000f7b330  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.MessageQueue.next+192)
+  #07 pc 0000000000f751f4  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.Looper.loop+500)
+  #08 pc 0000000000c16ae0  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.HandlerThread.run+624)
+  #09 pc 0000000000547188  /system/lib64/libart.so (art_quick_invoke_stub+584)
+  #10 pc 00000000000dc574  /system/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+200)
+  #11 pc 000000000046ba28  /system/lib64/libart.so (art::InvokeWithArgArray(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::ArgArray*, art::JValue*, char const*)+100)
+  #12 pc 000000000046cc54  /system/lib64/libart.so (art::InvokeVirtualOrInterfaceWithJValues(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jmethodID*, jvalue*)+836)
+  #13 pc 0000000000493540  /system/lib64/libart.so (art::Thread::CreateCallback(void*)+1120)
+  #14 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #15 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"Binder:6580_4" sysTid=18250
+  #00 pc 000000000006a48c  /system/lib64/libc.so (__ioctl+4)
+  #01 pc 00000000000243f8  /system/lib64/libc.so (ioctl+136)
+  #02 pc 0000000000054950  /system/lib64/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+256)
+  #03 pc 0000000000054abc  /system/lib64/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+24)
+  #04 pc 0000000000055178  /system/lib64/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+60)
+  #05 pc 0000000000076200  /system/lib64/libbinder.so (android::PoolThread::threadLoop()+24)
+  #06 pc 00000000000114d4  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+280)
+  #07 pc 00000000000aa6a8  /system/lib64/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+140)
+  #08 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #09 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"A2dpStateMachin" sysTid=18251
+  #00 pc 000000000006a3a0  /system/lib64/libc.so (__epoll_pwait+8)
+  #01 pc 000000000001f9e4  /system/lib64/libc.so (epoll_pwait+52)
+  #02 pc 0000000000015d7c  /system/lib64/libutils.so (android::Looper::pollInner(int)+144)
+  #03 pc 0000000000015c64  /system/lib64/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+108)
+  #04 pc 0000000000110910  /system/lib64/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long, int)+44)
+  #05 pc 00000000007f5d6c  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.app.NativeActivity.onWindowFocusChangedNative [DEDUPED]+140)
+  #06 pc 0000000000f7b330  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.MessageQueue.next+192)
+  #07 pc 0000000000f751f4  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.Looper.loop+500)
+  #08 pc 0000000000c16ae0  /system/framework/arm64/boot-framework.oat (offset 0x619000) (android.os.HandlerThread.run+624)
+  #09 pc 0000000000547188  /system/lib64/libart.so (art_quick_invoke_stub+584)
+  #10 pc 00000000000dc574  /system/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+200)
+  #11 pc 000000000046ba28  /system/lib64/libart.so (art::InvokeWithArgArray(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::ArgArray*, art::JValue*, char const*)+100)
+  #12 pc 000000000046cc54  /system/lib64/libart.so (art::InvokeVirtualOrInterfaceWithJValues(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jmethodID*, jvalue*)+836)
+  #13 pc 0000000000493540  /system/lib64/libart.so (art::Thread::CreateCallback(void*)+1120)
+  #14 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #15 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"media_worker" sysTid=18254
+  #00 pc 000000000006a3a0  /system/lib64/libc.so (__epoll_pwait+8)
+  #01 pc 000000000001f9e4  /system/lib64/libc.so (epoll_pwait+52)
+  #02 pc 00000000001c1d28  /system/lib64/hw/bluetooth.default.so (run_reactor(reactor_t*, int)+164)
+  #03 pc 00000000001c1c58  /system/lib64/hw/bluetooth.default.so (reactor_start(reactor_t*)+84)
+  #04 pc 00000000001c3618  /system/lib64/hw/bluetooth.default.so (run_thread(void*)+184)
+  #05 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #06 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+"uipc-main" sysTid=18255
+  #00 pc 000000000006a4d4  /system/lib64/libc.so (__pselect6+4)
+  #01 pc 0000000000026ae4  /system/lib64/libc.so (select+144)
+  #02 pc 0000000000215430  /system/lib64/hw/bluetooth.default.so (uipc_read_task(void*)+156)
+  #03 pc 0000000000067e04  /system/lib64/libc.so (__pthread_start(void*)+36)
+  #04 pc 000000000001f234  /system/lib64/libc.so (__start_thread+68)
+
+----- end 6580 -----

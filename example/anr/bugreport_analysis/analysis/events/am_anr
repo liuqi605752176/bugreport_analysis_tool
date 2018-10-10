@@ -1,0 +1,1 @@
+06-05 18:08:59.961  1000  2628  2708 I am_anr  : [0,27299,com.google.android.apps.tachyon,952647365,Input dispatching timed out (Waiting to send non-key event because the touched window has not finished processing certain input events that were delivered to it over 500.0ms ago.  Wait queue length: 8.  Wait queue head age: 5651.7ms.)]

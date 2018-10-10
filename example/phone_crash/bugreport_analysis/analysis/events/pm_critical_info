@@ -1,0 +1,83 @@
+07-30 08:01:37.697  1000  1310  1310 I pm_critical_info: No settings file; creating initial state
+07-30 08:01:37.869  1000  1310  1310 I pm_critical_info: Adding duplicate shared id: 1000 name=android
+07-30 08:01:37.905  1000  1310  1310 I pm_critical_info: Adding duplicate shared id: 1000 name=com.quicinc.cne.CNEService
+07-30 08:01:38.083  1000  1310  1310 I pm_critical_info: Adding duplicate shared id: 1000 name=com.android.location.fused
+07-30 08:01:38.222  1000  1310  1310 I pm_critical_info: Adding duplicate shared id: 1000 name=com.elephanttek.faceunlock
+07-30 08:01:38.233  1000  1310  1310 I pm_critical_info: Adding duplicate shared id: 1000 name=com.android.inputdevices
+07-30 08:01:38.261  1000  1310  1310 I pm_critical_info: Adding duplicate shared id: 1001 name=com.android.mms.service
+07-30 08:01:38.301  1000  1310  1310 I pm_critical_info: Adding duplicate shared id: 1000 name=com.android.providers.settings
+07-30 08:01:38.323  1000  1310  1310 I pm_critical_info: Adding duplicate shared id: 2000 name=com.android.shell
+07-30 08:01:38.500  1000  1310  1310 I pm_critical_info: Adding duplicate shared id: 1000 name=com.android.server.telecom
+07-30 08:01:38.551  1000  1310  1310 I pm_critical_info: Adding duplicate user id: 10005 name=com.android.systemui
+07-30 08:01:38.582  1000  1310  1310 I pm_critical_info: Adding duplicate shared id: 1001 name=com.android.phone
+07-30 08:01:38.677  1000  1310  1310 I pm_critical_info: Adding duplicate shared id: 1000 name=com.android.settings
+07-30 08:01:38.687  1000  1310  1310 I pm_critical_info: Adding duplicate shared id: 1001 name=com.android.providers.telephony
+07-30 08:01:38.694  1000  1310  1310 I pm_critical_info: Adding duplicate shared id: 1001 name=com.qualcomm.qcrilmsgtunnel
+07-30 08:01:39.288  1000  1310  1310 I pm_critical_info: Adding duplicate shared id: 1000 name=com.qualcomm.qti.qtisystemservice
+07-30 08:01:39.295  1000  1310  1310 I pm_critical_info: Adding duplicate shared id: 1001 name=com.qualcomm.qti.telephonyservice
+07-30 08:01:39.395  1000  1310  1310 I pm_critical_info: Adding duplicate shared id: 1001 name=org.codeaurora.ims
+07-30 08:01:39.405  1000  1310  1310 I pm_critical_info: Adding duplicate shared id: 1000 name=com.qualcomm.qti.uceShimService
+07-30 08:01:39.426  1000  1310  1310 I pm_critical_info: Adding duplicate shared id: 1000 name=com.qualcomm.cabl
+07-30 08:01:39.431  1000  1310  1310 I pm_critical_info: Adding duplicate shared id: 1000 name=com.qualcomm.qti.poweroffalarm
+07-30 08:01:39.435  1000  1310  1310 I pm_critical_info: Adding duplicate shared id: 2000 name=com.qualcomm.qti.perfdump
+07-30 08:01:39.439  1000  1310  1310 I pm_critical_info: Adding duplicate shared id: 1000 name=com.qualcomm.svi
+07-30 08:01:39.456  1000  1310  1310 I pm_critical_info: Destroying /data/user/0/media due to: com.android.server.pm.PackageManagerException: Package media is unknown
+07-30 08:01:39.475  1000  1310  1310 I pm_critical_info: Failed to migrate com.qualcomm.qti.perfdump: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.qualcomm.qti.perfdump (code 95)
+07-30 08:01:39.487  1000  1310  1310 I pm_critical_info: Failed to migrate com.google.android.ext.services: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.google.android.ext.services (code 95)
+07-30 08:01:39.500  1000  1310  1310 I pm_critical_info: Failed to migrate com.android.providers.telephony: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.providers.telephony (code 95)
+07-30 08:01:39.510  1000  1310  1310 I pm_critical_info: Failed to migrate com.google.android.ext.shared: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.google.android.ext.shared (code 95)
+07-30 08:01:39.522  1000  1310  1310 I pm_critical_info: Failed to migrate com.quicinc.cne.CNEService: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.quicinc.cne.CNEService (code 95)
+07-30 08:01:39.533  1000  1310  1310 I pm_critical_info: Failed to migrate com.qualcomm.svi: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.qualcomm.svi (code 95)
+07-30 08:01:39.543  1000  1310  1310 I pm_critical_info: Failed to migrate com.qualcomm.qti.uceShimService: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.qualcomm.qti.uceShimService (code 95)
+07-30 08:01:39.554  1000  1310  1310 I pm_critical_info: Failed to migrate com.android.mms.service: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.mms.service (code 95)
+07-30 08:01:39.566  1000  1310  1310 I pm_critical_info: Failed to migrate com.qualcomm.qti.telephonyservice: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.qualcomm.qti.telephonyservice (code 95)
+07-30 08:01:39.577  1000  1310  1310 I pm_critical_info: Failed to migrate com.android.defcontainer: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.defcontainer (code 95)
+07-30 08:01:39.588  1000  1310  1310 I pm_critical_info: Failed to migrate com.qualcomm.cabl: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.qualcomm.cabl (code 95)
+07-30 08:01:39.599  1000  1310  1310 I pm_critical_info: Failed to migrate android: android.os.ServiceSpecificException: Failed to mark default storage /data/data/android (code 95)
+07-30 08:01:39.608  1000  1310  1310 I pm_critical_info: Failed to migrate org.codeaurora.ims: android.os.ServiceSpecificException: Failed to mark default storage /data/data/org.codeaurora.ims (code 95)
+07-30 08:01:39.618  1000  1310  1310 I pm_critical_info: Failed to migrate com.qualcomm.qcrilmsgtunnel: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.qualcomm.qcrilmsgtunnel (code 95)
+07-30 08:01:39.632  1000  1310  1310 I pm_critical_info: Failed to migrate com.android.providers.settings: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.providers.settings (code 95)
+07-30 08:01:39.642  1000  1310  1310 I pm_critical_info: Failed to migrate com.android.inputdevices: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.inputdevices (code 95)
+07-30 08:01:39.652  1000  1310  1310 I pm_critical_info: Failed to migrate com.android.server.telecom: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.server.telecom (code 95)
+07-30 08:01:39.666  1000  1310  1310 I pm_critical_info: Failed to migrate com.android.dialer: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.dialer (code 95)
+07-30 08:01:39.676  1000  1310  1310 I pm_critical_info: Failed to migrate com.google.android.packageinstaller: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.google.android.packageinstaller (code 95)
+07-30 08:01:39.687  1000  1310  1310 I pm_critical_info: Failed to migrate com.qualcomm.qti.qtisystemservice: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.qualcomm.qti.qtisystemservice (code 95)
+07-30 08:01:39.700  1000  1310  1310 I pm_critical_info: Failed to migrate com.android.proxyhandler: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.proxyhandler (code 95)
+07-30 08:01:39.709  1000  1310  1310 I pm_critical_info: Failed to migrate com.elephanttek.faceunlock: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.elephanttek.faceunlock (code 95)
+07-30 08:01:39.720  1000  1310  1310 I pm_critical_info: Failed to migrate com.android.settings: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.settings (code 95)
+07-30 08:01:39.733  1000  1310  1310 I pm_critical_info: Failed to migrate com.android.phone: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.phone (code 95)
+07-30 08:01:39.743  1000  1310  1310 I pm_critical_info: Failed to migrate com.android.shell: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.shell (code 95)
+07-30 08:01:39.753  1000  1310  1310 I pm_critical_info: Failed to migrate com.android.location.fused: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.location.fused (code 95)
+07-30 08:01:39.766  1000  1310  1310 I pm_critical_info: Failed to migrate com.android.systemui: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.systemui (code 95)
+07-30 08:01:39.776  1000  1310  1310 I pm_critical_info: Failed to migrate com.qualcomm.qti.poweroffalarm: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.qualcomm.qti.poweroffalarm (code 95)
+07-30 08:01:39.788  1000  1310  1310 I pm_critical_info: Failed to migrate com.google.android.inputmethod.latin: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.google.android.inputmethod.latin (code 95)
+07-30 08:01:43.743  1000  1310  1443 I pm_critical_info: Failed to migrate com.qualcomm.qti.perfdump: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.qualcomm.qti.perfdump (code 95)
+07-30 08:01:43.751  1000  1310  1443 I pm_critical_info: Failed to migrate com.google.android.ext.services: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.google.android.ext.services (code 95)
+07-30 08:01:43.759  1000  1310  1443 I pm_critical_info: Failed to migrate com.android.providers.telephony: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.providers.telephony (code 95)
+07-30 08:01:43.766  1000  1310  1443 I pm_critical_info: Failed to migrate com.google.android.ext.shared: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.google.android.ext.shared (code 95)
+07-30 08:01:43.774  1000  1310  1443 I pm_critical_info: Failed to migrate com.quicinc.cne.CNEService: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.quicinc.cne.CNEService (code 95)
+07-30 08:01:43.781  1000  1310  1443 I pm_critical_info: Failed to migrate com.qualcomm.svi: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.qualcomm.svi (code 95)
+07-30 08:01:43.788  1000  1310  1443 I pm_critical_info: Failed to migrate com.qualcomm.qti.uceShimService: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.qualcomm.qti.uceShimService (code 95)
+07-30 08:01:43.794  1000  1310  1443 I pm_critical_info: Failed to migrate com.android.mms.service: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.mms.service (code 95)
+07-30 08:01:43.800  1000  1310  1443 I pm_critical_info: Failed to migrate com.qualcomm.qti.telephonyservice: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.qualcomm.qti.telephonyservice (code 95)
+07-30 08:01:43.808  1000  1310  1443 I pm_critical_info: Failed to migrate com.android.defcontainer: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.defcontainer (code 95)
+07-30 08:01:43.813  1000  1310  1443 I pm_critical_info: Failed to migrate com.qualcomm.cabl: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.qualcomm.cabl (code 95)
+07-30 08:01:43.820  1000  1310  1443 I pm_critical_info: Failed to migrate android: android.os.ServiceSpecificException: Failed to mark default storage /data/data/android (code 95)
+07-30 08:01:43.826  1000  1310  1443 I pm_critical_info: Failed to migrate org.codeaurora.ims: android.os.ServiceSpecificException: Failed to mark default storage /data/data/org.codeaurora.ims (code 95)
+07-30 08:01:43.831  1000  1310  1443 I pm_critical_info: Failed to migrate com.qualcomm.qcrilmsgtunnel: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.qualcomm.qcrilmsgtunnel (code 95)
+07-30 08:01:43.839  1000  1310  1443 I pm_critical_info: Failed to migrate com.android.providers.settings: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.providers.settings (code 95)
+07-30 08:01:43.844  1000  1310  1443 I pm_critical_info: Failed to migrate com.android.inputdevices: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.inputdevices (code 95)
+07-30 08:01:43.849  1000  1310  1443 I pm_critical_info: Failed to migrate com.android.server.telecom: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.server.telecom (code 95)
+07-30 08:01:43.857  1000  1310  1443 I pm_critical_info: Failed to migrate com.android.dialer: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.dialer (code 95)
+07-30 08:01:43.863  1000  1310  1443 I pm_critical_info: Failed to migrate com.google.android.packageinstaller: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.google.android.packageinstaller (code 95)
+07-30 08:01:43.872  1000  1310  1443 I pm_critical_info: Failed to migrate com.qualcomm.qti.qtisystemservice: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.qualcomm.qti.qtisystemservice (code 95)
+07-30 08:01:43.878  1000  1310  1443 I pm_critical_info: Failed to migrate com.android.proxyhandler: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.proxyhandler (code 95)
+07-30 08:01:43.887  1000  1310  1443 I pm_critical_info: Failed to migrate com.elephanttek.faceunlock: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.elephanttek.faceunlock (code 95)
+07-30 08:01:43.894  1000  1310  1443 I pm_critical_info: Failed to migrate com.android.settings: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.settings (code 95)
+07-30 08:01:43.905  1000  1310  1443 I pm_critical_info: Failed to migrate com.android.phone: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.phone (code 95)
+07-30 08:01:43.918  1000  1310  1443 I pm_critical_info: Failed to migrate com.android.shell: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.shell (code 95)
+07-30 08:01:43.927  1000  1310  1443 I pm_critical_info: Failed to migrate com.android.location.fused: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.location.fused (code 95)
+07-30 08:01:43.940  1000  1310  1443 I pm_critical_info: Failed to migrate com.android.systemui: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.android.systemui (code 95)
+07-30 08:01:43.948  1000  1310  1443 I pm_critical_info: Failed to migrate com.qualcomm.qti.poweroffalarm: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.qualcomm.qti.poweroffalarm (code 95)
+07-30 08:01:43.958  1000  1310  1443 I pm_critical_info: Failed to migrate com.google.android.inputmethod.latin: android.os.ServiceSpecificException: Failed to mark default storage /data/data/com.google.android.inputmethod.latin (code 95)
+07-30 08:02:40.970  1000  2741  2741 I pm_critical_info: Destroying /data/user/0/media due to: com.android.server.pm.PackageManagerException: Package media is unknown

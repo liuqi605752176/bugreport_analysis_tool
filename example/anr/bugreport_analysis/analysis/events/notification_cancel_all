@@ -1,0 +1,5 @@
+06-05 17:51:46.364  1000  2628  2628 I notification_cancel_all: [1000,2628,com.android.vending,0,0,0,17,NULL]
+06-05 17:51:46.375  1000  2628  2628 I notification_cancel_all: [1000,2628,com.android.vending,0,0,0,17,NULL]
+06-05 18:00:37.792  1000  2628  2628 I notification_cancel_all: [1000,2628,com.google.android.youtube,0,0,0,17,NULL]
+06-05 18:07:32.912  1000  2628  2628 I notification_cancel_all: [1000,2628,com.android.chrome,0,0,0,17,NULL]
+06-05 18:07:37.466  1000  2628  2628 I notification_cancel_all: [1000,2628,com.google.android.youtube,0,0,0,17,NULL]

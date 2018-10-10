@@ -1,0 +1,17 @@
+------------------------------------------------------------------------------------------
+--- devinfo ---
+------------------------------------------------------------------------------------------
+
+Device factory serial number        : RE20211179
+Device product name                 : 2018-03-01
+Device build date                   : Tue Jun  5 01:14:44 IST 2018
+Device build fingerprint            : Smartron/tphoneE/rimoE:8.1.0/T5911INDABURF-57/57:user/release-keys
+Device gms build                    : 8.1_201804
+Device mpss baseband build          : MPSS.TA.2.3.c1-00605-8953_GEN_PACK-1.142704.1.147138.1-Jun  5 2018
+Device build id                     : T5911INDABURF-57 release-keys
+Device mpss baseband1 build         : MPSS.TA.2.3.c1-00605-8953_GEN_PACK-1.142704.1.147138.1-Jun  5 2018
+Device kernel build date            : Tue Jun 5 01:14:44 IST 2018
+
+Device kernel build user            : jenkins
+Device product name                 : tphoneE
+Device product name                 : _a

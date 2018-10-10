@@ -1,0 +1,8 @@
+06-05 16:51:30.707  1000  2628  2628 I device_idle: [0,screen]
+06-05 16:51:41.978  1000  2628  2628 I device_idle: [1,no activity]
+06-05 17:00:59.013  1000  2628  2628 I device_idle: [0,screen]
+06-05 17:01:04.684  1000  2628  2628 I device_idle: [1,no activity]
+06-05 17:31:04.866  1000  2628  2707 I device_idle: [2,s:alarm]
+06-05 17:43:34.811  1000  2628  2628 I device_idle: [0,screen]
+06-05 17:47:34.452  1000  2628  2628 I device_idle: [1,no activity]
+06-05 17:59:27.210  1000  2628  2628 I device_idle: [0,screen]

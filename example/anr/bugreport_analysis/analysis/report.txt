@@ -1,0 +1,39 @@
+------------------------------------------------------------------------------------------
+BUGREPORT ANALYSIS
+------------------------------------------------------------------------------------------
+
+
+Bug title                     : ANR issue
+Dev Enginner                  : ajinath
+Test Enginner                 : hem
+Build ID                      : T5911INDABURF-57 release-keys
+
+Device info                   : --->>>
+Device factory serial number  : RE20211179
+Device product name           : 2018-03-01
+Device build date             : Tue Jun  5 01:14:44 IST 2018
+Device build fingerprint      : Smartron/tphoneE/rimoE:8.1.0/T5911INDABURF-57/57:user/release-keys
+Device gms build              : 8.1_201804
+Device mpss baseband build    : MPSS.TA.2.3.c1-00605-8953_GEN_PACK-1.142704.1.147138.1-Jun  5 2018
+Device build id               : T5911INDABURF-57 release-keys
+Device mpss baseband1 build   : MPSS.TA.2.3.c1-00605-8953_GEN_PACK-1.142704.1.147138.1-Jun  5 2018
+Device kernel build date      : Tue Jun 5 01:14:44 IST 2018
+Device kernel build user      : jenkins
+Device product name           : tphoneE
+Device product name           : _a
+Device owner                  : Owner
+Device Accounts               : --->>>
+                                upendrafresher2014@gmail.com
+Up time                       : 18:10:52 up  4:43
+Network                       : Jio 4G,airtel
+
+Native crash                  : None
+------------------------------------------------------------------------------------------
+Application crash             : None
+------------------------------------------------------------------------------------------
+Application ANR               : --->>>
+------------------------------------------------------------------------------------------
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager: ANR in com.google.android.apps.tachyon (com.google.android.apps.tachyon/.MainActivity)
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager: PID: 27299
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager: Reason: Input dispatching timed out (Waiting to send non-key event because the touched window has not finished processing certain input events that were delivered to it over 500.0ms ago.  Wait queue length: 8.  Wait queue head age: 5651.7ms.)
+

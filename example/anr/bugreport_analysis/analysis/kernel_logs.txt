@@ -1,0 +1,2608 @@
+------------------------------------------------------------------------------------------
+--- Kernel logs (dmesg) ---
+------------------------------------------------------------------------------------------
+<3>[14042.141229] DL data not available
+<3>[14042.261229] DL data not available
+<3>[14042.281241] DL data not available
+<3>[14042.301221] DL data not available
+<3>[14042.321221] DL data not available
+<3>[14042.341228] DL data not available
+<3>[14042.361226] DL data not available
+<3>[14042.381233] DL data not available
+<3>[14042.401231] DL data not available
+<3>[14042.421223] DL data not available
+<3>[14042.441225] DL data not available
+<3>[14042.461225] DL data not available
+<3>[14042.481230] DL data not available
+<3>[14042.501239] DL data not available
+<3>[14042.521228] DL data not available
+<3>[14042.541231] DL data not available
+<3>[14042.561229] DL data not available
+<3>[14042.581233] DL data not available
+<3>[14042.601233] DL data not available
+<3>[14042.621229] DL data not available
+<3>[14042.641232] DL data not available
+<3>[14042.661232] DL data not available
+<3>[14042.681232] DL data not available
+<3>[14042.701224] DL data not available
+<3>[14042.721231] DL data not available
+<3>[14042.741233] DL data not available
+<3>[14042.761230] DL data not available
+<3>[14042.781239] DL data not available
+<3>[14042.801243] DL data not available
+<3>[14042.821230] DL data not available
+<3>[14042.841239] DL data not available
+<3>[14042.861226] DL data not available
+<3>[14042.881228] DL data not available
+<3>[14042.901230] DL data not available
+<3>[14042.921234] DL data not available
+<3>[14042.941225] DL data not available
+<3>[14042.961232] DL data not available
+<3>[14042.981238] DL data not available
+<3>[14043.001239] DL data not available
+<3>[14043.021232] DL data not available
+<3>[14043.041242] DL data not available
+<3>[14043.061229] DL data not available
+<3>[14043.081230] DL data not available
+<3>[14043.101230] DL data not available
+<3>[14043.121239] DL data not available
+<3>[14043.141239] DL data not available
+<3>[14043.161230] DL data not available
+<3>[14043.181229] DL data not available
+<3>[14043.201224] DL data not available
+<3>[14043.221227] DL data not available
+<3>[14043.241229] DL data not available
+<3>[14043.261224] DL data not available
+<3>[14043.281232] DL data not available
+<3>[14043.301229] DL data not available
+<3>[14043.321231] DL data not available
+<3>[14043.341236] DL data not available
+<3>[14043.361230] DL data not available
+<3>[14043.381232] DL data not available
+<3>[14043.401239] DL data not available
+<3>[14043.421234] DL data not available
+<3>[14043.441244] DL data not available
+<3>[14043.461233] DL data not available
+<3>[14043.481241] DL data not available
+<3>[14043.501232] DL data not available
+<3>[14043.521228] DL data not available
+<3>[14043.541228] DL data not available
+<3>[14043.561226] DL data not available
+<3>[14043.581233] DL data not available
+<3>[14043.601243] DL data not available
+<3>[14043.621229] DL data not available
+<6>[14043.637926] binder: undelivered transaction 3337021, process died.
+<3>[14043.641262] DL data not available
+<3>[14043.661242] DL data not available
+<3>[14043.681324] DL data not available
+<3>[14043.701265] DL data not available
+<3>[14043.721228] DL data not available
+<3>[14043.741225] DL data not available
+<3>[14043.761227] DL data not available
+<3>[14043.781235] DL data not available
+<3>[14043.801234] DL data not available
+<3>[14043.821232] DL data not available
+<3>[14043.841248] DL data not available
+<3>[14043.861232] DL data not available
+<3>[14043.881243] DL data not available
+<3>[14043.901229] DL data not available
+<3>[14043.921229] DL data not available
+<3>[14043.941228] DL data not available
+<3>[14043.961227] DL data not available
+<3>[14043.981224] DL data not available
+<3>[14044.001230] DL data not available
+<3>[14044.021228] DL data not available
+<3>[14044.041242] DL data not available
+<3>[14044.061234] DL data not available
+<3>[14044.081230] DL data not available
+<3>[14044.101229] DL data not available
+<3>[14044.121265] DL data not available
+<3>[14044.141226] DL data not available
+<3>[14044.161227] DL data not available
+<3>[14044.181238] DL data not available
+<3>[14044.201233] DL data not available
+<3>[14044.221237] DL data not available
+<3>[14044.241233] DL data not available
+<3>[14044.261227] DL data not available
+<3>[14044.281232] DL data not available
+<3>[14044.301228] DL data not available
+<3>[14044.321230] DL data not available
+<3>[14044.341243] DL data not available
+<3>[14044.361226] DL data not available
+<3>[14044.381237] DL data not available
+<3>[14044.401237] DL data not available
+<3>[14044.421230] DL data not available
+<3>[14044.441233] DL data not available
+<3>[14044.461229] DL data not available
+<3>[14044.481242] DL data not available
+<3>[14044.501242] DL data not available
+<3>[14044.521231] DL data not available
+<3>[14044.541222] DL data not available
+<3>[14044.561224] DL data not available
+<3>[14044.581230] DL data not available
+<3>[14044.601230] DL data not available
+<3>[14044.621232] DL data not available
+<3>[14044.641228] DL data not available
+<3>[14044.661222] DL data not available
+<3>[14044.681234] DL data not available
+<3>[14044.701231] DL data not available
+<3>[14044.721232] DL data not available
+<3>[14044.741225] DL data not available
+<3>[14044.761237] DL data not available
+<3>[14044.781232] DL data not available
+<3>[14044.801230] DL data not available
+<3>[14044.821226] DL data not available
+<3>[14044.841231] DL data not available
+<3>[14044.861226] DL data not available
+<3>[14044.881233] DL data not available
+<3>[14044.901234] DL data not available
+<3>[14044.921232] DL data not available
+<3>[14044.941233] DL data not available
+<3>[14044.961230] DL data not available
+<3>[14044.981269] DL data not available
+<3>[14045.001230] DL data not available
+<3>[14045.021231] DL data not available
+<3>[14045.041232] DL data not available
+<3>[14045.061233] DL data not available
+<3>[14045.081235] DL data not available
+<3>[14045.101404] DL data not available
+<3>[14045.121239] DL data not available
+<3>[14045.141383] DL data not available
+<3>[14045.161346] DL data not available
+<3>[14045.181355] DL data not available
+<3>[14045.201400] DL data not available
+<3>[14045.221263] DL data not available
+<3>[14045.241346] DL data not available
+<3>[14045.261379] DL data not available
+<3>[14045.281358] DL data not available
+<3>[14045.301376] DL data not available
+<3>[14045.321248] DL data not available
+<3>[14045.341241] DL data not available
+<3>[14045.361388] DL data not available
+<3>[14045.381309] DL data not available
+<3>[14045.401247] DL data not available
+<3>[14045.421340] DL data not available
+<3>[14045.441509] DL data not available
+<3>[14045.461361] DL data not available
+<3>[14045.481372] DL data not available
+<3>[14045.501364] DL data not available
+<3>[14045.521339] DL data not available
+<3>[14045.541345] DL data not available
+<3>[14045.561350] DL data not available
+<3>[14045.581343] DL data not available
+<3>[14045.601335] DL data not available
+<3>[14045.621372] DL data not available
+<3>[14045.641344] DL data not available
+<3>[14045.661389] DL data not available
+<3>[14045.681267] DL data not available
+<3>[14045.701356] DL data not available
+<3>[14045.721355] DL data not available
+<3>[14045.741353] DL data not available
+<3>[14045.761359] DL data not available
+<3>[14045.781349] DL data not available
+<3>[14045.801366] DL data not available
+<3>[14045.821278] DL data not available
+<3>[14045.841361] DL data not available
+<3>[14045.861331] DL data not available
+<3>[14045.881479] DL data not available
+<3>[14045.901430] DL data not available
+<3>[14045.921246] DL data not available
+<3>[14045.941331] DL data not available
+<3>[14045.961348] DL data not available
+<3>[14045.981360] DL data not available
+<3>[14046.001369] DL data not available
+<3>[14046.021343] DL data not available
+<3>[14046.041370] DL data not available
+<3>[14046.061350] DL data not available
+<3>[14046.081345] DL data not available
+<3>[14046.101241] DL data not available
+<3>[14046.121361] DL data not available
+<3>[14046.141346] DL data not available
+<3>[14046.161351] DL data not available
+<3>[14046.181405] DL data not available
+<3>[14046.201338] DL data not available
+<3>[14046.221418] DL data not available
+<3>[14046.241374] DL data not available
+<3>[14046.261432] DL data not available
+<3>[14046.281364] DL data not available
+<3>[14046.301387] DL data not available
+<3>[14046.321364] DL data not available
+<3>[14046.341236] DL data not available
+<3>[14046.361364] DL data not available
+<3>[14046.381352] DL data not available
+<3>[14046.401370] DL data not available
+<3>[14046.421348] DL data not available
+<3>[14046.441245] DL data not available
+<3>[14046.461346] DL data not available
+<3>[14046.481359] DL data not available
+<3>[14046.501358] DL data not available
+<3>[14046.521408] DL data not available
+<3>[14046.541362] DL data not available
+<3>[14046.561406] DL data not available
+<3>[14046.581366] DL data not available
+<3>[14046.601402] DL data not available
+<3>[14046.621441] DL data not available
+<3>[14046.641368] DL data not available
+<3>[14046.661385] DL data not available
+<3>[14046.681383] DL data not available
+<3>[14046.701245] DL data not available
+<3>[14046.721310] DL data not available
+<3>[14046.741255] DL data not available
+<3>[14046.761243] DL data not available
+<3>[14046.781411] DL data not available
+<3>[14046.801409] DL data not available
+<3>[14046.821354] DL data not available
+<3>[14046.841357] DL data not available
+<3>[14046.861309] DL data not available
+<3>[14046.881406] DL data not available
+<3>[14046.901332] DL data not available
+<3>[14046.921338] DL data not available
+<3>[14046.941363] DL data not available
+<3>[14046.961245] DL data not available
+<3>[14046.981260] DL data not available
+<3>[14047.001361] DL data not available
+<3>[14047.021345] DL data not available
+<3>[14047.041360] DL data not available
+<3>[14047.061397] DL data not available
+<3>[14047.081343] DL data not available
+<3>[14047.101377] DL data not available
+<3>[14047.121354] DL data not available
+<3>[14047.141389] DL data not available
+<3>[14047.161355] DL data not available
+<3>[14047.181350] DL data not available
+<3>[14047.201271] DL data not available
+<3>[14047.221350] DL data not available
+<3>[14047.241353] DL data not available
+<3>[14047.261362] DL data not available
+<3>[14047.281239] DL data not available
+<3>[14047.301452] DL data not available
+<3>[14047.321360] DL data not available
+<3>[14047.341246] DL data not available
+<3>[14047.361357] DL data not available
+<3>[14047.381382] DL data not available
+<3>[14047.401302] DL data not available
+<3>[14047.421276] DL data not available
+<3>[14047.441295] DL data not available
+<3>[14047.461262] DL data not available
+<3>[14047.481296] DL data not available
+<3>[14047.501277] DL data not available
+<3>[14047.521250] DL data not available
+<3>[14047.541266] DL data not available
+<3>[14047.561263] DL data not available
+<3>[14047.581270] DL data not available
+<3>[14047.601292] DL data not available
+<3>[14047.621255] DL data not available
+<3>[14047.641259] DL data not available
+<3>[14047.661414] DL data not available
+<3>[14047.681397] DL data not available
+<3>[14047.701342] DL data not available
+<3>[14047.721366] DL data not available
+<3>[14047.741287] DL data not available
+<3>[14047.761415] DL data not available
+<3>[14047.781348] DL data not available
+<3>[14047.801377] DL data not available
+<3>[14047.821439] DL data not available
+<3>[14047.841430] DL data not available
+<3>[14047.861391] DL data not available
+<3>[14047.881264] DL data not available
+<3>[14047.901428] DL data not available
+<3>[14047.921370] DL data not available
+<3>[14047.941262] DL data not available
+<3>[14047.961360] DL data not available
+<3>[14047.981389] DL data not available
+<3>[14048.001452] DL data not available
+<3>[14048.021373] DL data not available
+<3>[14048.041362] DL data not available
+<3>[14048.061389] DL data not available
+<3>[14048.081407] DL data not available
+<3>[14048.101386] DL data not available
+<3>[14048.121317] DL data not available
+<3>[14048.141412] DL data not available
+<3>[14048.161366] DL data not available
+<3>[14048.181356] DL data not available
+<3>[14048.201406] DL data not available
+<3>[14048.221289] DL data not available
+<3>[14048.241464] DL data not available
+<3>[14048.261251] DL data not available
+<3>[14048.281262] DL data not available
+<3>[14048.301347] DL data not available
+<3>[14048.321310] DL data not available
+<3>[14048.341354] DL data not available
+<3>[14048.361338] DL data not available
+<3>[14048.381318] DL data not available
+<3>[14048.401345] DL data not available
+<3>[14048.421294] DL data not available
+<3>[14048.441363] DL data not available
+<3>[14048.461371] DL data not available
+<3>[14048.481334] DL data not available
+<3>[14048.501339] DL data not available
+<3>[14048.521447] DL data not available
+<3>[14048.541333] DL data not available
+<3>[14048.561287] DL data not available
+<3>[14048.581346] DL data not available
+<3>[14048.601337] DL data not available
+<3>[14048.621354] DL data not available
+<3>[14048.641241] DL data not available
+<3>[14048.661366] DL data not available
+<3>[14048.681410] DL data not available
+<3>[14048.701353] DL data not available
+<3>[14048.721341] DL data not available
+<3>[14048.741307] DL data not available
+<3>[14048.761285] DL data not available
+<3>[14048.761897] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<3>[14048.781388] DL data not available
+<3>[14048.801341] DL data not available
+<3>[14048.821336] DL data not available
+<3>[14048.841397] DL data not available
+<3>[14048.861305] DL data not available
+<3>[14048.881365] DL data not available
+<3>[14048.901349] DL data not available
+<3>[14048.921237] DL data not available
+<3>[14048.941348] DL data not available
+<3>[14048.961400] DL data not available
+<3>[14048.981300] DL data not available
+<3>[14049.001227] DL data not available
+<3>[14049.021317] DL data not available
+<3>[14049.041335] DL data not available
+<3>[14049.061336] DL data not available
+<3>[14049.081387] DL data not available
+<3>[14049.101236] DL data not available
+<3>[14049.121346] DL data not available
+<3>[14049.141483] DL data not available
+<3>[14049.161350] DL data not available
+<3>[14049.181260] DL data not available
+<3>[14049.201377] DL data not available
+<3>[14049.221271] DL data not available
+<3>[14049.241248] DL data not available
+<3>[14049.261339] DL data not available
+<3>[14049.281339] DL data not available
+<3>[14049.301404] DL data not available
+<3>[14049.321302] DL data not available
+<3>[14049.341243] DL data not available
+<3>[14049.361338] DL data not available
+<3>[14049.381367] DL data not available
+<3>[14049.401381] DL data not available
+<3>[14049.421335] DL data not available
+<3>[14049.441292] DL data not available
+<3>[14049.461310] DL data not available
+<3>[14049.481339] DL data not available
+<3>[14049.501348] DL data not available
+<3>[14049.521290] DL data not available
+<3>[14049.541302] DL data not available
+<3>[14049.561432] DL data not available
+<3>[14049.581351] DL data not available
+<3>[14049.601353] DL data not available
+<3>[14049.621306] DL data not available
+<3>[14049.641249] DL data not available
+<3>[14049.661342] DL data not available
+<3>[14049.681337] DL data not available
+<3>[14049.701341] DL data not available
+<3>[14049.721433] DL data not available
+<3>[14049.741383] DL data not available
+<3>[14049.761422] DL data not available
+<3>[14049.781470] DL data not available
+<3>[14049.801298] DL data not available
+<3>[14049.821411] DL data not available
+<3>[14049.841364] DL data not available
+<3>[14049.861247] DL data not available
+<3>[14049.881342] DL data not available
+<3>[14049.901341] DL data not available
+<3>[14049.921247] DL data not available
+<3>[14049.941355] DL data not available
+<3>[14049.961325] DL data not available
+<3>[14049.981296] DL data not available
+<3>[14050.001336] DL data not available
+<3>[14050.021298] DL data not available
+<3>[14050.041348] DL data not available
+<3>[14050.061233] DL data not available
+<3>[14050.081379] DL data not available
+<3>[14050.101337] DL data not available
+<3>[14050.121269] DL data not available
+<3>[14050.141357] DL data not available
+<3>[14050.161394] DL data not available
+<3>[14050.181414] DL data not available
+<3>[14050.201365] DL data not available
+<3>[14050.221253] DL data not available
+<3>[14050.241238] DL data not available
+<3>[14050.261324] DL data not available
+<3>[14050.281334] DL data not available
+<3>[14050.301351] DL data not available
+<3>[14050.321320] DL data not available
+<3>[14050.341246] DL data not available
+<3>[14050.361440] DL data not available
+<3>[14050.381339] DL data not available
+<3>[14050.401300] DL data not available
+<3>[14050.421392] DL data not available
+<3>[14050.441321] DL data not available
+<3>[14050.461409] DL data not available
+<3>[14050.481372] DL data not available
+<3>[14050.501376] DL data not available
+<3>[14050.521404] DL data not available
+<3>[14050.541390] DL data not available
+<3>[14050.561236] DL data not available
+<3>[14050.581389] DL data not available
+<3>[14050.601388] DL data not available
+<3>[14050.621340] DL data not available
+<3>[14050.641431] DL data not available
+<3>[14050.661280] DL data not available
+<3>[14050.681400] DL data not available
+<3>[14050.701351] DL data not available
+<3>[14050.721408] DL data not available
+<3>[14050.741297] DL data not available
+<3>[14050.761229] DL data not available
+<3>[14050.781390] DL data not available
+<3>[14050.801352] DL data not available
+<3>[14050.821471] DL data not available
+<3>[14050.841345] DL data not available
+<3>[14050.861401] DL data not available
+<3>[14050.881352] DL data not available
+<3>[14050.901260] DL data not available
+<3>[14050.921391] DL data not available
+<3>[14050.941362] DL data not available
+<3>[14050.961306] DL data not available
+<3>[14050.981291] DL data not available
+<3>[14051.001336] DL data not available
+<3>[14051.021287] DL data not available
+<3>[14051.041366] DL data not available
+<3>[14051.061367] DL data not available
+<3>[14051.081291] DL data not available
+<3>[14051.101342] DL data not available
+<3>[14051.121271] DL data not available
+<3>[14051.141346] DL data not available
+<3>[14051.161337] DL data not available
+<3>[14051.181346] DL data not available
+<3>[14051.201312] DL data not available
+<3>[14051.221225] DL data not available
+<3>[14051.241361] DL data not available
+<3>[14051.261340] DL data not available
+<3>[14051.281415] DL data not available
+<3>[14051.301337] DL data not available
+<3>[14051.321397] DL data not available
+<3>[14051.341377] DL data not available
+<3>[14051.361395] DL data not available
+<3>[14051.381377] DL data not available
+<3>[14051.401356] DL data not available
+<3>[14051.421459] DL data not available
+<3>[14051.441386] DL data not available
+<3>[14051.461381] DL data not available
+<3>[14051.481346] DL data not available
+<3>[14051.501369] DL data not available
+<3>[14051.521345] DL data not available
+<3>[14051.541363] DL data not available
+<3>[14051.561301] DL data not available
+<3>[14051.581281] DL data not available
+<3>[14051.601347] DL data not available
+<3>[14051.621350] DL data not available
+<3>[14051.641353] DL data not available
+<3>[14051.661227] DL data not available
+<3>[14051.681235] DL data not available
+<3>[14051.701228] DL data not available
+<3>[14051.721231] DL data not available
+<3>[14051.741247] DL data not available
+<3>[14051.761231] DL data not available
+<3>[14051.781327] DL data not available
+<3>[14051.801336] DL data not available
+<3>[14051.821333] DL data not available
+<3>[14051.841349] DL data not available
+<3>[14051.861341] DL data not available
+<3>[14051.881385] DL data not available
+<3>[14051.901352] DL data not available
+<3>[14051.921339] DL data not available
+<3>[14051.941349] DL data not available
+<3>[14051.961367] DL data not available
+<3>[14051.981399] DL data not available
+<3>[14052.001390] DL data not available
+<3>[14052.021338] DL data not available
+<3>[14052.041267] DL data not available
+<3>[14052.061461] DL data not available
+<3>[14052.081265] DL data not available
+<3>[14052.101343] DL data not available
+<3>[14052.121345] DL data not available
+<3>[14052.141346] DL data not available
+<3>[14052.161341] DL data not available
+<3>[14052.181340] DL data not available
+<3>[14052.201417] DL data not available
+<3>[14052.221409] DL data not available
+<3>[14052.241430] DL data not available
+<3>[14052.261493] DL data not available
+<3>[14052.281372] DL data not available
+<3>[14052.301326] DL data not available
+<3>[14052.321334] DL data not available
+<3>[14052.341258] DL data not available
+<3>[14052.361370] DL data not available
+<3>[14052.381482] DL data not available
+<3>[14052.401336] DL data not available
+<3>[14052.421412] DL data not available
+<3>[14052.441345] DL data not available
+<3>[14052.461376] DL data not available
+<3>[14052.481337] DL data not available
+<3>[14052.501454] DL data not available
+<3>[14052.521309] DL data not available
+<3>[14052.541357] DL data not available
+<3>[14052.561343] DL data not available
+<3>[14052.581366] DL data not available
+<3>[14052.601346] DL data not available
+<3>[14052.621354] DL data not available
+<3>[14052.641348] DL data not available
+<3>[14052.661536] DL data not available
+<3>[14052.681319] DL data not available
+<3>[14052.839113] DL data not available
+<3>[14052.859105] DL data not available
+<3>[14052.879099] DL data not available
+<3>[14052.899114] DL data not available
+<3>[14052.919118] DL data not available
+<3>[14052.939126] DL data not available
+<3>[14052.959104] DL data not available
+<3>[14052.979110] DL data not available
+<3>[14052.999106] DL data not available
+<3>[14053.019110] DL data not available
+<3>[14053.039116] DL data not available
+<3>[14053.059117] DL data not available
+<3>[14053.079110] DL data not available
+<3>[14053.099103] DL data not available
+<3>[14053.119100] DL data not available
+<3>[14053.139115] DL data not available
+<3>[14053.159113] DL data not available
+<3>[14053.179114] DL data not available
+<3>[14053.941483] DL data not available
+<3>[14053.949430] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14053.949470] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14053.961493] DL data not available
+<3>[14053.981491] DL data not available
+<3>[14054.622892] DL data not available
+<3>[14054.625990] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14054.626023] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14054.642899] DL data not available
+<3>[14054.662895] DL data not available
+<3>[14054.682896] DL data not available
+<3>[14054.702906] DL data not available
+<3>[14054.722906] DL data not available
+<3>[14054.742903] DL data not available
+<3>[14054.762897] DL data not available
+<3>[14054.782897] DL data not available
+<3>[14054.802894] DL data not available
+<3>[14054.822895] DL data not available
+<3>[14054.842897] DL data not available
+<3>[14054.862894] DL data not available
+<3>[14054.882897] DL data not available
+<3>[14054.943031] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14054.962238] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14054.995393] DL data not available
+<3>[14055.015392] DL data not available
+<3>[14055.035391] DL data not available
+<3>[14055.055404] DL data not available
+<3>[14055.075399] DL data not available
+<3>[14055.095393] DL data not available
+<3>[14055.115413] DL data not available
+<3>[14055.135399] DL data not available
+<3>[14055.155416] DL data not available
+<3>[14055.175407] DL data not available
+<3>[14055.195402] DL data not available
+<3>[14055.199162] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14055.199198] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14055.215397] DL data not available
+<3>[14055.235407] DL data not available
+<3>[14055.299630] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14055.351008] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14055.358155] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14055.373791] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14055.388982] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14055.389016] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14055.434198] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14055.481180] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14055.486523] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14055.502659] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14055.515517] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14055.515556] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14055.627998] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14055.628037] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14055.628618] DL data not available
+<3>[14055.648644] DL data not available
+<3>[14055.668634] DL data not available
+<3>[14055.688626] DL data not available
+<3>[14055.708641] DL data not available
+<3>[14055.728628] DL data not available
+<3>[14055.748628] DL data not available
+<3>[14055.768627] DL data not available
+<3>[14055.788629] DL data not available
+<3>[14055.808631] DL data not available
+<3>[14055.828630] DL data not available
+<3>[14055.848627] DL data not available
+<3>[14055.868635] DL data not available
+<3>[14055.992942] DL data not available
+<3>[14056.012968] DL data not available
+<3>[14056.032945] DL data not available
+<3>[14056.052952] DL data not available
+<3>[14056.053168] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14056.072951] DL data not available
+<3>[14056.092945] DL data not available
+<3>[14056.100934] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14056.112982] DL data not available
+<3>[14056.132966] DL data not available
+<3>[14056.152948] DL data not available
+<3>[14056.847816] DL data not available
+<3>[14056.851520] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14056.851552] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14056.867832] DL data not available
+<3>[14056.887819] DL data not available
+<3>[14056.907827] DL data not available
+<3>[14056.927824] DL data not available
+<3>[14056.947826] DL data not available
+<3>[14056.967823] DL data not available
+<3>[14056.987821] DL data not available
+<3>[14057.007833] DL data not available
+<3>[14057.027826] DL data not available
+<3>[14057.047867] DL data not available
+<3>[14057.067832] DL data not available
+<3>[14057.087827] DL data not available
+<3>[14057.107852] DL data not available
+<3>[14057.127821] DL data not available
+<3>[14057.193139] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14057.212422] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14057.245700] DL data not available
+<3>[14057.265713] DL data not available
+<3>[14057.285705] DL data not available
+<3>[14057.305727] DL data not available
+<3>[14057.325712] DL data not available
+<3>[14057.345729] DL data not available
+<3>[14057.365715] DL data not available
+<3>[14057.385711] DL data not available
+<3>[14057.405720] DL data not available
+<3>[14057.425709] DL data not available
+<3>[14057.445710] DL data not available
+<3>[14057.461227] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14057.461259] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14057.465736] DL data not available
+<3>[14057.485729] DL data not available
+<3>[14057.505723] DL data not available
+<3>[14057.575661] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14057.621264] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14057.627841] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14057.643735] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14057.662529] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14057.662653] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14057.722029] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14057.771062] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14057.780463] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14057.804743] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14057.827814] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14057.827854] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14057.954129] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14057.954162] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14057.955123] DL data not available
+<3>[14057.975134] DL data not available
+<3>[14057.995150] DL data not available
+<3>[14058.015133] DL data not available
+<3>[14058.035135] DL data not available
+<3>[14058.055133] DL data not available
+<3>[14058.075146] DL data not available
+<3>[14058.095137] DL data not available
+<3>[14058.115137] DL data not available
+<3>[14058.135137] DL data not available
+<3>[14058.155139] DL data not available
+<3>[14058.175175] DL data not available
+<3>[14058.195147] DL data not available
+<3>[14058.215158] DL data not available
+<3>[14058.235138] DL data not available
+<3>[14058.255142] DL data not available
+<3>[14058.275159] DL data not available
+<3>[14058.295150] DL data not available
+<3>[14058.315136] DL data not available
+<3>[14058.335130] DL data not available
+<3>[14058.355140] DL data not available
+<3>[14058.375137] DL data not available
+<3>[14058.395140] DL data not available
+<3>[14058.415145] DL data not available
+<3>[14058.435135] DL data not available
+<3>[14058.455146] DL data not available
+<3>[14058.475140] DL data not available
+<3>[14058.495138] DL data not available
+<3>[14058.515146] DL data not available
+<3>[14058.535135] DL data not available
+<3>[14058.555133] DL data not available
+<3>[14058.575145] DL data not available
+<3>[14058.595135] DL data not available
+<3>[14058.615134] DL data not available
+<3>[14058.635142] DL data not available
+<3>[14058.655141] DL data not available
+<3>[14058.675136] DL data not available
+<3>[14058.695133] DL data not available
+<3>[14058.715139] DL data not available
+<3>[14058.735136] DL data not available
+<3>[14058.755131] DL data not available
+<3>[14058.775131] DL data not available
+<3>[14058.795133] DL data not available
+<3>[14058.815131] DL data not available
+<3>[14058.835141] DL data not available
+<3>[14058.855138] DL data not available
+<3>[14058.875138] DL data not available
+<3>[14058.895132] DL data not available
+<3>[14058.915141] DL data not available
+<3>[14058.935132] DL data not available
+<3>[14058.955139] DL data not available
+<3>[14058.975133] DL data not available
+<3>[14058.990949] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<3>[14058.995145] DL data not available
+<3>[14059.015155] DL data not available
+<3>[14059.035134] DL data not available
+<3>[14059.055158] DL data not available
+<3>[14059.075186] DL data not available
+<3>[14059.095134] DL data not available
+<3>[14059.115145] DL data not available
+<3>[14059.135135] DL data not available
+<3>[14059.155133] DL data not available
+<3>[14059.175149] DL data not available
+<3>[14059.195144] DL data not available
+<3>[14059.215142] DL data not available
+<3>[14059.235133] DL data not available
+<3>[14059.255131] DL data not available
+<3>[14059.275137] DL data not available
+<3>[14059.295134] DL data not available
+<3>[14059.315160] DL data not available
+<3>[14059.335130] DL data not available
+<3>[14059.355159] DL data not available
+<3>[14059.375137] DL data not available
+<3>[14059.395134] DL data not available
+<3>[14059.415136] DL data not available
+<3>[14059.435132] DL data not available
+<3>[14059.455132] DL data not available
+<3>[14059.475145] DL data not available
+<3>[14059.495139] DL data not available
+<3>[14059.515148] DL data not available
+<3>[14059.535135] DL data not available
+<3>[14059.555128] DL data not available
+<3>[14059.575135] DL data not available
+<3>[14059.595133] DL data not available
+<3>[14059.615170] DL data not available
+<3>[14059.635180] DL data not available
+<3>[14059.655140] DL data not available
+<3>[14059.675141] DL data not available
+<3>[14059.695144] DL data not available
+<3>[14059.715137] DL data not available
+<3>[14059.735140] DL data not available
+<3>[14059.755144] DL data not available
+<3>[14059.775139] DL data not available
+<3>[14059.795132] DL data not available
+<3>[14059.815129] DL data not available
+<3>[14059.835133] DL data not available
+<3>[14059.855127] DL data not available
+<3>[14059.875146] DL data not available
+<3>[14059.895132] DL data not available
+<3>[14059.915131] DL data not available
+<3>[14059.935146] DL data not available
+<3>[14059.955138] DL data not available
+<3>[14059.975133] DL data not available
+<3>[14059.995141] DL data not available
+<3>[14060.015142] DL data not available
+<3>[14060.035134] DL data not available
+<3>[14060.055133] DL data not available
+<3>[14060.075137] DL data not available
+<3>[14060.095151] DL data not available
+<3>[14060.115130] DL data not available
+<3>[14060.135132] DL data not available
+<3>[14060.155131] DL data not available
+<3>[14060.175156] DL data not available
+<3>[14060.195132] DL data not available
+<3>[14060.215132] DL data not available
+<3>[14060.235158] DL data not available
+<3>[14060.255140] DL data not available
+<3>[14060.275152] DL data not available
+<3>[14060.295146] DL data not available
+<3>[14060.315154] DL data not available
+<3>[14060.335135] DL data not available
+<3>[14060.355138] DL data not available
+<3>[14060.375138] DL data not available
+<3>[14060.395154] DL data not available
+<3>[14060.415135] DL data not available
+<3>[14060.435136] DL data not available
+<3>[14060.455135] DL data not available
+<3>[14060.475141] DL data not available
+<3>[14060.495148] DL data not available
+<3>[14060.515143] DL data not available
+<3>[14060.535136] DL data not available
+<3>[14060.555135] DL data not available
+<3>[14060.575157] DL data not available
+<3>[14060.595147] DL data not available
+<3>[14060.615136] DL data not available
+<3>[14060.635140] DL data not available
+<3>[14060.655150] DL data not available
+<3>[14060.675143] DL data not available
+<3>[14060.695137] DL data not available
+<3>[14060.715151] DL data not available
+<3>[14060.735148] DL data not available
+<3>[14060.755144] DL data not available
+<3>[14060.775138] DL data not available
+<3>[14060.795126] DL data not available
+<3>[14060.815127] DL data not available
+<3>[14060.835166] DL data not available
+<3>[14060.855128] DL data not available
+<3>[14060.920669] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14060.970987] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14060.977364] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14060.992904] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14061.007824] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14061.007876] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14061.059716] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14061.110971] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14061.116254] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14061.133282] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14061.149386] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14061.149423] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14061.261104] DL data not available
+<3>[14061.261491] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14061.261524] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14061.281115] DL data not available
+<3>[14061.301122] DL data not available
+<3>[14061.321110] DL data not available
+<3>[14061.341103] DL data not available
+<3>[14061.361114] DL data not available
+<3>[14061.381108] DL data not available
+<3>[14061.401108] DL data not available
+<3>[14061.421106] DL data not available
+<3>[14061.441120] DL data not available
+<3>[14061.461118] DL data not available
+<3>[14061.481136] DL data not available
+<3>[14061.501108] DL data not available
+<3>[14061.521102] DL data not available
+<3>[14061.541124] DL data not available
+<3>[14061.561111] DL data not available
+<3>[14061.581095] DL data not available
+<3>[14061.601117] DL data not available
+<3>[14061.621104] DL data not available
+<3>[14061.641103] DL data not available
+<3>[14061.661138] DL data not available
+<3>[14061.681114] DL data not available
+<3>[14061.701100] DL data not available
+<3>[14061.768449] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14061.821234] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14061.827293] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14061.842944] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14061.858004] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14061.858052] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14061.904501] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14061.951031] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14061.956092] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14061.973948] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14061.986928] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14061.986975] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14062.114185] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14062.114226] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14062.114662] DL data not available
+<3>[14062.134674] DL data not available
+<3>[14062.154672] DL data not available
+<3>[14062.174684] DL data not available
+<3>[14062.194671] DL data not available
+<3>[14062.214663] DL data not available
+<3>[14062.234680] DL data not available
+<3>[14062.254663] DL data not available
+<3>[14062.274673] DL data not available
+<3>[14062.294675] DL data not available
+<3>[14062.314669] DL data not available
+<3>[14062.334668] DL data not available
+<3>[14062.354672] DL data not available
+<3>[14062.448021] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<3>[14062.474318] DL data not available
+<3>[14062.494329] DL data not available
+<3>[14062.514317] DL data not available
+<3>[14062.534328] DL data not available
+<3>[14062.535126] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14062.554328] DL data not available
+<3>[14062.574320] DL data not available
+<3>[14062.580970] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14062.594341] DL data not available
+<3>[14062.614323] DL data not available
+<3>[14062.634324] DL data not available
+<3>[14063.311628] DL data not available
+<3>[14063.315934] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14063.315965] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14063.331639] DL data not available
+<3>[14063.351631] DL data not available
+<3>[14063.371636] DL data not available
+<3>[14063.391630] DL data not available
+<3>[14063.411669] DL data not available
+<3>[14063.431638] DL data not available
+<3>[14063.451635] DL data not available
+<3>[14063.471640] DL data not available
+<3>[14063.491637] DL data not available
+<3>[14063.511643] DL data not available
+<3>[14063.531670] DL data not available
+<3>[14063.551632] DL data not available
+<3>[14063.571673] DL data not available
+<3>[14063.591629] DL data not available
+<3>[14063.611636] DL data not available
+<3>[14063.631636] DL data not available
+<11>[14063.633585] rmt_storage:INFO:rmt_storage_rw_iovec_cb: Write iovec request received for /boot/modem_fs2
+<11>[14063.633758] rmt_storage:INFO:rmt_storage_client_thread: Calling Write [offset=0, size=1572864]for /boot/modem_fs2!
+<3>[14063.651632] DL data not available
+<3>[14063.671646] DL data not available
+<3>[14063.691628] DL data not available
+<11>[14063.707225] rmt_storage:INFO:rmt_storage_client_thread: Done Write (bytes = 1572864) for /boot/modem_fs2!
+<3>[14063.711643] DL data not available
+<3>[14063.731636] DL data not available
+<3>[14063.751625] DL data not available
+<3>[14063.771631] DL data not available
+<3>[14063.791628] DL data not available
+<3>[14063.811637] DL data not available
+<3>[14063.831625] DL data not available
+<3>[14063.851631] DL data not available
+<3>[14063.871628] DL data not available
+<3>[14063.891660] DL data not available
+<3>[14063.911633] DL data not available
+<3>[14063.931631] DL data not available
+<3>[14063.951626] DL data not available
+<3>[14063.971627] DL data not available
+<3>[14063.991626] DL data not available
+<3>[14064.011638] DL data not available
+<3>[14064.031623] DL data not available
+<3>[14064.051627] DL data not available
+<3>[14064.071640] DL data not available
+<3>[14064.091624] DL data not available
+<3>[14064.111629] DL data not available
+<3>[14064.131629] DL data not available
+<3>[14064.151621] DL data not available
+<3>[14064.171628] DL data not available
+<3>[14064.191629] DL data not available
+<3>[14064.211639] DL data not available
+<3>[14064.231631] DL data not available
+<3>[14064.251629] DL data not available
+<3>[14064.271643] DL data not available
+<3>[14064.291638] DL data not available
+<3>[14064.311628] DL data not available
+<3>[14064.331653] DL data not available
+<3>[14064.351630] DL data not available
+<3>[14064.371640] DL data not available
+<3>[14064.391630] DL data not available
+<3>[14064.411651] DL data not available
+<3>[14064.431635] DL data not available
+<3>[14064.451633] DL data not available
+<3>[14064.471630] DL data not available
+<3>[14064.491634] DL data not available
+<3>[14064.511630] DL data not available
+<3>[14064.531633] DL data not available
+<3>[14064.551624] DL data not available
+<3>[14064.571652] DL data not available
+<3>[14064.591631] DL data not available
+<3>[14064.611629] DL data not available
+<3>[14064.631628] DL data not available
+<3>[14064.651634] DL data not available
+<3>[14064.671649] DL data not available
+<3>[14064.691630] DL data not available
+<3>[14064.711628] DL data not available
+<3>[14064.731639] DL data not available
+<3>[14064.751625] DL data not available
+<3>[14064.771630] DL data not available
+<3>[14064.791623] DL data not available
+<3>[14064.811626] DL data not available
+<3>[14064.831631] DL data not available
+<3>[14064.851631] DL data not available
+<3>[14064.871629] DL data not available
+<3>[14064.891629] DL data not available
+<3>[14064.911626] DL data not available
+<3>[14064.931629] DL data not available
+<3>[14064.951628] DL data not available
+<3>[14064.971635] DL data not available
+<3>[14064.991628] DL data not available
+<3>[14065.011634] DL data not available
+<3>[14065.031632] DL data not available
+<3>[14065.051627] DL data not available
+<3>[14065.071636] DL data not available
+<3>[14065.091629] DL data not available
+<3>[14065.111632] DL data not available
+<3>[14065.131639] DL data not available
+<3>[14065.151627] DL data not available
+<3>[14065.171637] DL data not available
+<3>[14065.191624] DL data not available
+<3>[14065.211628] DL data not available
+<3>[14065.231647] DL data not available
+<3>[14065.251625] DL data not available
+<3>[14065.271630] DL data not available
+<3>[14065.291634] DL data not available
+<3>[14065.311629] DL data not available
+<3>[14065.331635] DL data not available
+<3>[14065.351636] DL data not available
+<3>[14065.371643] DL data not available
+<3>[14065.391633] DL data not available
+<3>[14065.411626] DL data not available
+<3>[14065.431638] DL data not available
+<3>[14065.451626] DL data not available
+<3>[14065.471637] DL data not available
+<3>[14065.617004] DL data not available
+<3>[14065.637006] DL data not available
+<3>[14065.656982] DL data not available
+<3>[14065.677003] DL data not available
+<3>[14065.697011] DL data not available
+<3>[14065.717009] DL data not available
+<3>[14065.737008] DL data not available
+<3>[14065.757005] DL data not available
+<3>[14065.777005] DL data not available
+<3>[14065.797003] DL data not available
+<3>[14065.817007] DL data not available
+<3>[14065.837000] DL data not available
+<3>[14065.857003] DL data not available
+<3>[14065.876998] DL data not available
+<3>[14065.896993] DL data not available
+<3>[14065.917029] DL data not available
+<3>[14065.937057] DL data not available
+<3>[14065.956993] DL data not available
+<3>[14066.785196] DL data not available
+<3>[14066.788515] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14066.788545] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14066.805231] DL data not available
+<3>[14066.825214] DL data not available
+<3>[14066.845218] DL data not available
+<3>[14067.619145] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14067.633419] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14067.646130] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14067.646409] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14067.687205] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14067.730984] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14067.736299] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14067.752679] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14067.763779] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14067.763822] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14067.874744] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14067.874775] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14067.875722] DL data not available
+<3>[14067.895739] DL data not available
+<3>[14067.915737] DL data not available
+<3>[14067.935745] DL data not available
+<3>[14067.955736] DL data not available
+<3>[14067.975741] DL data not available
+<3>[14067.995736] DL data not available
+<3>[14068.015733] DL data not available
+<3>[14068.035738] DL data not available
+<3>[14068.055740] DL data not available
+<3>[14068.075757] DL data not available
+<3>[14068.095736] DL data not available
+<3>[14068.115732] DL data not available
+<3>[14068.135743] DL data not available
+<3>[14068.155740] DL data not available
+<3>[14068.278503] DL data not available
+<3>[14068.298520] DL data not available
+<3>[14068.318500] DL data not available
+<3>[14068.338511] DL data not available
+<3>[14068.340132] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14068.358499] DL data not available
+<3>[14068.378492] DL data not available
+<3>[14068.390939] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14068.398513] DL data not available
+<3>[14068.418510] DL data not available
+<3>[14068.438611] DL data not available
+<3>[14068.458528] DL data not available
+<3>[14068.478513] DL data not available
+<3>[14068.498502] DL data not available
+<3>[14068.518499] DL data not available
+<3>[14068.538500] DL data not available
+<3>[14068.558523] DL data not available
+<3>[14068.578506] DL data not available
+<3>[14068.598510] DL data not available
+<3>[14068.618504] DL data not available
+<3>[14068.638507] DL data not available
+<3>[14068.658507] DL data not available
+<3>[14068.678501] DL data not available
+<3>[14068.698504] DL data not available
+<3>[14068.718503] DL data not available
+<3>[14068.738503] DL data not available
+<3>[14068.758507] DL data not available
+<3>[14068.778502] DL data not available
+<3>[14068.798512] DL data not available
+<3>[14068.818499] DL data not available
+<3>[14068.838508] DL data not available
+<3>[14068.858514] DL data not available
+<3>[14068.878510] DL data not available
+<3>[14068.898508] DL data not available
+<3>[14068.918511] DL data not available
+<3>[14068.938515] DL data not available
+<3>[14068.958520] DL data not available
+<3>[14068.978507] DL data not available
+<3>[14068.998502] DL data not available
+<3>[14069.018500] DL data not available
+<3>[14069.038505] DL data not available
+<3>[14069.058527] DL data not available
+<3>[14069.078508] DL data not available
+<3>[14069.098500] DL data not available
+<3>[14069.118511] DL data not available
+<3>[14069.138504] DL data not available
+<3>[14069.158513] DL data not available
+<3>[14069.178507] DL data not available
+<3>[14069.198502] DL data not available
+<3>[14069.218501] DL data not available
+<3>[14069.238515] DL data not available
+<3>[14069.258505] DL data not available
+<3>[14069.278511] DL data not available
+<3>[14069.298503] DL data not available
+<3>[14069.318504] DL data not available
+<3>[14069.338514] DL data not available
+<3>[14069.358514] DL data not available
+<3>[14069.378500] DL data not available
+<3>[14069.398498] DL data not available
+<3>[14069.418500] DL data not available
+<3>[14069.438500] DL data not available
+<3>[14069.458498] DL data not available
+<3>[14069.478499] DL data not available
+<3>[14069.498503] DL data not available
+<3>[14069.518496] DL data not available
+<3>[14069.538494] DL data not available
+<3>[14069.558507] DL data not available
+<3>[14069.578503] DL data not available
+<3>[14069.598499] DL data not available
+<3>[14069.618500] DL data not available
+<3>[14069.638514] DL data not available
+<3>[14069.658497] DL data not available
+<3>[14069.678501] DL data not available
+<3>[14069.698528] DL data not available
+<3>[14069.718502] DL data not available
+<3>[14069.738503] DL data not available
+<3>[14069.758535] DL data not available
+<3>[14069.778501] DL data not available
+<3>[14069.798506] DL data not available
+<3>[14069.818503] DL data not available
+<3>[14069.838506] DL data not available
+<3>[14069.858512] DL data not available
+<3>[14069.878513] DL data not available
+<3>[14069.898510] DL data not available
+<3>[14069.918521] DL data not available
+<3>[14069.938558] DL data not available
+<3>[14069.958514] DL data not available
+<3>[14069.978499] DL data not available
+<3>[14069.998524] DL data not available
+<3>[14070.018523] DL data not available
+<3>[14070.038502] DL data not available
+<3>[14070.058532] DL data not available
+<3>[14070.078528] DL data not available
+<3>[14070.098513] DL data not available
+<3>[14070.118508] DL data not available
+<3>[14070.138512] DL data not available
+<3>[14070.158536] DL data not available
+<3>[14070.178510] DL data not available
+<3>[14070.198512] DL data not available
+<3>[14070.218500] DL data not available
+<3>[14070.238509] DL data not available
+<3>[14070.258519] DL data not available
+<3>[14070.278514] DL data not available
+<3>[14070.298504] DL data not available
+<3>[14070.318509] DL data not available
+<3>[14070.338526] DL data not available
+<3>[14070.358517] DL data not available
+<3>[14070.378507] DL data not available
+<3>[14070.398505] DL data not available
+<3>[14070.418497] DL data not available
+<3>[14070.438526] DL data not available
+<3>[14070.458502] DL data not available
+<3>[14070.478500] DL data not available
+<3>[14070.498502] DL data not available
+<3>[14070.518508] DL data not available
+<3>[14070.538495] DL data not available
+<3>[14070.558504] DL data not available
+<3>[14070.578493] DL data not available
+<3>[14070.598495] DL data not available
+<3>[14070.618501] DL data not available
+<3>[14070.638497] DL data not available
+<3>[14070.658499] DL data not available
+<3>[14070.678500] DL data not available
+<3>[14070.698501] DL data not available
+<3>[14070.718503] DL data not available
+<3>[14070.738496] DL data not available
+<3>[14070.758498] DL data not available
+<3>[14070.778493] DL data not available
+<3>[14070.798500] DL data not available
+<3>[14070.818514] DL data not available
+<3>[14070.838553] DL data not available
+<3>[14070.858504] DL data not available
+<3>[14070.878498] DL data not available
+<3>[14070.898500] DL data not available
+<3>[14070.918500] DL data not available
+<3>[14071.065957] DL data not available
+<3>[14071.085926] DL data not available
+<3>[14071.105925] DL data not available
+<3>[14071.125937] DL data not available
+<3>[14071.145937] DL data not available
+<3>[14071.165953] DL data not available
+<3>[14071.185921] DL data not available
+<3>[14071.205924] DL data not available
+<3>[14071.225923] DL data not available
+<3>[14071.245919] DL data not available
+<3>[14071.265936] DL data not available
+<3>[14071.285928] DL data not available
+<3>[14071.305932] DL data not available
+<3>[14071.325928] DL data not available
+<3>[14071.345928] DL data not available
+<3>[14071.365955] DL data not available
+<3>[14071.385936] DL data not available
+<3>[14071.405949] DL data not available
+<3>[14071.948607] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14071.962724] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14071.976326] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14071.976361] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14072.013889] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14072.060975] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14072.068652] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14072.082856] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14072.094946] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14072.094984] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14072.217087] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14072.217125] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14072.217774] DL data not available
+<3>[14072.237778] DL data not available
+<3>[14072.257789] DL data not available
+<3>[14072.277780] DL data not available
+<3>[14072.297781] DL data not available
+<3>[14072.317771] DL data not available
+<3>[14072.337791] DL data not available
+<3>[14072.357775] DL data not available
+<3>[14072.377777] DL data not available
+<3>[14072.397775] DL data not available
+<3>[14072.417779] DL data not available
+<3>[14072.437774] DL data not available
+<3>[14072.457774] DL data not available
+<3>[14072.477801] DL data not available
+<3>[14072.497792] DL data not available
+<3>[14072.517770] DL data not available
+<3>[14072.537775] DL data not available
+<3>[14072.557773] DL data not available
+<3>[14072.577789] DL data not available
+<3>[14072.597776] DL data not available
+<3>[14072.617779] DL data not available
+<3>[14072.637778] DL data not available
+<3>[14072.657774] DL data not available
+<3>[14072.677778] DL data not available
+<3>[14072.697775] DL data not available
+<3>[14072.717773] DL data not available
+<3>[14072.737777] DL data not available
+<3>[14072.757777] DL data not available
+<3>[14072.777794] DL data not available
+<3>[14072.797776] DL data not available
+<3>[14072.817780] DL data not available
+<3>[14072.837781] DL data not available
+<3>[14072.857780] DL data not available
+<3>[14072.877774] DL data not available
+<3>[14072.897775] DL data not available
+<3>[14072.917777] DL data not available
+<3>[14072.937802] DL data not available
+<3>[14072.957776] DL data not available
+<3>[14072.977779] DL data not available
+<3>[14072.997778] DL data not available
+<3>[14073.017772] DL data not available
+<3>[14073.037775] DL data not available
+<3>[14073.057797] DL data not available
+<3>[14073.077772] DL data not available
+<3>[14073.097768] DL data not available
+<3>[14073.117770] DL data not available
+<3>[14073.137775] DL data not available
+<3>[14073.157777] DL data not available
+<3>[14073.177772] DL data not available
+<3>[14073.197774] DL data not available
+<3>[14073.217764] DL data not available
+<3>[14073.237770] DL data not available
+<3>[14073.257783] DL data not available
+<3>[14073.277766] DL data not available
+<3>[14073.297771] DL data not available
+<3>[14073.317772] DL data not available
+<3>[14073.337771] DL data not available
+<3>[14073.357769] DL data not available
+<3>[14073.377775] DL data not available
+<3>[14073.397769] DL data not available
+<3>[14073.417766] DL data not available
+<3>[14073.437780] DL data not available
+<3>[14073.457777] DL data not available
+<3>[14073.477776] DL data not available
+<3>[14073.497773] DL data not available
+<3>[14073.517770] DL data not available
+<3>[14073.537778] DL data not available
+<3>[14073.557782] DL data not available
+<3>[14073.577773] DL data not available
+<3>[14073.597773] DL data not available
+<3>[14073.617780] DL data not available
+<3>[14073.637778] DL data not available
+<3>[14073.657782] DL data not available
+<3>[14073.677780] DL data not available
+<3>[14073.697781] DL data not available
+<3>[14073.717775] DL data not available
+<3>[14073.737787] DL data not available
+<3>[14073.757782] DL data not available
+<3>[14073.777776] DL data not available
+<3>[14073.797776] DL data not available
+<3>[14073.817778] DL data not available
+<3>[14073.837773] DL data not available
+<3>[14073.857780] DL data not available
+<3>[14073.877769] DL data not available
+<3>[14073.897777] DL data not available
+<3>[14073.917765] DL data not available
+<3>[14073.937773] DL data not available
+<3>[14073.957769] DL data not available
+<3>[14073.977769] DL data not available
+<3>[14073.997772] DL data not available
+<3>[14074.017771] DL data not available
+<3>[14074.037777] DL data not available
+<3>[14074.057781] DL data not available
+<3>[14074.077767] DL data not available
+<3>[14074.097768] DL data not available
+<3>[14074.117765] DL data not available
+<3>[14074.137775] DL data not available
+<3>[14074.157782] DL data not available
+<3>[14074.177773] DL data not available
+<3>[14074.197768] DL data not available
+<3>[14074.217767] DL data not available
+<3>[14074.237779] DL data not available
+<3>[14074.257781] DL data not available
+<3>[14074.277778] DL data not available
+<3>[14074.297774] DL data not available
+<3>[14074.317777] DL data not available
+<3>[14074.337791] DL data not available
+<3>[14074.357772] DL data not available
+<3>[14074.377776] DL data not available
+<3>[14074.397774] DL data not available
+<3>[14074.417770] DL data not available
+<3>[14074.437773] DL data not available
+<3>[14074.457778] DL data not available
+<3>[14074.477792] DL data not available
+<3>[14074.497785] DL data not available
+<3>[14074.517769] DL data not available
+<3>[14074.537775] DL data not available
+<3>[14074.557776] DL data not available
+<3>[14074.577773] DL data not available
+<3>[14074.597777] DL data not available
+<3>[14074.617774] DL data not available
+<3>[14074.637769] DL data not available
+<3>[14074.657773] DL data not available
+<3>[14074.677775] DL data not available
+<3>[14074.697773] DL data not available
+<3>[14074.717776] DL data not available
+<3>[14074.737771] DL data not available
+<3>[14074.757771] DL data not available
+<3>[14074.777770] DL data not available
+<3>[14074.797778] DL data not available
+<3>[14074.817767] DL data not available
+<3>[14074.837778] DL data not available
+<3>[14074.857776] DL data not available
+<3>[14074.877774] DL data not available
+<3>[14074.897773] DL data not available
+<3>[14074.917770] DL data not available
+<3>[14074.937775] DL data not available
+<3>[14074.957770] DL data not available
+<3>[14074.977777] DL data not available
+<3>[14074.997777] DL data not available
+<3>[14075.017767] DL data not available
+<3>[14075.037775] DL data not available
+<3>[14075.057773] DL data not available
+<3>[14075.077786] DL data not available
+<3>[14075.097774] DL data not available
+<3>[14075.117769] DL data not available
+<3>[14075.137773] DL data not available
+<3>[14075.157768] DL data not available
+<3>[14075.177776] DL data not available
+<3>[14075.197775] DL data not available
+<3>[14075.217774] DL data not available
+<3>[14075.237823] DL data not available
+<3>[14075.257773] DL data not available
+<3>[14075.277772] DL data not available
+<3>[14075.297780] DL data not available
+<3>[14075.317771] DL data not available
+<3>[14075.337777] DL data not available
+<3>[14075.357788] DL data not available
+<3>[14075.377769] DL data not available
+<3>[14075.397787] DL data not available
+<3>[14075.417783] DL data not available
+<3>[14075.437781] DL data not available
+<3>[14075.457778] DL data not available
+<3>[14075.477778] DL data not available
+<3>[14075.497776] DL data not available
+<3>[14075.517763] DL data not available
+<3>[14075.537779] DL data not available
+<3>[14075.557770] DL data not available
+<3>[14075.577770] DL data not available
+<3>[14075.597797] DL data not available
+<3>[14075.617769] DL data not available
+<3>[14075.637770] DL data not available
+<3>[14075.657777] DL data not available
+<3>[14075.677775] DL data not available
+<3>[14075.697772] DL data not available
+<3>[14075.717792] DL data not available
+<3>[14075.737777] DL data not available
+<3>[14075.757771] DL data not available
+<3>[14075.777771] DL data not available
+<3>[14075.797782] DL data not available
+<3>[14075.817773] DL data not available
+<3>[14075.837784] DL data not available
+<3>[14075.857778] DL data not available
+<3>[14075.877766] DL data not available
+<3>[14075.897767] DL data not available
+<3>[14075.917768] DL data not available
+<3>[14075.937828] DL data not available
+<3>[14075.957770] DL data not available
+<3>[14075.977773] DL data not available
+<3>[14075.997772] DL data not available
+<3>[14076.017767] DL data not available
+<3>[14076.037770] DL data not available
+<3>[14076.057775] DL data not available
+<3>[14076.077775] DL data not available
+<3>[14076.097804] DL data not available
+<3>[14076.117774] DL data not available
+<3>[14076.126745] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<3>[14076.137792] DL data not available
+<3>[14076.157771] DL data not available
+<3>[14076.177774] DL data not available
+<3>[14076.197770] DL data not available
+<3>[14076.217770] DL data not available
+<3>[14076.237774] DL data not available
+<3>[14076.257773] DL data not available
+<3>[14076.277770] DL data not available
+<3>[14076.297783] DL data not available
+<3>[14076.317766] DL data not available
+<3>[14076.337766] DL data not available
+<3>[14076.357775] DL data not available
+<3>[14076.377773] DL data not available
+<3>[14076.397775] DL data not available
+<3>[14076.417774] DL data not available
+<3>[14076.437778] DL data not available
+<3>[14076.457782] DL data not available
+<3>[14076.477802] DL data not available
+<3>[14076.497784] DL data not available
+<3>[14076.517767] DL data not available
+<3>[14076.537773] DL data not available
+<3>[14076.557780] DL data not available
+<3>[14076.577767] DL data not available
+<3>[14076.597767] DL data not available
+<3>[14076.617771] DL data not available
+<3>[14076.637780] DL data not available
+<3>[14076.657775] DL data not available
+<3>[14076.677775] DL data not available
+<3>[14076.697770] DL data not available
+<3>[14076.717782] DL data not available
+<3>[14076.737783] DL data not available
+<3>[14076.757774] DL data not available
+<3>[14076.777772] DL data not available
+<3>[14076.797776] DL data not available
+<3>[14076.817776] DL data not available
+<3>[14076.837781] DL data not available
+<3>[14076.857793] DL data not available
+<3>[14076.877770] DL data not available
+<3>[14076.897793] DL data not available
+<3>[14076.917767] DL data not available
+<3>[14076.937772] DL data not available
+<3>[14076.957786] DL data not available
+<3>[14076.977772] DL data not available
+<3>[14076.997787] DL data not available
+<3>[14077.017765] DL data not available
+<3>[14077.037775] DL data not available
+<3>[14077.057778] DL data not available
+<3>[14077.077772] DL data not available
+<3>[14077.097774] DL data not available
+<3>[14077.117768] DL data not available
+<3>[14077.137772] DL data not available
+<3>[14077.157765] DL data not available
+<3>[14077.177776] DL data not available
+<3>[14077.197774] DL data not available
+<3>[14077.217773] DL data not available
+<3>[14077.237779] DL data not available
+<3>[14077.257776] DL data not available
+<3>[14077.277773] DL data not available
+<3>[14077.297772] DL data not available
+<3>[14077.317776] DL data not available
+<3>[14077.337777] DL data not available
+<3>[14077.357774] DL data not available
+<3>[14077.377775] DL data not available
+<3>[14077.397777] DL data not available
+<3>[14077.417779] DL data not available
+<3>[14077.437775] DL data not available
+<3>[14077.457779] DL data not available
+<3>[14077.477779] DL data not available
+<3>[14077.497788] DL data not available
+<3>[14077.517769] DL data not available
+<3>[14077.537801] DL data not available
+<3>[14077.557769] DL data not available
+<3>[14077.577770] DL data not available
+<3>[14077.597771] DL data not available
+<3>[14077.617769] DL data not available
+<3>[14077.637766] DL data not available
+<3>[14077.657769] DL data not available
+<3>[14077.677767] DL data not available
+<3>[14077.697774] DL data not available
+<3>[14077.717770] DL data not available
+<3>[14077.737769] DL data not available
+<3>[14077.757767] DL data not available
+<3>[14077.777771] DL data not available
+<3>[14077.797796] DL data not available
+<3>[14077.817768] DL data not available
+<3>[14077.837773] DL data not available
+<3>[14077.857775] DL data not available
+<3>[14077.877776] DL data not available
+<3>[14077.897815] DL data not available
+<3>[14077.917773] DL data not available
+<3>[14077.937808] DL data not available
+<3>[14077.957774] DL data not available
+<3>[14077.977778] DL data not available
+<3>[14077.997775] DL data not available
+<3>[14078.017772] DL data not available
+<3>[14078.037774] DL data not available
+<3>[14078.057778] DL data not available
+<3>[14078.077770] DL data not available
+<3>[14078.097784] DL data not available
+<3>[14078.117771] DL data not available
+<3>[14078.137775] DL data not available
+<3>[14078.157774] DL data not available
+<3>[14078.177768] DL data not available
+<3>[14078.197785] DL data not available
+<3>[14078.217777] DL data not available
+<3>[14078.237773] DL data not available
+<3>[14078.257796] DL data not available
+<3>[14078.277778] DL data not available
+<3>[14078.297778] DL data not available
+<3>[14078.317773] DL data not available
+<3>[14078.337777] DL data not available
+<3>[14078.357773] DL data not available
+<3>[14078.377775] DL data not available
+<3>[14078.397776] DL data not available
+<3>[14078.417777] DL data not available
+<3>[14078.437776] DL data not available
+<3>[14078.457775] DL data not available
+<3>[14078.477776] DL data not available
+<3>[14078.497780] DL data not available
+<3>[14078.517771] DL data not available
+<3>[14078.537775] DL data not available
+<3>[14078.557769] DL data not available
+<3>[14078.577783] DL data not available
+<3>[14078.597782] DL data not available
+<3>[14078.617774] DL data not available
+<3>[14078.637770] DL data not available
+<3>[14078.657773] DL data not available
+<3>[14078.677770] DL data not available
+<3>[14078.697786] DL data not available
+<3>[14078.717775] DL data not available
+<3>[14078.737776] DL data not available
+<3>[14078.757771] DL data not available
+<3>[14078.777776] DL data not available
+<3>[14078.797784] DL data not available
+<3>[14078.817788] DL data not available
+<3>[14078.837782] DL data not available
+<3>[14078.857776] DL data not available
+<3>[14078.877772] DL data not available
+<3>[14078.897781] DL data not available
+<3>[14078.917773] DL data not available
+<3>[14078.937772] DL data not available
+<3>[14078.957774] DL data not available
+<3>[14078.977775] DL data not available
+<3>[14078.997771] DL data not available
+<3>[14079.017772] DL data not available
+<3>[14079.037773] DL data not available
+<3>[14079.057773] DL data not available
+<3>[14079.077772] DL data not available
+<3>[14079.097786] DL data not available
+<3>[14079.117767] DL data not available
+<3>[14079.137780] DL data not available
+<3>[14079.157776] DL data not available
+<3>[14079.177794] DL data not available
+<3>[14079.197809] DL data not available
+<3>[14079.217774] DL data not available
+<3>[14079.237773] DL data not available
+<3>[14079.257772] DL data not available
+<3>[14079.277777] DL data not available
+<3>[14079.297776] DL data not available
+<3>[14079.317767] DL data not available
+<3>[14079.337772] DL data not available
+<3>[14079.357770] DL data not available
+<3>[14079.377767] DL data not available
+<3>[14079.397777] DL data not available
+<3>[14079.417768] DL data not available
+<3>[14079.437764] DL data not available
+<3>[14079.457773] DL data not available
+<3>[14079.477788] DL data not available
+<3>[14079.497783] DL data not available
+<3>[14079.517773] DL data not available
+<3>[14079.537792] DL data not available
+<3>[14079.557908] DL data not available
+<3>[14079.577947] DL data not available
+<3>[14079.597884] DL data not available
+<3>[14079.617943] DL data not available
+<3>[14079.637890] DL data not available
+<3>[14079.657895] DL data not available
+<3>[14079.677884] DL data not available
+<3>[14079.697893] DL data not available
+<3>[14079.717902] DL data not available
+<3>[14079.737900] DL data not available
+<3>[14079.757911] DL data not available
+<3>[14079.836772] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14079.891189] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14079.900918] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14079.924043] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14079.938920] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14079.939080] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14080.000654] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14080.051459] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14080.065230] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14080.085502] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14080.103444] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14080.103506] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14080.234662] DL data not available
+<3>[14080.234834] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14080.234943] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14080.254572] DL data not available
+<3>[14080.274555] DL data not available
+<3>[14080.294701] DL data not available
+<3>[14080.314562] DL data not available
+<3>[14080.334586] DL data not available
+<3>[14080.354566] DL data not available
+<3>[14080.374528] DL data not available
+<3>[14080.394610] DL data not available
+<3>[14080.414548] DL data not available
+<3>[14080.434591] DL data not available
+<3>[14080.454568] DL data not available
+<3>[14080.474575] DL data not available
+<3>[14080.494566] DL data not available
+<3>[14080.603145] DL data not available
+<3>[14080.623150] DL data not available
+<3>[14080.643146] DL data not available
+<3>[14080.663180] DL data not available
+<3>[14080.664301] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14080.683152] DL data not available
+<3>[14080.703142] DL data not available
+<3>[14080.710941] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14080.723164] DL data not available
+<3>[14080.743265] DL data not available
+<3>[14080.763263] DL data not available
+<3>[14081.567671] DL data not available
+<3>[14081.574151] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14081.574183] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14081.587706] DL data not available
+<3>[14081.607706] DL data not available
+<3>[14081.627613] DL data not available
+<3>[14081.647755] DL data not available
+<3>[14081.667634] DL data not available
+<3>[14081.687710] DL data not available
+<3>[14081.707713] DL data not available
+<3>[14081.727633] DL data not available
+<3>[14081.747622] DL data not available
+<3>[14081.767604] DL data not available
+<3>[14081.787588] DL data not available
+<3>[14081.807595] DL data not available
+<3>[14081.827703] DL data not available
+<3>[14081.847780] DL data not available
+<3>[14081.867780] DL data not available
+<3>[14081.887705] DL data not available
+<3>[14081.907768] DL data not available
+<3>[14081.927699] DL data not available
+<3>[14081.947723] DL data not available
+<3>[14081.967685] DL data not available
+<3>[14081.987766] DL data not available
+<3>[14082.007720] DL data not available
+<3>[14082.027694] DL data not available
+<3>[14082.047669] DL data not available
+<3>[14082.067696] DL data not available
+<3>[14082.087689] DL data not available
+<3>[14082.107711] DL data not available
+<3>[14082.127802] DL data not available
+<3>[14082.147700] DL data not available
+<3>[14082.167632] DL data not available
+<3>[14082.187740] DL data not available
+<3>[14082.207591] DL data not available
+<3>[14082.227580] DL data not available
+<3>[14082.247574] DL data not available
+<3>[14082.267592] DL data not available
+<3>[14082.287577] DL data not available
+<3>[14082.307581] DL data not available
+<3>[14082.327577] DL data not available
+<3>[14082.347578] DL data not available
+<3>[14082.367584] DL data not available
+<3>[14082.387587] DL data not available
+<3>[14082.407588] DL data not available
+<3>[14082.427581] DL data not available
+<3>[14082.447579] DL data not available
+<3>[14082.467590] DL data not available
+<3>[14082.487586] DL data not available
+<3>[14082.507589] DL data not available
+<3>[14082.527583] DL data not available
+<3>[14082.547575] DL data not available
+<3>[14082.567576] DL data not available
+<3>[14082.587580] DL data not available
+<3>[14082.607587] DL data not available
+<3>[14082.627583] DL data not available
+<3>[14082.647577] DL data not available
+<3>[14082.667594] DL data not available
+<3>[14082.687578] DL data not available
+<3>[14082.707586] DL data not available
+<3>[14082.727585] DL data not available
+<3>[14082.747582] DL data not available
+<3>[14082.767586] DL data not available
+<3>[14082.787582] DL data not available
+<3>[14082.807582] DL data not available
+<3>[14082.827587] DL data not available
+<3>[14082.847583] DL data not available
+<3>[14082.867579] DL data not available
+<3>[14082.887605] DL data not available
+<3>[14082.900974] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<3>[14082.907582] DL data not available
+<3>[14082.927584] DL data not available
+<3>[14082.947583] DL data not available
+<3>[14082.967578] DL data not available
+<3>[14082.987578] DL data not available
+<3>[14083.007574] DL data not available
+<3>[14083.027583] DL data not available
+<3>[14083.047579] DL data not available
+<3>[14083.067585] DL data not available
+<3>[14083.087577] DL data not available
+<3>[14083.107579] DL data not available
+<3>[14083.127592] DL data not available
+<3>[14083.147576] DL data not available
+<3>[14083.167581] DL data not available
+<3>[14083.187582] DL data not available
+<3>[14083.207577] DL data not available
+<3>[14083.227590] DL data not available
+<3>[14083.247575] DL data not available
+<3>[14083.267583] DL data not available
+<3>[14083.287579] DL data not available
+<3>[14083.307576] DL data not available
+<3>[14083.327606] DL data not available
+<3>[14083.347576] DL data not available
+<3>[14083.367583] DL data not available
+<3>[14083.387591] DL data not available
+<3>[14083.407579] DL data not available
+<3>[14083.427588] DL data not available
+<3>[14083.447579] DL data not available
+<3>[14083.467603] DL data not available
+<3>[14083.487577] DL data not available
+<3>[14083.507582] DL data not available
+<3>[14083.527582] DL data not available
+<3>[14083.547583] DL data not available
+<3>[14083.567576] DL data not available
+<3>[14083.587580] DL data not available
+<3>[14083.607582] DL data not available
+<3>[14083.627584] DL data not available
+<3>[14083.647573] DL data not available
+<3>[14083.667580] DL data not available
+<3>[14083.687576] DL data not available
+<3>[14083.707576] DL data not available
+<3>[14083.727579] DL data not available
+<3>[14083.747576] DL data not available
+<3>[14083.767582] DL data not available
+<3>[14083.787584] DL data not available
+<3>[14083.807576] DL data not available
+<3>[14083.827610] DL data not available
+<3>[14083.847579] DL data not available
+<3>[14083.867582] DL data not available
+<3>[14083.887582] DL data not available
+<3>[14083.907585] DL data not available
+<3>[14083.927582] DL data not available
+<3>[14083.947586] DL data not available
+<3>[14083.967579] DL data not available
+<3>[14083.987580] DL data not available
+<3>[14084.007584] DL data not available
+<3>[14084.027585] DL data not available
+<3>[14084.047579] DL data not available
+<3>[14084.067589] DL data not available
+<3>[14084.087578] DL data not available
+<3>[14084.107584] DL data not available
+<3>[14084.127583] DL data not available
+<3>[14084.147578] DL data not available
+<3>[14084.167587] DL data not available
+<3>[14084.187587] DL data not available
+<3>[14084.207584] DL data not available
+<3>[14084.227593] DL data not available
+<3>[14084.247588] DL data not available
+<3>[14084.267593] DL data not available
+<3>[14084.287588] DL data not available
+<3>[14084.307584] DL data not available
+<3>[14084.327595] DL data not available
+<3>[14084.347578] DL data not available
+<3>[14084.367586] DL data not available
+<3>[14084.387590] DL data not available
+<3>[14084.407588] DL data not available
+<3>[14084.427586] DL data not available
+<3>[14084.588048] DL data not available
+<3>[14084.608045] DL data not available
+<3>[14084.628067] DL data not available
+<3>[14084.648043] DL data not available
+<3>[14084.668051] DL data not available
+<3>[14084.688058] DL data not available
+<3>[14084.708052] DL data not available
+<3>[14084.728069] DL data not available
+<3>[14084.748051] DL data not available
+<3>[14084.768050] DL data not available
+<3>[14084.788052] DL data not available
+<3>[14084.808048] DL data not available
+<3>[14084.828061] DL data not available
+<3>[14084.848043] DL data not available
+<3>[14084.868096] DL data not available
+<3>[14084.888043] DL data not available
+<3>[14085.071133] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<3>[14085.340882] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14085.340919] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14085.353735] DL data not available
+<3>[14085.373711] DL data not available
+<3>[14085.393722] DL data not available
+<3>[14085.413710] DL data not available
+<3>[14085.433724] DL data not available
+<3>[14085.453715] DL data not available
+<3>[14085.473720] DL data not available
+<3>[14085.493717] DL data not available
+<3>[14085.513710] DL data not available
+<3>[14085.533714] DL data not available
+<3>[14085.553718] DL data not available
+<3>[14085.573711] DL data not available
+<3>[14085.593723] DL data not available
+<3>[14085.613731] DL data not available
+<3>[14085.768870] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14085.782412] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14085.800676] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14085.800754] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14085.832724] qdsp_cvp_callback: cmd = 0x13198 returned error = 0x9
+<3>[14085.832762] voice_send_cvp_topology_commit_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14085.832771] voc_enable_device:  Set topology commit failed
+<3>[14085.881689] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x1
+<3>[14085.881724] voice_send_vol_step_cmd: DSP returned error[ADSP_EFAILED]
+<3>[14089.809819] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<3>[14095.594022] qdsp_cvp_callback: cmd = 0x1307c returned error = 0x9
+<3>[14095.594051] voice_send_cvp_deregister_vol_cal_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14095.594143] qdsp_cvp_callback: cmd = 0x1307a returned error = 0x9
+<3>[14095.595425] voice_send_cvp_deregister_cal_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14095.595543] qdsp_cvp_callback: cmd = 0x11372 returned error = 0x9
+<3>[14095.595567] voice_send_cvp_deregister_dev_cfg_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14095.647853] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14095.690977] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14095.696564] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14095.712717] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14095.727033] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14095.727083] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14095.772011] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14095.820993] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14095.829004] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14095.842799] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14095.857775] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14095.857831] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14095.979496] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14095.979552] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14095.979953] DL data not available
+<3>[14095.999966] DL data not available
+<3>[14096.019966] DL data not available
+<3>[14096.039946] DL data not available
+<3>[14096.059953] DL data not available
+<3>[14096.079956] DL data not available
+<3>[14096.099952] DL data not available
+<3>[14096.119971] DL data not available
+<3>[14096.212180] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14096.261013] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14096.269024] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14096.283473] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14096.302568] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14096.302616] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14096.362456] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14096.410990] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14096.417722] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14096.433699] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14096.451784] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14096.451831] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14096.587627] DL data not available
+<3>[14096.587812] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14096.587844] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14096.607618] DL data not available
+<3>[14096.627629] DL data not available
+<3>[14096.647611] DL data not available
+<3>[14096.667605] DL data not available
+<3>[14096.687622] DL data not available
+<3>[14096.707606] DL data not available
+<3>[14096.727613] DL data not available
+<3>[14096.747621] DL data not available
+<3>[14096.767619] DL data not available
+<3>[14096.787610] DL data not available
+<3>[14096.807609] DL data not available
+<3>[14096.827619] DL data not available
+<3>[14096.966405] DL data not available
+<3>[14096.986402] DL data not available
+<3>[14097.006386] DL data not available
+<3>[14097.026416] DL data not available
+<3>[14097.033224] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14097.046402] DL data not available
+<3>[14097.066398] DL data not available
+<3>[14097.081293] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14097.086403] DL data not available
+<3>[14097.106415] DL data not available
+<3>[14097.126397] DL data not available
+<3>[14098.099474] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14098.100031] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14098.109388] DL data not available
+<3>[14098.129412] DL data not available
+<3>[14099.061594] DL data not available
+<3>[14099.065619] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14099.065649] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14099.081601] DL data not available
+<3>[14099.101592] DL data not available
+<3>[14099.790118] DL data not available
+<3>[14099.796482] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14099.796522] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14099.810128] DL data not available
+<3>[14099.830118] DL data not available
+<3>[14099.850120] DL data not available
+<3>[14099.870123] DL data not available
+<3>[14099.890121] DL data not available
+<3>[14099.910119] DL data not available
+<3>[14099.930133] DL data not available
+<3>[14099.950124] DL data not available
+<3>[14099.970125] DL data not available
+<3>[14099.990122] DL data not available
+<3>[14100.010120] DL data not available
+<3>[14100.030145] DL data not available
+<3>[14100.050130] DL data not available
+<3>[14100.070128] DL data not available
+<3>[14100.132074] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14100.153164] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14100.186344] DL data not available
+<3>[14100.206350] DL data not available
+<3>[14100.226348] DL data not available
+<3>[14100.246376] DL data not available
+<3>[14100.266361] DL data not available
+<3>[14100.286376] DL data not available
+<3>[14100.306357] DL data not available
+<3>[14100.326368] DL data not available
+<3>[14100.346368] DL data not available
+<3>[14100.366352] DL data not available
+<3>[14100.386348] DL data not available
+<3>[14100.404272] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14100.404303] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14100.406368] DL data not available
+<3>[14100.426367] DL data not available
+<3>[14100.506829] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14100.550999] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14100.559419] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14100.574122] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14100.592375] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14100.592532] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14100.694133] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14100.741033] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14100.748914] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14100.773363] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14100.794879] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14100.794930] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14100.930020] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14100.930057] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14100.930101] DL data not available
+<3>[14100.950118] DL data not available
+<3>[14100.970116] DL data not available
+<3>[14101.050432] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14101.101024] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14101.109308] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14101.126531] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14101.148991] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14101.149733] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14101.210915] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14101.261286] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14101.267631] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14101.283519] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14101.302808] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14101.302859] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14101.434250] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14101.434297] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14101.435092] DL data not available
+<3>[14101.455099] DL data not available
+<3>[14101.475067] DL data not available
+<3>[14101.495069] DL data not available
+<3>[14101.515069] DL data not available
+<3>[14101.535065] DL data not available
+<3>[14101.555067] DL data not available
+<3>[14101.575063] DL data not available
+<3>[14101.595067] DL data not available
+<3>[14101.615084] DL data not available
+<3>[14101.635063] DL data not available
+<3>[14101.655070] DL data not available
+<3>[14101.741996] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14101.791030] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14101.801642] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14101.824512] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14101.845470] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14101.845516] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14101.900578] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14101.951018] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14101.962816] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14101.983931] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14102.005948] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14102.005995] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14102.136749] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14102.136813] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14102.137205] DL data not available
+<3>[14102.157229] DL data not available
+<3>[14102.177223] DL data not available
+<3>[14102.197219] DL data not available
+<3>[14102.217225] DL data not available
+<3>[14102.237201] DL data not available
+<3>[14102.257212] DL data not available
+<3>[14102.277199] DL data not available
+<3>[14102.297206] DL data not available
+<3>[14102.317204] DL data not available
+<3>[14102.337203] DL data not available
+<3>[14102.357211] DL data not available
+<3>[14102.377213] DL data not available
+<3>[14102.397211] DL data not available
+<3>[14102.513892] DL data not available
+<3>[14102.533892] DL data not available
+<3>[14102.553940] DL data not available
+<3>[14102.573041] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14102.573951] DL data not available
+<3>[14102.593886] DL data not available
+<3>[14102.613891] DL data not available
+<3>[14102.621024] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14102.633911] DL data not available
+<3>[14102.653896] DL data not available
+<3>[14102.673899] DL data not available
+<3>[14103.412764] DL data not available
+<3>[14103.421930] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14103.421970] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14103.432759] DL data not available
+<3>[14103.452758] DL data not available
+<3>[14103.472750] DL data not available
+<3>[14103.492752] DL data not available
+<3>[14103.495577] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<3>[14103.512748] DL data not available
+<3>[14103.532749] DL data not available
+<3>[14103.552748] DL data not available
+<3>[14103.572741] DL data not available
+<3>[14103.592752] DL data not available
+<3>[14103.612744] DL data not available
+<3>[14103.632757] DL data not available
+<3>[14103.652755] DL data not available
+<3>[14103.672745] DL data not available
+<3>[14103.692757] DL data not available
+<3>[14103.740076] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14103.754109] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14103.787500] DL data not available
+<3>[14103.807505] DL data not available
+<3>[14103.827506] DL data not available
+<3>[14103.847515] DL data not available
+<3>[14103.867508] DL data not available
+<3>[14103.887508] DL data not available
+<3>[14103.907504] DL data not available
+<3>[14103.927510] DL data not available
+<3>[14103.947508] DL data not available
+<3>[14103.967505] DL data not available
+<3>[14103.987506] DL data not available
+<3>[14104.006167] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14104.006200] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14104.007516] DL data not available
+<3>[14104.027512] DL data not available
+<3>[14104.047507] DL data not available
+<3>[14104.123955] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14104.171125] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14104.177747] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14104.192992] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14104.212392] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14104.212441] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14104.272771] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14104.321067] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14104.328034] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14104.342663] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14104.362219] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14104.362269] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14104.493370] DL data not available
+<3>[14104.494201] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14104.494232] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14104.513398] DL data not available
+<3>[14104.533379] DL data not available
+<3>[14104.553378] DL data not available
+<3>[14104.573379] DL data not available
+<3>[14104.593375] DL data not available
+<3>[14104.613374] DL data not available
+<3>[14104.633372] DL data not available
+<3>[14104.717612] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14104.771067] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14104.777963] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14104.793063] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14104.810480] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14104.810530] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14104.867411] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14104.911008] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14104.918877] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14104.932552] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14104.949831] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14104.949928] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14105.079212] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14105.079252] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14105.079470] DL data not available
+<3>[14105.099469] DL data not available
+<3>[14105.119470] DL data not available
+<3>[14105.139457] DL data not available
+<3>[14105.159475] DL data not available
+<3>[14105.179471] DL data not available
+<3>[14105.199465] DL data not available
+<3>[14105.219470] DL data not available
+<3>[14105.239463] DL data not available
+<3>[14105.259481] DL data not available
+<3>[14105.279482] DL data not available
+<3>[14105.299471] DL data not available
+<3>[14105.319527] DL data not available
+<3>[14105.399531] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14105.451008] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14105.459940] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14105.484473] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14105.504369] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14105.504417] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14105.858440] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14105.900972] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14106.333479] DL data not available
+<3>[14106.337050] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14106.337078] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14106.353497] DL data not available
+<3>[14106.373490] DL data not available
+<3>[14106.393491] DL data not available
+<3>[14106.413497] DL data not available
+<3>[14106.433488] DL data not available
+<3>[14106.453489] DL data not available
+<3>[14106.473485] DL data not available
+<3>[14106.493499] DL data not available
+<3>[14106.513496] DL data not available
+<3>[14106.533493] DL data not available
+<3>[14106.553492] DL data not available
+<3>[14106.573495] DL data not available
+<3>[14106.593490] DL data not available
+<3>[14106.613489] DL data not available
+<3>[14106.633497] DL data not available
+<3>[14106.682242] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14106.702580] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14106.736804] DL data not available
+<3>[14106.756809] DL data not available
+<3>[14106.776810] DL data not available
+<3>[14106.796811] DL data not available
+<3>[14106.816804] DL data not available
+<3>[14106.836802] DL data not available
+<3>[14106.856807] DL data not available
+<3>[14106.876800] DL data not available
+<3>[14106.896804] DL data not available
+<3>[14106.916807] DL data not available
+<3>[14106.936792] DL data not available
+<3>[14106.952193] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14106.952234] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14106.956833] DL data not available
+<3>[14106.976814] DL data not available
+<3>[14106.996805] DL data not available
+<3>[14107.016814] DL data not available
+<3>[14107.036826] DL data not available
+<3>[14107.056844] DL data not available
+<3>[14107.137772] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14107.180996] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14107.188924] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14107.203479] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14107.221321] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14107.221377] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14107.279696] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14107.341049] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14107.348189] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14107.362864] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14107.380576] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14107.380613] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14107.511804] DL data not available
+<3>[14107.512088] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14107.512121] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14107.531815] DL data not available
+<3>[14107.551821] DL data not available
+<3>[14107.571860] DL data not available
+<3>[14107.591806] DL data not available
+<3>[14107.611803] DL data not available
+<3>[14107.631805] DL data not available
+<3>[14107.651810] DL data not available
+<3>[14107.671811] DL data not available
+<3>[14107.691823] DL data not available
+<3>[14107.711805] DL data not available
+<3>[14107.731807] DL data not available
+<3>[14107.751844] DL data not available
+<3>[14107.771832] DL data not available
+<3>[14107.859782] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14107.910966] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14107.917081] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14107.932834] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14107.949708] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14107.949762] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14108.312747] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14108.361022] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14108.807027] DL data not available
+<3>[14108.810499] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14108.810531] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14108.827042] DL data not available
+<3>[14108.847049] DL data not available
+<3>[14108.867031] DL data not available
+<3>[14108.887048] DL data not available
+<3>[14108.907040] DL data not available
+<3>[14108.927040] DL data not available
+<3>[14108.947042] DL data not available
+<3>[14108.967039] DL data not available
+<3>[14108.987041] DL data not available
+<3>[14109.007043] DL data not available
+<3>[14109.027041] DL data not available
+<3>[14109.047047] DL data not available
+<3>[14109.067040] DL data not available
+<3>[14109.087046] DL data not available
+<3>[14109.107035] DL data not available
+<3>[14109.127037] DL data not available
+<3>[14109.147042] DL data not available
+<3>[14109.167035] DL data not available
+<3>[14109.187043] DL data not available
+<3>[14109.207036] DL data not available
+<3>[14109.270946] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14109.293131] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14109.324206] DL data not available
+<3>[14109.344207] DL data not available
+<3>[14109.364197] DL data not available
+<3>[14109.384242] DL data not available
+<3>[14109.404204] DL data not available
+<3>[14109.424213] DL data not available
+<3>[14109.444208] DL data not available
+<3>[14109.464200] DL data not available
+<3>[14109.484227] DL data not available
+<3>[14109.504199] DL data not available
+<3>[14109.524205] DL data not available
+<3>[14109.542373] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14109.542406] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14109.544216] DL data not available
+<3>[14109.564222] DL data not available
+<3>[14109.584266] DL data not available
+<3>[14109.604224] DL data not available
+<3>[14109.624250] DL data not available
+<3>[14109.644209] DL data not available
+<3>[14109.715253] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14109.761130] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14109.768130] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14109.783162] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14109.801565] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14109.801615] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14109.861535] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14109.910967] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14109.922844] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14109.944758] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14109.964342] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14109.964397] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14110.094894] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14110.094926] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14110.095792] DL data not available
+<3>[14110.115810] DL data not available
+<3>[14110.135808] DL data not available
+<3>[14110.155814] DL data not available
+<3>[14110.175813] DL data not available
+<3>[14110.195805] DL data not available
+<3>[14110.215799] DL data not available
+<3>[14110.235799] DL data not available
+<3>[14110.255802] DL data not available
+<3>[14110.275811] DL data not available
+<3>[14110.295813] DL data not available
+<3>[14110.315811] DL data not available
+<3>[14110.335806] DL data not available
+<3>[14110.355815] DL data not available
+<3>[14110.413578] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14110.461014] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14110.554171] DL data not available
+<3>[14110.574173] DL data not available
+<3>[14110.594153] DL data not available
+<3>[14110.614162] DL data not available
+<3>[14110.634191] DL data not available
+<3>[14110.654198] DL data not available
+<3>[14110.674162] DL data not available
+<3>[14110.694156] DL data not available
+<3>[14110.714154] DL data not available
+<3>[14110.734151] DL data not available
+<3>[14110.754154] DL data not available
+<3>[14110.774165] DL data not available
+<3>[14110.921125] qdsp_cvp_callback: cmd = 0x13198 returned error = 0x9
+<3>[14110.921163] voice_send_cvp_topology_commit_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14110.921171] voc_enable_device:  Set topology commit failed
+<3>[14111.112830] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x1
+<3>[14111.112872] voice_send_vol_step_cmd: DSP returned error[ADSP_EFAILED]
+<3>[14111.170947] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<3>[14117.174936] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<3>[14120.846366] qdsp_cvp_callback: cmd = 0x1307c returned error = 0x9
+<3>[14120.846409] voice_send_cvp_deregister_vol_cal_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14120.846511] qdsp_cvp_callback: cmd = 0x1307a returned error = 0x9
+<3>[14120.846532] voice_send_cvp_deregister_cal_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14120.846620] qdsp_cvp_callback: cmd = 0x11372 returned error = 0x9
+<3>[14120.846640] voice_send_cvp_deregister_dev_cfg_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14121.331113] DL data not available
+<3>[14121.337789] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14121.337830] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14121.351006] DL data not available
+<3>[14121.371035] DL data not available
+<3>[14121.391113] DL data not available
+<3>[14121.411092] DL data not available
+<3>[14121.431147] DL data not available
+<3>[14122.172919] DL data not available
+<3>[14122.183041] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14122.183097] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14122.192897] DL data not available
+<3>[14122.212966] DL data not available
+<3>[14122.232895] DL data not available
+<3>[14122.252885] DL data not available
+<3>[14122.272813] DL data not available
+<3>[14122.292783] DL data not available
+<3>[14122.312892] DL data not available
+<3>[14122.332900] DL data not available
+<3>[14122.352927] DL data not available
+<3>[14122.372903] DL data not available
+<3>[14122.392907] DL data not available
+<3>[14122.412793] DL data not available
+<3>[14122.432894] DL data not available
+<3>[14122.453053] DL data not available
+<3>[14122.472815] DL data not available
+<3>[14122.492814] DL data not available
+<3>[14122.512902] DL data not available
+<3>[14122.532798] DL data not available
+<3>[14122.552804] DL data not available
+<3>[14122.572852] DL data not available
+<3>[14122.592804] DL data not available
+<3>[14122.612789] DL data not available
+<3>[14122.632888] DL data not available
+<3>[14122.652981] DL data not available
+<3>[14122.672933] DL data not available
+<3>[14122.692886] DL data not available
+<3>[14122.712949] DL data not available
+<3>[14122.732886] DL data not available
+<3>[14122.752897] DL data not available
+<3>[14122.772987] DL data not available
+<3>[14122.792890] DL data not available
+<3>[14122.812814] DL data not available
+<3>[14122.872950] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14122.892411] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14122.927375] DL data not available
+<3>[14122.947436] DL data not available
+<3>[14122.967382] DL data not available
+<3>[14122.987391] DL data not available
+<3>[14123.007407] DL data not available
+<3>[14123.027392] DL data not available
+<3>[14123.047394] DL data not available
+<3>[14123.067384] DL data not available
+<3>[14123.087394] DL data not available
+<3>[14123.107405] DL data not available
+<3>[14123.127402] DL data not available
+<3>[14123.131844] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14123.131881] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14123.147394] DL data not available
+<3>[14123.167403] DL data not available
+<3>[14123.232601] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14123.281015] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14123.287663] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14123.303410] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14123.316534] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14123.316579] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14123.360930] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14123.410961] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14123.419528] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14123.434730] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14123.448602] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14123.448652] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14123.573210] DL data not available
+<3>[14123.573483] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14123.573509] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14123.593113] DL data not available
+<3>[14123.613116] DL data not available
+<3>[14123.633103] DL data not available
+<3>[14123.653112] DL data not available
+<3>[14123.673108] DL data not available
+<3>[14123.693103] DL data not available
+<3>[14123.713116] DL data not available
+<3>[14123.733107] DL data not available
+<3>[14123.753149] DL data not available
+<3>[14123.773132] DL data not available
+<3>[14123.793108] DL data not available
+<3>[14123.813110] DL data not available
+<3>[14123.833106] DL data not available
+<3>[14123.948896] DL data not available
+<3>[14123.968889] DL data not available
+<3>[14123.988885] DL data not available
+<3>[14124.008903] DL data not available
+<3>[14124.011643] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14124.028933] DL data not available
+<3>[14124.048897] DL data not available
+<3>[14124.060938] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14124.068917] DL data not available
+<3>[14124.088889] DL data not available
+<3>[14124.108918] DL data not available
+<14>[14124.494865] init: Untracked pid 30368 exited with status 0
+<3>[14124.809163] DL data not available
+<3>[14124.816047] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14124.816083] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14124.829181] DL data not available
+<3>[14124.849173] DL data not available
+<3>[14124.869170] DL data not available
+<14>[14124.875763] init: Untracked pid 30373 exited with status 0
+<3>[14124.889183] DL data not available
+<3>[14124.909166] DL data not available
+<3>[14124.929168] DL data not available
+<3>[14124.949169] DL data not available
+<3>[14124.969188] DL data not available
+<14>[14125.078069] init: Untracked pid 30376 exited with status 0
+<3>[14125.124011] DL data not available
+<3>[14125.144001] DL data not available
+<3>[14125.163993] DL data not available
+<14>[14125.168043] init: Untracked pid 30379 exited with status 0
+<3>[14125.184007] DL data not available
+<3>[14125.204012] DL data not available
+<3>[14125.224023] DL data not available
+<3>[14125.244019] DL data not available
+<14>[14125.261874] init: Untracked pid 30382 exited with status 0
+<3>[14125.264025] DL data not available
+<3>[14125.284038] DL data not available
+<3>[14125.304008] DL data not available
+<3>[14125.324015] DL data not available
+<3>[14125.344002] DL data not available
+<3>[14125.364020] DL data not available
+<3>[14125.384010] DL data not available
+<3>[14125.403998] DL data not available
+<3>[14125.424006] DL data not available
+<3>[14125.443999] DL data not available
+<14>[14125.487273] init: Untracked pid 30385 exited with status 0
+<3>[14125.915493] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14125.916265] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14125.928758] DL data not available
+<3>[14125.948822] DL data not available
+<3>[14125.968773] DL data not available
+<3>[14125.988779] DL data not available
+<3>[14126.008765] DL data not available
+<3>[14126.028770] DL data not available
+<3>[14126.048796] DL data not available
+<3>[14126.068758] DL data not available
+<3>[14126.088750] DL data not available
+<3>[14126.227331] qdsp_cvp_callback: cmd = 0x13198 returned error = 0x9
+<3>[14126.227360] voice_send_cvp_topology_commit_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14126.227366] voc_enable_device:  Set topology commit failed
+<3>[14126.423070] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x1
+<3>[14126.424478] voice_send_vol_step_cmd: DSP returned error[ADSP_EFAILED]
+<3>[14130.857823] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<3>[14131.071082] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<3>[14136.146933] qdsp_cvp_callback: cmd = 0x1307c returned error = 0x9
+<3>[14136.147040] voice_send_cvp_deregister_vol_cal_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14136.147152] qdsp_cvp_callback: cmd = 0x1307a returned error = 0x9
+<3>[14136.147198] voice_send_cvp_deregister_cal_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14136.147332] qdsp_cvp_callback: cmd = 0x11372 returned error = 0x9
+<3>[14136.147376] voice_send_cvp_deregister_dev_cfg_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14136.615765] DL data not available
+<3>[14136.620189] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14136.620221] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14136.635756] DL data not available
+<3>[14136.655757] DL data not available
+<3>[14136.675767] DL data not available
+<3>[14136.695770] DL data not available
+<3>[14136.715768] DL data not available
+<3>[14136.735754] DL data not available
+<3>[14137.250988] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<3>[14137.353357] DL data not available
+<3>[14137.357465] qdsp_cvp_callback: cmd = 0x112c2 returned error = 0x9
+<3>[14137.357494] voice_send_vol_step_cmd: DSP returned error[ADSP_EALREADY]
+<3>[14137.373360] DL data not available
+<3>[14137.393363] DL data not available
+<3>[14137.413358] DL data not available
+<3>[14137.433355] DL data not available
+<3>[14137.453357] DL data not available
+<3>[14137.473397] DL data not available
+<3>[14137.493353] DL data not available
+<3>[14137.513357] DL data not available
+<3>[14137.533358] DL data not available
+<3>[14137.553354] DL data not available
+<3>[14137.573350] DL data not available
+<3>[14137.593369] DL data not available
+<3>[14137.613361] DL data not available
+<3>[14137.674462] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14137.692341] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14137.724358] DL data not available
+<3>[14137.744361] DL data not available
+<3>[14137.764371] DL data not available
+<3>[14137.784372] DL data not available
+<3>[14137.804373] DL data not available
+<3>[14137.824354] DL data not available
+<3>[14137.844385] DL data not available
+<3>[14137.864364] DL data not available
+<3>[14137.884357] DL data not available
+<3>[14137.904363] DL data not available
+<3>[14137.924377] DL data not available
+<3>[14137.930924] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14137.930967] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14137.944369] DL data not available
+<3>[14137.964358] DL data not available
+<3>[14138.026727] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14138.070962] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14138.076825] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14138.093601] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14138.106161] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14138.106217] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14138.712390] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14138.760998] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14139.385112] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14139.403053] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14139.419070] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14139.419112] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14139.797272] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14139.841038] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14140.363096] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<3>[14140.415053] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14140.433181] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14140.448937] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14140.448978] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14149.868550] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<6>[14151.796848] binder: undelivered transaction 3521574, process died.
+<6>[14151.797079] binder: send failed reply for transaction 3521564 to 2124:2291
+<6>[14151.797608] binder: undelivered transaction 3521657, process died.
+<6>[14151.798638] binder: 2124:29228 transaction failed 29189/-22, size 13620-0 line 2933
+<6>[14151.800100] binder: undelivered transaction 3521656, process died.
+<6>[14151.840964] binder: 2628:3315 transaction failed 29189/-22, size 648-0 line 2933
+<6>[14151.843347] binder: 2628:3315 transaction failed 29189/-22, size 648-0 line 2933
+<6>[14151.948938] binder: 2124:2124 transaction failed 29189/-22, size 100-0 line 2933
+<6>[14151.949027] binder: 2124:2124 transaction failed 29189/-22, size 100-0 line 2933
+<6>[14152.088313] msm_vidc: info: Closed video instance: 0000000000000000
+<6>[14152.183646] msm_vidc: info: Closed video instance: 0000000000000000
+<3>[14154.752832] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14154.801621] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14155.091974] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<3>[14159.375320] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<36>[14167.708787] type=1400 audit(1528202315.841:638): avc: denied { connectto } for pid=28420 comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0 duplicate messages suppressed
+<36>[14167.708812] type=1400 audit(1528202387.931:639): avc: denied { read } for pid=30625 comm="id.apps.tachyon" name="stat" dev="proc" ino=4026532312 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+<36>[14168.896145] type=1400 audit(1528202387.931:639): avc: denied { read } for pid=30625 comm="id.apps.tachyon" name="stat" dev="proc" ino=4026532312 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+<36>[14168.896177] type=1400 audit(1528202389.121:640): avc: denied { read } for pid=30625 comm="VideoCapturerTh" name="u:object_r:camera_prop:s0" dev="tmpfs" ino=6405 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:camera_prop:s0 tclass=file permissive=0
+<6>[14168.916464] msm_pm_qos_update_request: update request 100
+<11>[14168.917781] selinux: avc:  denied  { set } for property=persist.camera.debug.logfile pid=2142 uid=1006 gid=1006 scontext=u:r:mm-qcamerad:s0 tcontext=u:object_r:camera_prop:s0 tclass=property_service permissive=0
+<11>[14168.917781] 
+<11>[14168.917866] init: sys_prop(PROP_MSG_SETPROP2): permission denied uid:1006 name:persist.camera.debug.logfile
+<6>[14168.922767] msm_csid_init: CSID_VERSION = 0x30050001
+<3>[14168.924277] msm_csid_irq CSID1_IRQ_STATUS_ADDR = 0x800
+<6>[14168.935917] MSM-CPP cpp_init_hardware:1005 CPP HW Version: 0x40030003
+<3>[14168.935936] MSM-CPP cpp_init_hardware:1023 stream_cnt:0
+<6>[14168.947882] msm_pm_qos_update_request: update request -1
+<6>[14168.969578] msm_cci_init:1434: hw_version = 0x10020005
+<3>[14168.990976] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<3>[14169.231229] msm_csid_irq CSID1_IRQ_STATUS_ADDR = 0x800
+<3>[14169.701370] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<3>[14174.231074] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<3>[14178.490515] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<3>[14188.095155] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<36>[14190.632467] type=1400 audit(1528202389.121:640): avc: denied { read } for pid=30625 comm="VideoCapturerTh" name="u:object_r:camera_prop:s0" dev="tmpfs" ino=6405 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:camera_prop:s0 tclass=file permissive=0
+<36>[14190.632491] type=1400 audit(1528202410.861:641): avc: denied { execute } for pid=30825 comm="id.apps.tachyon" name="thermal-engine" dev="dm-1" ino=297 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:thermal-engine_exec:s0 tclass=file permissive=0
+<36>[14190.655983] type=1400 audit(1528202410.861:641): avc: denied { execute } for pid=30825 comm="id.apps.tachyon" name="thermal-engine" dev="dm-1" ino=297 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:thermal-engine_exec:s0 tclass=file permissive=0
+<36>[14190.656009] type=1400 audit(1528202410.881:642): avc: denied { execute } for pid=30832 comm="id.apps.tachyon" name="thermal-engine" dev="dm-1" ino=297 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:thermal-engine_exec:s0 tclass=file permissive=0
+<3>[14191.056476] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<3>[14191.073593] enable_spk_ext_pa: gpio_num:96, Enable external speaker PA
+<3>[14191.092442] adm_callback: cmd = 0x10328 returned error = 0x2
+<3>[14191.092479] send_adm_cal_block: DSP returned error[ADSP_EBADPARAM]
+<3>[14191.496653] enable_spk_ext_pa: gpio_num:96, Disable external speaker PA
+<3>[14191.540969] msm8952-asoc-wcd c051000.sound: msm8952_wsa_switch_event: no wsa switch supply
+<36>[14196.108811] type=1400 audit(1528202410.881:642): avc: denied { execute } for pid=30832 comm="id.apps.tachyon" name="thermal-engine" dev="dm-1" ino=297 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:thermal-engine_exec:s0 tclass=file permissive=0
+<36>[14196.108839] type=1400 audit(1528202416.331:643): avc: denied { read } for pid=30625 comm="VideoCapturerTh" name="u:object_r:camera_prop:s0" dev="tmpfs" ino=6405 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:camera_prop:s0 tclass=file permissive=0
+<6>[14196.159877] msm_pm_qos_update_request: update request 100
+<11>[14196.161690] selinux: avc:  denied  { set } for property=persist.camera.debug.logfile pid=2142 uid=1006 gid=1006 scontext=u:r:mm-qcamerad:s0 tcontext=u:object_r:camera_prop:s0 tclass=property_service permissive=0
+<11>[14196.161690] 
+<11>[14196.161772] init: sys_prop(PROP_MSG_SETPROP2): permission denied uid:1006 name:persist.camera.debug.logfile
+<6>[14196.178085] msm_csid_init: CSID_VERSION = 0x30050001
+<3>[14196.181659] msm_csid_irq CSID1_IRQ_STATUS_ADDR = 0x800
+<6>[14196.198668] MSM-CPP cpp_init_hardware:1005 CPP HW Version: 0x40030003
+<3>[14196.198687] MSM-CPP cpp_init_hardware:1023 stream_cnt:0
+<6>[14196.216067] msm_cci_init:1434: hw_version = 0x10020005
+<6>[14196.268480] msm_pm_qos_update_request: update request -1
+<3>[14196.402532] msm_csid_irq CSID1_IRQ_STATUS_ADDR = 0x800
+<6>[14196.698310] msm_vidc: info: Opening video instance: 0000000000000000, 0
+<6>[14196.702318] subsys-restart: __subsystem_get(): Changing subsys fw_name to venus
+<14>[14196.710257] ueventd: firmware: loading 'venus.mdt' for '/devices/soc/1de0000.qcom,venus/firmware/venus.mdt'
+<14>[14196.711144] ueventd: loading /devices/soc/1de0000.qcom,venus/firmware/venus.mdt took 1ms
+<6>[14196.738709] subsys-pil-tz 1de0000.qcom,venus: venus: loading from 0x000000008f800000 to 0x000000008fd00000
+<14>[14196.769604] ueventd: firmware: loading 'venus.b02' for '/devices/soc/1de0000.qcom,venus/firmware/venus.b02'
+<14>[14196.784716] ueventd: loading /devices/soc/1de0000.qcom,venus/firmware/venus.b02 took 15ms
+<14>[14196.788468] ueventd: firmware: loading 'venus.b03' for '/devices/soc/1de0000.qcom,venus/firmware/venus.b03'
+<14>[14196.792660] ueventd: loading /devices/soc/1de0000.qcom,venus/firmware/venus.b03 took 4ms
+<14>[14196.797135] ueventd: firmware: loading 'venus.b04' for '/devices/soc/1de0000.qcom,venus/firmware/venus.b04'
+<14>[14196.797591] ueventd: loading /devices/soc/1de0000.qcom,venus/firmware/venus.b04 took 0ms
+<6>[14196.836552] subsys-pil-tz 1de0000.qcom,venus: venus: Brought out of reset
+<3>[14197.600984] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<6>[14198.015314] msm_vidc: info: Closed video instance: 0000000000000000
+<3>[14207.105507] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<14>[14210.573989] init: starting service 'bugreport'...
+<3>[14216.610643] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<14>[14224.177495] init: Untracked pid 31090 exited with status 0
+<14>[14224.235961] init: Untracked pid 31093 exited with status 0
+<14>[14224.328798] init: Untracked pid 31096 exited with status 0
+<14>[14224.465311] init: Untracked pid 31099 exited with status 0
+<3>[14224.532433] SMBCHG: set_dc_current_limit_vote_cb: No voters
+<14>[14224.595490] init: Untracked pid 31102 exited with status 0
+<14>[14224.901005] init: Untracked pid 31105 exited with status 0
+<14>[14225.086880] init: Untracked pid 31108 exited with status 0
+<14>[14225.204390] init: Untracked pid 31111 exited with status 0
+<14>[14225.277555] init: Untracked pid 31114 exited with status 0
+<14>[14225.353634] init: Untracked pid 31117 exited with status 0
+<14>[14225.504222] init: Untracked pid 31120 exited with status 0
+<3>[14226.115272] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<36>[14232.772512] type=1400 audit(1528202416.331:643): avc: denied { read } for pid=30625 comm="VideoCapturerTh" name="u:object_r:camera_prop:s0" dev="tmpfs" ino=6405 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:camera_prop:s0 tclass=file permissive=0
+<36>[14232.772539] type=1400 audit(1528202452.958:644): avc: denied { read } for pid=30982 comm="Binder:30982_2" name="zram0" dev="sysfs" ino=24632 scontext=u:r:dumpstate:s0 tcontext=u:object_r:sysfs_zram:s0 tclass=dir permissive=0
+<36>[14232.789954] type=1400 audit(1528202452.958:644): avc: denied { read } for pid=30982 comm="Binder:30982_2" name="zram0" dev="sysfs" ino=24632 scontext=u:r:dumpstate:s0 tcontext=u:object_r:sysfs_zram:s0 tclass=dir permissive=0
+<36>[14232.789977] type=1400 audit(1528202452.968:645): avc: denied { search } for pid=30982 comm="Binder:30982_2" name="mmc0" dev="debugfs" ino=1108 scontext=u:r:dumpstate:s0 tcontext=u:object_r:debugfs_mmc:s0 tclass=dir permissive=0
+<3>[14235.111453] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+<3>[14235.619873] wlan: [9892:E :DAT] dxeTXCompFrame :ARP packet DMA-ed 
+
+
+------ 0.012s was the duration of 'KERNEL LOG (dmesg)' ------
+

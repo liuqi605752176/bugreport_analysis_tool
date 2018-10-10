@@ -1,0 +1,229 @@
+------------------------------------------------------------------------------------------
+	comm
+------------------------------------------------------------------------------------------
+WifiStateMachin
+m.android.phone
+id.apps.tachyon
+VideoCapturerTh
+Thread-2
+TcmReceiver
+Thread-3
+Thread-4
+.android.chrome
+Binder:30982_2
+
+------------------------------------------------------------------------------------------
+	name
+------------------------------------------------------------------------------------------
+u:object_r:qcom_ims_prop:s0
+u:object_r:camera_prop:s0
+stat
+thermal-engine
+vmstat
+zram0
+mmc0
+
+------------------------------------------------------------------------------------------
+	scontext
+------------------------------------------------------------------------------------------
+system_server
+radio
+untrusted_app_25
+mediaprovider
+untrusted_app
+dumpstate
+
+------------------------------------------------------------------------------------------
+	Logs
+------------------------------------------------------------------------------------------
+ 
+WifiStateMachin 
+------------------------------------------------------------------------------------------
+06-05 17:07:09.374  1000  2628  2628 I auditd  : type=1400 audit(0.0:488): avc: denied { syslog_read } for comm="WifiStateMachin" scontext=u:r:system_server:s0 tcontext=u:r:kernel:s0 tclass=system permissive=0
+06-05 17:07:25.494  1000  2628  2628 I auditd  : type=1400 audit(0.0:489): avc: denied { syslog_read } for comm="WifiStateMachin" scontext=u:r:system_server:s0 tcontext=u:r:kernel:s0 tclass=system permissive=0
+06-05 17:11:39.813  1000  2628  2628 I auditd  : type=1400 audit(0.0:490): avc: denied { syslog_read } for comm="WifiStateMachin" scontext=u:r:system_server:s0 tcontext=u:r:kernel:s0 tclass=system permissive=0
+06-05 17:16:02.750  1000  2628  2628 I auditd  : type=1400 audit(0.0:491): avc: denied { syslog_read } for comm="WifiStateMachin" scontext=u:r:system_server:s0 tcontext=u:r:kernel:s0 tclass=system permissive=0
+06-05 17:16:12.192  1000  2628  2628 I auditd  : type=1400 audit(0.0:492): avc: denied { syslog_read } for comm="WifiStateMachin" scontext=u:r:system_server:s0 tcontext=u:r:kernel:s0 tclass=system permissive=0
+06-05 17:16:27.070  1000  2628  2628 I auditd  : type=1400 audit(0.0:493): avc: denied { syslog_read } for comm="WifiStateMachin" scontext=u:r:system_server:s0 tcontext=u:r:kernel:s0 tclass=system permissive=0
+06-05 17:28:13.071  1000  2628  2628 I auditd  : type=1400 audit(0.0:494): avc: denied { syslog_read } for comm="WifiStateMachin" scontext=u:r:system_server:s0 tcontext=u:r:kernel:s0 tclass=system permissive=0
+ 
+ 
+m.android.phone 
+------------------------------------------------------------------------------------------
+06-05 17:44:08.508 radio  3545  3545 I auditd  : type=1400 audit(0.0:495): avc: denied { read } for comm="m.android.phone" name="u:object_r:qcom_ims_prop:s0" dev="tmpfs" ino=6370 scontext=u:r:radio:s0 tcontext=u:object_r:qcom_ims_prop:s0 tclass=file permissive=0
+06-05 17:44:08.508 radio  3545  3545 I auditd  : type=1400 audit(0.0:497): avc: denied { read } for comm="m.android.phone" name="u:object_r:qcom_ims_prop:s0" dev="tmpfs" ino=6370 scontext=u:r:radio:s0 tcontext=u:object_r:qcom_ims_prop:s0 tclass=file permissive=0
+06-05 17:44:11.053 radio  3545  3545 I auditd  : type=1400 audit(0.0:498): avc: denied { read } for comm="m.android.phone" name="u:object_r:camera_prop:s0" dev="tmpfs" ino=6405 scontext=u:r:radio:s0 tcontext=u:object_r:camera_prop:s0 tclass=file permissive=0
+06-05 17:44:40.633 radio  3545  3545 I auditd  : type=1400 audit(0.0:499): avc: denied { read } for comm="m.android.phone" name="u:object_r:camera_prop:s0" dev="tmpfs" ino=6405 scontext=u:r:radio:s0 tcontext=u:object_r:camera_prop:s0 tclass=file permissive=0
+06-05 17:44:41.513 radio  3545  3545 I auditd  : type=1400 audit(0.0:500): avc: denied { read } for comm="m.android.phone" name="u:object_r:camera_prop:s0" dev="tmpfs" ino=6405 scontext=u:r:radio:s0 tcontext=u:object_r:camera_prop:s0 tclass=file permissive=0
+06-05 17:45:53.603 radio  3545  3545 I auditd  : type=1400 audit(0.0:501): avc: denied { read } for comm="m.android.phone" name="u:object_r:qcom_ims_prop:s0" dev="tmpfs" ino=6370 scontext=u:r:radio:s0 tcontext=u:object_r:qcom_ims_prop:s0 tclass=file permissive=0
+06-05 17:45:53.603 radio  3545  3545 I auditd  : type=1400 audit(0.0:503): avc: denied { read } for comm="m.android.phone" name="u:object_r:qcom_ims_prop:s0" dev="tmpfs" ino=6370 scontext=u:r:radio:s0 tcontext=u:object_r:qcom_ims_prop:s0 tclass=file permissive=0
+06-05 17:45:53.883 radio  3545  3545 I auditd  : type=1400 audit(0.0:504): avc: denied { read } for comm="m.android.phone" name="u:object_r:camera_prop:s0" dev="tmpfs" ino=6405 scontext=u:r:radio:s0 tcontext=u:object_r:camera_prop:s0 tclass=file permissive=0
+ 
+ 
+id.apps.tachyon 
+------------------------------------------------------------------------------------------
+06-05 18:00:10.011 10060 27299 27299 I auditd  : type=1400 audit(0.0:505): avc: denied { read } for comm="id.apps.tachyon" name="stat" dev="proc" ino=4026532312 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+06-05 18:01:04.971  logd 28143 28143 I auditd  : type=1400 audit(0.0:507): avc: denied { execute } for comm="id.apps.tachyon" name="thermal-engine" dev="dm-1" ino=297 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:thermal-engine_exec:s0 tclass=file permissive=0
+06-05 18:01:05.011 10060 28150 28150 I auditd  : type=1400 audit(0.0:508): avc: denied { execute } for comm="id.apps.tachyon" name="thermal-engine" dev="dm-1" ino=297 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:thermal-engine_exec:s0 tclass=file permissive=0
+06-05 18:09:47.931 10060 30625 30625 I auditd  : type=1400 audit(0.0:639): avc: denied { read } for comm="id.apps.tachyon" name="stat" dev="proc" ino=4026532312 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:proc_stat:s0 tclass=file permissive=0
+06-05 18:10:10.861 10060 30825 30825 I auditd  : type=1400 audit(0.0:641): avc: denied { execute } for comm="id.apps.tachyon" name="thermal-engine" dev="dm-1" ino=297 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:thermal-engine_exec:s0 tclass=file permissive=0
+06-05 18:10:10.881 10060 30832 30832 I auditd  : type=1400 audit(0.0:642): avc: denied { execute } for comm="id.apps.tachyon" name="thermal-engine" dev="dm-1" ino=297 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:thermal-engine_exec:s0 tclass=file permissive=0
+ 
+ 
+VideoCapturerTh 
+------------------------------------------------------------------------------------------
+06-05 18:00:44.811 10060 27299 27299 I auditd  : type=1400 audit(0.0:506): avc: denied { read } for comm="VideoCapturerTh" name="u:object_r:camera_prop:s0" dev="tmpfs" ino=6405 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:camera_prop:s0 tclass=file permissive=0
+06-05 18:04:22.871 10060 27299 27299 I auditd  : type=1400 audit(0.0:509): avc: denied { read } for comm="VideoCapturerTh" name="u:object_r:camera_prop:s0" dev="tmpfs" ino=6405 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:camera_prop:s0 tclass=file permissive=0
+06-05 18:05:24.241 10060 27299 27299 I auditd  : type=1400 audit(0.0:510): avc: denied { read } for comm="VideoCapturerTh" name="u:object_r:camera_prop:s0" dev="tmpfs" ino=6405 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:camera_prop:s0 tclass=file permissive=0
+06-05 18:05:27.961 10060 27299 27299 I auditd  : type=1400 audit(0.0:511): avc: denied { read } for comm="VideoCapturerTh" name="u:object_r:camera_prop:s0" dev="tmpfs" ino=6405 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:camera_prop:s0 tclass=file permissive=0
+06-05 18:09:49.121 10060 30625 30625 I auditd  : type=1400 audit(0.0:640): avc: denied { read } for comm="VideoCapturerTh" name="u:object_r:camera_prop:s0" dev="tmpfs" ino=6405 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:camera_prop:s0 tclass=file permissive=0
+06-05 18:10:16.331 10060 30625 30625 I auditd  : type=1400 audit(0.0:643): avc: denied { read } for comm="VideoCapturerTh" name="u:object_r:camera_prop:s0" dev="tmpfs" ino=6405 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:camera_prop:s0 tclass=file permissive=0
+ 
+ 
+Thread-2 
+------------------------------------------------------------------------------------------
+06-05 18:06:36.681 10014 28420 28420 I auditd  : type=1400 audit(0.0:512): avc: denied { connectto } for comm="Thread-2" path="/dev/socket/dpmwrapper" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:06:36.731 10014 28420 28420 I auditd  : type=1400 audit(0.0:514): avc: denied { connectto } for comm="Thread-2" path="/dev/socket/dpmwrapper" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+ 
+ 
+TcmReceiver 
+------------------------------------------------------------------------------------------
+06-05 18:06:36.681 10014 28420 28420 I auditd  : type=1400 audit(0.0:513): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:06:37.681 10014 28420 28420 I auditd  : type=1400 audit(0.0:519): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:06:38.681 10014 28420 28420 I auditd  : type=1400 audit(0.0:520): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:06:39.681 10014 28420 28420 I auditd  : type=1400 audit(0.0:521): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:06:40.681 10014 28420 28420 I auditd  : type=1400 audit(0.0:522): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:06:41.681 10014 28420 28420 I auditd  : type=1400 audit(0.0:523): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:06:42.681 10014 28420 28420 I auditd  : type=1400 audit(0.0:524): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:06:44.691 10014 28420 28420 I auditd  : type=1400 audit(0.0:526): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:06:45.691 10014 28420 28420 I auditd  : type=1400 audit(0.0:527): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:06:46.691 10014 28420 28420 I auditd  : type=1400 audit(0.0:528): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:06:47.691 10014 28420 28420 I auditd  : type=1400 audit(0.0:529): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:06:48.691 10014 28420 28420 I auditd  : type=1400 audit(0.0:530): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:06:49.701 10014 28420 28420 I auditd  : type=1400 audit(0.0:531): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:06:50.701 10014 28420 28420 I auditd  : type=1400 audit(0.0:532): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:06:51.701 10014 28420 28420 I auditd  : type=1400 audit(0.0:533): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:06:52.701 10014 28420 28420 I auditd  : type=1400 audit(0.0:534): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:06:53.701 10014 28420 28420 I auditd  : type=1400 audit(0.0:535): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:06:54.701 10014 28420 28420 I auditd  : type=1400 audit(0.0:536): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:06:56.701 10014 28420 28420 I auditd  : type=1400 audit(0.0:538): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:06:57.701 10014 28420 28420 I auditd  : type=1400 audit(0.0:539): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:06:58.711 10014 28420 28420 I auditd  : type=1400 audit(0.0:540): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:00.711 10014 28420 28420 I auditd  : type=1400 audit(0.0:542): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:01.711 10014 28420 28420 I auditd  : type=1400 audit(0.0:543): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:02.711 10014 28420 28420 I auditd  : type=1400 audit(0.0:544): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:03.711 10014 28420 28420 I auditd  : type=1400 audit(0.0:545): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:04.711 10014 28420 28420 I auditd  : type=1400 audit(0.0:546): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:05.721 10014 28420 28420 I auditd  : type=1400 audit(0.0:547): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:06.721 10014 28420 28420 I auditd  : type=1400 audit(0.0:548): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:07.721 10014 28420 28420 I auditd  : type=1400 audit(0.0:549): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:08.721 10014 28420 28420 I auditd  : type=1400 audit(0.0:550): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:09.721 10014 28420 28420 I auditd  : type=1400 audit(0.0:551): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:10.721 10014 28420 28420 I auditd  : type=1400 audit(0.0:552): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:11.721 10014 28420 28420 I auditd  : type=1400 audit(0.0:553): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:12.731 10014 28420 28420 I auditd  : type=1400 audit(0.0:554): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:13.731 10014 28420 28420 I auditd  : type=1400 audit(0.0:555): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:14.731 10014 28420 28420 I auditd  : type=1400 audit(0.0:556): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:15.731 10014 28420 28420 I auditd  : type=1400 audit(0.0:557): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:16.731 10014 28420 28420 I auditd  : type=1400 audit(0.0:558): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:17.731 10014 28420 28420 I auditd  : type=1400 audit(0.0:559): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:18.731 10014 28420 28420 I auditd  : type=1400 audit(0.0:560): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:19.731 10014 28420 28420 I auditd  : type=1400 audit(0.0:561): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:20.731 10014 28420 28420 I auditd  : type=1400 audit(0.0:562): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:21.741 10014 28420 28420 I auditd  : type=1400 audit(0.0:563): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:22.741 10014 28420 28420 I auditd  : type=1400 audit(0.0:564): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:23.741 10014 28420 28420 I auditd  : type=1400 audit(0.0:565): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:24.741 10014 28420 28420 I auditd  : type=1400 audit(0.0:566): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:25.741 10014 28420 28420 I auditd  : type=1400 audit(0.0:567): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:26.741 10014 28420 28420 I auditd  : type=1400 audit(0.0:568): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:27.751 10014 28420 28420 I auditd  : type=1400 audit(0.0:570): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:28.751 10014 28420 28420 I auditd  : type=1400 audit(0.0:571): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:29.751 10014 28420 28420 I auditd  : type=1400 audit(0.0:572): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:30.751 10014 28420 28420 I auditd  : type=1400 audit(0.0:573): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:31.751 10014 28420 28420 I auditd  : type=1400 audit(0.0:574): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:32.751 10014 28420 28420 I auditd  : type=1400 audit(0.0:575): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:33.751 10014 28420 28420 I auditd  : type=1400 audit(0.0:576): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:34.761 10014 28420 28420 I auditd  : type=1400 audit(0.0:577): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:35.761 10014 28420 28420 I auditd  : type=1400 audit(0.0:578): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:36.761 10014 28420 28420 I auditd  : type=1400 audit(0.0:579): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:37.761 10014 28420 28420 I auditd  : type=1400 audit(0.0:580): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:38.761 10014 28420 28420 I auditd  : type=1400 audit(0.0:581): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:39.771 10014 28420 28420 I auditd  : type=1400 audit(0.0:582): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:40.771 10014 28420 28420 I auditd  : type=1400 audit(0.0:583): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:41.771 10014 28420 28420 I auditd  : type=1400 audit(0.0:584): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:42.771 10014 28420 28420 I auditd  : type=1400 audit(0.0:585): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:43.771 10014 28420 28420 I auditd  : type=1400 audit(0.0:586): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:44.771 10014 28420 28420 I auditd  : type=1400 audit(0.0:587): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:45.781 10014 28420 28420 I auditd  : type=1400 audit(0.0:588): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:46.781 10014 28420 28420 I auditd  : type=1400 audit(0.0:589): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:47.781 10014 28420 28420 I auditd  : type=1400 audit(0.0:590): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:48.781 10014 28420 28420 I auditd  : type=1400 audit(0.0:591): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:49.781 10014 28420 28420 I auditd  : type=1400 audit(0.0:592): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:50.781 10014 28420 28420 I auditd  : type=1400 audit(0.0:593): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:51.781 10014 28420 28420 I auditd  : type=1400 audit(0.0:594): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:52.791 10014 28420 28420 I auditd  : type=1400 audit(0.0:595): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:53.791 10014 28420 28420 I auditd  : type=1400 audit(0.0:596): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:54.791 10014 28420 28420 I auditd  : type=1400 audit(0.0:597): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:55.791 10014 28420 28420 I auditd  : type=1400 audit(0.0:598): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:56.791 10014 28420 28420 I auditd  : type=1400 audit(0.0:599): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:57.791 10014 28420 28420 I auditd  : type=1400 audit(0.0:600): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:58.791 10014 28420 28420 I auditd  : type=1400 audit(0.0:601): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:07:59.791 10014 28420 28420 I auditd  : type=1400 audit(0.0:602): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:00.801 10014 28420 28420 I auditd  : type=1400 audit(0.0:603): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:01.801 10014 28420 28420 I auditd  : type=1400 audit(0.0:604): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:02.801 10014 28420 28420 I auditd  : type=1400 audit(0.0:605): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:03.801 10014 28420 28420 I auditd  : type=1400 audit(0.0:606): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:04.801 10014 28420 28420 I auditd  : type=1400 audit(0.0:607): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:05.801 10014 28420 28420 I auditd  : type=1400 audit(0.0:608): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:06.801 10014 28420 28420 I auditd  : type=1400 audit(0.0:609): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:07.801 10014 28420 28420 I auditd  : type=1400 audit(0.0:610): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:08.801 10014 28420 28420 I auditd  : type=1400 audit(0.0:611): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:09.811 10014 28420 28420 I auditd  : type=1400 audit(0.0:612): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:10.811 10014 28420 28420 I auditd  : type=1400 audit(0.0:613): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:11.811 10014 28420 28420 I auditd  : type=1400 audit(0.0:614): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:12.811 10014 28420 28420 I auditd  : type=1400 audit(0.0:615): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:14.811 10014 28420 28420 I auditd  : type=1400 audit(0.0:617): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:15.811 10014 28420 28420 I auditd  : type=1400 audit(0.0:618): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:18.821 10014 28420 28420 I auditd  : type=1400 audit(0.0:621): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:19.821 10014 28420 28420 I auditd  : type=1400 audit(0.0:622): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:20.821 10014 28420 28420 I auditd  : type=1400 audit(0.0:623): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:21.821 10014 28420 28420 I auditd  : type=1400 audit(0.0:624): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:22.821 10014 28420 28420 I auditd  : type=1400 audit(0.0:625): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:23.821 10014 28420 28420 I auditd  : type=1400 audit(0.0:626): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:24.831 10014 28420 28420 I auditd  : type=1400 audit(0.0:627): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:25.831 10014 28420 28420 I auditd  : type=1400 audit(0.0:628): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:26.831 10014 28420 28420 I auditd  : type=1400 audit(0.0:629): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:27.831 10014 28420 28420 I auditd  : type=1400 audit(0.0:630): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:28.831 10014 28420 28420 I auditd  : type=1400 audit(0.0:631): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:29.831 10014 28420 28420 I auditd  : type=1400 audit(0.0:632): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:30.831 10014 28420 28420 I auditd  : type=1400 audit(0.0:633): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:31.831 10014 28420 28420 I auditd  : type=1400 audit(0.0:634): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:32.841 10014 28420 28420 I auditd  : type=1400 audit(0.0:635): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:33.841 10014 28420 28420 I auditd  : type=1400 audit(0.0:636): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:34.841 10014 28420 28420 I auditd  : type=1400 audit(0.0:637): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:08:35.841 10014 28420 28420 I auditd  : type=1400 audit(0.0:638): avc: denied { connectto } for comm="TcmReceiver" path="/dev/socket/tcm" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+ 
+ 
+Thread-3 
+------------------------------------------------------------------------------------------
+06-05 18:06:36.771 10014 28420 28420 I auditd  : type=1400 audit(0.0:515): avc: denied { connectto } for comm="Thread-3" path="/dev/socket/dpmwrapper" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:06:36.781 10014 28420 28420 I auditd  : type=1400 audit(0.0:516): avc: denied { connectto } for comm="Thread-3" path="/dev/socket/dpmwrapper" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+ 
+ 
+Thread-4 
+------------------------------------------------------------------------------------------
+06-05 18:06:36.841 10014 28420 28420 I auditd  : type=1400 audit(0.0:517): avc: denied { connectto } for comm="Thread-4" path="/dev/socket/dpmwrapper" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+06-05 18:06:36.871 10014 28420 28420 I auditd  : type=1400 audit(0.0:518): avc: denied { connectto } for comm="Thread-4" path="/dev/socket/dpmwrapper" scontext=u:r:mediaprovider:s0:c512,c768 tcontext=u:r:dpmd:s0 tclass=unix_stream_socket permissive=0
+ 
+ 
+.android.chrome 
+------------------------------------------------------------------------------------------
+06-05 18:07:27.241 10059 29790 29790 I auditd  : type=1400 audit(0.0:569): avc: denied { read } for comm=".android.chrome" name="vmstat" dev="proc" ino=4026532366 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:proc:s0 tclass=file permissive=0
+ 
+ 
+Binder:30982_2 
+------------------------------------------------------------------------------------------
+06-05 18:10:52.958 shell 30982 30982 I auditd  : type=1400 audit(0.0:644): avc: denied { read } for comm="Binder:30982_2" name="zram0" dev="sysfs" ino=24632 scontext=u:r:dumpstate:s0 tcontext=u:object_r:sysfs_zram:s0 tclass=dir permissive=0
+06-05 18:10:52.968 shell 30982 30982 I auditd  : type=1400 audit(0.0:645): avc: denied { search } for comm="Binder:30982_2" name="mmc0" dev="debugfs" ino=1108 scontext=u:r:dumpstate:s0 tcontext=u:object_r:debugfs_mmc:s0 tclass=dir permissive=0
+06-05 18:10:55.928 shell 30982 30982 I auditd  : type=1400 audit(0.0:646): avc: denied { getattr } for comm="Binder:30982_2" path="/proc/modules" dev="proc" ino=4026532361 scontext=u:r:dumpstate:s0 tcontext=u:object_r:proc_modules:s0 tclass=file permissive=0
+ 

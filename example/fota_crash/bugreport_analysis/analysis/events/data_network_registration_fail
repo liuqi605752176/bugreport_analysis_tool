@@ -1,0 +1,5 @@
+07-30 10:04:40.327 radio  3301  3301 I data_network_registration_fail: [40407,39871425]
+07-30 10:15:08.416 radio  3301  3301 I data_network_registration_fail: [40407,39869337]
+07-30 12:01:07.535 radio  3301  3301 I data_network_registration_fail: [405854,5217552]
+07-30 13:14:28.926 radio  3301  3301 I data_network_registration_fail: [405854,5217555]
+07-30 13:43:13.002 radio  3301  3301 I data_network_registration_fail: [405854,-1]

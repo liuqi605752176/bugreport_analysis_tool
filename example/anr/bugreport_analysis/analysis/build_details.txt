@@ -1,0 +1,15 @@
+------------------------------------------------------------------------------------------
+--- Build details ---
+------------------------------------------------------------------------------------------
+
+Build: T5911INDABURF-57 release-keys
+Build fingerprint: 'Smartron/tphoneE/rimoE:8.1.0/T5911INDABURF-57/57:user/release-keys'
+Bootloader: unknown
+Radio: MPSS.TA.2.3.c1-00605-8953_GEN_PACK-1.142704.1.147138.1-Jun  5 2018
+Network: Jio 4G,airtel
+Kernel: Linux version 3.18.71-perf (jenkins@tron8) (gcc version 4.9.x 20150123 (prerelease) (GCC) ) #1 SMP PREEMPT Tue Jun 5 01:36:23 IST 2018
+Command line: sched_enable_hmp=1 sched_enable_power_aware=1 console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78af000 rootfstype=ext4 noinitrd buildvariant=user veritykeyid=id:28f05206a40c3aa0d1e2395fb39321e7ab983caf androidboot.emmc=true androidboot.verifiedbootstate=green androidboot.veritymode=enforcing androidboot.keymaster=1 androidboot.serialno=4c40c62a androidboot.usermode=user androidboot.authorized_kernel=true androidboot.baseband=msm mdss_mdp.panel=1:dsi:0:qcom,mdss_dsi_ssd2092_1080p_huashi_video:1:none:cfg:single_dsi androidboot.slot_suffix=_a skip_initramfs rootwait ro init=/init root=/dev/dm-0 dm="system none ro,0 1 android-verity /dev/mmcblk0p17"
+Bugreport format version: 1.0
+Dumpstate info: id=1 pid=30982 dry_run=0 args=/system/bin/dumpstate -d -p -B -z -o /data/user_de/0/com.android.shell/files/bugreports/bugreport extra_options=bugreportplus
+
+

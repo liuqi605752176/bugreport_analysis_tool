@@ -1,0 +1,104 @@
+------------------------------------------------------------------------------------------
+--- Accounts ---
+------------------------------------------------------------------------------------------
+User UserInfo{0:Suresh:13}:
+  Accounts: 7
+    Account {name=suresh.dorepally@smartron.com, type=com.google}
+    Account {name=suresh.dorepally@gmail.com, type=com.google}
+    Account {name=sureshdorepally, type=com.twitter.android.auth.login}
+    Account {name=Office, type=com.microsoft.office}
+    Account {name=WhatsApp, type=com.whatsapp}
+    Account {name=suresh.dorepally@smartron.com, type=com.smartron.tronx.account.SMARTRONACCOUNT}
+    Account {name=Duo, type=com.google.android.gms.matchstick}
+  
+  AccountId, Action_Type, timestamp, UID, TableName, Key
+  Accounts History
+  -1,action_called_account_add,2018-07-02 09:40:25,10030,accounts,0
+  1,action_account_add,2018-07-02 09:59:37,10016,accounts,1
+  1,action_set_password,2018-07-02 09:59:37,10016,accounts,2
+  2,action_account_add,2018-07-02 15:38:20,10041,accounts,3
+  -1,action_called_account_add,2018-07-02 16:03:08,10064,accounts,4
+  3,action_account_add,2018-07-02 16:04:15,10016,accounts,5
+  3,action_set_password,2018-07-02 16:04:15,10016,accounts,6
+  -1,action_called_account_remove,2018-07-02 16:04:21,10016,accounts,7
+  4,action_account_add,2018-07-03 12:14:52,10096,accounts,8
+  5,action_account_add,2018-07-03 14:39:29,10094,accounts,9
+  5,action_authenticator_remove,2018-07-03 14:39:34,1000,accounts,10
+  6,action_account_add,2018-07-03 14:45:29,10097,accounts,11
+  7,action_account_add,2018-07-04 10:29:11,10016,accounts,12
+  7,action_called_account_remove,2018-07-06 10:42:34,10016,accounts,13
+  7,action_account_remove,2018-07-06 10:42:34,10016,accounts,14
+  -1,action_called_account_remove,2018-07-06 12:40:04,10016,accounts,15
+  -1,action_called_account_remove,2018-07-07 11:01:25,10016,accounts,16
+  -1,action_called_account_remove,2018-07-08 09:09:29,10016,accounts,17
+  -1,action_called_account_remove,2018-07-08 11:17:32,10016,accounts,18
+  -1,action_called_account_remove,2018-07-08 15:08:06,10016,accounts,19
+  -1,action_called_account_remove,2018-07-09 11:25:29,10016,accounts,20
+  -1,action_called_account_remove,2018-07-09 16:07:02,10016,accounts,21
+  2,action_called_account_remove,2018-07-09 17:35:30,1000,accounts,22
+  2,action_account_remove,2018-07-09 17:35:30,10041,accounts,23
+  -1,action_called_account_add,2018-07-09 17:35:34,0,accounts,24
+  -1,action_called_account_add,2018-07-09 17:37:30,0,accounts,25
+  -1,action_called_account_remove,2018-07-10 12:45:52,10016,accounts,26
+  -1,action_called_account_remove,2018-07-10 15:07:44,10016,accounts,27
+  -1,action_called_account_remove,2018-07-10 15:28:20,10016,accounts,28
+  -1,action_called_account_remove,2018-07-11 07:35:36,10016,accounts,29
+  -1,action_called_account_remove,2018-07-11 10:33:09,10016,accounts,30
+  -1,action_called_account_remove,2018-07-11 11:33:27,10016,accounts,31
+  -1,action_called_account_remove,2018-07-11 13:38:40,10016,accounts,32
+  8,action_account_add,2018-07-11 16:05:35,10022,accounts,33
+  -1,action_called_account_remove,2018-07-12 11:37:21,10016,accounts,34
+  -1,action_called_account_remove,2018-07-12 11:44:12,10016,accounts,35
+  -1,action_called_account_add,2018-07-12 16:23:08,0,accounts,36
+  9,action_account_add,2018-07-12 16:23:25,10041,accounts,37
+  -1,action_called_account_remove,2018-07-13 11:54:29,10016,accounts,38
+  -1,action_called_account_remove,2018-07-13 11:56:42,10016,accounts,39
+  -1,action_called_account_remove,2018-07-13 13:36:45,10016,accounts,40
+  -1,action_called_account_remove,2018-07-14 11:57:27,10016,accounts,41
+  -1,action_called_account_remove,2018-07-14 12:39:04,10016,accounts,42
+  -1,action_called_account_remove,2018-07-16 04:53:33,10016,accounts,43
+  -1,action_called_account_remove,2018-07-18 04:16:42,10016,accounts,44
+  -1,action_called_account_remove,2018-07-18 21:58:20,10016,accounts,45
+  -1,action_called_account_remove,2018-07-18 22:24:23,10016,accounts,46
+  6,action_authenticator_remove,2018-07-19 08:23:34,1000,accounts,47
+  10,action_account_add,2018-07-19 08:29:11,10115,accounts,48
+  -1,action_called_account_remove,2018-07-19 08:44:46,10016,accounts,49
+  9,action_called_account_remove,2018-07-19 16:05:45,1000,accounts,50
+  9,action_account_remove,2018-07-19 16:05:45,10041,accounts,51
+  -1,action_called_account_add,2018-07-19 16:05:49,0,accounts,52
+  11,action_account_add,2018-07-19 16:06:07,10041,accounts,53
+  -1,action_called_account_remove,2018-07-19 17:51:19,10016,accounts,54
+  -1,action_called_account_remove,2018-07-20 09:36:21,10016,accounts,55
+  12,action_account_add,2018-07-20 09:36:28,10016,accounts,56
+  
+  Active Sessions: 0
+  
+  RegisteredServicesCache: 13 services
+    ServiceInfo: AuthenticatorDescription {type=com.whatsapp}, ComponentInfo{com.whatsapp/com.whatsapp.accountsync.AccountAuthenticatorService}, uid 10115
+    ServiceInfo: AuthenticatorDescription {type=com.google.android.gm.pop3}, ComponentInfo{com.google.android.gm/com.android.email.service.Pop3AuthenticatorService}, uid 10064
+    ServiceInfo: AuthenticatorDescription {type=com.android.sim}, ComponentInfo{com.qualcomm.simcontacts/com.qualcomm.simcontacts.SimAuthenticateService}, uid 1001
+    ServiceInfo: AuthenticatorDescription {type=com.smartron.tronx.account.SMARTRONACCOUNT}, ComponentInfo{com.smartron.tronx/com.smartron.tronx.account.AuthenticatorService}, uid 10041
+    ServiceInfo: AuthenticatorDescription {type=com.google}, ComponentInfo{com.google.android.gms/com.google.android.gms.auth.account.authenticator.GoogleAccountAuthenticatorService}, uid 10016
+    ServiceInfo: AuthenticatorDescription {type=com.google.android.apps.tachyon}, ComponentInfo{com.google.android.apps.tachyon/com.google.android.apps.tachyon.contacts.sync.DuoAccountService}, uid 10063
+    ServiceInfo: AuthenticatorDescription {type=com.twitter.android.auth.login}, ComponentInfo{com.twitter.android/com.twitter.android.platform.TwitterAuthenticationService}, uid 10096
+    ServiceInfo: AuthenticatorDescription {type=com.microsoft.office}, ComponentInfo{com.microsoft.office.word/com.microsoft.office.msohttp.keystore.OfficeAuthenticationService}, uid 10022
+    ServiceInfo: AuthenticatorDescription {type=com.android.localphone}, ComponentInfo{com.qualcomm.simcontacts/com.qualcomm.simcontacts.PhoneAuthenticateService}, uid 1001
+    ServiceInfo: AuthenticatorDescription {type=com.google.android.gm.exchange}, ComponentInfo{com.google.android.gm/com.android.email.service.EasAuthenticatorService}, uid 10064
+    ServiceInfo: AuthenticatorDescription {type=com.google.android.gms.matchstick}, ComponentInfo{com.google.android.gms/com.google.android.gms.matchstick.contacts.sync.TachystickAccountService}, uid 10016
+    ServiceInfo: AuthenticatorDescription {type=com.tencent.mm.account}, ComponentInfo{com.tencent.mm/com.tencent.mm.plugin.account.model.AccountAuthenticatorService}, uid 10114
+    ServiceInfo: AuthenticatorDescription {type=com.google.android.gm.legacyimap}, ComponentInfo{com.google.android.gm/com.android.email.service.LegacyImapAuthenticatorService}, uid 10064
+  
+  Account visibility:
+    suresh.dorepally@smartron.com
+      com.smartron.tronxservices, 1
+      com.smartron.caretron, 1
+      com.smartron.camera, 1
+      com.smartron.movies, 1
+      com.smartron.tstore, 1
+      com.smartron.sid2, 1
+      com.smartron.synctron, 1
+      com.smartron.gallery, 1
+      com.smartron.music, 1
+  
+--------- 0.019s was the duration of dumpsys account, ending at: 2018-07-30 16:42:37
+

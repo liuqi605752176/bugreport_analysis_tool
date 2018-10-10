@@ -1,0 +1,69 @@
+------------------------------------------------------------------------------------------
+--- Application ANR ---
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager: ANR in com.google.android.apps.tachyon (com.google.android.apps.tachyon/.MainActivity)
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager: PID: 27299
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager: Reason: Input dispatching timed out (Waiting to send non-key event because the touched window has not finished processing certain input events that were delivered to it over 500.0ms ago.  Wait queue length: 8.  Wait queue head age: 5651.7ms.)
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager: Load: 9.39 / 8.91 / 7.08
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager: CPU usage from 0ms to 6328ms later (2018-06-05 18:08:59.896 to 2018-06-05 18:09:06.224):
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   91% 27299/com.google.android.apps.tachyon: 66% user + 25% kernel / faults: 4564 minor 108 major
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   43% 2142/mm-qcamera-daemon: 32% user + 11% kernel / faults: 13082 minor
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   41% 2628/system_server: 25% user + 16% kernel / faults: 4181 minor 66 major
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   19% 2135/media.codec: 6% user + 13% kernel / faults: 1956 minor 28 major
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   14% 566/android.hardware.audio@2.0-service: 4.4% user + 9.6% kernel / faults: 102 minor
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   12% 568/android.hardware.camera.provider@2.4-service: 2.5% user + 9.4% kernel / faults: 13 minor
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   10% 3373/com.android.systemui: 8.5% user + 2% kernel / faults: 2159 minor 44 major
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   8.2% 2123/audioserver: 5.5% user + 2.6% kernel / faults: 640 minor 8 major
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   6.1% 2124/cameraserver: 3.9% user + 2.2% kernel / faults: 575 minor 3 major
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   5.3% 3545/com.android.phone: 3.9% user + 1.4% kernel / faults: 2011 minor 40 major
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   5% 600/surfaceflinger: 2.2% user + 2.8% kernel / faults: 254 minor 8 major
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   4.1% 28785/adbd: 1.4% user + 2.6% kernel / faults: 1004 minor
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   3.4% 9892/VosTXThread: 0% user + 3.4% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   3.3% 574/android.hardware.graphics.composer@2.1-service: 3% user + 0.3% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   3.3% 9894/VosRXThread: 0% user + 3.3% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   3.1% 457/logd: 1.7% user + 1.4% kernel / faults: 2 minor
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   2.8% 15758/com.google.android.inputmethod.latin: 2.5% user + 0.3% kernel / faults: 1343 minor 3 major
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   2.5% 3511/com.qualcomm.qti.telephonyservice: 1.5% user + 0.9% kernel / faults: 2144 minor 103 major
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   2% 3487/.dataservices: 2% user + 0% kernel / faults: 1959 minor 111 major
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   1.8% 260/kgsl_worker_thr: 0% user + 1.8% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   1.8% 28819/logcat: 1.2% user + 0.6% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   1.5% 10834/kworker/u16:12: 0% user + 1.5% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   1.5% 25491/kworker/u16:9: 0% user + 1.5% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   1.4% 351/mmc-cmdqd/0: 0% user + 1.4% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   1.4% 3531/com.elephanttek.faceunlock: 0.7% user + 0.6% kernel / faults: 1918 minor 171 major
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   1.4% 23318/kworker/u16:8: 0% user + 1.4% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   1.2% 2152/mm-pp-dpps: 0.7% user + 0.4% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   1.2% 26836/kworker/u16:0: 0% user + 1.2% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   1.1% 177/kswapd0: 0% user + 1.1% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   1.1% 4038/com.qualcomm.qti.services.secureui:sui_service: 0.3% user + 0.7% kernel / faults: 2102 minor 155 major
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0% 27160/kworker/u17:0: 0% user + 0% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0.9% 4013/com.android.runintest: 0.4% user + 0.4% kernel / faults: 2062 minor 169 major
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0.9% 4028/com.qualcomm.qti.loadcarrier: 0.4% user + 0.4% kernel / faults: 2050 minor 159 major
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0.9% 24159/kworker/u16:6: 0% user + 0.9% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0% 2129/media.extractor: 0% user + 0% kernel / faults: 1366 minor 14 major
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0% 27166/kworker/u17:8: 0% user + 0% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0.6% 610/android.hardware.sensors@1.0-service: 0.1% user + 0.4% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0.6% 10888/com.google.android.gms.persistent: 0.3% user + 0.3% kernel / faults: 31 minor
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0.6% 27162/kworker/u17:3: 0% user + 0.6% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0% 27165/kworker/u17:7: 0% user + 0% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0.6% 27190/mdss_fb0: 0% user + 0.6% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0.4% 7/rcu_preempt: 0% user + 0.4% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0.4% 82/kworker/u16:1: 0% user + 0.4% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0.4% 300/irq/72-ssd2098: 0% user + 0.4% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0% 27163/kworker/u17:4: 0% user + 0% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0.4% 28803/kworker/u16:2: 0% user + 0.4% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0.4% 29746/kworker/0:0: 0% user + 0.4% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0.3% 110/system: 0% user + 0.3% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0.3% 586/vendor.qti.hardware.perf@1.0-service: 0% user + 0.3% kernel / faults: 4 minor
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0% 27164/kworker/u17:6: 0% user + 0% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0% 1//init: 0% user + 0% kernel / faults: 10 minor
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0.1% 8/rcu_sched: 0% user + 0.1% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0.1% 45/rcuop/4: 0% user + 0.1% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0.1% 53/rcuop/5: 0% user + 0.1% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0.1% 61/rcuop/6: 0% user + 0.1% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0.1% 62/rcuos/6: 0% user + 0.1% kernel
+06-05 18:09:06.286  1000  2628  2708 E ActivityManager:   0.1% 69/rcuop/7: 0% user 
+06-05 18:10:16.265  1000  2628  7823 E ActivityManager: applyOptionsLocked: Unknown animationType=0

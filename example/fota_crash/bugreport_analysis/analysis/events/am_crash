@@ -1,0 +1,2 @@
+07-30 16:03:02.391  1000  2741  3632 I am_crash: [6502,0,com.fota.pro,952647237,java.lang.NullPointerException,Attempt to invoke virtual method 'boolean com.fota.pro.a.d.d()' on a null object reference,NULL,14]
+07-30 16:03:08.243  1000  2741  3632 I am_crash: [8050,0,com.fota.pro,952647237,java.lang.NullPointerException,Attempt to invoke virtual method 'boolean com.fota.pro.a.d.d()' on a null object reference,NULL,14]

@@ -1,0 +1,11 @@
+06-05 17:44:08.508 radio  3545  3545 I chatty  : uid=1001(radio) com.android.phone identical 1 line
+06-05 17:45:53.603 radio  3545  3545 I chatty  : uid=1001(radio) com.android.phone identical 1 line
+06-05 17:51:46.375  1000  2628  2628 I chatty  : uid=1000 system_server identical 2 lines
+06-05 18:03:15.080  1000 27469 27469 I chatty  : uid=1000(system) com.android.settings identical 4 lines
+06-05 18:06:43.691 10014 28420 28420 I chatty  : uid=10014(com.android.providers.media) android.process.media identical 1 line
+06-05 18:06:55.701 10014 28420 28420 I chatty  : uid=10014(com.android.providers.media) android.process.media identical 1 line
+06-05 18:06:59.711 10014 28420 28420 I chatty  : uid=10014(com.android.providers.media) android.process.media identical 1 line
+06-05 18:08:13.811 10014 28420 28420 I chatty  : uid=10014(com.android.providers.media) android.process.media identical 1 line
+06-05 18:08:17.821 10014 28420 28420 I chatty  : uid=10014(com.android.providers.media) android.process.media identical 2 lines
+06-05 18:09:22.861 10060 27299 29639 I chatty  : uid=10060(com.google.android.apps.tachyon) identical 3 lines
+06-05 18:09:26.664 10060 27299 29639 I chatty  : uid=10060(com.google.android.apps.tachyon) identical 1 line

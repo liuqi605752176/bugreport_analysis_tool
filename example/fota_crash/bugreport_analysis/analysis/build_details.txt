@@ -1,0 +1,15 @@
+------------------------------------------------------------------------------------------
+--- Build details ---
+------------------------------------------------------------------------------------------
+
+Build: T5711INDURG-264 release-keys
+Build fingerprint: 'Smartron/tphoneY/rimoY:8.1.0/T5711INDURG-264/264:user/release-keys'
+Bootloader: unknown
+Radio: MPSS.TA.2.3.c1-00605-8953_GEN_PACK-1.142704.1.147138.1-Jul 13 2018
+Network: Jio 4G,IDEA
+Kernel: Linux version 3.18.71-perf (jenkins@tron7) (gcc version 4.9.x 20150123 (prerelease) (GCC) ) #1 SMP PREEMPT Fri Jul 13 01:29:20 IST 2018
+Command line: sched_enable_hmp=1 console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78B0000 log_buf_len=1M buildvariant=user androidboot.emmc=true androidboot.verifiedbootstate=green androidboot.veritymode=enforcing androidboot.keymaster=1 androidboot.serialno=bfade83 androidboot.usermode=user androidboot.authorized_kernel=true androidboot.baseband=msm mdss_mdp.panel=1:dsi:0:qcom,mdss_dsi_ili9881d_720p_hsd_huashi_video:1:none:cfg:single_dsi
+Bugreport format version: 1.0
+Dumpstate info: id=1 pid=11086 dry_run=0 args=/system/bin/dumpstate -d -p -B -z -o /data/user_de/0/com.android.shell/files/bugreports/bugreport extra_options=bugreportplus
+
+
