@@ -1,2 +1,4 @@
 *.pyc
 bugreport_analysis
+venv
+.idea
